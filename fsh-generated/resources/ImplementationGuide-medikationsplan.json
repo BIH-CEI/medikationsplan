@@ -1,0 +1,77 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "medikationsplan",
+  "url": "https://www.charite.de/fhir/medikationsplan/ImplementationGuide/medikationsplan",
+  "version": "0.1.0",
+  "name": "Medikationsplan",
+  "status": "draft",
+  "packageId": "medikationsplan",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/mp-medicationstatement"
+        },
+        "name": "MedicationStatement MP++",
+        "description": "Dieses Profil beschreibt die Verordnung eines Arzneimittels.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mp-medikation"
+        },
+        "name": "Medikation MP++",
+        "description": "Dieses Profil beschreibt die Medikation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MyPatient"
+        },
+        "name": "MyPatient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mp-extension-freitext"
+        },
+        "name": "Extension Freitext MP++",
+        "description": "Extension zur Freitext-Angabe der Wirkstoffmenge bzw. Stärke.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mp-einnahmezeitpunkte"
+        },
+        "name": "Einnahmezeitpunkte",
+        "description": "ValueSet zur Codierung von Einnahmezeitpunkten",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2021+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}
