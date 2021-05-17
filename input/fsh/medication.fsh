@@ -3,7 +3,7 @@ Alias: $edqm-doseform = http://fhir.de/CodeSystem/edqm/dose-form
 Alias: $ask = http://fhir.de/ValueSet/ask
 Alias: $Freitext = https://www.charite.de/fhir/medikationsplan/Extension/freitext
 
-Profile: Medikation
+Profile: MedicationMPPP
 Parent: Medication
 Id: mp-medikation
 Title: "Medikation MP++"

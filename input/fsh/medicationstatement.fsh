@@ -1,8 +1,4 @@
-Alias: $MII-Reference = https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
-Alias: $target-site-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips
-Alias: $medicine-route-of-administration = http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration
-
-Profile: MedStatement
+Profile: MedicationStatementMPPP
 Parent: MedicationStatement
 Id: mp-medicationstatement
 Title: "MedicationStatement MP++"
@@ -20,7 +16,10 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * identifier 1..* MS 
 * identifier.system 1..1 MS 
 * identifier.value 1..1 MS 
+* basedOn 0..0
+* partOf 0..0
 * status MS
+* category 0..0
 * medication[x] MS
 * medication[x] only Reference
 * medication[x] ^slicing.discriminator.type = #type
@@ -30,15 +29,24 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * medicationReference.reference 1..1 MS
 * subject 1..1 MS
 * subject only Reference(Patient)
+* context 0..0
 * effective[x] 0..1 MS
+* effective[x] ^short = "Einnahmezeitraum"
 * effective[x] only Period
 * effective[x] ^slicing.discriminator.type = #type
 * effective[x] ^slicing.discriminator.path = "$this"
 * effective[x] ^slicing.rules = #open
 * effectivePeriod.start 1..1 MS
+* effectivePeriod.start ^short = "Beginn der Einnahme (@ms)"
 * effectivePeriod.end 0..1 MS
+* effectivePeriod.end ^short = "Ende der Einnahme (@me)"
 * dateAsserted MS
-* note MS
+* informationSource 0..0
+* derivedFrom 0..0
+* reasonCode.text MS
+* reasonCode.text ^short = "Grund für die Einnahme (@r)"
+* reasonReference 0..0
+* note 0..1 MS
 * dosage 1..5 MS
 * dosage ^slicing.discriminator.type = #exists
 * dosage ^slicing.discriminator.path = "text"
@@ -54,6 +62,7 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * dosage[freitext].asNeeded[x] ^slicing.discriminator.type = #type
 * dosage[freitext].asNeeded[x] ^slicing.discriminator.path = "$this"
 * dosage[freitext].asNeeded[x] ^slicing.rules = #open
+* dosage[freitext].asNeededBoolean ^short = "Bedarfs- oder Dauermedikation"
 * dosage[freitext].site 0..0
 * dosage[freitext].route 0..0
 * dosage[freitext].method 0..0
@@ -69,6 +78,7 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * dosage[kodiert].timing.event 0..0
 * dosage[kodiert].timing.repeat 0..0
 * dosage[kodiert].timing.code MS
+* dosage[kodiert].timing.code ^short = "Einnahmezeitpunkt CM|CD|CV|HS (@m|@d|@v|@h)"
 * dosage[kodiert].timing.code from Einnahmezeitpunkte (required)
 * dosage[kodiert].timing.code.coding 0..1 MS
 * dosage[kodiert].timing.code.coding.system MS
@@ -85,6 +95,7 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * dosage[kodiert].doseAndRate.dose[x] ^slicing.rules = #open
 * dosage[kodiert].doseAndRate.dose[x] contains 
     doseQuantity 1..1 MS
+* dosage[kodiert].doseAndRate.doseQuantity ^short = "Dosiereinheit kodiert (@du)"
 * dosage[kodiert].doseAndRate.doseQuantity.value MS
 * dosage[kodiert].doseAndRate.doseQuantity.unit MS
 * dosage[kodiert].doseAndRate.doseQuantity.system MS
