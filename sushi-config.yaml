@@ -17,3 +17,7 @@ releaseLabel: ci-build
 menu:
   Home: index.html
   Artifacts: artifacts.html
+dependencies:
+  de.basisprofil.r4:
+    uri: http://fhir.de/ImplementationGuide/basisprofil-de-r4
+    version: 1.0.0-rc1

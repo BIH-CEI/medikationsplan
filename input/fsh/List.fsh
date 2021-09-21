@@ -20,9 +20,30 @@ Title: "MedicationStatement List MP++"
 * mode MS
 * mode = #snapshot (exactly)
 * title ^short = "Zwischenüberschrift Titel (@c)"
+* code from https://www.charite.de/fhir/medikationsplan/ValueSet/kbv/s-bmp-zwischenueberschrift (required)
+* code MS
+* code.coding MS
+* code.coding.system MS
+* code.coding.code MS
+* code.coding.display MS
+* code.text MS
+* subject 0..0
+* encounter 0..0
+* date 0..0
+* source 0..0
+* orderedBy 0..0
+* note 0..0
+* entry MS
+* entry.flag 0..0
+* entry.deleted 0..0
+* entry.date 0..0
+* entry.item MS
+* entry.item only Reference(https://www.charite.de./fhir/medikationsplan/StructureDefinition/MedicationStatement)
+* entry.item.reference 1..1 MS
+* emptyReason 0..0
 
 
-ValueSet: kbv-s-bmp-zwischenueberschrift-vs
+ValueSet: KBV_BMP_Zwischenueberschrift_VS
 Id: mp-kbv-s-bmp-zwischenueberschrift-vs
 Description: "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP)."
 * ^url = "https://www.charite.de/fhir/medikationsplan/ValueSet/kbv/s-bmp-zwischenueberschrift"
@@ -36,7 +57,7 @@ Description: "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenübers
 * ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * include codes from system $s-bmp-zwischenueberschrift
 
-CodeSystem: kbv-s-bmp-zwischenueberschrift-cs
+CodeSystem: KBV_BMP_Zwischenueberschrift_CS
 Id: mp-kbv-s-bmp-zwischenueberschrift-cs
 Description: "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP)."
 * ^url = "https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"
