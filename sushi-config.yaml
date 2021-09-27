@@ -20,7 +20,7 @@ menu:
 dependencies:
   de.basisprofil.r4:
     uri: http://fhir.de/ImplementationGuide/basisprofil-de-r4
-    version: 1.0.0-rc1
+    version: 1.0.0
   hl7.fhir.uv.ips:
     uri: http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips
     version: 1.0.0
