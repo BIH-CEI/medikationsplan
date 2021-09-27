@@ -2,7 +2,7 @@ Profile: PractitionerMPPP
 Parent: Practitioner
 Id: mp-practitioner
 Title: "Practitioner MP++"
-* ^url = "https://www.charite.de./fhir/medikationsplan/StructureDefinition/practitioner"
+* ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/practitioner"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^publisher = "Charité"
