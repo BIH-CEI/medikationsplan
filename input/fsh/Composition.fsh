@@ -23,6 +23,7 @@ Title: "Composition MP++"
 * type.coding.code = #77603-9
 * type.coding.display MS
 * subject MS
+* subject only Reference(Patient)
 * subject.reference 1..1 MS
 * encounter 0..0
 * date MS
