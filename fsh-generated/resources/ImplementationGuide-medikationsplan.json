@@ -9,14 +9,49 @@
   "fhirVersion": [
     "4.0.1"
   ],
+  "dependsOn": [
+    {
+      "packageId": "de.basisprofil.r4",
+      "uri": "http://fhir.de/ImplementationGuide/basisprofil-de-r4",
+      "version": "1.0.0",
+      "id": "de_basisprofil_r4"
+    },
+    {
+      "packageId": "hl7.fhir.uv.ips",
+      "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
+      "version": "1.0.0",
+      "id": "hl7_fhir_uv_ips"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.laborbefund",
+      "uri": "https://simplifier.net/guide/laborbefundindermedizininformatik-initiative",
+      "version": "1.0.6",
+      "id": "de_medizininformatikinitiative_kerndatensatz_laborbefund"
+    }
+  ],
   "definition": {
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/mp-medicationstatement"
+          "reference": "StructureDefinition/mp-allergyintolerance"
         },
-        "name": "MedicationStatement MP++",
-        "description": "Dieses Profil beschreibt die Verordnung eines Arzneimittels.",
+        "name": "AllergyIntolerance MP++",
+        "description": "Allergie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/observation-breastfeeding"
+        },
+        "name": "Breastfeeding",
+        "description": "Breastfeeding",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mp-composition"
+        },
+        "name": "Composition MP++",
         "exampleBoolean": false
       },
       {
@@ -29,9 +64,31 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/MyPatient"
+          "reference": "StructureDefinition/mp-list"
         },
-        "name": "MyPatient",
+        "name": "MedicationStatement List MP++",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mp-medicationstatement"
+        },
+        "name": "MedicationStatement MP++",
+        "description": "Dieses Profil beschreibt die Verordnung eines Arzneimittels.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mp-patient"
+        },
+        "name": "Patient MP++",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mp-practitioner"
+        },
+        "name": "Practitioner MP++",
         "exampleBoolean": false
       },
       {
@@ -44,10 +101,34 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mp-allergiesintolerances-alphaid"
+        },
+        "name": "AllergiesIntolerancesAlphaID",
+        "description": "Allergien und Unverträglichkeiten Alpha-ID",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mp-einnahmezeitpunkte"
         },
         "name": "Einnahmezeitpunkte",
         "description": "ValueSet zur Codierung von Einnahmezeitpunkten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mp-kbv-s-bmp-zwischenueberschrift-vs"
+        },
+        "name": "KBV_BMP_Zwischenueberschrift_VS",
+        "description": "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mp-kbv-s-bmp-zwischenueberschrift-cs"
+        },
+        "name": "KBV_BMP_Zwischenueberschrift_CS",
+        "description": "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP).",
         "exampleBoolean": false
       }
     ],

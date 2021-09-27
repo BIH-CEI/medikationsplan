@@ -1,0 +1,84 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "KBV_BMP_Zwischenueberschrift_CS",
+  "id": "mp-kbv-s-bmp-zwischenueberschrift-cs",
+  "description": "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP).",
+  "version": "1.01",
+  "url": "https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift",
+  "concept": [
+    {
+      "code": "411",
+      "display": "Bedarfsmedikation"
+    },
+    {
+      "code": "412",
+      "display": "Dauermedikation"
+    },
+    {
+      "code": "413",
+      "display": "Intramuskuläre Anwendung"
+    },
+    {
+      "code": "414",
+      "display": "Besondere Anwendung"
+    },
+    {
+      "code": "415",
+      "display": "Intravenöse Anwendung"
+    },
+    {
+      "code": "416",
+      "display": "Anwendung unter die Haut"
+    },
+    {
+      "code": "417",
+      "display": "Fertigspritze"
+    },
+    {
+      "code": "418",
+      "display": "Selbstmedikation"
+    },
+    {
+      "code": "419",
+      "display": "Allergiehinweise"
+    },
+    {
+      "code": "421",
+      "display": "Wichtige Hinweise"
+    },
+    {
+      "code": "422",
+      "display": "Wichtige Angaben"
+    },
+    {
+      "code": "423",
+      "display": "zu besonderen Zeiten anzuwendende Medikamente"
+    },
+    {
+      "code": "424",
+      "display": "zeitlich befristet anzuwendende Medikamente"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "1.2.276.0.76.3.1.1.5.2.42"
+    }
+  ],
+  "date": "2017-08-08",
+  "publisher": "Charité",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "valueSet": "https://www.charite.de/fhir/medikationsplan/ValueSet/kbv/s-bmp-zwischenueberschrift",
+  "count": 13
+}

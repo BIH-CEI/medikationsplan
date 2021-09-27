@@ -13,7 +13,7 @@
   ],
   "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Medication",
   "version": "0.1.0",
-  "name": "Medikation",
+  "name": "MedicationMPPP",
   "title": "Medikation MP++",
   "status": "draft",
   "publisher": "Charité",
