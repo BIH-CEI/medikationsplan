@@ -94,7 +94,7 @@ Title: "Composition MP++"
 * section[gesundheitsBelange].mode 0..0
 * section[gesundheitsBelange].orderedBy 0..0
 * section[gesundheitsBelange].entry 0..* MS
-* section[gesundheitsBelange].entry ^slicing.discriminator.type = #Profile
+* section[gesundheitsBelange].entry ^slicing.discriminator.type = #profile
 * section[gesundheitsBelange].entry ^slicing.discriminator.path = "reference"
 * section[gesundheitsBelange].entry ^slicing.rules = #closed
 * section[gesundheitsBelange].entry contains
@@ -118,7 +118,7 @@ Title: "Composition MP++"
 * section[klinischeParameter].mode 0..0
 * section[klinischeParameter].orderedBy 0..0
 * section[klinischeParameter].entry 0..* MS
-* section[klinischeParameter].entry ^slicing.discriminator.type = #Profile
+* section[klinischeParameter].entry ^slicing.discriminator.type = #profile
 * section[klinischeParameter].entry ^slicing.discriminator.path = "reference"
 * section[klinischeParameter].entry ^slicing.rules = #closed
 * section[klinischeParameter].entry contains
