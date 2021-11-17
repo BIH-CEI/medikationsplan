@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mp-composition",
+  "id": "mp4p-composition",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,10 +11,10 @@
       "valueCode": "not-classified"
     }
   ],
-  "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/composition",
+  "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition",
   "version": "0.1.0",
-  "name": "CompositionMPPP",
-  "title": "Composition MP++",
+  "name": "CompositionMP4P",
+  "title": "Composition MP4+",
   "status": "draft",
   "publisher": "Charité",
   "contact": [
@@ -138,7 +138,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient"
             ]
           }
         ],
@@ -167,7 +167,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.charite.de/fhir/medikationsplan/StructureDefinition/practitioner"
+              "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner"
             ]
           }
         ]
@@ -488,7 +488,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips"
+              "https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusSchwanger"
             ]
           }
         ],
@@ -510,7 +510,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.charite.de/fhir/medikationsplan/StructureDefinition/observation-breastfeeding"
+              "https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusStillend"
             ]
           }
         ],
@@ -609,7 +609,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht"
+              "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergewicht"
             ]
           }
         ],
@@ -631,7 +631,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse"
+              "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergroesse"
             ]
           }
         ],
@@ -653,7 +653,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+              "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Kreatininwert"
             ]
           }
         ],

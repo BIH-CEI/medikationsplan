@@ -1,8 +1,8 @@
-Profile: PractitionerMPPP
+Profile: PractitionerMP4P
 Parent: Practitioner
-Id: mp-practitioner
-Title: "Practitioner MP++"
-* ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/practitioner"
+Id: mp4p-practitioner
+Title: "Practitioner MP4+"
+* ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^publisher = "Charité"

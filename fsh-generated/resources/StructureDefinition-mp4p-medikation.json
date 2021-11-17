@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mp-medikation",
+  "id": "mp4p-medikation",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -13,8 +13,8 @@
   ],
   "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Medication",
   "version": "0.1.0",
-  "name": "MedicationMPPP",
-  "title": "Medikation MP++",
+  "name": "MedicationMP4P",
+  "title": "Medikation MP4+",
   "status": "draft",
   "publisher": "Charité",
   "contact": [

@@ -1,9 +1,9 @@
-Profile: MedicationStatementMPPP
+Profile: MedicationStatementMP4P
 Parent: MedicationStatement
-Id: mp-medicationstatement
-Title: "MedicationStatement MP++"
+Id: mp4p-medicationstatement
+Title: "MedicationStatement MP4+"
 Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
-* ^url = "https://www.charite.de./fhir/medikationsplan/StructureDefinition/MedicationStatement"
+* ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^publisher = "Charité"
@@ -28,7 +28,7 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * medicationReference only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/Medication)
 * medicationReference.reference 1..1 MS
 * subject 1..1 MS
-* subject only Reference(Patient)
+* subject only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient)
 * context 0..0
 * effective[x] 0..1 MS
 * effective[x] ^short = "Einnahmezeitraum"

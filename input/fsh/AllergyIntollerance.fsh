@@ -1,7 +1,7 @@
-Profile: AllergyIntoleranceMPPP
+Profile: AllergyIntoleranceMP4P
 Parent: AllergyIntolerance
-Id: mp-allergyintolerance
-Title: "AllergyIntolerance MP++"
+Id: mp4p-allergyintolerance
+Title: "AllergyIntolerance MP4+"
 Description: "Allergie"
 * ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/AllergyIntolerance"
 * ^version = "0.1.0"
@@ -22,15 +22,16 @@ Description: "Allergie"
 * code.coding ^slicing.discriminator[0].path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains 
-    alpha-id 1..1
+    alpha-id 0..1
 * code.coding[alpha-id] MS
-* code.coding[alpha-id] ^patternCoding.system = "http://fhir.de/CodeSystem/dimdi/alpha-id"
+* code.coding[alpha-id] ^patternCoding.system = "http://fhir.de/CodeSystem/bfarm/alpha-id"
 * code.coding[alpha-id] from AllergiesIntolerancesAlphaID (required)
 * code.coding[alpha-id].system MS
 * code.coding[alpha-id].code MS 
 * code.coding[alpha-id].display MS
 * code.text MS
-* patient MS
+* patient 1..1 MS
+* patient only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient)
 * patient.reference 1.. MS
 * onset[x] MS
 * recordedDate 0..0
@@ -51,5 +52,8 @@ Description: "Allergie"
 * reaction.exposureRoute 0..0
 * reaction.note 0..0
 
-
-
+Mapping: UKF-AllergyIntolerance
+Id: UKF
+Title: "UKF Mapping"
+Source: AllergyIntoleranceMP4P
+* code.text -> "O@a"

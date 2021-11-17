@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mp-extension-freitext",
+  "id": "mp4p-extension-freitext",
   "url": "https://www.charite.de/fhir/medikationsplan/Extension/freitext",
   "version": "0.1.0",
   "name": "Freitext",
-  "title": "Extension Freitext MP++",
+  "title": "Extension Freitext MP4+",
   "status": "active",
   "experimental": false,
   "publisher": "Charité",
@@ -43,7 +43,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Extension Freitext MP++",
+        "short": "Extension Freitext MP4+",
         "definition": "Extension zur Freitext-Angabe der Wirkstoffmenge bzw. Stärke."
       },
       {

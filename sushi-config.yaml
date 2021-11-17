@@ -2,14 +2,18 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: medikationsplan
-canonical: https://www.charite.de/fhir/medikationsplan
-name: Medikationsplan
+id: de.mp4p
+canonical: https://www.charite.de/fhir/medikationsplan/ImplementationGuide/mp4p
+name: MP4P_DE_IG
+title: Medikationsplan 4 PLUS
 status: draft
 version: 0.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
+publisher:
+  name: BIH@Charité
+  url: https://www.bihealth.org/en/research/core-facilities/interoperability/
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
@@ -20,10 +24,8 @@ menu:
 dependencies:
   de.basisprofil.r4:
     uri: http://fhir.de/ImplementationGuide/basisprofil-de-r4
-    version: 1.0.0
+    version: 1.1.0
   hl7.fhir.uv.ips:
     uri: http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips
     version: 1.0.0
-  de.medizininformatikinitiative.kerndatensatz.laborbefund: 
-    uri: https://simplifier.net/guide/laborbefundindermedizininformatik-initiative
-    version: 1.0.6
+

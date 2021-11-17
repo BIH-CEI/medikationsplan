@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mp-practitioner",
+  "id": "mp4p-practitioner",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,10 +11,10 @@
       "valueCode": "individual"
     }
   ],
-  "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/practitioner",
+  "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner",
   "version": "0.1.0",
-  "name": "PractitionerMPPP",
-  "title": "Practitioner MP++",
+  "name": "PractitionerMP4P",
+  "title": "Practitioner MP4+",
   "status": "draft",
   "publisher": "Charité",
   "contact": [

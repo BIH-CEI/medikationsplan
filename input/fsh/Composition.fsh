@@ -1,8 +1,8 @@
-Profile: CompositionMPPP
+Profile: CompositionMP4P
 Parent: Composition
-Id: mp-composition
-Title: "Composition MP++"
-* ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/composition"
+Id: mp4p-composition
+Title: "Composition MP4+"
+* ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition"
 * ^version = "0.1.0"
 * ^status = #draft
 * ^publisher = "Charité"
@@ -23,11 +23,11 @@ Title: "Composition MP++"
 * type.coding.code = #77603-9
 * type.coding.display MS
 * subject MS
-* subject only Reference(Patient)
+* subject only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient)
 * subject.reference 1..1 MS
 * encounter 0..0
 * date MS
-* author only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/practitioner)
+* author only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner)
 * title 1..1 MS
 * custodian ^slicing.discriminator.type = #pattern
 * custodian ^slicing.discriminator.path = "identifier"
@@ -101,9 +101,9 @@ Title: "Composition MP++"
 * section[gesundheitsBelange].entry contains
     schwangerschaft 0..1 MS and 
     stillzeit 0..1 MS
-* section[gesundheitsBelange].entry[schwangerschaft] only Reference(http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips)
+* section[gesundheitsBelange].entry[schwangerschaft] only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusSchwanger)
 * section[gesundheitsBelange].entry[schwangerschaft].reference 1..1 MS
-* section[gesundheitsBelange].entry[stillzeit] only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/observation-breastfeeding)
+* section[gesundheitsBelange].entry[stillzeit] only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusStillend)
 * section[gesundheitsBelange].entry[stillzeit].reference 1..1 MS
 * section[gesundheitsBelange].emptyReason 0..0
 * section[gesundheitsBelange].section 0..0
@@ -126,11 +126,11 @@ Title: "Composition MP++"
     gewicht 0..1 MS and 
     groesse 0..1 MS and
     creatinin 0..1 MS
-* section[klinischeParameter].entry[gewicht] only Reference(http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht)
+* section[klinischeParameter].entry[gewicht] only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergewicht)
 * section[klinischeParameter].entry[gewicht].reference 1..1 MS
-* section[klinischeParameter].entry[groesse] only Reference(http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse)
+* section[klinischeParameter].entry[groesse] only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergroesse)
 * section[klinischeParameter].entry[groesse].reference 1..1 MS
-* section[klinischeParameter].entry[creatinin] only Reference(https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab)
+* section[klinischeParameter].entry[creatinin] only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/Kreatininwert)
 * section[klinischeParameter].entry[creatinin].reference 1..1 MS
 * section[klinischeParameter].emptyReason 0..0
 * section[klinischeParameter].section 0..0

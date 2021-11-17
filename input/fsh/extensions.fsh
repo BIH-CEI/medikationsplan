@@ -1,6 +1,6 @@
 Extension: Freitext
-Id: mp-extension-freitext
-Title: "Extension Freitext MP++"
+Id: mp4p-extension-freitext
+Title: "Extension Freitext MP4+"
 Description: "Extension zur Freitext-Angabe der Wirkstoffmenge bzw. Stärke."
 * ^url = "https://www.charite.de/fhir/medikationsplan/Extension/freitext"
 * ^version = "0.1.0"

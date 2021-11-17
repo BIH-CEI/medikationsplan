@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mp-list",
+  "id": "mp4p-list",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -13,8 +13,8 @@
   ],
   "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/List",
   "version": "0.1.0",
-  "name": "MedicationStatementListMPPP",
-  "title": "MedicationStatement List MP++",
+  "name": "MedicationStatementListMP4P",
+  "title": "MedicationStatement List MP4+",
   "status": "draft",
   "publisher": "Charité",
   "contact": [
@@ -180,7 +180,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.charite.de./fhir/medikationsplan/StructureDefinition/MedicationStatement"
+              "https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement"
             ]
           }
         ],

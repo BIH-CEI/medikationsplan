@@ -1,7 +1,7 @@
-Profile: MedicationStatementListMPPP
+Profile: MedicationStatementListMP4P
 Parent: List
-Id: mp-list
-Title: "MedicationStatement List MP++"
+Id: mp4p-list
+Title: "MedicationStatement List MP4+"
 * ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/List"
 * ^version = "0.1.0"
 * ^status = #draft
@@ -36,6 +36,6 @@ Title: "MedicationStatement List MP++"
 * entry.deleted 0..0
 * entry.date 0..0
 * entry.item MS
-* entry.item only Reference(https://www.charite.de./fhir/medikationsplan/StructureDefinition/MedicationStatement)
+* entry.item only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement)
 * entry.item.reference 1..1 MS
 * emptyReason 0..0

@@ -22,7 +22,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://fhir.de/CodeSystem/dimdi/alpha-id",
+        "system": "http://fhir.de/CodeSystem/bfarm/alpha-id",
         "concept": [
           {
             "code": "I81502",

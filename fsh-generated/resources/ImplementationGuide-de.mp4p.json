@@ -1,11 +1,24 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "medikationsplan",
-  "url": "https://www.charite.de/fhir/medikationsplan/ImplementationGuide/medikationsplan",
+  "id": "de.mp4p",
+  "url": "https://www.charite.de/fhir/medikationsplan/ImplementationGuide/mp4p/ImplementationGuide/de.mp4p",
   "version": "0.1.0",
-  "name": "Medikationsplan",
+  "name": "MP4P_DE_IG",
+  "title": "Medikationsplan 4 PLUS",
   "status": "draft",
-  "packageId": "medikationsplan",
+  "publisher": "BIH@Charité",
+  "contact": [
+    {
+      "name": "BIH@Charité",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "packageId": "de.mp4p",
   "fhirVersion": [
     "4.0.1"
   ],
@@ -13,7 +26,7 @@
     {
       "packageId": "de.basisprofil.r4",
       "uri": "http://fhir.de/ImplementationGuide/basisprofil-de-r4",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "id": "de_basisprofil_r4"
     },
     {
@@ -21,81 +34,114 @@
       "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
       "version": "1.0.0",
       "id": "hl7_fhir_uv_ips"
-    },
-    {
-      "packageId": "de.medizininformatikinitiative.kerndatensatz.laborbefund",
-      "uri": "https://simplifier.net/guide/laborbefundindermedizininformatik-initiative",
-      "version": "1.0.6",
-      "id": "de_medizininformatikinitiative_kerndatensatz_laborbefund"
     }
   ],
   "definition": {
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/mp-allergyintolerance"
+          "reference": "StructureDefinition/mp4p-allergyintolerance"
         },
-        "name": "AllergyIntolerance MP++",
+        "name": "AllergyIntolerance MP4+",
         "description": "Allergie",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/observation-breastfeeding"
+          "reference": "StructureDefinition/mp4p-bundle"
         },
-        "name": "Breastfeeding",
-        "description": "Breastfeeding",
+        "name": "Bundle MP4+",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mp-composition"
+          "reference": "StructureDefinition/mp4p-composition"
         },
-        "name": "Composition MP++",
+        "name": "Composition MP4+",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mp-medikation"
+          "reference": "StructureDefinition/mp4p-koerpergewicht"
         },
-        "name": "Medikation MP++",
+        "name": "Körpergewicht MP4+",
+        "description": "Körpergewicht des Patienten in kg.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mp4p-koerpergroesse"
+        },
+        "name": "Körpergröße MP4+",
+        "description": "Körpergröße des Patienten in cm.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mp4p-kreatin"
+        },
+        "name": "Kreatininwert MP4+",
+        "description": "Kreatininwert des Patienten in mg/dl.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mp4p-medikation"
+        },
+        "name": "Medikation MP4+",
         "description": "Dieses Profil beschreibt die Medikation.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mp-list"
+          "reference": "StructureDefinition/mp4p-list"
         },
-        "name": "MedicationStatement List MP++",
+        "name": "MedicationStatement List MP4+",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mp-medicationstatement"
+          "reference": "StructureDefinition/mp4p-medicationstatement"
         },
-        "name": "MedicationStatement MP++",
+        "name": "MedicationStatement MP4+",
         "description": "Dieses Profil beschreibt die Verordnung eines Arzneimittels.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mp-patient"
+          "reference": "StructureDefinition/mp4p-patient"
         },
-        "name": "Patient MP++",
+        "name": "Patient MP4+",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mp-practitioner"
+          "reference": "StructureDefinition/mp4p-practitioner"
         },
-        "name": "Practitioner MP++",
+        "name": "Practitioner MP4+",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mp-extension-freitext"
+          "reference": "StructureDefinition/mp4p-schwangerschaft"
         },
-        "name": "Extension Freitext MP++",
+        "name": "Status schwanger MP4+",
+        "description": "Information darüber, ob die Patientin aktuell schwanger ist.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mp4p-stillend"
+        },
+        "name": "Status stillend MP4+",
+        "description": "Information darüber, ob die Patientin aktuell stillend ist.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mp4p-extension-freitext"
+        },
+        "name": "Extension Freitext MP4+",
         "description": "Extension zur Freitext-Angabe der Wirkstoffmenge bzw. Stärke.",
         "exampleBoolean": false
       },
