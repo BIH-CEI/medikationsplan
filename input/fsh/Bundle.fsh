@@ -12,11 +12,12 @@ Title: "Bundle MP4+"
 * meta MS
 * meta.profile MS
 * language MS
-* identifier MS 
-* identifier.system MS
-* identifier.value MS
+* identifier 1.. MS 
+* identifier.system 1.. MS
+* identifier.value 1.. MS
 * type MS
 * type = #document
+* timestamp 1.. MS
 * total 0..0
 * entry MS
 * entry ^slicing.discriminator.type = #type
@@ -29,3 +30,21 @@ Title: "Bundle MP4+"
 * entry[composition].search 0..0
 * entry[composition].request 0..0
 * entry[composition].response 0..0
+
+Mapping: UKF-Bundle
+Id: UKF
+Title: "UKF Mapping"
+Source: BundleMP4P
+* -> "MP"
+
+Instance: ExampleBundle
+InstanceOf: BundleMP4P
+Usage: #example
+* id = "4b226738-6988-4b95-b3eb-bde3baf310f4"
+* meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Bundle"
+* identifier.system = "https://www.charite.de/fhir/sid/medikationsplaene"
+* identifier.value = "f1addd63-aaff-4287-aa8e-e5bdc075043d"
+* type = #document
+* timestamp = "2021-11-23T13:28:17.239+01:00"
+* entry[composition].fullUrl = "urn:uuid:4b226738-6988-4b95-b3eb-bde3baf310f4"
+* entry[composition].resource = ExampleComposition

@@ -1,17 +1,37 @@
-Alias: $TimingEvent = http://hl7.org/fhir/v3/TimingEvent
-
-ValueSet: Einnahmezeitpunkte
-Id: mp-einnahmezeitpunkte
-Description: "ValueSet zur Codierung von Einnahmezeitpunkten"
+ValueSet: EinnahmezeitpunkteV3
+Id: mp4p-einnahmezeitpunkte-v3
+Title: "Einnahmezeitpunkte v3 TimingEvent"
+Description: "ValueSet zur Codierung von Einnahmezeitpunkten aus v3 CodeSystem TimingEvent."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
-* ^url = "https://www.charite.de/fhir/medikationsplan/ValueSet/einnahmezeitpunkte"
+* ^url = "https://www.charite.de/fhir/medikationsplan/ValueSet/einnahmezeitpunkte-v3-TimingEvent"
 * ^version = "0.1.0"
 * ^status = #draft
+* ^experimental = true
+* ^publisher = "Charité"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * ^date = "2021-05-07"
 * $TimingEvent#CM "Morgens"
 * $TimingEvent#CD "Mittags"
 * $TimingEvent#CV "Abends"
 * $TimingEvent#HS "zur Nacht"
+
+// ValueSet: EinnahmezeitpunkteSNOMED
+// Id: mp4p-einnahmezeitpunkte-snomed
+// Title: "Einnahmezeitpunkte SNOMED"
+// Description: "ValueSet zur Codierung von Einnahmezeitpunkten aus SNOMED."
+// * ^url = "https://www.charite.de/fhir/medikationsplan/ValueSet/einnahmezeitpunkte-snomed"
+// * ^version = "0.1.0"
+// * ^status = #draft
+// * ^publisher = "Charité"
+// * ^contact.telecom.system = #url
+// * ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+// * ^date = "2021-11-22"
+// * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
+// * $snomed#73775008 "Morning (qualifier value)"
+// * $snomed#71997007 "Noon (qualifier value)"
+// * $snomed#3157002 "Evening (qualifier value)"
+// * $snomed#2546009 "Night time (qualifier value)"
 
 ValueSet: AllergiesIntolerancesAlphaID
 Id: mp-allergiesintolerances-alphaid
@@ -615,3 +635,29 @@ Description: "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenübers
 * #422 "Wichtige Angaben"
 * #423 "zu besonderen Zeiten anzuwendende Medikamente"
 * #424 "zeitlich befristet anzuwendende Medikamente"
+
+// ValueSet: KBV_VS_SFHIR_BMP_DARREICHUNGSFORM
+// Id: KBV_VS_SFHIR_BMP_DARREICHUNGSFORM
+// Description: "Das Valueset enthält alle Codes aus dem Codesystem https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM"
+// * ^url = "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DARREICHUNGSFORM"
+// * ^version = "1.03"
+// * ^status = #active
+// * ^date = "2021-04-01"
+// * ^publisher = "Kassenärztliche Bundesvereinigung"
+// * ^contact.telecom.system = #url
+// * ^contact.telecom.value = "http://www.kbv.de"
+// * ^copyright = "Kassenärztliche Bundesvereinigung"
+// * include codes from system $KBV_CS_SFHIR_BMP_DARREICHUNGSFORM
+// 
+ValueSet: KBV_VS_SFHIR_BMP_DOSIEREINHEIT
+Id: KBV_VS_SFHIR_BMP_DOSIEREINHEIT
+Description: "Das Valueset enthält alle Codes aus dem Codesystem https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"
+* ^url = "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT"
+* ^version = "1.01"
+* ^status = #active
+* ^date = "2019-01-01"
+* ^publisher = "Kassenärztliche Bundesvereinigung"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "http://www.kbv.de"
+* ^copyright = "Kassenärztliche Bundesvereinigung"
+* include codes from system $KBV_CS_SFHIR_BMP_DOSIEREINHEIT

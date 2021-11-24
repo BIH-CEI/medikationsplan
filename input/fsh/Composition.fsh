@@ -19,10 +19,15 @@ Title: "Composition MP4+"
 * status = #final (exactly)
 * type MS
 * type.coding MS
-* type.coding.system = "http://loinc.org"
-* type.coding.code = #77603-9
-* type.coding.display MS
-* subject MS
+* type.coding ^slicing.discriminator[0].type = #pattern
+* type.coding ^slicing.discriminator[0].path = "$this"
+* type.coding ^slicing.rules = #open
+* type.coding contains
+    loinc 1..* MS
+* type.coding[loinc] = $loinc#77603-9
+* type.coding[loinc].system 1.. MS
+* type.coding[loinc].code 1.. MS
+* subject 1..1 MS
 * subject only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient)
 * subject.reference 1..1 MS
 * encounter 0..0
@@ -53,8 +58,8 @@ Title: "Composition MP4+"
     hinweiseSection 0..1 MS
 * section[medikationsplanSection].title MS
 * section[medikationsplanSection].title = "aktuelle Medikation"
-* section[medikationsplanSection].code MS
-* section[medikationsplanSection].code.coding MS
+* section[medikationsplanSection].code 1.. MS
+* section[medikationsplanSection].code.coding 1.. MS
 * section[medikationsplanSection].code.coding.system 1..1 MS
 * section[medikationsplanSection].code.coding.system = "http://loinc.org" (exactly)
 * section[medikationsplanSection].code.coding.code 1..1 MS
@@ -149,3 +154,26 @@ Title: "Composition MP4+"
 * section[hinweiseSection].entry 0..0
 * section[hinweiseSection].emptyReason 0..0
 * section[hinweiseSection].section 0..0
+
+Mapping: UKF-Composition
+Id: UKF
+Title: "UKF Mapping"
+Source: CompositionMP4P
+* -> "MP"
+
+
+Instance: ExampleComposition
+InstanceOf: CompositionMP4P
+Usage: #example
+* id = "a8ac189d-617c-45e8-9dc1-0a7ebe7f08f2"
+* meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition"
+* identifier.system = "https://www.charite.de/fhir/sid/medikationsplaene"
+* identifier.value = "f1addd63-aaff-4287-aa8e-e5bdc075043d"
+* status = #final
+* type.coding[loinc] = $loinc#77603-9
+* subject = Reference(ExamplePatient)
+* date = "2021-11-23"
+* author = Reference(ExamplePractitioner)
+* title = "Medikationsplan"
+* section[medikationsplanSection].code = $loinc#19009-0
+* section[medikationsplanSection].entry = Reference(ExampleList)

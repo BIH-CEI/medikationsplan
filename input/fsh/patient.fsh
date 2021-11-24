@@ -24,8 +24,11 @@ Title: "Patient MP4+"
     pid 0..* MS and
     versichertennummer_pkv 0..1 MS
 * identifier[versichertenId_GKV] only http://fhir.de/StructureDefinition/identifier-kvid-10
+* identifier[versichertenId_GKV] ^patternIdentifier.type = $identifier-type-de-basis#GKV
 * identifier[pid] only http://fhir.de/StructureDefinition/identifier-pid
+* identifier[pid] ^patternIdentifier.type = $v2-0203#MR
 * identifier[versichertennummer_pkv] only http://fhir.de/StructureDefinition/identifier-pkv
+* identifier[versichertennummer_pkv] ^patternIdentifier.type = $identifier-type-de-basis#PKV
 * name 1.. MS
 * name ^slicing.discriminator.type = #pattern
 * name ^slicing.discriminator.path = "$this"
@@ -33,6 +36,7 @@ Title: "Patient MP4+"
 * name contains
     name 1..1 MS
 * name[name] only http://fhir.de/StructureDefinition/humanname-de-basis
+* name[name] ^patternHumanName.use = #official
 * gender MS
 * gender.extension ^slicing.discriminator.type = #value
 * gender.extension ^slicing.discriminator.path = "url"
@@ -46,6 +50,7 @@ Title: "Patient MP4+"
 * address contains
     Strassenanschrift 0..* MS
 * address[Strassenanschrift] only http://fhir.de/StructureDefinition/address-de-basis
+* address[Strassenanschrift] ^patternAddress.type = #both
 * contact.name only http://fhir.de/StructureDefinition/humanname-de-basis
 * contact.address only http://fhir.de/StructureDefinition/address-de-basis
 * communication MS
@@ -68,3 +73,19 @@ Source: PatientMP4P
 * name[name].prefix -> "P@t"
 * gender -> "P@s"
 * birthDate -> "P@b"
+
+Instance: ExamplePatient
+InstanceOf: PatientMP4P
+Usage: #example
+* meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient"
+* identifier[+].use = #official
+* identifier[=].type = $identifier-type-de-basis#GKV
+* identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[=].value = "Z234567890"
+* name[name].use = #official
+* name[name].family = "Schumann"
+* name[name].family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
+* name[name].family.extension.valueString = "Schumann"
+* name[name].given[0] = "Clara"
+* name[name].given[+] = "Josephine"
+

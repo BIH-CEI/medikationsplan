@@ -28,4 +28,10 @@ dependencies:
   hl7.fhir.uv.ips:
     uri: http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips
     version: 1.0.0
-
+  kbv.basis:
+    uri: https://simplifier.net/packages/kbv.basis
+    version: 1.2.0
+  kbv.mio.patientenkurzakte:
+    uri: https://simplifier.net/packages/kbv.mio.patientenkurzakte
+    version: 1.0.0-kommentierung
+    
