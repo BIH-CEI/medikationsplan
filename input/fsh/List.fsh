@@ -1,4 +1,4 @@
-Profile: MedicationStatementListMP4P
+Profile: ListMP4P
 Parent: List
 Id: mp4p-list
 Title: "MedicationStatement List MP4+"
