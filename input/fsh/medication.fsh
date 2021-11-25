@@ -92,7 +92,7 @@ Title: "UKF Mapping"
 Source: MedicationMP4P
 
 Instance: ExampleMedication
-InstanceOf: MedicationMP4P
+InstanceOf: mp4p-medikation
 Usage: #example
 * id = "7559cafa-b2ef-4a74-bb7b-ee00d7654082"
 * meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Medication"

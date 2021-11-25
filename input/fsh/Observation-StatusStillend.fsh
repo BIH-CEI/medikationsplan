@@ -41,3 +41,20 @@ Description: "Information darüber, ob die Patientin aktuell stillend ist."
 * device 0..0
 * referenceRange 0..0 
 * component 0..0 
+
+Mapping: UKF-StatusStillend
+Id: UKF
+Title: "UKF Mapping"
+Source: StatusStillendMP4P
+
+Instance: ExampleStatusStillend
+InstanceOf: mp4p-stillend
+Usage: #example
+//* id = "2f52e5c1-12c2-4bec-9dd6-66b084afad40"
+* meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusStillend"
+* status = #final
+//* category = $observation-category#laboratory
+* code = $loinc#63895-7
+* subject = Reference(ExamplePatient)
+* effectiveDateTime = "2021-11-25"
+* valueBoolean = false

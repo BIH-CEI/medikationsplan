@@ -1,6 +1,6 @@
 Profile: KreatininMP4P
 Parent: Observation
-Id: mp4p-kreatin
+Id: mp4p-kreatinin
 Title: "Kreatininwert MP4+"
 Description: "Kreatininwert des Patienten in mg/dl."
 * ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Kreatininwert"
@@ -45,3 +45,23 @@ Description: "Kreatininwert des Patienten in mg/dl."
 * valueQuantity.code = #mg/dl (exactly)
 * dataAbsentReason 0..0
 * bodySite 0..0
+
+Mapping: UKF-Kreatinin
+Id: UKF
+Title: "UKF Mapping"
+Source: KreatininMP4P
+
+Instance: ExampleKreatinin
+InstanceOf: mp4p-kreatinin
+Usage: #example
+//* id = "2f52e5c1-12c2-4bec-9dd6-66b084afad40"
+* meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Kreatininwert"
+* status = #final
+* category = $observation-category#laboratory
+* code = $loinc#2160-0
+* subject = Reference(ExamplePatient)
+* effectiveDateTime = "2021-11-25"
+* valueQuantity.value = 1.10
+* valueQuantity.unit = "milligram/deciLiters"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #mg/dl

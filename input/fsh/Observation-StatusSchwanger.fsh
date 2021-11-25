@@ -36,6 +36,7 @@ Description: "Information darüber, ob die Patientin aktuell schwanger ist."
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips (required)
+* valueCodeableConcept.coding 1.. MS
 * valueCodeableConcept.coding.system ..1 MS
 * valueCodeableConcept.coding.code ..1 MS
 * valueCodeableConcept.coding.display MS
@@ -45,3 +46,22 @@ Description: "Information darüber, ob die Patientin aktuell schwanger ist."
 * device 0..0
 * referenceRange 0..0 
 * component 0..0 
+
+Mapping: UKF-StatusSchwanger
+Id: UKF
+Title: "UKF Mapping"
+Source: StatusSchwangerMP4P
+
+Instance: ExampleStatusSchwanger
+InstanceOf: mp4p-schwangerschaft
+Usage: #example
+//* id = "2f52e5c1-12c2-4bec-9dd6-66b084afad40"
+* meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusSchwanger"
+* status = #final
+//* category = $observation-category#laboratory
+* code = $loinc#82810-3
+* subject = Reference(ExamplePatient)
+* effectiveDateTime = "2021-11-25"
+* valueCodeableConcept.coding.system = $loinc
+* valueCodeableConcept.coding.code = #LA15173-0
+* valueCodeableConcept.coding.display = "Pregnant"

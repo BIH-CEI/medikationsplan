@@ -38,9 +38,9 @@ Source: BundleMP4P
 * -> "MP"
 
 Instance: ExampleBundle
-InstanceOf: BundleMP4P
+InstanceOf: mp4p-bundle
 Usage: #example
-* id = "4b226738-6988-4b95-b3eb-bde3baf310f4"
+//* id = "4b226738-6988-4b95-b3eb-bde3baf310f4"
 * meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Bundle"
 * identifier.system = "https://www.charite.de/fhir/sid/medikationsplaene"
 * identifier.value = "f1addd63-aaff-4287-aa8e-e5bdc075043d"

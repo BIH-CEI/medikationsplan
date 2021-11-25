@@ -45,3 +45,23 @@ Description: "Körpergewicht des Patienten in kg."
 * dataAbsentReason 0..0
 * bodySite 0..0
 * specimen 0..0
+
+Mapping: UKF-Koerpergewicht
+Id: UKF
+Title: "UKF Mapping"
+Source: KoerpergewichtMP4P
+
+Instance: ExampleKoerpergewicht
+InstanceOf: mp4p-koerpergewicht
+Usage: #example
+//* id = "2f52e5c1-12c2-4bec-9dd6-66b084afad40"
+* meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergewicht"
+* status = #final
+* category = $observation-category#vital-signs
+* code = $loinc#29463-7
+* subject = Reference(ExamplePatient)
+* effectiveDateTime = "2021-11-25"
+* valueQuantity.value = 68
+* valueQuantity.unit = "Kilogramm"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #kg

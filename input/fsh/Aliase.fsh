@@ -16,3 +16,5 @@ Alias: $ask-cs = http://fhir.de/CodeSystem/ask
 Alias: $Freitext = https://www.charite.de/fhir/medikationsplan/Extension/freitext
 Alias: $pzn = http://fhir.de/CodeSystem/ifa/pzn
 Alias: $standardterms = http://standardterms.edqm.eu
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $ucum = http://unitsofmeasure.org

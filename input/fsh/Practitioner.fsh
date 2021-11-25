@@ -24,7 +24,7 @@ Title: "Practitioner MP4+"
 * name.text 1..1 MS
 
 Instance: ExamplePractitioner
-InstanceOf: PractitionerMP4P
+InstanceOf: mp4p-practitioner
 Usage: #example
 * birthDate = "1841-09-08"
 * identifier.use = #official

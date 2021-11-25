@@ -75,7 +75,7 @@ Source: PatientMP4P
 * birthDate -> "P@b"
 
 Instance: ExamplePatient
-InstanceOf: PatientMP4P
+InstanceOf: mp4p-patient
 Usage: #example
 * meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient"
 * identifier[+].use = #official

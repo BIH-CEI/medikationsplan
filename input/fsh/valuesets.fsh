@@ -650,7 +650,7 @@ Description: "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenübers
 // * include codes from system $KBV_CS_SFHIR_BMP_DARREICHUNGSFORM
 // 
 ValueSet: KBV_VS_SFHIR_BMP_DOSIEREINHEIT
-Id: KBV_VS_SFHIR_BMP_DOSIEREINHEIT
+Id: KBV-VS-SFHIR-BMP-DOSIEREINHEIT
 Description: "Das Valueset enthält alle Codes aus dem Codesystem https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"
 * ^url = "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT"
 * ^version = "1.01"

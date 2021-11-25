@@ -45,3 +45,23 @@ Description: "Körpergröße des Patienten in cm."
 * dataAbsentReason 0..0
 * bodySite 0..0
 * specimen 0..0
+
+Mapping: UKF-Koerpergroesse
+Id: UKF
+Title: "UKF Mapping"
+Source: KoerpergroesseMP4P
+
+Instance: ExampleKoerpergroesse
+InstanceOf: mp4p-koerpergroesse
+Usage: #example
+//* id = "2f52e5c1-12c2-4bec-9dd6-66b084afad40"
+* meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergroesse"
+* status = #final
+* category = $observation-category#vital-signs
+* code = $loinc#8302-2
+* subject = Reference(ExamplePatient)
+* effectiveDateTime = "2021-11-25"
+* valueQuantity.value = 168
+* valueQuantity.unit = "Zentimeter"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #cm
