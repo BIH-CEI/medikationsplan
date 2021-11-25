@@ -91,7 +91,7 @@ Id: UKF
 Title: "UKF Mapping"
 Source: MedicationMP4P
 
-Instance: ExampleMedication
+Instance: MedicationMP4P
 InstanceOf: mp4p-medikation
 Usage: #example
 * id = "7559cafa-b2ef-4a74-bb7b-ee00d7654082"

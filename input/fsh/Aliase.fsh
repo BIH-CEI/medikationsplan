@@ -18,3 +18,4 @@ Alias: $pzn = http://fhir.de/CodeSystem/ifa/pzn
 Alias: $standardterms = http://standardterms.edqm.eu
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $ucum = http://unitsofmeasure.org
+Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical

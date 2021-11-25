@@ -57,3 +57,12 @@ Id: UKF
 Title: "UKF Mapping"
 Source: AllergyIntoleranceMP4P
 * code.text -> "O@a"
+
+Instance: AllergyIntoleranceMP4P
+InstanceOf: mp4p-allergyintolerance
+Usage: #example
+//* id = "4b226738-6988-4b95-b3eb-bde3baf310f4"
+* meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/AllergyIntolerance"
+* clinicalStatus = $allergyintolerance-clinical#active
+* code = $alpha-id#I29215 "Nahrungsmittelunverträglichkeit"
+* patient = Reference(ExamplePatient)
