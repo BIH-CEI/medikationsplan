@@ -12,9 +12,9 @@ Title: "Bundle MP4+"
 * meta MS
 * meta.profile MS
 * language MS
-* identifier 1.. MS 
-* identifier.system 1.. MS
-* identifier.value 1.. MS
+* identifier MS 
+* identifier.system MS
+* identifier.value MS
 * type MS
 * type = #document
 * timestamp 1.. MS
