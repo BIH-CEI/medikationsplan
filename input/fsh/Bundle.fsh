@@ -26,7 +26,7 @@ Title: "Bundle MP4+"
 * entry contains 
     composition 1..1 MS
 * entry[composition].fullUrl MS
-* entry[composition].resource only https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition
+* entry[composition].resource only http://hl7.org/fhir/StructureDefinition/Composition
 * entry[composition].search 0..0
 * entry[composition].request 0..0
 * entry[composition].response 0..0
@@ -42,9 +42,15 @@ InstanceOf: mp4p-bundle
 Usage: #example
 //* id = "4b226738-6988-4b95-b3eb-bde3baf310f4"
 * meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Bundle"
-* identifier.system = "https://www.charite.de/fhir/sid/medikationsplaene"
-* identifier.value = "f1addd63-aaff-4287-aa8e-e5bdc075043d"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d"
 * type = #document
 * timestamp = "2021-11-23T13:28:17.239+01:00"
-* entry[composition].fullUrl = "urn:uuid:4b226738-6988-4b95-b3eb-bde3baf310f4"
-* entry[composition].resource = ExampleComposition
+* entry[0].fullUrl = "Composition/ExampleComposition"
+* entry[=].resource = ExampleComposition
+* entry[+].resource = ExampleList
+* entry[=].fullUrl = "List/ExampleList"
+* entry[+].resource = ExamplePatient
+* entry[=].fullUrl = "Patient/ExamplePatient"
+* entry[+].resource = ExamplePractitioner
+* entry[=].fullUrl = "Practitioner/ExamplePractitioner"

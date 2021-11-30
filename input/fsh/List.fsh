@@ -48,7 +48,6 @@ Source: ListMP4P
 Instance: ExampleList
 InstanceOf: mp4p-list
 Usage: #example
-* id = "121a7a64-7a80-4ff4-b7d0-1854293491cf"
 * meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/List"
 * status = #current
 * mode = #snapshot

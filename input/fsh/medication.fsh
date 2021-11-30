@@ -91,10 +91,9 @@ Id: UKF
 Title: "UKF Mapping"
 Source: MedicationMP4P
 
-Instance: MedicationMP4P
+Instance: ExampleMedication
 InstanceOf: mp4p-medikation
 Usage: #example
-* id = "7559cafa-b2ef-4a74-bb7b-ee00d7654082"
 * meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Medication"
 * code.coding[Pharmazentralnummer] = $pzn#06312077 "ASS 100 - 1a Pharma TAH Tabletten"
 * form.coding[0] = $standardterms#10219000 "Tablet"

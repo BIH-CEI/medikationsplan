@@ -24,6 +24,7 @@ Thumbs.db
 .vscode
 *.code-workspace
 .idea
+.venv
 
 # nodejs files/directories
 ###########################

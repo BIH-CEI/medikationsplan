@@ -33,6 +33,7 @@ Title: "Composition MP4+"
 * encounter 0..0
 * date MS
 * author only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner)
+* author 1..1 MS 
 * title 1..1 MS
 //* custodian ^slicing.discriminator.type = #pattern
 //* custodian ^slicing.discriminator.path = "identifier"
@@ -165,7 +166,6 @@ Source: CompositionMP4P
 Instance: ExampleComposition
 InstanceOf: mp4p-composition
 Usage: #example
-//* id = "a8ac189d-617c-45e8-9dc1-0a7ebe7f08f2"
 * meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition"
 * identifier.system = "https://www.charite.de/fhir/sid/medikationsplaene"
 * identifier.value = "f1addd63-aaff-4287-aa8e-e5bdc075043d"

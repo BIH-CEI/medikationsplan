@@ -99,18 +99,20 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * dosage[kodiert].timing.code.coding[timingEvent] ^patternCoding.system = http://terminology.hl7.org/CodeSystem/v3-TimingEvent
 * dosage[kodiert].timing.code.coding[timingEvent].system 1..1 MS
 * dosage[kodiert].timing.code.coding[timingEvent].code 1..1 MS
-* dosage[kodiert].asNeeded[x] 0..0
+//* dosage[kodiert].asNeeded[x] 0..0
 * dosage[kodiert].site 0..0
 * dosage[kodiert].route 0..0
 * dosage[kodiert].method 0..0
 * dosage[kodiert].doseAndRate 1..1 MS
 * dosage[kodiert].doseAndRate.type 0..0
-* dosage[kodiert].doseAndRate.dose[x] only SimpleQuantity
+//* dosage[kodiert].doseAndRate.dose[x] only SimpleQuantity or Range 
 * dosage[kodiert].doseAndRate.dose[x] ^slicing.discriminator.type = #type
 * dosage[kodiert].doseAndRate.dose[x] ^slicing.discriminator.path = "$this"
-* dosage[kodiert].doseAndRate.dose[x] ^slicing.rules = #open
-* dosage[kodiert].doseAndRate.dose[x] contains 
-    doseQuantity 1..1 MS
+* dosage[kodiert].doseAndRate.dose[x] ^slicing.rules = #closed
+//* dosage[kodiert].doseAndRate.dose[x] contains 
+//    doseQuantity 0..1 MS and 
+//    doseRange 0..1 MS
+* dosage[kodiert].doseAndRate.doseQuantity only SimpleQuantity
 * dosage[kodiert].doseAndRate.doseQuantity ^short = "Dosiereinheit kodiert (@du)"
 * dosage[kodiert].doseAndRate.doseQuantity.value 1.. MS
 * dosage[kodiert].doseAndRate.doseQuantity.unit 1.. MS
@@ -118,6 +120,7 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * dosage[kodiert].doseAndRate.doseQuantity.system = $KBV_CS_SFHIR_BMP_DOSIEREINHEIT (exactly)
 * dosage[kodiert].doseAndRate.doseQuantity.code 1.. MS
 * dosage[kodiert].doseAndRate.doseQuantity.code from https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT (required)
+* dosage[kodiert].doseAndRate.doseRange only Range
 * dosage[kodiert].doseAndRate.rate[x] 0..0
 * dosage[kodiert].maxDosePerPeriod 0..0
 * dosage[kodiert].maxDosePerAdministration 0..0
@@ -145,7 +148,6 @@ Source: MedicationStatementMP4P
 Instance: ExampleMedicationStatement
 InstanceOf: mp4p-medicationstatement
 Usage: #example
-* id = "2f52e5c1-12c2-4bec-9dd6-66b084afad40"
 * meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement"
 * status = #active
 * medicationReference = Reference(ExampleMedication)
