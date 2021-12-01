@@ -12,9 +12,9 @@ Title: "Composition MP4+"
 * meta MS
 * meta.profile MS
 * language MS
-* identifier 1..1 MS
-* identifier.system 1..1 MS
-* identifier.value 1..1 MS
+* identifier 1.. MS
+* identifier.system 1.. MS
+* identifier.value 1.. MS
 * status MS
 * status = #final (exactly)
 * type MS
