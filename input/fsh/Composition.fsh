@@ -167,8 +167,8 @@ Instance: ExampleComposition
 InstanceOf: mp4p-composition
 Usage: #example
 * meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition"
-* identifier.system = "https://www.charite.de/fhir/sid/medikationsplaene"
-* identifier.value = "f1addd63-aaff-4287-aa8e-e5bdc075043d"
+* identifier.system = "urn:ietf:rfc:3986"
+* identifier.value = "urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d"
 * status = #final
 * type.coding[loinc] = $loinc#77603-9
 * subject = Reference(ExamplePatient)
