@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "MP4P_DE_IG"];
   fhir:ImplementationGuide.title [ fhir:value "Medikationsplan 4 PLUS"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-12-01T09:40:17+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-12-01T11:34:04+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "BIH@Charité"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;

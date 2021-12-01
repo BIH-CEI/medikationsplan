@@ -27,7 +27,7 @@
   fhir:StructureDefinition.name [ fhir:value "CompositionMP4P"];
   fhir:StructureDefinition.title [ fhir:value "Composition MP4+"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2021-12-01T09:40:17+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-12-01T11:34:04+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "BIH@Charité"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
