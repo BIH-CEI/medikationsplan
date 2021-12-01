@@ -38,7 +38,7 @@ jobs:
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
           # Get the latest publisher - don't run the batch script but run the line directly
-          args: ln -s ./fhir-packages/packages packages
+          args: ln -s ./mii-package-temp/packages packages
 
 
       - name: Update the image to the latest publisher
