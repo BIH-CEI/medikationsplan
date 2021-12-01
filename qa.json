@@ -1,0 +1,12 @@
+{
+  "url": "https://www.charite.de/fhir/medikationsplan/ImplementationGuide/mp4p/ImplementationGuide/de.mp4p",
+  "name": "MP4P_DE_IG",
+  "package-id": "de.mp4p",
+  "ig-ver": "0.1.0",
+  "date": "Wed, 01 Dec, 2021 09:40:17 +0000",
+  "errs": 31,
+  "warnings": 26,
+  "hints": 11,
+  "version": "4.0.1",
+  "tool": "4.6.0 (3)"
+}

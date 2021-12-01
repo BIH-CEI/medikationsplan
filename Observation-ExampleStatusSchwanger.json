@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleStatusSchwanger",
+  "meta": {
+    "profile": [
+      "https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusSchwanger"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 82810-3}\">Pregnancy status</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Gesetzliche Krankenversicherung: Z234567890 (OFFICIAL); Clara Josephine Schumann (OFFICIAL)</a></p><p><b>effective</b>: 2021-11-25</p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA15173-0}\">Pregnant</span></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "82810-3"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2021-11-25",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "LA15173-0",
+        "display": "Pregnant"
+      }
+    ]
+  }
+}

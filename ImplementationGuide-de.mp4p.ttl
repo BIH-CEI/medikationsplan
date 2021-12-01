@@ -1,0 +1,868 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/ImplementationGuide/de.mp4p> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "de.mp4p"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MP4P_DE_IG</h2><p>The official URL for this implementation guide is: </p><pre>https://www.charite.de/fhir/medikationsplan/ImplementationGuide/mp4p/ImplementationGuide/de.mp4p</pre></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "https://www.charite.de/fhir/medikationsplan/ImplementationGuide/mp4p/ImplementationGuide/de.mp4p"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
+  fhir:ImplementationGuide.name [ fhir:value "MP4P_DE_IG"];
+  fhir:ImplementationGuide.title [ fhir:value "Medikationsplan 4 PLUS"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.date [ fhir:value "2021-12-01T09:40:17+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "BIH@Charité"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "BIH@Charité" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/en/research/core-facilities/interoperability/" ]
+     ]
+  ];
+  fhir:ImplementationGuide.packageId [ fhir:value "de.mp4p"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "de_basisprofil_r4" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://fhir.de/ImplementationGuide/basisprofil-de-r4";
+       fhir:link <http://fhir.de/ImplementationGuide/basisprofil-de-r4>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.basisprofil.r4" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.1.0" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_ips" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips";
+       fhir:link <http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.ips" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0" ]
+  ], [
+     fhir:index 2;
+     fhir:Element.id [ fhir:value "kbv_basis" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://simplifier.net/packages/kbv.basis";
+       fhir:link <https://simplifier.net/packages/kbv.basis>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "kbv.basis" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.2.0" ]
+  ], [
+     fhir:index 3;
+     fhir:Element.id [ fhir:value "kbv_mio_patientenkurzakte" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://simplifier.net/packages/kbv.mio.patientenkurzakte";
+       fhir:link <https://simplifier.net/packages/kbv.mio.patientenkurzakte>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "kbv.mio.patientenkurzakte" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0-kommentierung" ]
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2021+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://www.charite.de/fhir/medikationsplan/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-allergyintolerance>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-allergyintolerance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AllergyIntolerance MP4+" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Allergie" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-bundle>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle MP4+" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-composition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-composition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Composition MP4+" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-koerpergewicht>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-koerpergewicht" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Körpergewicht MP4+" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Körpergewicht des Patienten in kg." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-koerpergroesse>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-koerpergroesse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Körpergröße MP4+" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Körpergröße des Patienten in cm." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-kreatinin>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-kreatinin" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kreatininwert MP4+" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Kreatininwert des Patienten in mg/dl." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-list>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-list" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedicationStatement List MP4+" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-medikation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-medikation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medikation MP4+" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dieses Profil beschreibt die Medikation." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-medicationstatement>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-medicationstatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedicationStatement MP4+" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dieses Profil beschreibt die Verordnung eines Arzneimittels." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient MP4+" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner MP4+" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-schwangerschaft>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-schwangerschaft" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Status schwanger MP4+" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Information darüber, ob die Patientin aktuell schwanger ist." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-stillend>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-stillend" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Status stillend MP4+" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Information darüber, ob die Patientin aktuell stillend ist." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-extension-freitext>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-extension-freitext" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Extension Freitext MP4+" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension zur Freitext-Angabe der Wirkstoffmenge bzw. Stärke." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/ValueSet/mp-allergiesintolerances-alphaid>;
+         fhir:Reference.reference [ fhir:value "ValueSet/mp-allergiesintolerances-alphaid" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AllergiesIntolerancesAlphaID" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Allergien und Unverträglichkeiten Alpha-ID" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/ValueSet/mp4p-einnahmezeitpunkte-v3>;
+         fhir:Reference.reference [ fhir:value "ValueSet/mp4p-einnahmezeitpunkte-v3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Einnahmezeitpunkte v3 TimingEvent" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet zur Codierung von Einnahmezeitpunkten aus v3 CodeSystem TimingEvent." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/ValueSet/mp-kbv-s-bmp-zwischenueberschrift-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/mp-kbv-s-bmp-zwischenueberschrift-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KBV_BMP_Zwischenueberschrift_VS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/ValueSet/KBV-VS-SFHIR-BMP-DOSIEREINHEIT>;
+         fhir:Reference.reference [ fhir:value "ValueSet/KBV-VS-SFHIR-BMP-DOSIEREINHEIT" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KBV_VS_SFHIR_BMP_DOSIEREINHEIT" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das Valueset enthält alle Codes aus dem Codesystem https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/CodeSystem/mp-kbv-s-bmp-zwischenueberschrift-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/mp-kbv-s-bmp-zwischenueberschrift-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KBV_BMP_Zwischenueberschrift_CS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/CodeSystem/KBV-CS-SFHIR-BMP-DOSIEREINHEIT>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/KBV-CS-SFHIR-BMP-DOSIEREINHEIT" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KBV_CS_SFHIR_BMP_DOSIEREINHEIT" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Die Schlüsseltabelle enthält eine Liste von kodierten Dosiereinheiten, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Anhang 4 zu Anlage 3 Vereinbarung BMP). Die Spalte \"Code\" wird im Attribut \"V\", die Spalte \"Einheit Ausdruck\" im Attribut \"DN\", die Spalte  \"Bedeutung\" im Attribut \"bedeutung\" und die Spalte \"Einheit durch AM-Datenbanken unterstützt\" im Attribut \"unterstuetzt\" abgebildet." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "AllergyIntolerance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/AllergyIntolerance/AllergyIntoleranceMP4P>;
+         fhir:Reference.reference [ fhir:value "AllergyIntolerance/AllergyIntoleranceMP4P" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AllergyIntoleranceMP4P" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/AllergyIntolerance";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/AllergyIntolerance>
+       ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/Bundle/ExampleBundle>;
+         fhir:Reference.reference [ fhir:value "Bundle/ExampleBundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleBundle" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Bundle";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Bundle>
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Composition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/Composition/ExampleComposition>;
+         fhir:Reference.reference [ fhir:value "Composition/ExampleComposition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleComposition" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition>
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/Observation/ExampleKoerpergewicht>;
+         fhir:Reference.reference [ fhir:value "Observation/ExampleKoerpergewicht" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleKoerpergewicht" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergewicht";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergewicht>
+       ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/Observation/ExampleKoerpergroesse>;
+         fhir:Reference.reference [ fhir:value "Observation/ExampleKoerpergroesse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleKoerpergroesse" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergroesse";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergroesse>
+       ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/Observation/ExampleKreatinin>;
+         fhir:Reference.reference [ fhir:value "Observation/ExampleKreatinin" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleKreatinin" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Kreatininwert";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Kreatininwert>
+       ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "List" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/List/ExampleList>;
+         fhir:Reference.reference [ fhir:value "List/ExampleList" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleList" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/List";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/List>
+       ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/Medication/ExampleMedication>;
+         fhir:Reference.reference [ fhir:value "Medication/ExampleMedication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleMedication" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Medication";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Medication>
+       ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/MedicationStatement/ExampleMedicationStatement>;
+         fhir:Reference.reference [ fhir:value "MedicationStatement/ExampleMedicationStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleMedicationStatement" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement>
+       ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/Patient/ExamplePatient>;
+         fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExamplePatient" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient>
+       ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/Practitioner/ExamplePractitioner>;
+         fhir:Reference.reference [ fhir:value "Practitioner/ExamplePractitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExamplePractitioner" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner>
+       ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/Observation/ExampleStatusSchwanger>;
+         fhir:Reference.reference [ fhir:value "Observation/ExampleStatusSchwanger" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleStatusSchwanger" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusSchwanger";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusSchwanger>
+       ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/Observation/ExampleStatusStillend>;
+         fhir:Reference.reference [ fhir:value "Observation/ExampleStatusStillend" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleStatusStillend" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusStillend";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusStillend>
+       ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/ImplementationGuide/de.mp4p.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

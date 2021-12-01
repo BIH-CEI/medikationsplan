@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="AllergyIntoleranceMP4P"/>
+  <meta>
+    <profile value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/AllergyIntolerance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>code</b>: <span title="Codes: {http://fhir.de/CodeSystem/bfarm/alpha-id I29215}">Nahrungsmittelunverträglichkeit</span></p><p><b>patient</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Gesetzliche Krankenversicherung: Z234567890 (OFFICIAL); Clara Josephine Schumann (OFFICIAL)</a></p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <code>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/bfarm/alpha-id"/>
+      <code value="I29215"/>
+      <display value="Nahrungsmittelunverträglichkeit"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/ExamplePatient"/>
+  </patient>
+</AllergyIntolerance>

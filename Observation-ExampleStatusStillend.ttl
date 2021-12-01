@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/Observation/ExampleStatusStillend> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ExampleStatusStillend"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusStillend";
+       fhir:index 0;
+       fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusStillend>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 63895-7}\">Breastfeeding status</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Gesetzliche Krankenversicherung: Z234567890 (OFFICIAL); Clara Josephine Schumann (OFFICIAL)</a></p><p><b>effective</b>: 2021-11-25</p><p><b>value</b>: false</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:63895-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "63895-7" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://www.charite.de/fhir/medikationsplan/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2021-11-25"^^xsd:date];
+  fhir:Observation.valueBoolean [ fhir:value "false"^^xsd:boolean] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/Observation/ExampleStatusStillend.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

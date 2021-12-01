@@ -1,0 +1,46 @@
+{
+  "resourceType": "Patient",
+  "id": "ExamplePatient",
+  "meta": {
+    "profile": [
+      "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Gesetzliche Krankenversicherung: Z234567890 (OFFICIAL)</p><p><b>name</b>: Clara Josephine Schumann (OFFICIAL)</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis",
+            "code": "GKV"
+          }
+        ]
+      },
+      "system": "http://fhir.de/sid/gkv/kvid-10",
+      "value": "Z234567890"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Schumann",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Schumann"
+          }
+        ]
+      },
+      "given": [
+        "Clara",
+        "Josephine"
+      ]
+    }
+  ]
+}

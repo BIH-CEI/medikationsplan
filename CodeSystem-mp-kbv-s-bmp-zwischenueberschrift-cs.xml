@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mp-kbv-s-bmp-zwischenueberschrift-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">411<a name="mp-kbv-s-bmp-zwischenueberschrift-cs-411"> </a></td><td>Bedarfsmedikation</td></tr><tr><td style="white-space:nowrap">412<a name="mp-kbv-s-bmp-zwischenueberschrift-cs-412"> </a></td><td>Dauermedikation</td></tr><tr><td style="white-space:nowrap">413<a name="mp-kbv-s-bmp-zwischenueberschrift-cs-413"> </a></td><td>Intramuskuläre Anwendung</td></tr><tr><td style="white-space:nowrap">414<a name="mp-kbv-s-bmp-zwischenueberschrift-cs-414"> </a></td><td>Besondere Anwendung</td></tr><tr><td style="white-space:nowrap">415<a name="mp-kbv-s-bmp-zwischenueberschrift-cs-415"> </a></td><td>Intravenöse Anwendung</td></tr><tr><td style="white-space:nowrap">416<a name="mp-kbv-s-bmp-zwischenueberschrift-cs-416"> </a></td><td>Anwendung unter die Haut</td></tr><tr><td style="white-space:nowrap">417<a name="mp-kbv-s-bmp-zwischenueberschrift-cs-417"> </a></td><td>Fertigspritze</td></tr><tr><td style="white-space:nowrap">418<a name="mp-kbv-s-bmp-zwischenueberschrift-cs-418"> </a></td><td>Selbstmedikation</td></tr><tr><td style="white-space:nowrap">419<a name="mp-kbv-s-bmp-zwischenueberschrift-cs-419"> </a></td><td>Allergiehinweise</td></tr><tr><td style="white-space:nowrap">421<a name="mp-kbv-s-bmp-zwischenueberschrift-cs-421"> </a></td><td>Wichtige Hinweise</td></tr><tr><td style="white-space:nowrap">422<a name="mp-kbv-s-bmp-zwischenueberschrift-cs-422"> </a></td><td>Wichtige Angaben</td></tr><tr><td style="white-space:nowrap">423<a name="mp-kbv-s-bmp-zwischenueberschrift-cs-423"> </a></td><td>zu besonderen Zeiten anzuwendende Medikamente</td></tr><tr><td style="white-space:nowrap">424<a name="mp-kbv-s-bmp-zwischenueberschrift-cs-424"> </a></td><td>zeitlich befristet anzuwendende Medikamente</td></tr></table></div>
+  </text>
+  <url value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="1.2.276.0.76.3.1.1.5.2.42"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="KBV_BMP_Zwischenueberschrift_CS"/>
+  <status value="draft"/>
+  <date value="2017-08-08"/>
+  <publisher value="BIH@Charité"/>
+  <contact>
+    <name value="BIH@Charité"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
+    </telecom>
+  </contact>
+  <description value="Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP)."/>
+  <valueSet value="https://www.charite.de/fhir/medikationsplan/ValueSet/kbv/s-bmp-zwischenueberschrift"/>
+  <content value="complete"/>
+  <count value="13"/>
+  <concept>
+    <code value="411"/>
+    <display value="Bedarfsmedikation"/>
+  </concept>
+  <concept>
+    <code value="412"/>
+    <display value="Dauermedikation"/>
+  </concept>
+  <concept>
+    <code value="413"/>
+    <display value="Intramuskuläre Anwendung"/>
+  </concept>
+  <concept>
+    <code value="414"/>
+    <display value="Besondere Anwendung"/>
+  </concept>
+  <concept>
+    <code value="415"/>
+    <display value="Intravenöse Anwendung"/>
+  </concept>
+  <concept>
+    <code value="416"/>
+    <display value="Anwendung unter die Haut"/>
+  </concept>
+  <concept>
+    <code value="417"/>
+    <display value="Fertigspritze"/>
+  </concept>
+  <concept>
+    <code value="418"/>
+    <display value="Selbstmedikation"/>
+  </concept>
+  <concept>
+    <code value="419"/>
+    <display value="Allergiehinweise"/>
+  </concept>
+  <concept>
+    <code value="421"/>
+    <display value="Wichtige Hinweise"/>
+  </concept>
+  <concept>
+    <code value="422"/>
+    <display value="Wichtige Angaben"/>
+  </concept>
+  <concept>
+    <code value="423"/>
+    <display value="zu besonderen Zeiten anzuwendende Medikamente"/>
+  </concept>
+  <concept>
+    <code value="424"/>
+    <display value="zeitlich befristet anzuwendende Medikamente"/>
+  </concept>
+</CodeSystem>

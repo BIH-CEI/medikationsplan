@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="2948fe71-3dde-49bf-8f1a-d72e109fdf16"/>
+  <meta>
+    <lastUpdated value="2021-12-01T09:40:17.256+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.charite.de/fhir/medikationsplan/ValueSet/einnahmezeitpunkte-v3-TimingEvent"/>
+    <resource>
+      <ValueSet>
+        <id value="mp4p-einnahmezeitpunkte-v3"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-TimingEvent.html">TimingEvent v2.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-TimingEvent.html">
+                <code>http://terminology.hl7.org/CodeSystem/v3-TimingEvent</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-TimingEvent-CM"> </a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-TimingEvent.html#v3-TimingEvent-CM">CM</a>
+                </td>
+                <td>Morgens</td>
+                <td>**Description:** breakfast (from lat. cibus matutinus)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-TimingEvent-CD"> </a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-TimingEvent.html#v3-TimingEvent-CD">CD</a>
+                </td>
+                <td>Mittags</td>
+                <td>**Description:** lunch (from lat. cibus diurnus)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-TimingEvent-CV"> </a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-TimingEvent.html#v3-TimingEvent-CV">CV</a>
+                </td>
+                <td>Abends</td>
+                <td>**Description:** dinner (from lat. cibus vespertinus)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-TimingEvent-HS"> </a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-TimingEvent.html#v3-TimingEvent-HS">HS</a>
+                </td>
+                <td>zur Nacht</td>
+                <td>**Description:** Prior to beginning a regular period of extended sleep (this would exclude naps). Note that this might occur at different times of day depending on a person&#39;s regular sleep schedule.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.charite.de/fhir/medikationsplan/ValueSet/einnahmezeitpunkte-v3-TimingEvent"/>
+        <version value="0.1.0"/>
+        <name value="EinnahmezeitpunkteV3"/>
+        <title value="Einnahmezeitpunkte v3 TimingEvent"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2021-05-07"/>
+        <publisher value="BIH@Charité"/>
+        <contact>
+          <name value="BIH@Charité"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
+          </telecom>
+        </contact>
+        <description value="ValueSet zur Codierung von Einnahmezeitpunkten aus v3 CodeSystem TimingEvent."/>
+        <expansion>
+          <identifier value="urn:uuid:3b683dda-16bb-41cc-a58e-f09ad389932f"/>
+          <timestamp value="2021-12-01T09:40:56+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent|2.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent"/>
+            <code value="CM"/>
+            <display value="Morgens"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent"/>
+            <code value="CD"/>
+            <display value="Mittags"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent"/>
+            <code value="CV"/>
+            <display value="Abends"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent"/>
+            <code value="HS"/>
+            <display value="zur Nacht"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.charite.de/fhir/medikationsplan/ValueSet/kbv/s-bmp-zwischenueberschrift"/>
+    <resource>
+      <ValueSet>
+        <id value="mp-kbv-s-bmp-zwischenueberschrift-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 13 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html">KBV_BMP_Zwischenueberschrift_CS v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html">
+                <code>https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.charite.de-fhir-medikationsplan-CodeSystem-kbv-s-bmp-zwischenueberschrift-411"> </a>
+                  <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html#mp-kbv-s-bmp-zwischenueberschrift-cs-411">411</a>
+                </td>
+                <td>Bedarfsmedikation</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.charite.de-fhir-medikationsplan-CodeSystem-kbv-s-bmp-zwischenueberschrift-412"> </a>
+                  <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html#mp-kbv-s-bmp-zwischenueberschrift-cs-412">412</a>
+                </td>
+                <td>Dauermedikation</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.charite.de-fhir-medikationsplan-CodeSystem-kbv-s-bmp-zwischenueberschrift-413"> </a>
+                  <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html#mp-kbv-s-bmp-zwischenueberschrift-cs-413">413</a>
+                </td>
+                <td>Intramuskuläre Anwendung</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.charite.de-fhir-medikationsplan-CodeSystem-kbv-s-bmp-zwischenueberschrift-414"> </a>
+                  <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html#mp-kbv-s-bmp-zwischenueberschrift-cs-414">414</a>
+                </td>
+                <td>Besondere Anwendung</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.charite.de-fhir-medikationsplan-CodeSystem-kbv-s-bmp-zwischenueberschrift-415"> </a>
+                  <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html#mp-kbv-s-bmp-zwischenueberschrift-cs-415">415</a>
+                </td>
+                <td>Intravenöse Anwendung</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.charite.de-fhir-medikationsplan-CodeSystem-kbv-s-bmp-zwischenueberschrift-416"> </a>
+                  <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html#mp-kbv-s-bmp-zwischenueberschrift-cs-416">416</a>
+                </td>
+                <td>Anwendung unter die Haut</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.charite.de-fhir-medikationsplan-CodeSystem-kbv-s-bmp-zwischenueberschrift-417"> </a>
+                  <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html#mp-kbv-s-bmp-zwischenueberschrift-cs-417">417</a>
+                </td>
+                <td>Fertigspritze</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.charite.de-fhir-medikationsplan-CodeSystem-kbv-s-bmp-zwischenueberschrift-418"> </a>
+                  <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html#mp-kbv-s-bmp-zwischenueberschrift-cs-418">418</a>
+                </td>
+                <td>Selbstmedikation</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.charite.de-fhir-medikationsplan-CodeSystem-kbv-s-bmp-zwischenueberschrift-419"> </a>
+                  <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html#mp-kbv-s-bmp-zwischenueberschrift-cs-419">419</a>
+                </td>
+                <td>Allergiehinweise</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.charite.de-fhir-medikationsplan-CodeSystem-kbv-s-bmp-zwischenueberschrift-421"> </a>
+                  <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html#mp-kbv-s-bmp-zwischenueberschrift-cs-421">421</a>
+                </td>
+                <td>Wichtige Hinweise</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.charite.de-fhir-medikationsplan-CodeSystem-kbv-s-bmp-zwischenueberschrift-422"> </a>
+                  <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html#mp-kbv-s-bmp-zwischenueberschrift-cs-422">422</a>
+                </td>
+                <td>Wichtige Angaben</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.charite.de-fhir-medikationsplan-CodeSystem-kbv-s-bmp-zwischenueberschrift-423"> </a>
+                  <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html#mp-kbv-s-bmp-zwischenueberschrift-cs-423">423</a>
+                </td>
+                <td>zu besonderen Zeiten anzuwendende Medikamente</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.charite.de-fhir-medikationsplan-CodeSystem-kbv-s-bmp-zwischenueberschrift-424"> </a>
+                  <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html#mp-kbv-s-bmp-zwischenueberschrift-cs-424">424</a>
+                </td>
+                <td>zeitlich befristet anzuwendende Medikamente</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.charite.de/fhir/medikationsplan/ValueSet/kbv/s-bmp-zwischenueberschrift"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="1.2.276.0.76.3.1.1.5.2.42"/>
+        </identifier>
+        <version value="0.1.0"/>
+        <name value="KBV_BMP_Zwischenueberschrift_VS"/>
+        <status value="draft"/>
+        <date value="2021-05-13"/>
+        <publisher value="BIH@Charité"/>
+        <contact>
+          <name value="BIH@Charité"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
+          </telecom>
+        </contact>
+        <description value="Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP)."/>
+        <expansion>
+          <identifier value="urn:uuid:a0709294-0bb0-425b-8629-18faf74131dd"/>
+          <timestamp value="2021-12-01T09:40:57+00:00"/>
+          <total value="13"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+            <code value="411"/>
+            <display value="Bedarfsmedikation"/>
+          </contains>
+          <contains>
+            <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+            <code value="412"/>
+            <display value="Dauermedikation"/>
+          </contains>
+          <contains>
+            <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+            <code value="413"/>
+            <display value="Intramuskuläre Anwendung"/>
+          </contains>
+          <contains>
+            <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+            <code value="414"/>
+            <display value="Besondere Anwendung"/>
+          </contains>
+          <contains>
+            <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+            <code value="415"/>
+            <display value="Intravenöse Anwendung"/>
+          </contains>
+          <contains>
+            <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+            <code value="416"/>
+            <display value="Anwendung unter die Haut"/>
+          </contains>
+          <contains>
+            <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+            <code value="417"/>
+            <display value="Fertigspritze"/>
+          </contains>
+          <contains>
+            <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+            <code value="418"/>
+            <display value="Selbstmedikation"/>
+          </contains>
+          <contains>
+            <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+            <code value="419"/>
+            <display value="Allergiehinweise"/>
+          </contains>
+          <contains>
+            <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+            <code value="421"/>
+            <display value="Wichtige Hinweise"/>
+          </contains>
+          <contains>
+            <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+            <code value="422"/>
+            <display value="Wichtige Angaben"/>
+          </contains>
+          <contains>
+            <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+            <code value="423"/>
+            <display value="zu besonderen Zeiten anzuwendende Medikamente"/>
+          </contains>
+          <contains>
+            <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+            <code value="424"/>
+            <display value="zeitlich befristet anzuwendende Medikamente"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT"/>
+    <resource>
+      <ValueSet>
+        <id value="KBV-VS-SFHIR-BMP-DOSIEREINHEIT"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 33 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html">KBV_CS_SFHIR_BMP_DOSIEREINHEIT v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html">
+                <code>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT--"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-.35">#</a>
+                </td>
+                <td>Messlöffel</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-0"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-0">0</a>
+                </td>
+                <td>Messbecher</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-1"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-1">1</a>
+                </td>
+                <td>Stück</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-2"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-2">2</a>
+                </td>
+                <td>Pkg.</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-3"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-3">3</a>
+                </td>
+                <td>Flasche</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-4"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-4">4</a>
+                </td>
+                <td>Beutel</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-5"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-5">5</a>
+                </td>
+                <td>Hub</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-6"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-6">6</a>
+                </td>
+                <td>Tropfen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-7"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-7">7</a>
+                </td>
+                <td>Teelöffel</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-8"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-8">8</a>
+                </td>
+                <td>Esslöffel</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-9"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-9">9</a>
+                </td>
+                <td>E</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-a"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-a">a</a>
+                </td>
+                <td>Tasse</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-b"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-b">b</a>
+                </td>
+                <td>Applikatorfüllung</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-c"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-c">c</a>
+                </td>
+                <td>Augenbadewanne</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-d"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-d">d</a>
+                </td>
+                <td>Dosierbriefchen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-e"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-e">e</a>
+                </td>
+                <td>Dosierpipette</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-f"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-f">f</a>
+                </td>
+                <td>Dosierspritze</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-g"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-g">g</a>
+                </td>
+                <td>Einzeldosis</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-h"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-h">h</a>
+                </td>
+                <td>Glas</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-i"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-i">i</a>
+                </td>
+                <td>Likörglas</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-j"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-j">j</a>
+                </td>
+                <td>Messkappe</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-k"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-k">k</a>
+                </td>
+                <td>Messschale</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-l"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-l">l</a>
+                </td>
+                <td>Mio E</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-m"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-m">m</a>
+                </td>
+                <td>Mio IE</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-n"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-n">n</a>
+                </td>
+                <td>Pipettenteilstrich</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-o"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-o">o</a>
+                </td>
+                <td>Sprühstoß</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-p"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-p">p</a>
+                </td>
+                <td>IE</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-q"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-q">q</a>
+                </td>
+                <td>cm</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-r"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-r">r</a>
+                </td>
+                <td>l</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-s"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-s">s</a>
+                </td>
+                <td>ml</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-t"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-t">t</a>
+                </td>
+                <td>g</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-u"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-u">u</a>
+                </td>
+                <td>kg</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---fhir.kbv.de-CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT-v"> </a>
+                  <a href="CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html#KBV-CS-SFHIR-BMP-DOSIEREINHEIT-v">v</a>
+                </td>
+                <td>mg</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT"/>
+        <version value="0.1.0"/>
+        <name value="KBV_VS_SFHIR_BMP_DOSIEREINHEIT"/>
+        <status value="active"/>
+        <date value="2019-01-01"/>
+        <publisher value="BIH@Charité"/>
+        <contact>
+          <name value="BIH@Charité"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
+          </telecom>
+        </contact>
+        <description value="Das Valueset enthält alle Codes aus dem Codesystem https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+        <copyright value="Kassenärztliche Bundesvereinigung"/>
+        <expansion>
+          <identifier value="urn:uuid:c19c22bd-4c93-4554-b80a-f41f7c7e0695"/>
+          <timestamp value="2021-12-01T09:40:57+00:00"/>
+          <total value="33"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="#"/>
+            <display value="Messlöffel"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="0"/>
+            <display value="Messbecher"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="1"/>
+            <display value="Stück"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="2"/>
+            <display value="Pkg."/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="3"/>
+            <display value="Flasche"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="4"/>
+            <display value="Beutel"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="5"/>
+            <display value="Hub"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="6"/>
+            <display value="Tropfen"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="7"/>
+            <display value="Teelöffel"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="8"/>
+            <display value="Esslöffel"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="9"/>
+            <display value="E"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="a"/>
+            <display value="Tasse"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="b"/>
+            <display value="Applikatorfüllung"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="c"/>
+            <display value="Augenbadewanne"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="d"/>
+            <display value="Dosierbriefchen"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="e"/>
+            <display value="Dosierpipette"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="f"/>
+            <display value="Dosierspritze"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="g"/>
+            <display value="Einzeldosis"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="h"/>
+            <display value="Glas"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="i"/>
+            <display value="Likörglas"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="j"/>
+            <display value="Messkappe"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="k"/>
+            <display value="Messschale"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="l"/>
+            <display value="Mio E"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="m"/>
+            <display value="Mio IE"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="n"/>
+            <display value="Pipettenteilstrich"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="o"/>
+            <display value="Sprühstoß"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="p"/>
+            <display value="IE"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="q"/>
+            <display value="cm"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="r"/>
+            <display value="l"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="s"/>
+            <display value="ml"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="t"/>
+            <display value="g"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="u"/>
+            <display value="kg"/>
+          </contains>
+          <contains>
+            <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+            <code value="v"/>
+            <display value="mg"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,2246 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/ValueSet/mp-allergiesintolerances-alphaid> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "mp-allergiesintolerances-alphaid"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/bfarm/alpha-id</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>I81502</td><td>Anaphylaktischer Schock durch Nahrungsmittel a.n.k.</td></tr><tr><td>I81501</td><td>Schock durch Nahrungsmittelunverträglichkeit</td></tr><tr><td>I564</td><td>Allergie gegen Nahrungsmittel</td></tr><tr><td>I97198</td><td>Allergische Reaktion durch Nahrungsmittel a.n.k.</td></tr><tr><td>I112579</td><td>Eiprotein-Allergie</td></tr><tr><td>I112647</td><td>Eiprotein-Überempfindlichkeit</td></tr><tr><td>I120131</td><td>Erdnussprotein-Allergie</td></tr><tr><td>I112580</td><td>Erdnussöl-Allergie</td></tr><tr><td>I112648</td><td>Erdnussöl-Überempfindlichkeit</td></tr><tr><td>I116460</td><td>Fisch-Allergie</td></tr><tr><td>I116463</td><td>Fischeiweiß-Überempfindlichkeit</td></tr><tr><td>I116461</td><td>Gelatine-Überempfindlichkeit</td></tr><tr><td>I116459</td><td>Hühnereiweiß-Allergie</td></tr><tr><td>I24369</td><td>Kuhmilchproteinintoleranz</td></tr><tr><td>I116796</td><td>Kürbisfrüchte-Allergie</td></tr><tr><td>I116465</td><td>Leguminosen-Allergie</td></tr><tr><td>I29215</td><td>Nahrungsmittelunverträglichkeit</td></tr><tr><td>I116462</td><td>Nuss-Überempfindlichkeit</td></tr><tr><td>I116353</td><td>Rinderprotein-Überempfindlichkeit</td></tr><tr><td>I116795</td><td>Sesamöl-Allergie</td></tr><tr><td>I112576</td><td>Soja-Allergie</td></tr><tr><td>I112644</td><td>Soja-Überempfindlichkeit</td></tr><tr><td>I112577</td><td>Sojaprotein-Allergie</td></tr><tr><td>I112645</td><td>Sojaprotein-Überempfindlichkeit</td></tr><tr><td>I112641</td><td>Sorbitol-Allergie</td></tr><tr><td>I112709</td><td>Sorbitol-Überempfindlichkeit</td></tr><tr><td>I109560</td><td>Sorbitolunverträglichkeit</td></tr><tr><td>I109981</td><td>Überempfindlichkeit gegen Farbstoffe in Nahrungsmitteln</td></tr><tr><td>I109980</td><td>Überempfindlichkeit gegen Konservierungsmittel</td></tr><tr><td>I109978</td><td>Überempfindlichkeit gegen Nahrungsmittelzusatzstoffe</td></tr><tr><td>I112578</td><td>Zimt-Allergie</td></tr><tr><td>I112646</td><td>Zimt-Überempfindlichkeit</td></tr><tr><td>I116464</td><td>Zitrusfrüchte-Überempfindlichkeit</td></tr><tr><td>I87720</td><td>Allergischer Schock</td></tr><tr><td>I565</td><td>Anaphylaktischer Schock</td></tr><tr><td>I16144</td><td>Anaphylaxie</td></tr><tr><td>I85981</td><td>Herxheimer-Reaktion</td></tr><tr><td>I80523</td><td>Schock durch Arzneimittel</td></tr><tr><td>I74711</td><td>Akutes essentielles Ödem</td></tr><tr><td>I74531</td><td>Akutes Quincke-Ödem der Haut</td></tr><tr><td>I74712</td><td>Akutes umschriebenes Ödem</td></tr><tr><td>I74721</td><td>Akutes zirkumskriptes Ödem</td></tr><tr><td>I64438</td><td>Allergisches angioneurotisches Ödem</td></tr><tr><td>I64444</td><td>Allergisches Angioödem</td></tr><tr><td>I96567</td><td>Allergisches Glottisödem</td></tr><tr><td>I566</td><td>Angioneurotisches Ödem</td></tr><tr><td>I64441</td><td>Angioneurotisches Ödem mit Urtikaria</td></tr><tr><td>I567</td><td>Angioödem</td></tr><tr><td>I64445</td><td>Angioödem mit Urtikaria</td></tr><tr><td>I75170</td><td>Bannister-Krankheit</td></tr><tr><td>I82080</td><td>Larynxurtikaria</td></tr><tr><td>I74718</td><td>Periodisches Ödem</td></tr><tr><td>I81969</td><td>Quincke-Syndrom</td></tr><tr><td>I568</td><td>Quincke-Ödem</td></tr><tr><td>I82079</td><td>Urticaria gigantea</td></tr><tr><td>I119417</td><td>AAE [Erworbenes Angioödem]</td></tr><tr><td>I119795</td><td>Erworbenes angioneurotisches Ödem</td></tr><tr><td>I119704</td><td>Erworbenes Angioödem</td></tr><tr><td>I119898</td><td>Erworbenes Bradykinin-induziertes Angioödem</td></tr><tr><td>I119899</td><td>Erworbenes nicht-Histamin-induziertes Angioödem</td></tr><tr><td>I15529</td><td>Allergie</td></tr><tr><td>I109613</td><td>Allergie gegen Alkohol</td></tr><tr><td>I112601</td><td>Allergie gegen echtes Karmin [E 120]</td></tr><tr><td>I15530</td><td>Allergische Diathese</td></tr><tr><td>I15533</td><td>Allergische Reaktion</td></tr><tr><td>I112598</td><td>Allurarot-Allergie [E 129]</td></tr><tr><td>I112666</td><td>Allurarot-Überempfindlichkeit [E 129]</td></tr><tr><td>I112625</td><td>Amaranth-Allergie [E 123]</td></tr><tr><td>I112693</td><td>Amaranth-Überempfindlichkeit [E 123]</td></tr><tr><td>I112596</td><td>Annatto-Allergie</td></tr><tr><td>I112664</td><td>Annatto-Überempfindlichkeit</td></tr><tr><td>I32389</td><td>Arthus-Phänomen</td></tr><tr><td>I24895</td><td>Atopie</td></tr><tr><td>I112624</td><td>Azorubin-Allergie [E 122]</td></tr><tr><td>I112692</td><td>Azorubin-Überempfindlichkeit [E 122]</td></tr><tr><td>I112623</td><td>Benzalkoniumchlorid-Allergie</td></tr><tr><td>I112691</td><td>Benzalkoniumchlorid-Überempfindlichkeit</td></tr><tr><td>I112594</td><td>Benzoesäure-Allergie</td></tr><tr><td>I112662</td><td>Benzoesäure-Überempfindlichkeit</td></tr><tr><td>I112622</td><td>Benzolsulfonsäure-Allergie</td></tr><tr><td>I112690</td><td>Benzolsulfonsäure-Überempfindlichkeit</td></tr><tr><td>I112621</td><td>Benzylalkohol-Allergie</td></tr><tr><td>I112689</td><td>Benzylalkohol-Überempfindlichkeit</td></tr><tr><td>I112620</td><td>Bernsteinsäure-Allergie</td></tr><tr><td>I112688</td><td>Bernsteinsäure-Überempfindlichkeit</td></tr><tr><td>I112597</td><td>Braun-Allergie [E 155]</td></tr><tr><td>I112665</td><td>Braun-Überempfindlichkeit [E 155]</td></tr><tr><td>I112618</td><td>Brillantschwarz-Allergie [E 151]</td></tr><tr><td>I112686</td><td>Brillantschwarz-Überempfindlichkeit [E 151]</td></tr><tr><td>I112590</td><td>Butylhydroxyanisol-Allergie</td></tr><tr><td>I112658</td><td>Butylhydroxyanisol-Überempfindlichkeit</td></tr><tr><td>I112619</td><td>Butylhydroxytoluol-Allergie</td></tr><tr><td>I112687</td><td>Butylhydroxytoluol-Überempfindlichkeit</td></tr><tr><td>I112587</td><td>Carrageen-Allergie [E 407]</td></tr><tr><td>I112655</td><td>Carrageen-Überempfindlichkeit [E 407]</td></tr><tr><td>I112617</td><td>Cetylalkohol-Allergie</td></tr><tr><td>I112685</td><td>Cetylalkohol-Überempfindlichkeit</td></tr><tr><td>I112639</td><td>Chinazolin-Allergie</td></tr><tr><td>I112707</td><td>Chinazolin-Überempfindlichkeit</td></tr><tr><td>I112616</td><td>Chinolingelb-Allergie [E 104]</td></tr><tr><td>I112684</td><td>Chinolingelb-Überempfindlichkeit [E 104]</td></tr><tr><td>I112615</td><td>Chlorocresol-Allergie</td></tr><tr><td>I112683</td><td>Chlorocresol-Überempfindlichkeit</td></tr><tr><td>I112638</td><td>Chrysanthemen-Allergie</td></tr><tr><td>I112706</td><td>Chrysanthemen-Überempfindlichkeit</td></tr><tr><td>I112600</td><td>Cochenillerot-Allergie [E 124]</td></tr><tr><td>I112668</td><td>Cochenillerot-Überempfindlichkeit [E 124]</td></tr><tr><td>I112637</td><td>Doldengewächs-Allergie</td></tr><tr><td>I112705</td><td>Doldengewächs-Überempfindlichkeit</td></tr><tr><td>I112614</td><td>Erythrosin-Allergie [E 127]</td></tr><tr><td>I112682</td><td>Erythrosin-Überempfindlichkeit [E 127]</td></tr><tr><td>I112483</td><td>Ethanol-Allergie</td></tr><tr><td>I112352</td><td>Ethanol-Überempfindlichkeit</td></tr><tr><td>I112612</td><td>Formaldehyd-Allergie</td></tr><tr><td>I112680</td><td>Formaldehyd-Überempfindlichkeit</td></tr><tr><td>I112591</td><td>Gallate-Allergie</td></tr><tr><td>I112659</td><td>Gallate-Überempfindlichkeit</td></tr><tr><td>I117140</td><td>Gallussäure-Allergie</td></tr><tr><td>I112613</td><td>Gelborange-Allergie [E 110]</td></tr><tr><td>I112681</td><td>Gelborange-Überempfindlichkeit [E 110]</td></tr><tr><td>I112585</td><td>Guarkernmehl-Allergie [E 412]</td></tr><tr><td>I112653</td><td>Guarkernmehl-Überempfindlichkeit [E 412]</td></tr><tr><td>I112636</td><td>Hamsterprotein-Allergie</td></tr><tr><td>I112704</td><td>Hamsterprotein-Überempfindlichkeit</td></tr><tr><td>I115633</td><td>Hyperergische Reaktion</td></tr><tr><td>I115638</td><td>Hyperergische Reaktion gegen mikrobielle Allergene</td></tr><tr><td>I15536</td><td>Hypersensibilität</td></tr><tr><td>I32391</td><td>Idiosynkrasie</td></tr><tr><td>I112611</td><td>Isopropylalkohol-Allergie</td></tr><tr><td>I112679</td><td>Isopropylalkohol-Überempfindlichkeit</td></tr><tr><td>I109672</td><td>Jodallergie</td></tr><tr><td>I112586</td><td>Johannisbrotkernmehl-Allergie [E 410]</td></tr><tr><td>I112654</td><td>Johannisbrotkernmehl-Überempfindlichkeit [E 410]</td></tr><tr><td>I15532</td><td>Kaninchenallergie</td></tr><tr><td>I112583</td><td>Karaya-Allergie [E 416]</td></tr><tr><td>I112651</td><td>Karaya-Überempfindlichkeit [E 416]</td></tr><tr><td>I112635</td><td>Korbblütler-Allergie</td></tr><tr><td>I112703</td><td>Korbblütler-Überempfindlichkeit</td></tr><tr><td>I112602</td><td>Kurkumin-Allergie [E 100]</td></tr><tr><td>I112670</td><td>Kurkumin-Überempfindlichkeit [E 100]</td></tr><tr><td>I112595</td><td>Litholrubin-Allergie [E 180]</td></tr><tr><td>I112663</td><td>Litholrubin-Überempfindlichkeit [E 180]</td></tr><tr><td>I112582</td><td>Lysozym-Allergie</td></tr><tr><td>I112650</td><td>Lysozym-Überempfindlichkeit</td></tr><tr><td>I112610</td><td>Macrogolglycerolricinoleat-Allergie</td></tr><tr><td>I112678</td><td>Macrogolglycerolricinoleat-Überempfindlichkeit</td></tr><tr><td>I112634</td><td>Mausprotein-Allergie</td></tr><tr><td>I112702</td><td>Mausprotein-Überempfindlichkeit</td></tr><tr><td>I30749</td><td>MCS [Multiple-Chemical-Sensitivity]-Syndrom</td></tr><tr><td>I15535</td><td>Multiple Allergien</td></tr><tr><td>I15534</td><td>Multiple-Chemical-Sensitivity [MCS]-Syndrom</td></tr><tr><td>I112609</td><td>Natriumbenzoat-Allergie</td></tr><tr><td>I112677</td><td>Natriumbenzoat-Überempfindlichkeit</td></tr><tr><td>I112608</td><td>Natriumdisulfit-Allergie</td></tr><tr><td>I112676</td><td>Natriumdisulfit-Überempfindlichkeit</td></tr><tr><td>I112607</td><td>Natriumedetat-Allergie</td></tr><tr><td>I112675</td><td>Natriumedetat-Überempfindlichkeit</td></tr><tr><td>I112633</td><td>Nitroverbindungen-Allergie</td></tr><tr><td>I112701</td><td>Nitroverbindungen-Überempfindlichkeit</td></tr><tr><td>I112632</td><td>Norfluran-Allergie</td></tr><tr><td>I112700</td><td>Norfluran-Überempfindlichkeit</td></tr><tr><td>I112593</td><td>Para-Hydroxybenzoesäureester-Allergie</td></tr><tr><td>I112661</td><td>Para-Hydroxybenzoesäureester-Überempfindlichkeit</td></tr><tr><td>I112606</td><td>Parabene-Allergie</td></tr><tr><td>I112674</td><td>Parabene-Überempfindlichkeit</td></tr><tr><td>I112631</td><td>Phenolrot-Allergie</td></tr><tr><td>I112699</td><td>Phenolrot-Überempfindlichkeit</td></tr><tr><td>I112605</td><td>Ponceau-Allergie [E 124]</td></tr><tr><td>I112673</td><td>Ponceau-Überempfindlichkeit [E 124]</td></tr><tr><td>I112604</td><td>Propylenglycol-Allergie</td></tr><tr><td>I112672</td><td>Propylenglycol-Überempfindlichkeit</td></tr><tr><td>I117141</td><td>Propylgallate-Allergie</td></tr><tr><td>I112630</td><td>Pyrrolidon-Allergie</td></tr><tr><td>I112698</td><td>Pyrrolidon-Überempfindlichkeit</td></tr><tr><td>I112599</td><td>Rot-Allergie [E 128]</td></tr><tr><td>I112667</td><td>Rot-Überempfindlichkeit [E 128]</td></tr><tr><td>I112592</td><td>Schwefeldioxid-Allergie</td></tr><tr><td>I112660</td><td>Schwefeldioxid-Überempfindlichkeit</td></tr><tr><td>I116354</td><td>Schwermetallüberempfindlichkeit</td></tr><tr><td>I112640</td><td>Sorbinsäure-Allergie</td></tr><tr><td>I112708</td><td>Sorbinsäure-Überempfindlichkeit</td></tr><tr><td>I112642</td><td>Stearylalkohol-Allergie</td></tr><tr><td>I112710</td><td>Stearylalkohol-Überempfindlichkeit</td></tr><tr><td>I112643</td><td>Sulfit-Allergie</td></tr><tr><td>I112711</td><td>Sulfit-Überempfindlichkeit</td></tr><tr><td>I112603</td><td>Tartrazin-Allergie [E 102]</td></tr><tr><td>I112671</td><td>Tartrazin-Überempfindlichkeit [E 102]</td></tr><tr><td>I120132</td><td>Thioharnstoff-Überempfindlichkeit</td></tr><tr><td>I112629</td><td>Thionamid-Derivate-Allergie</td></tr><tr><td>I112697</td><td>Thionamid-Derivate-Überempfindlichkeit</td></tr><tr><td>I112584</td><td>Traganth-Allergie [E 413]</td></tr><tr><td>I112652</td><td>Traganth-Überempfindlichkeit [E 413]</td></tr><tr><td>I112588</td><td>Triammoniumcitrat-Allergie</td></tr><tr><td>I112656</td><td>Triammoniumcitrat-Überempfindlichkeit</td></tr><tr><td>I112628</td><td>Triarylmethan-Allergie</td></tr><tr><td>I112696</td><td>Triarylmethan-Überempfindlichkeit</td></tr><tr><td>I112581</td><td>Triethylcitrat-Allergie</td></tr><tr><td>I112649</td><td>Triethylcitrat-Überempfindlichkeit</td></tr><tr><td>I112627</td><td>Triphenylmethan-Farbstoff-Allergie</td></tr><tr><td>I112695</td><td>Triphenylmethan-Farbstoff-Überempfindlichkeit</td></tr><tr><td>I112626</td><td>Tropasäure-Allergie</td></tr><tr><td>I112694</td><td>Tropasäure-Überempfindlichkeit</td></tr><tr><td>I15531</td><td>Unklare Allergie</td></tr><tr><td>I32390</td><td>Überempfindlichkeit</td></tr><tr><td>I116798</td><td>Überempfindlichkeit durch 2-Phenoxyethanol</td></tr><tr><td>I116467</td><td>Überempfindlichkeit durch Aspergillus-Extrakt</td></tr><tr><td>I116799</td><td>Überempfindlichkeit durch E. coli-Protein</td></tr><tr><td>I112669</td><td>Überempfindlichkeit durch echtes Karmin [E 120]</td></tr><tr><td>I116797</td><td>Überempfindlichkeit durch Polysorbat 20</td></tr><tr><td>I116466</td><td>Überempfindlichkeit durch quaternäre Ammoniumverbindung</td></tr><tr><td>I15537</td><td>Überempfindlichkeitsreaktion</td></tr><tr><td>I112589</td><td>Zitronensäure-Allergie</td></tr><tr><td>I112657</td><td>Zitronensäure-Überempfindlichkeit</td></tr><tr><td>I90606</td><td>Arthritis bei Überempfindlichkeitsreaktion a.n.k.</td></tr><tr><td>I83174</td><td>Abnorme Arzneimittelwirkung a.n.k.</td></tr><tr><td>I112538</td><td>ACE-Hemmer-Allergie</td></tr><tr><td>I112408</td><td>ACE-Hemmer-Überempfindlichkeit</td></tr><tr><td>I112539</td><td>Aciclovir-Allergie</td></tr><tr><td>I112409</td><td>Aciclovir-Überempfindlichkeit</td></tr><tr><td>I112540</td><td>Acridin-Derivate-Allergie</td></tr><tr><td>I112410</td><td>Acridin-Derivate-Überempfindlichkeit</td></tr><tr><td>I112541</td><td>ACTH [Adrenocorticotropes Hormon]-Allergie</td></tr><tr><td>I112411</td><td>ACTH [Adrenocorticotropes Hormon]-Überempfindlichkeit</td></tr><tr><td>I16017</td><td>Adriblastinschädigung</td></tr><tr><td>I112542</td><td>Allergie gegen adrenerge Mittel</td></tr><tr><td>I112465</td><td>Allergie gegen halogenierte Kohlenwasserstoffe</td></tr><tr><td>I109567</td><td>Allergie gegen jodhaltige Kontrastmittel</td></tr><tr><td>I112573</td><td>Allergie gegen monoklonale Antikörper</td></tr><tr><td>I112457</td><td>Allergie gegen normale humane Immunglobuline</td></tr><tr><td>I112507</td><td>Allergie gegen trizyklische Antidepressiva</td></tr><tr><td>I89387</td><td>Allergische Reaktion durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I89388</td><td>Allergische Reaktion durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I110486</td><td>Allergisches Medikamentenexanthem</td></tr><tr><td>I112543</td><td>Alpha-Adrenorezeptor-Antagonisten-Allergie</td></tr><tr><td>I112413</td><td>Alpha-Adrenorezeptor-Antagonisten-Überempfindlichkeit</td></tr><tr><td>I112544</td><td>Amantadin-Allergie</td></tr><tr><td>I112414</td><td>Amantadin-Überempfindlichkeit</td></tr><tr><td>I112460</td><td>Amid-Lokalanästhetika-Allergie</td></tr><tr><td>I112329</td><td>Amid-Lokalanästhetika-Überempfindlichkeit</td></tr><tr><td>I112545</td><td>Amidin-Allergie</td></tr><tr><td>I112415</td><td>Amidin-Überempfindlichkeit</td></tr><tr><td>I112536</td><td>Aminochinoline-Allergie</td></tr><tr><td>I112406</td><td>Aminochinoline-Überempfindlichkeit</td></tr><tr><td>I112546</td><td>Aminoglykosid-Allergie</td></tr><tr><td>I112416</td><td>Aminoglykosid-Überempfindlichkeit</td></tr><tr><td>I112547</td><td>Amoxicillin-Allergie</td></tr><tr><td>I112417</td><td>Amoxicillin-Überempfindlichkeit</td></tr><tr><td>I112548</td><td>Amphotericin-B-Allergie</td></tr><tr><td>I112418</td><td>Amphotericin-B-Überempfindlichkeit</td></tr><tr><td>I676</td><td>Analgetikaintoleranz</td></tr><tr><td>I670</td><td>Androgennebenwirkung</td></tr><tr><td>I112550</td><td>Anthracen-Derivate-Allergie</td></tr><tr><td>I112420</td><td>Anthracen-Derivate-Überempfindlichkeit</td></tr><tr><td>I112549</td><td>Anthracyclin-Allergie</td></tr><tr><td>I112419</td><td>Anthracyclin-Überempfindlichkeit</td></tr><tr><td>I671</td><td>Antiandrogen-Nebenwirkung</td></tr><tr><td>I110518</td><td>Antibiotikaunverträglichkeit</td></tr><tr><td>I112551</td><td>Anticholinergika-Allergie</td></tr><tr><td>I112421</td><td>Anticholinergika-Überempfindlichkeit</td></tr><tr><td>I691</td><td>Antidiabetika-Nebenwirkung</td></tr><tr><td>I112552</td><td>Antihistaminika-Allergie</td></tr><tr><td>I112422</td><td>Antihistaminika-Überempfindlichkeit</td></tr><tr><td>I672</td><td>Antiöstrogen-Nebenwirkung</td></tr><tr><td>I12827</td><td>Arzneimittelallergie</td></tr><tr><td>I116801</td><td>Arzneimittelbedingte Überhangeffekte</td></tr><tr><td>I109565</td><td>Arzneimittelinduzierte Toleranzentwicklung</td></tr><tr><td>I73188</td><td>Arzneimittelreaktion a.n.k.</td></tr><tr><td>I697</td><td>Arzneimittelunverträglichkeit</td></tr><tr><td>I78497</td><td>Arzneimittelüberempfindlichkeit</td></tr><tr><td>I112553</td><td>Atropin-Allergie</td></tr><tr><td>I112423</td><td>Atropin-Überempfindlichkeit</td></tr><tr><td>I112555</td><td>Baldrianwurzel-Allergie</td></tr><tr><td>I112425</td><td>Baldrianwurzel-Überempfindlichkeit</td></tr><tr><td>I112556</td><td>Barbiturate-Allergie</td></tr><tr><td>I112426</td><td>Barbiturate-Überempfindlichkeit</td></tr><tr><td>I112557</td><td>Benzamid-Allergie</td></tr><tr><td>I112427</td><td>Benzamid-Überempfindlichkeit</td></tr><tr><td>I112558</td><td>Benzimidazol-Derivate-Allergie</td></tr><tr><td>I112428</td><td>Benzimidazol-Derivate-Überempfindlichkeit</td></tr><tr><td>I112559</td><td>Benzodiazepin-Allergie</td></tr><tr><td>I112429</td><td>Benzodiazepin-Überempfindlichkeit</td></tr><tr><td>I112560</td><td>Beta-Adrenorezeptor-Antagonisten-Allergie</td></tr><tr><td>I112430</td><td>Beta-Adrenorezeptor-Antagonisten-Überempfindlichkeit</td></tr><tr><td>I112515</td><td>Beta-Laktamase-Inhibitoren-Allergie</td></tr><tr><td>I112385</td><td>Beta-Laktamase-Inhibitoren-Überempfindlichkeit</td></tr><tr><td>I112561</td><td>Betablocker-Allergie</td></tr><tr><td>I112431</td><td>Betablocker-Überempfindlichkeit</td></tr><tr><td>I112562</td><td>Betalaktam-Antibiotika-Allergie</td></tr><tr><td>I112432</td><td>Betalaktam-Antibiotika-Überempfindlichkeit</td></tr><tr><td>I112563</td><td>Bisphosphonat-Allergie</td></tr><tr><td>I112433</td><td>Bisphosphonat-Überempfindlichkeit</td></tr><tr><td>I112564</td><td>Butyrophenon-Derivate-Allergie</td></tr><tr><td>I112434</td><td>Butyrophenon-Derivate-Überempfindlichkeit</td></tr><tr><td>I112566</td><td>Carbamat-Allergie</td></tr><tr><td>I112436</td><td>Carbamat-Überempfindlichkeit</td></tr><tr><td>I112567</td><td>Carbamazepin-Allergie</td></tr><tr><td>I112437</td><td>Carbamazepin-Überempfindlichkeit</td></tr><tr><td>I112568</td><td>Carbapenem-Allergie</td></tr><tr><td>I112438</td><td>Carbapenem-Überempfindlichkeit</td></tr><tr><td>I112569</td><td>Cefotaxim-Allergie</td></tr><tr><td>I112439</td><td>Cefotaxim-Überempfindlichkeit</td></tr><tr><td>I112570</td><td>Cephalosporin-Allergie</td></tr><tr><td>I112440</td><td>Cephalosporin-Überempfindlichkeit</td></tr><tr><td>I692</td><td>Chemotherapie-Nebenwirkung</td></tr><tr><td>I112571</td><td>Chinolin-Allergie</td></tr><tr><td>I112441</td><td>Chinolin-Überempfindlichkeit</td></tr><tr><td>I112572</td><td>Chinolon-Allergie</td></tr><tr><td>I112442</td><td>Chinolon-Überempfindlichkeit</td></tr><tr><td>I685</td><td>Chlormadinonacetat-Nebenwirkung</td></tr><tr><td>I112574</td><td>Clindamycin-Allergie</td></tr><tr><td>I112444</td><td>Clindamycin-Überempfindlichkeit</td></tr><tr><td>I673</td><td>Cyproteronazetat-Nebenwirkung</td></tr><tr><td>I117908</td><td>Cytokine-Release-Syndrom</td></tr><tr><td>I112535</td><td>Dacarbazin-Allergie</td></tr><tr><td>I112405</td><td>Dacarbazin-Überempfindlichkeit</td></tr><tr><td>I112487</td><td>Darbepoetin-alfa-Allergie</td></tr><tr><td>I112356</td><td>Darbepoetin-alfa-Überempfindlichkeit</td></tr><tr><td>I674</td><td>Dehydroepiandrosteronsulfat-Nebenwirkung</td></tr><tr><td>I112459</td><td>Desirudin-Allergie</td></tr><tr><td>I112328</td><td>Desirudin-Überempfindlichkeit</td></tr><tr><td>I675</td><td>Desogestrel-Nebenwirkung</td></tr><tr><td>I677</td><td>DHEA [Dehydroepiandrosteron]-Sulfat-Nebenwirkung</td></tr><tr><td>I112494</td><td>Dihydropyridin-Allergie</td></tr><tr><td>I112364</td><td>Dihydropyridin-Überempfindlichkeit</td></tr><tr><td>I112492</td><td>Diphenylbutylpiperidin-Allergie</td></tr><tr><td>I112362</td><td>Diphenylbutylpiperidin-Überempfindlichkeit</td></tr><tr><td>I115806</td><td>DRESS [Drug Rash with Eosinophilia and Systemic Symptoms]-Syndrom</td></tr><tr><td>I83175</td><td>Drogenwirkung a.n.k.</td></tr><tr><td>I112489</td><td>Erythromycin-Allergie</td></tr><tr><td>I112358</td><td>Erythromycin-Überempfindlichkeit</td></tr><tr><td>I112462</td><td>Ester-Lokalanästhetika-Allergie</td></tr><tr><td>I112331</td><td>Ester-Lokalanästhetika-Überempfindlichkeit</td></tr><tr><td>I112485</td><td>Estradiol-Allergie</td></tr><tr><td>I678</td><td>Estradiol-Nebenwirkung</td></tr><tr><td>I112354</td><td>Estradiol-Überempfindlichkeit</td></tr><tr><td>I679</td><td>Estriol-Nebenwirkung</td></tr><tr><td>I680</td><td>Estron-Nebenwirkung</td></tr><tr><td>I681</td><td>Ethinyl-Estradiol-Nebenwirkung</td></tr><tr><td>I112481</td><td>Fentanyl-Allergie</td></tr><tr><td>I112350</td><td>Fentanyl-Überempfindlichkeit</td></tr><tr><td>I112479</td><td>Filgrastim-Allergie</td></tr><tr><td>I112348</td><td>Filgrastim-Überempfindlichkeit</td></tr><tr><td>I116805</td><td>Flare-Phänomen durch Strahlentherapie</td></tr><tr><td>I112477</td><td>Fluorouracil-Allergie</td></tr><tr><td>I112346</td><td>Fluorouracil-Überempfindlichkeit</td></tr><tr><td>I112475</td><td>Gadodiamid-Allergie</td></tr><tr><td>I112344</td><td>Gadodiamid-Überempfindlichkeit</td></tr><tr><td>I682</td><td>Gestagen-Nebenwirkung</td></tr><tr><td>I109614</td><td>Gesteigerte Empfindlichkeit auf ein Arzneimittel</td></tr><tr><td>I683</td><td>Glukokortikoid-Nebenwirkung</td></tr><tr><td>I112471</td><td>Glycopeptid-Antibiotika-Allergie</td></tr><tr><td>I112340</td><td>Glycopeptid-Antibiotika-Überempfindlichkeit</td></tr><tr><td>I112469</td><td>Gonadotropin-Releasing-Hormon-Analoga-Allergie</td></tr><tr><td>I112338</td><td>Gonadotropin-Releasing-Hormon-Analoga-Überempfindlichkeit</td></tr><tr><td>I112504</td><td>Harnstoff-Allergie</td></tr><tr><td>I112374</td><td>Harnstoff-Überempfindlichkeit</td></tr><tr><td>I112463</td><td>Heparin-Allergie</td></tr><tr><td>I112332</td><td>Heparin-Überempfindlichkeit</td></tr><tr><td>I112461</td><td>Herzglykoside-Allergie</td></tr><tr><td>I112330</td><td>Herzglykoside-Überempfindlichkeit</td></tr><tr><td>I112467</td><td>Histamin-H2-Rezeptorantagonist-Allergie</td></tr><tr><td>I112336</td><td>Histamin-H2-Rezeptorantagonist-Überempfindlichkeit</td></tr><tr><td>I112453</td><td>Hydantoin-Derivate-Allergie</td></tr><tr><td>I112322</td><td>Hydantoin-Derivate-Überempfindlichkeit</td></tr><tr><td>I112451</td><td>Hydralazin-Allergie</td></tr><tr><td>I112320</td><td>Hydralazin-Überempfindlichkeit</td></tr><tr><td>I89391</td><td>Idiosynkrasie durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I89392</td><td>Idiosynkrasie durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I112449</td><td>Imidazol-Derivate-Allergie</td></tr><tr><td>I112318</td><td>Imidazol-Derivate-Überempfindlichkeit</td></tr><tr><td>I112499</td><td>Immunglobuline-Allergie</td></tr><tr><td>I112369</td><td>Immunglobuline-Überempfindlichkeit</td></tr><tr><td>I112447</td><td>Indometacin-Allergie</td></tr><tr><td>I112316</td><td>Indometacin-Überempfindlichkeit</td></tr><tr><td>I112446</td><td>Inhalationsanästhetika-Allergie</td></tr><tr><td>I112315</td><td>Inhalationsanästhetika-Überempfindlichkeit</td></tr><tr><td>I684</td><td>Insulin-Nebenwirkung</td></tr><tr><td>I116802</td><td>Jodschnupfen</td></tr><tr><td>I115859</td><td>Kaliumthiocyanat-Überempfindlichkeit</td></tr><tr><td>I112565</td><td>Kalziumantagonisten-Allergie</td></tr><tr><td>I112435</td><td>Kalziumantagonisten-Überempfindlichkeit</td></tr><tr><td>I112575</td><td>Koffein-Allergie</td></tr><tr><td>I112445</td><td>Koffein-Überempfindlichkeit</td></tr><tr><td>I112473</td><td>Kontrastmittel-Allergie</td></tr><tr><td>I112342</td><td>Kontrastmittel-Überempfindlichkeit</td></tr><tr><td>I112448</td><td>Kortikosteroid-Allergie</td></tr><tr><td>I112317</td><td>Kortikosteroid-Überempfindlichkeit</td></tr><tr><td>I109566</td><td>Kreuztoleranz</td></tr><tr><td>I112452</td><td>Lidocain-Allergie</td></tr><tr><td>I112321</td><td>Lidocain-Überempfindlichkeit</td></tr><tr><td>I112454</td><td>Lincomycin-Allergie</td></tr><tr><td>I112323</td><td>Lincomycin-Überempfindlichkeit</td></tr><tr><td>I112456</td><td>Lincosamid-Allergie</td></tr><tr><td>I112325</td><td>Lincosamid-Überempfindlichkeit</td></tr><tr><td>I112458</td><td>Lisinopril-Allergie</td></tr><tr><td>I112327</td><td>Lisinopril-Überempfindlichkeit</td></tr><tr><td>I698</td><td>Lokalanästhetikaunverträglichkeit</td></tr><tr><td>I112450</td><td>Lutein-Releasing-Hormone-Allergie</td></tr><tr><td>I112319</td><td>Lutein-Releasing-Hormone-Überempfindlichkeit</td></tr><tr><td>I112464</td><td>Macrogol-Allergie</td></tr><tr><td>I112333</td><td>Macrogol-Überempfindlichkeit</td></tr><tr><td>I112554</td><td>Makrolid-Allergie</td></tr><tr><td>I112468</td><td>Makrolid-Antibiotika-Allergie</td></tr><tr><td>I112337</td><td>Makrolid-Antibiotika-Überempfindlichkeit</td></tr><tr><td>I112424</td><td>Makrolid-Überempfindlichkeit</td></tr><tr><td>I12828</td><td>Medikamentenallergie</td></tr><tr><td>I696</td><td>Medikamentenunverträglichkeit</td></tr><tr><td>I112472</td><td>Mercaptopurin-Allergie</td></tr><tr><td>I112341</td><td>Mercaptopurin-Überempfindlichkeit</td></tr><tr><td>I112470</td><td>Methanolchinolin-Allergie</td></tr><tr><td>I112339</td><td>Methanolchinolin-Überempfindlichkeit</td></tr><tr><td>I112476</td><td>Metoprolol-Allergie</td></tr><tr><td>I112345</td><td>Metoprolol-Überempfindlichkeit</td></tr><tr><td>I112478</td><td>Muskelrelaxanzien-Allergie</td></tr><tr><td>I112347</td><td>Muskelrelaxanzien-Überempfindlichkeit</td></tr><tr><td>I112480</td><td>Mutterkornalkaloid-Allergie</td></tr><tr><td>I112349</td><td>Mutterkornalkaloid-Überempfindlichkeit</td></tr><tr><td>I112482</td><td>Nadroparin-Allergie</td></tr><tr><td>I112351</td><td>Nadroparin-Überempfindlichkeit</td></tr><tr><td>I112484</td><td>Natamycin-Allergie</td></tr><tr><td>I112353</td><td>Natamycin-Überempfindlichkeit</td></tr><tr><td>I24992</td><td>Nebenwirkung oraler Kontrazeptiva</td></tr><tr><td>I112486</td><td>Neomycin-Allergie</td></tr><tr><td>I112355</td><td>Neomycin-Überempfindlichkeit</td></tr><tr><td>I112488</td><td>Neuroleptika-Allergie</td></tr><tr><td>I112357</td><td>Neuroleptika-Überempfindlichkeit</td></tr><tr><td>I112490</td><td>Nitrat-Allergie</td></tr><tr><td>I112359</td><td>Nitrat-Überempfindlichkeit</td></tr><tr><td>I112491</td><td>Nitrofuran-Allergie</td></tr><tr><td>I112361</td><td>Nitrofuran-Überempfindlichkeit</td></tr><tr><td>I112498</td><td>Nitroimidazol-Derivate-Allergie</td></tr><tr><td>I112368</td><td>Nitroimidazol-Derivate-Überempfindlichkeit</td></tr><tr><td>I112493</td><td>Nitrosoharn-Allergie</td></tr><tr><td>I112363</td><td>Nitrosoharn-Überempfindlichkeit</td></tr><tr><td>I686</td><td>Norethistosteron-Nebenwirkung</td></tr><tr><td>I687</td><td>Ocytocin-Nebenwirkung</td></tr><tr><td>I112534</td><td>Opiate-Allergie</td></tr><tr><td>I112404</td><td>Opiate-Überempfindlichkeit</td></tr><tr><td>I24993</td><td>Ovulationshemmernebenwirkung</td></tr><tr><td>I24991</td><td>Ovulationshemmerunverträglichkeit</td></tr><tr><td>I112533</td><td>Oxicam-Allergie</td></tr><tr><td>I112403</td><td>Oxicam-Überempfindlichkeit</td></tr><tr><td>I109417</td><td>Oxytozin-Nebenwirkung</td></tr><tr><td>I12829</td><td>Penicillin-Allergie</td></tr><tr><td>I112532</td><td>Perchlorat-Allergie</td></tr><tr><td>I112402</td><td>Perchlorat-Überempfindlichkeit</td></tr><tr><td>I112531</td><td>Perubalsam-Allergie</td></tr><tr><td>I112401</td><td>Perubalsam-Überempfindlichkeit</td></tr><tr><td>I112530</td><td>Phenothiazin-Allergie</td></tr><tr><td>I112400</td><td>Phenothiazin-Überempfindlichkeit</td></tr><tr><td>I112529</td><td>Phenytoin-Allergie</td></tr><tr><td>I112399</td><td>Phenytoin-Überempfindlichkeit</td></tr><tr><td>I112528</td><td>Piperazin-Derviate-Allergie</td></tr><tr><td>I112398</td><td>Piperazin-Derviate-Überempfindlichkeit</td></tr><tr><td>I112527</td><td>Piperidin-Derivate-Allergie</td></tr><tr><td>I112397</td><td>Piperidin-Derivate-Überempfindlichkeit</td></tr><tr><td>I112455</td><td>Plasmaprotein-Allergie</td></tr><tr><td>I112324</td><td>Plasmaprotein-Überempfindlichkeit</td></tr><tr><td>I112526</td><td>Podophyllotoxin-Allergie</td></tr><tr><td>I112396</td><td>Podophyllotoxin-Überempfindlichkeit</td></tr><tr><td>I112525</td><td>Polymyxin-B-Allergie</td></tr><tr><td>I112395</td><td>Polymyxin-B-Überempfindlichkeit</td></tr><tr><td>I112524</td><td>Pravastatin-Allergie</td></tr><tr><td>I112394</td><td>Pravastatin-Überempfindlichkeit</td></tr><tr><td>I112523</td><td>Probenecid-Allergie</td></tr><tr><td>I112393</td><td>Probenecid-Überempfindlichkeit</td></tr><tr><td>I689</td><td>Progesteron-Nebenwirkung</td></tr><tr><td>I112522</td><td>Propacetamol-Allergie</td></tr><tr><td>I112392</td><td>Propacetamol-Überempfindlichkeit</td></tr><tr><td>I112521</td><td>Prostaglandin-Allergie</td></tr><tr><td>I112391</td><td>Prostaglandin-Überempfindlichkeit</td></tr><tr><td>I117241</td><td>Purple-Glove-Syndrom</td></tr><tr><td>I112520</td><td>Pyrazolon-Allergie</td></tr><tr><td>I112390</td><td>Pyrazolon-Überempfindlichkeit</td></tr><tr><td>I112519</td><td>Pyrethrin-Allergie</td></tr><tr><td>I112389</td><td>Pyrethrin-Überempfindlichkeit</td></tr><tr><td>I112518</td><td>Quecksilber-Allergie</td></tr><tr><td>I112388</td><td>Quecksilber-Überempfindlichkeit</td></tr><tr><td>I116803</td><td>Rapamycin-Derivate-Überempfindlichkeit</td></tr><tr><td>I112517</td><td>Rifamycin-Allergie</td></tr><tr><td>I112387</td><td>Rifamycin-Überempfindlichkeit</td></tr><tr><td>I112516</td><td>Salizylate-Allergie</td></tr><tr><td>I112386</td><td>Salizylate-Überempfindlichkeit</td></tr><tr><td>I117244</td><td>Scopolaminderivate-Überempfindlichkeit</td></tr><tr><td>I112537</td><td>Serotonin-5HT3-Antagonisten-Allergie</td></tr><tr><td>I112407</td><td>Serotonin-5HT3-Antagonisten-Überempfindlichkeit</td></tr><tr><td>I109557</td><td>Serotonin-Syndrom</td></tr><tr><td>I118673</td><td>Streptomycin-Überempfindlichkeit</td></tr><tr><td>I112514</td><td>Sulfasalazin-Allergie</td></tr><tr><td>I112384</td><td>Sulfasalazin-Überempfindlichkeit</td></tr><tr><td>I112513</td><td>Sulfonamid-Allergie</td></tr><tr><td>I112383</td><td>Sulfonamid-Überempfindlichkeit</td></tr><tr><td>I112512</td><td>Sulfonylharnstoff-Allergie</td></tr><tr><td>I112382</td><td>Sulfonylharnstoff-Überempfindlichkeit</td></tr><tr><td>I112511</td><td>Sympathomimetika-Allergie</td></tr><tr><td>I112381</td><td>Sympathomimetika-Überempfindlichkeit</td></tr><tr><td>I112466</td><td>Tacrolismus-Allergie</td></tr><tr><td>I112335</td><td>Tacrolismus-Überempfindlichkeit</td></tr><tr><td>I694</td><td>Tamoxifen-Nebenwirkung</td></tr><tr><td>I112510</td><td>Terbutalin-Allergie</td></tr><tr><td>I112380</td><td>Terbutalin-Überempfindlichkeit</td></tr><tr><td>I112509</td><td>Tetracyclin-Allergie</td></tr><tr><td>I112508</td><td>Tetracyclin-Derivate-Allergie</td></tr><tr><td>I112378</td><td>Tetracyclin-Derivate-Überempfindlichkeit</td></tr><tr><td>I112379</td><td>Tetracyclin-Überempfindlichkeit</td></tr><tr><td>I112506</td><td>Thiamin-Allergie</td></tr><tr><td>I112376</td><td>Thiamin-Überempfindlichkeit</td></tr><tr><td>I112505</td><td>Thiazid-Allergie</td></tr><tr><td>I112375</td><td>Thiazid-Überempfindlichkeit</td></tr><tr><td>I112503</td><td>Thioxanthen-Allergie</td></tr><tr><td>I112373</td><td>Thioxanthen-Überempfindlichkeit</td></tr><tr><td>I690</td><td>Thyreostatika-Nebenwirkung</td></tr><tr><td>I112501</td><td>Thyreotropin-Releasing-Hormon-Allergie</td></tr><tr><td>I112371</td><td>Thyreotropin-Releasing-Hormon-Überempfindlichkeit</td></tr><tr><td>I112502</td><td>Tolycain-Allergie</td></tr><tr><td>I112372</td><td>Tolycain-Überempfindlichkeit</td></tr><tr><td>I112500</td><td>Trimethoprim-Allergie</td></tr><tr><td>I112370</td><td>Trimethoprim-Überempfindlichkeit</td></tr><tr><td>I119546</td><td>Unerwünschte Arzneimittelwirkung</td></tr><tr><td>I89389</td><td>Unerwünschte Nebenwirkung durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I89390</td><td>Unerwünschte Nebenwirkung durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I112497</td><td>Valaciclovir-Allergie</td></tr><tr><td>I112367</td><td>Valaciclovir-Überempfindlichkeit</td></tr><tr><td>I115860</td><td>Valganciclovir-Überempfindlichkeit</td></tr><tr><td>I112496</td><td>Valproinsäure-Derivate-Allergie</td></tr><tr><td>I112366</td><td>Valproinsäure-Derivate-Überempfindlichkeit</td></tr><tr><td>I112495</td><td>Vitamin-D-Allergie</td></tr><tr><td>I112365</td><td>Vitamin-D-Überempfindlichkeit</td></tr><tr><td>I693</td><td>Wehenmittel-Nebenwirkung</td></tr><tr><td>I112474</td><td>Xanthin-Allergie</td></tr><tr><td>I112343</td><td>Xanthin-Überempfindlichkeit</td></tr><tr><td>I112412</td><td>Überempfindlichkeit durch adrenerge Mittel</td></tr><tr><td>I89393</td><td>Überempfindlichkeit durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I89394</td><td>Überempfindlichkeit durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I112334</td><td>Überempfindlichkeit durch halogenierte Kohlenwasserstoffe</td></tr><tr><td>I115861</td><td>Überempfindlichkeit durch homologe Immunglobuline</td></tr><tr><td>I112443</td><td>Überempfindlichkeit durch monoklonale Antikörper</td></tr><tr><td>I112326</td><td>Überempfindlichkeit durch normale humane Immunglobuline</td></tr><tr><td>I116804</td><td>Überempfindlichkeit durch Sirolimus</td></tr><tr><td>I117243</td><td>Überempfindlichkeit durch tetrazyklische Antidepressiva</td></tr><tr><td>I112377</td><td>Überempfindlichkeit durch trizyklische Antidepressiva</td></tr><tr><td>I117242</td><td>Überempfindlichkeit durch Vincaalkaloide</td></tr><tr><td>I118675</td><td>Überempfindlichkeit gegen Prasugrel</td></tr><tr><td>I118674</td><td>Überempfindlichkeit gegen Succinimide</td></tr><tr><td>I118676</td><td>Überempfindlichkeit gegen Ticlopidin</td></tr><tr><td>I118677</td><td>Überempfindlichkeit gegen Zytokine</td></tr><tr><td>I688</td><td>Östrogen-Nebenwirkung</td></tr><tr><td>I27947</td><td>Angeborene Laktoseintoleranz</td></tr><tr><td>I27946</td><td>Laktoseintoleranz</td></tr><tr><td>I27948</td><td>Laktoseintoleranzsyndrom</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.charite.de./fhir/medikationsplan/ValueSet/allergies-alphaid"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "AllergiesIntolerancesAlphaID"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:ValueSet.date [ fhir:value "2021-05-13"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "BIH@Charité"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "BIH@Charité" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/en/research/core-facilities/interoperability/" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Allergien und Unverträglichkeiten Alpha-ID"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/alpha-id" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I81502" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anaphylaktischer Schock durch Nahrungsmittel a.n.k." ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I81501" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Schock durch Nahrungsmittelunverträglichkeit" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I564" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergie gegen Nahrungsmittel" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I97198" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergische Reaktion durch Nahrungsmittel a.n.k." ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112579" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eiprotein-Allergie" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112647" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eiprotein-Überempfindlichkeit" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I120131" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erdnussprotein-Allergie" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112580" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erdnussöl-Allergie" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112648" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erdnussöl-Überempfindlichkeit" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116460" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fisch-Allergie" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116463" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fischeiweiß-Überempfindlichkeit" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116461" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gelatine-Überempfindlichkeit" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116459" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hühnereiweiß-Allergie" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I24369" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kuhmilchproteinintoleranz" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116796" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kürbisfrüchte-Allergie" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116465" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Leguminosen-Allergie" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I29215" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nahrungsmittelunverträglichkeit" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116462" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nuss-Überempfindlichkeit" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116353" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rinderprotein-Überempfindlichkeit" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116795" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sesamöl-Allergie" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112576" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Soja-Allergie" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112644" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Soja-Überempfindlichkeit" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112577" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sojaprotein-Allergie" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112645" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sojaprotein-Überempfindlichkeit" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112641" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sorbitol-Allergie" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112709" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sorbitol-Überempfindlichkeit" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I109560" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sorbitolunverträglichkeit" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I109981" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit gegen Farbstoffe in Nahrungsmitteln" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I109980" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit gegen Konservierungsmittel" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I109978" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit gegen Nahrungsmittelzusatzstoffe" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112578" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Zimt-Allergie" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112646" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Zimt-Überempfindlichkeit" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116464" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Zitrusfrüchte-Überempfindlichkeit" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I87720" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergischer Schock" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I565" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anaphylaktischer Schock" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I16144" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anaphylaxie" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I85981" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Herxheimer-Reaktion" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I80523" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Schock durch Arzneimittel" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I74711" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Akutes essentielles Ödem" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I74531" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Akutes Quincke-Ödem der Haut" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I74712" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Akutes umschriebenes Ödem" ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I74721" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Akutes zirkumskriptes Ödem" ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I64438" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergisches angioneurotisches Ödem" ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I64444" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergisches Angioödem" ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I96567" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergisches Glottisödem" ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I566" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Angioneurotisches Ödem" ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I64441" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Angioneurotisches Ödem mit Urtikaria" ]
+       ], [
+         fhir:index 47;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I567" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Angioödem" ]
+       ], [
+         fhir:index 48;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I64445" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Angioödem mit Urtikaria" ]
+       ], [
+         fhir:index 49;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I75170" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bannister-Krankheit" ]
+       ], [
+         fhir:index 50;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I82080" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Larynxurtikaria" ]
+       ], [
+         fhir:index 51;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I74718" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Periodisches Ödem" ]
+       ], [
+         fhir:index 52;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I81969" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quincke-Syndrom" ]
+       ], [
+         fhir:index 53;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I568" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quincke-Ödem" ]
+       ], [
+         fhir:index 54;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I82079" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urticaria gigantea" ]
+       ], [
+         fhir:index 55;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I119417" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "AAE [Erworbenes Angioödem]" ]
+       ], [
+         fhir:index 56;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I119795" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erworbenes angioneurotisches Ödem" ]
+       ], [
+         fhir:index 57;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I119704" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erworbenes Angioödem" ]
+       ], [
+         fhir:index 58;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I119898" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erworbenes Bradykinin-induziertes Angioödem" ]
+       ], [
+         fhir:index 59;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I119899" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erworbenes nicht-Histamin-induziertes Angioödem" ]
+       ], [
+         fhir:index 60;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I15529" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergie" ]
+       ], [
+         fhir:index 61;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I109613" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergie gegen Alkohol" ]
+       ], [
+         fhir:index 62;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112601" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergie gegen echtes Karmin [E 120]" ]
+       ], [
+         fhir:index 63;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I15530" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergische Diathese" ]
+       ], [
+         fhir:index 64;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I15533" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergische Reaktion" ]
+       ], [
+         fhir:index 65;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112598" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allurarot-Allergie [E 129]" ]
+       ], [
+         fhir:index 66;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112666" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allurarot-Überempfindlichkeit [E 129]" ]
+       ], [
+         fhir:index 67;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112625" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amaranth-Allergie [E 123]" ]
+       ], [
+         fhir:index 68;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112693" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amaranth-Überempfindlichkeit [E 123]" ]
+       ], [
+         fhir:index 69;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112596" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Annatto-Allergie" ]
+       ], [
+         fhir:index 70;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112664" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Annatto-Überempfindlichkeit" ]
+       ], [
+         fhir:index 71;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I32389" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arthus-Phänomen" ]
+       ], [
+         fhir:index 72;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I24895" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atopie" ]
+       ], [
+         fhir:index 73;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112624" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Azorubin-Allergie [E 122]" ]
+       ], [
+         fhir:index 74;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112692" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Azorubin-Überempfindlichkeit [E 122]" ]
+       ], [
+         fhir:index 75;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112623" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzalkoniumchlorid-Allergie" ]
+       ], [
+         fhir:index 76;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112691" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzalkoniumchlorid-Überempfindlichkeit" ]
+       ], [
+         fhir:index 77;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112594" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzoesäure-Allergie" ]
+       ], [
+         fhir:index 78;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112662" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzoesäure-Überempfindlichkeit" ]
+       ], [
+         fhir:index 79;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112622" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzolsulfonsäure-Allergie" ]
+       ], [
+         fhir:index 80;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112690" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzolsulfonsäure-Überempfindlichkeit" ]
+       ], [
+         fhir:index 81;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112621" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzylalkohol-Allergie" ]
+       ], [
+         fhir:index 82;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112689" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzylalkohol-Überempfindlichkeit" ]
+       ], [
+         fhir:index 83;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112620" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bernsteinsäure-Allergie" ]
+       ], [
+         fhir:index 84;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112688" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bernsteinsäure-Überempfindlichkeit" ]
+       ], [
+         fhir:index 85;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112597" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Braun-Allergie [E 155]" ]
+       ], [
+         fhir:index 86;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112665" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Braun-Überempfindlichkeit [E 155]" ]
+       ], [
+         fhir:index 87;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112618" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Brillantschwarz-Allergie [E 151]" ]
+       ], [
+         fhir:index 88;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112686" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Brillantschwarz-Überempfindlichkeit [E 151]" ]
+       ], [
+         fhir:index 89;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112590" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Butylhydroxyanisol-Allergie" ]
+       ], [
+         fhir:index 90;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112658" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Butylhydroxyanisol-Überempfindlichkeit" ]
+       ], [
+         fhir:index 91;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112619" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Butylhydroxytoluol-Allergie" ]
+       ], [
+         fhir:index 92;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112687" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Butylhydroxytoluol-Überempfindlichkeit" ]
+       ], [
+         fhir:index 93;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112587" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carrageen-Allergie [E 407]" ]
+       ], [
+         fhir:index 94;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112655" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carrageen-Überempfindlichkeit [E 407]" ]
+       ], [
+         fhir:index 95;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112617" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cetylalkohol-Allergie" ]
+       ], [
+         fhir:index 96;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112685" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cetylalkohol-Überempfindlichkeit" ]
+       ], [
+         fhir:index 97;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112639" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chinazolin-Allergie" ]
+       ], [
+         fhir:index 98;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112707" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chinazolin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 99;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112616" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chinolingelb-Allergie [E 104]" ]
+       ], [
+         fhir:index 100;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112684" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chinolingelb-Überempfindlichkeit [E 104]" ]
+       ], [
+         fhir:index 101;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112615" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chlorocresol-Allergie" ]
+       ], [
+         fhir:index 102;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112683" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chlorocresol-Überempfindlichkeit" ]
+       ], [
+         fhir:index 103;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112638" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chrysanthemen-Allergie" ]
+       ], [
+         fhir:index 104;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112706" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chrysanthemen-Überempfindlichkeit" ]
+       ], [
+         fhir:index 105;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112600" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cochenillerot-Allergie [E 124]" ]
+       ], [
+         fhir:index 106;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112668" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cochenillerot-Überempfindlichkeit [E 124]" ]
+       ], [
+         fhir:index 107;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112637" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Doldengewächs-Allergie" ]
+       ], [
+         fhir:index 108;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112705" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Doldengewächs-Überempfindlichkeit" ]
+       ], [
+         fhir:index 109;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112614" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrosin-Allergie [E 127]" ]
+       ], [
+         fhir:index 110;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112682" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythrosin-Überempfindlichkeit [E 127]" ]
+       ], [
+         fhir:index 111;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112483" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ethanol-Allergie" ]
+       ], [
+         fhir:index 112;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112352" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ethanol-Überempfindlichkeit" ]
+       ], [
+         fhir:index 113;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112612" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Formaldehyd-Allergie" ]
+       ], [
+         fhir:index 114;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112680" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Formaldehyd-Überempfindlichkeit" ]
+       ], [
+         fhir:index 115;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112591" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gallate-Allergie" ]
+       ], [
+         fhir:index 116;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112659" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gallate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 117;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I117140" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gallussäure-Allergie" ]
+       ], [
+         fhir:index 118;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112613" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gelborange-Allergie [E 110]" ]
+       ], [
+         fhir:index 119;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112681" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gelborange-Überempfindlichkeit [E 110]" ]
+       ], [
+         fhir:index 120;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112585" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Guarkernmehl-Allergie [E 412]" ]
+       ], [
+         fhir:index 121;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112653" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Guarkernmehl-Überempfindlichkeit [E 412]" ]
+       ], [
+         fhir:index 122;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112636" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hamsterprotein-Allergie" ]
+       ], [
+         fhir:index 123;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112704" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hamsterprotein-Überempfindlichkeit" ]
+       ], [
+         fhir:index 124;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I115633" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hyperergische Reaktion" ]
+       ], [
+         fhir:index 125;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I115638" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hyperergische Reaktion gegen mikrobielle Allergene" ]
+       ], [
+         fhir:index 126;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I15536" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypersensibilität" ]
+       ], [
+         fhir:index 127;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I32391" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Idiosynkrasie" ]
+       ], [
+         fhir:index 128;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112611" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Isopropylalkohol-Allergie" ]
+       ], [
+         fhir:index 129;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112679" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Isopropylalkohol-Überempfindlichkeit" ]
+       ], [
+         fhir:index 130;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I109672" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Jodallergie" ]
+       ], [
+         fhir:index 131;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112586" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Johannisbrotkernmehl-Allergie [E 410]" ]
+       ], [
+         fhir:index 132;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112654" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Johannisbrotkernmehl-Überempfindlichkeit [E 410]" ]
+       ], [
+         fhir:index 133;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I15532" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kaninchenallergie" ]
+       ], [
+         fhir:index 134;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112583" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Karaya-Allergie [E 416]" ]
+       ], [
+         fhir:index 135;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112651" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Karaya-Überempfindlichkeit [E 416]" ]
+       ], [
+         fhir:index 136;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112635" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Korbblütler-Allergie" ]
+       ], [
+         fhir:index 137;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112703" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Korbblütler-Überempfindlichkeit" ]
+       ], [
+         fhir:index 138;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112602" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kurkumin-Allergie [E 100]" ]
+       ], [
+         fhir:index 139;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112670" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kurkumin-Überempfindlichkeit [E 100]" ]
+       ], [
+         fhir:index 140;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112595" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Litholrubin-Allergie [E 180]" ]
+       ], [
+         fhir:index 141;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112663" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Litholrubin-Überempfindlichkeit [E 180]" ]
+       ], [
+         fhir:index 142;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112582" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lysozym-Allergie" ]
+       ], [
+         fhir:index 143;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112650" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lysozym-Überempfindlichkeit" ]
+       ], [
+         fhir:index 144;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112610" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Macrogolglycerolricinoleat-Allergie" ]
+       ], [
+         fhir:index 145;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112678" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Macrogolglycerolricinoleat-Überempfindlichkeit" ]
+       ], [
+         fhir:index 146;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112634" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mausprotein-Allergie" ]
+       ], [
+         fhir:index 147;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112702" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mausprotein-Überempfindlichkeit" ]
+       ], [
+         fhir:index 148;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I30749" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "MCS [Multiple-Chemical-Sensitivity]-Syndrom" ]
+       ], [
+         fhir:index 149;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I15535" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Multiple Allergien" ]
+       ], [
+         fhir:index 150;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I15534" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Multiple-Chemical-Sensitivity [MCS]-Syndrom" ]
+       ], [
+         fhir:index 151;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112609" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Natriumbenzoat-Allergie" ]
+       ], [
+         fhir:index 152;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112677" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Natriumbenzoat-Überempfindlichkeit" ]
+       ], [
+         fhir:index 153;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112608" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Natriumdisulfit-Allergie" ]
+       ], [
+         fhir:index 154;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112676" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Natriumdisulfit-Überempfindlichkeit" ]
+       ], [
+         fhir:index 155;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112607" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Natriumedetat-Allergie" ]
+       ], [
+         fhir:index 156;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112675" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Natriumedetat-Überempfindlichkeit" ]
+       ], [
+         fhir:index 157;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112633" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nitroverbindungen-Allergie" ]
+       ], [
+         fhir:index 158;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112701" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nitroverbindungen-Überempfindlichkeit" ]
+       ], [
+         fhir:index 159;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112632" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Norfluran-Allergie" ]
+       ], [
+         fhir:index 160;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112700" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Norfluran-Überempfindlichkeit" ]
+       ], [
+         fhir:index 161;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112593" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Para-Hydroxybenzoesäureester-Allergie" ]
+       ], [
+         fhir:index 162;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112661" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Para-Hydroxybenzoesäureester-Überempfindlichkeit" ]
+       ], [
+         fhir:index 163;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112606" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Parabene-Allergie" ]
+       ], [
+         fhir:index 164;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112674" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Parabene-Überempfindlichkeit" ]
+       ], [
+         fhir:index 165;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112631" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Phenolrot-Allergie" ]
+       ], [
+         fhir:index 166;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112699" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Phenolrot-Überempfindlichkeit" ]
+       ], [
+         fhir:index 167;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112605" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ponceau-Allergie [E 124]" ]
+       ], [
+         fhir:index 168;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112673" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ponceau-Überempfindlichkeit [E 124]" ]
+       ], [
+         fhir:index 169;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112604" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Propylenglycol-Allergie" ]
+       ], [
+         fhir:index 170;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112672" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Propylenglycol-Überempfindlichkeit" ]
+       ], [
+         fhir:index 171;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I117141" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Propylgallate-Allergie" ]
+       ], [
+         fhir:index 172;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112630" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pyrrolidon-Allergie" ]
+       ], [
+         fhir:index 173;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112698" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pyrrolidon-Überempfindlichkeit" ]
+       ], [
+         fhir:index 174;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112599" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rot-Allergie [E 128]" ]
+       ], [
+         fhir:index 175;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112667" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rot-Überempfindlichkeit [E 128]" ]
+       ], [
+         fhir:index 176;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112592" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Schwefeldioxid-Allergie" ]
+       ], [
+         fhir:index 177;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112660" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Schwefeldioxid-Überempfindlichkeit" ]
+       ], [
+         fhir:index 178;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116354" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Schwermetallüberempfindlichkeit" ]
+       ], [
+         fhir:index 179;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112640" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sorbinsäure-Allergie" ]
+       ], [
+         fhir:index 180;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112708" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sorbinsäure-Überempfindlichkeit" ]
+       ], [
+         fhir:index 181;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112642" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stearylalkohol-Allergie" ]
+       ], [
+         fhir:index 182;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112710" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stearylalkohol-Überempfindlichkeit" ]
+       ], [
+         fhir:index 183;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112643" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sulfit-Allergie" ]
+       ], [
+         fhir:index 184;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112711" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sulfit-Überempfindlichkeit" ]
+       ], [
+         fhir:index 185;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112603" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tartrazin-Allergie [E 102]" ]
+       ], [
+         fhir:index 186;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112671" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tartrazin-Überempfindlichkeit [E 102]" ]
+       ], [
+         fhir:index 187;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I120132" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thioharnstoff-Überempfindlichkeit" ]
+       ], [
+         fhir:index 188;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112629" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thionamid-Derivate-Allergie" ]
+       ], [
+         fhir:index 189;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112697" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thionamid-Derivate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 190;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112584" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Traganth-Allergie [E 413]" ]
+       ], [
+         fhir:index 191;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112652" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Traganth-Überempfindlichkeit [E 413]" ]
+       ], [
+         fhir:index 192;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112588" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Triammoniumcitrat-Allergie" ]
+       ], [
+         fhir:index 193;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112656" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Triammoniumcitrat-Überempfindlichkeit" ]
+       ], [
+         fhir:index 194;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112628" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Triarylmethan-Allergie" ]
+       ], [
+         fhir:index 195;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112696" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Triarylmethan-Überempfindlichkeit" ]
+       ], [
+         fhir:index 196;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112581" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Triethylcitrat-Allergie" ]
+       ], [
+         fhir:index 197;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112649" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Triethylcitrat-Überempfindlichkeit" ]
+       ], [
+         fhir:index 198;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112627" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Triphenylmethan-Farbstoff-Allergie" ]
+       ], [
+         fhir:index 199;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112695" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Triphenylmethan-Farbstoff-Überempfindlichkeit" ]
+       ], [
+         fhir:index 200;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112626" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tropasäure-Allergie" ]
+       ], [
+         fhir:index 201;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112694" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tropasäure-Überempfindlichkeit" ]
+       ], [
+         fhir:index 202;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I15531" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unklare Allergie" ]
+       ], [
+         fhir:index 203;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I32390" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit" ]
+       ], [
+         fhir:index 204;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116798" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch 2-Phenoxyethanol" ]
+       ], [
+         fhir:index 205;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116467" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch Aspergillus-Extrakt" ]
+       ], [
+         fhir:index 206;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116799" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch E. coli-Protein" ]
+       ], [
+         fhir:index 207;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112669" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch echtes Karmin [E 120]" ]
+       ], [
+         fhir:index 208;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116797" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch Polysorbat 20" ]
+       ], [
+         fhir:index 209;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116466" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch quaternäre Ammoniumverbindung" ]
+       ], [
+         fhir:index 210;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I15537" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeitsreaktion" ]
+       ], [
+         fhir:index 211;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112589" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Zitronensäure-Allergie" ]
+       ], [
+         fhir:index 212;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112657" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Zitronensäure-Überempfindlichkeit" ]
+       ], [
+         fhir:index 213;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I90606" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arthritis bei Überempfindlichkeitsreaktion a.n.k." ]
+       ], [
+         fhir:index 214;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I83174" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abnorme Arzneimittelwirkung a.n.k." ]
+       ], [
+         fhir:index 215;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112538" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ACE-Hemmer-Allergie" ]
+       ], [
+         fhir:index 216;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112408" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ACE-Hemmer-Überempfindlichkeit" ]
+       ], [
+         fhir:index 217;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112539" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aciclovir-Allergie" ]
+       ], [
+         fhir:index 218;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112409" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aciclovir-Überempfindlichkeit" ]
+       ], [
+         fhir:index 219;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112540" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acridin-Derivate-Allergie" ]
+       ], [
+         fhir:index 220;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112410" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acridin-Derivate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 221;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112541" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ACTH [Adrenocorticotropes Hormon]-Allergie" ]
+       ], [
+         fhir:index 222;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112411" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ACTH [Adrenocorticotropes Hormon]-Überempfindlichkeit" ]
+       ], [
+         fhir:index 223;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I16017" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Adriblastinschädigung" ]
+       ], [
+         fhir:index 224;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112542" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergie gegen adrenerge Mittel" ]
+       ], [
+         fhir:index 225;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112465" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergie gegen halogenierte Kohlenwasserstoffe" ]
+       ], [
+         fhir:index 226;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I109567" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergie gegen jodhaltige Kontrastmittel" ]
+       ], [
+         fhir:index 227;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112573" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergie gegen monoklonale Antikörper" ]
+       ], [
+         fhir:index 228;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112457" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergie gegen normale humane Immunglobuline" ]
+       ], [
+         fhir:index 229;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112507" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergie gegen trizyklische Antidepressiva" ]
+       ], [
+         fhir:index 230;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I89387" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergische Reaktion durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung" ]
+       ], [
+         fhir:index 231;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I89388" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergische Reaktion durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung" ]
+       ], [
+         fhir:index 232;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I110486" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergisches Medikamentenexanthem" ]
+       ], [
+         fhir:index 233;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112543" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alpha-Adrenorezeptor-Antagonisten-Allergie" ]
+       ], [
+         fhir:index 234;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112413" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alpha-Adrenorezeptor-Antagonisten-Überempfindlichkeit" ]
+       ], [
+         fhir:index 235;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112544" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amantadin-Allergie" ]
+       ], [
+         fhir:index 236;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112414" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amantadin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 237;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112460" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amid-Lokalanästhetika-Allergie" ]
+       ], [
+         fhir:index 238;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112329" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amid-Lokalanästhetika-Überempfindlichkeit" ]
+       ], [
+         fhir:index 239;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112545" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amidin-Allergie" ]
+       ], [
+         fhir:index 240;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112415" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amidin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 241;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112536" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aminochinoline-Allergie" ]
+       ], [
+         fhir:index 242;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112406" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aminochinoline-Überempfindlichkeit" ]
+       ], [
+         fhir:index 243;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112546" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aminoglykosid-Allergie" ]
+       ], [
+         fhir:index 244;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112416" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aminoglykosid-Überempfindlichkeit" ]
+       ], [
+         fhir:index 245;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112547" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amoxicillin-Allergie" ]
+       ], [
+         fhir:index 246;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112417" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amoxicillin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 247;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112548" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amphotericin-B-Allergie" ]
+       ], [
+         fhir:index 248;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112418" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Amphotericin-B-Überempfindlichkeit" ]
+       ], [
+         fhir:index 249;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I676" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Analgetikaintoleranz" ]
+       ], [
+         fhir:index 250;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I670" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Androgennebenwirkung" ]
+       ], [
+         fhir:index 251;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112550" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anthracen-Derivate-Allergie" ]
+       ], [
+         fhir:index 252;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112420" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anthracen-Derivate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 253;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112549" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anthracyclin-Allergie" ]
+       ], [
+         fhir:index 254;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112419" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anthracyclin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 255;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I671" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Antiandrogen-Nebenwirkung" ]
+       ], [
+         fhir:index 256;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I110518" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Antibiotikaunverträglichkeit" ]
+       ], [
+         fhir:index 257;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112551" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anticholinergika-Allergie" ]
+       ], [
+         fhir:index 258;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112421" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anticholinergika-Überempfindlichkeit" ]
+       ], [
+         fhir:index 259;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I691" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Antidiabetika-Nebenwirkung" ]
+       ], [
+         fhir:index 260;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112552" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Antihistaminika-Allergie" ]
+       ], [
+         fhir:index 261;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112422" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Antihistaminika-Überempfindlichkeit" ]
+       ], [
+         fhir:index 262;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I672" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Antiöstrogen-Nebenwirkung" ]
+       ], [
+         fhir:index 263;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I12827" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arzneimittelallergie" ]
+       ], [
+         fhir:index 264;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116801" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arzneimittelbedingte Überhangeffekte" ]
+       ], [
+         fhir:index 265;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I109565" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arzneimittelinduzierte Toleranzentwicklung" ]
+       ], [
+         fhir:index 266;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I73188" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arzneimittelreaktion a.n.k." ]
+       ], [
+         fhir:index 267;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I697" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arzneimittelunverträglichkeit" ]
+       ], [
+         fhir:index 268;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I78497" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arzneimittelüberempfindlichkeit" ]
+       ], [
+         fhir:index 269;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112553" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atropin-Allergie" ]
+       ], [
+         fhir:index 270;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112423" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atropin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 271;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112555" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Baldrianwurzel-Allergie" ]
+       ], [
+         fhir:index 272;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112425" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Baldrianwurzel-Überempfindlichkeit" ]
+       ], [
+         fhir:index 273;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112556" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Barbiturate-Allergie" ]
+       ], [
+         fhir:index 274;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112426" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Barbiturate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 275;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112557" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzamid-Allergie" ]
+       ], [
+         fhir:index 276;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112427" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzamid-Überempfindlichkeit" ]
+       ], [
+         fhir:index 277;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112558" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzimidazol-Derivate-Allergie" ]
+       ], [
+         fhir:index 278;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112428" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzimidazol-Derivate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 279;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112559" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzodiazepin-Allergie" ]
+       ], [
+         fhir:index 280;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112429" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Benzodiazepin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 281;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112560" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Beta-Adrenorezeptor-Antagonisten-Allergie" ]
+       ], [
+         fhir:index 282;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112430" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Beta-Adrenorezeptor-Antagonisten-Überempfindlichkeit" ]
+       ], [
+         fhir:index 283;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112515" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Beta-Laktamase-Inhibitoren-Allergie" ]
+       ], [
+         fhir:index 284;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112385" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Beta-Laktamase-Inhibitoren-Überempfindlichkeit" ]
+       ], [
+         fhir:index 285;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112561" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Betablocker-Allergie" ]
+       ], [
+         fhir:index 286;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112431" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Betablocker-Überempfindlichkeit" ]
+       ], [
+         fhir:index 287;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112562" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Betalaktam-Antibiotika-Allergie" ]
+       ], [
+         fhir:index 288;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112432" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Betalaktam-Antibiotika-Überempfindlichkeit" ]
+       ], [
+         fhir:index 289;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112563" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bisphosphonat-Allergie" ]
+       ], [
+         fhir:index 290;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112433" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bisphosphonat-Überempfindlichkeit" ]
+       ], [
+         fhir:index 291;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112564" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Butyrophenon-Derivate-Allergie" ]
+       ], [
+         fhir:index 292;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112434" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Butyrophenon-Derivate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 293;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112566" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carbamat-Allergie" ]
+       ], [
+         fhir:index 294;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112436" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carbamat-Überempfindlichkeit" ]
+       ], [
+         fhir:index 295;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112567" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carbamazepin-Allergie" ]
+       ], [
+         fhir:index 296;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112437" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carbamazepin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 297;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112568" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carbapenem-Allergie" ]
+       ], [
+         fhir:index 298;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112438" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carbapenem-Überempfindlichkeit" ]
+       ], [
+         fhir:index 299;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112569" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cefotaxim-Allergie" ]
+       ], [
+         fhir:index 300;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112439" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cefotaxim-Überempfindlichkeit" ]
+       ], [
+         fhir:index 301;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112570" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cephalosporin-Allergie" ]
+       ], [
+         fhir:index 302;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112440" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cephalosporin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 303;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I692" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chemotherapie-Nebenwirkung" ]
+       ], [
+         fhir:index 304;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112571" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chinolin-Allergie" ]
+       ], [
+         fhir:index 305;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112441" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chinolin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 306;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112572" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chinolon-Allergie" ]
+       ], [
+         fhir:index 307;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112442" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chinolon-Überempfindlichkeit" ]
+       ], [
+         fhir:index 308;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I685" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chlormadinonacetat-Nebenwirkung" ]
+       ], [
+         fhir:index 309;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112574" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Clindamycin-Allergie" ]
+       ], [
+         fhir:index 310;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112444" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Clindamycin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 311;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I673" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cyproteronazetat-Nebenwirkung" ]
+       ], [
+         fhir:index 312;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I117908" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cytokine-Release-Syndrom" ]
+       ], [
+         fhir:index 313;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112535" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dacarbazin-Allergie" ]
+       ], [
+         fhir:index 314;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112405" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dacarbazin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 315;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112487" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Darbepoetin-alfa-Allergie" ]
+       ], [
+         fhir:index 316;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112356" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Darbepoetin-alfa-Überempfindlichkeit" ]
+       ], [
+         fhir:index 317;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I674" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dehydroepiandrosteronsulfat-Nebenwirkung" ]
+       ], [
+         fhir:index 318;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112459" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Desirudin-Allergie" ]
+       ], [
+         fhir:index 319;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112328" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Desirudin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 320;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I675" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Desogestrel-Nebenwirkung" ]
+       ], [
+         fhir:index 321;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I677" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DHEA [Dehydroepiandrosteron]-Sulfat-Nebenwirkung" ]
+       ], [
+         fhir:index 322;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112494" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dihydropyridin-Allergie" ]
+       ], [
+         fhir:index 323;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112364" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dihydropyridin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 324;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112492" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diphenylbutylpiperidin-Allergie" ]
+       ], [
+         fhir:index 325;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112362" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diphenylbutylpiperidin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 326;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I115806" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "DRESS [Drug Rash with Eosinophilia and Systemic Symptoms]-Syndrom" ]
+       ], [
+         fhir:index 327;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I83175" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Drogenwirkung a.n.k." ]
+       ], [
+         fhir:index 328;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112489" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythromycin-Allergie" ]
+       ], [
+         fhir:index 329;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112358" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Erythromycin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 330;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112462" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ester-Lokalanästhetika-Allergie" ]
+       ], [
+         fhir:index 331;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112331" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ester-Lokalanästhetika-Überempfindlichkeit" ]
+       ], [
+         fhir:index 332;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112485" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Estradiol-Allergie" ]
+       ], [
+         fhir:index 333;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I678" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Estradiol-Nebenwirkung" ]
+       ], [
+         fhir:index 334;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112354" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Estradiol-Überempfindlichkeit" ]
+       ], [
+         fhir:index 335;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I679" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Estriol-Nebenwirkung" ]
+       ], [
+         fhir:index 336;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I680" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Estron-Nebenwirkung" ]
+       ], [
+         fhir:index 337;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I681" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ethinyl-Estradiol-Nebenwirkung" ]
+       ], [
+         fhir:index 338;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112481" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fentanyl-Allergie" ]
+       ], [
+         fhir:index 339;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112350" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fentanyl-Überempfindlichkeit" ]
+       ], [
+         fhir:index 340;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112479" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Filgrastim-Allergie" ]
+       ], [
+         fhir:index 341;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112348" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Filgrastim-Überempfindlichkeit" ]
+       ], [
+         fhir:index 342;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116805" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Flare-Phänomen durch Strahlentherapie" ]
+       ], [
+         fhir:index 343;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112477" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fluorouracil-Allergie" ]
+       ], [
+         fhir:index 344;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112346" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fluorouracil-Überempfindlichkeit" ]
+       ], [
+         fhir:index 345;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112475" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gadodiamid-Allergie" ]
+       ], [
+         fhir:index 346;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112344" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gadodiamid-Überempfindlichkeit" ]
+       ], [
+         fhir:index 347;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I682" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gestagen-Nebenwirkung" ]
+       ], [
+         fhir:index 348;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I109614" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gesteigerte Empfindlichkeit auf ein Arzneimittel" ]
+       ], [
+         fhir:index 349;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I683" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glukokortikoid-Nebenwirkung" ]
+       ], [
+         fhir:index 350;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112471" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glycopeptid-Antibiotika-Allergie" ]
+       ], [
+         fhir:index 351;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112340" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glycopeptid-Antibiotika-Überempfindlichkeit" ]
+       ], [
+         fhir:index 352;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112469" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gonadotropin-Releasing-Hormon-Analoga-Allergie" ]
+       ], [
+         fhir:index 353;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112338" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gonadotropin-Releasing-Hormon-Analoga-Überempfindlichkeit" ]
+       ], [
+         fhir:index 354;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112504" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Harnstoff-Allergie" ]
+       ], [
+         fhir:index 355;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112374" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Harnstoff-Überempfindlichkeit" ]
+       ], [
+         fhir:index 356;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112463" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Heparin-Allergie" ]
+       ], [
+         fhir:index 357;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112332" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Heparin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 358;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112461" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Herzglykoside-Allergie" ]
+       ], [
+         fhir:index 359;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112330" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Herzglykoside-Überempfindlichkeit" ]
+       ], [
+         fhir:index 360;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112467" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Histamin-H2-Rezeptorantagonist-Allergie" ]
+       ], [
+         fhir:index 361;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112336" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Histamin-H2-Rezeptorantagonist-Überempfindlichkeit" ]
+       ], [
+         fhir:index 362;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112453" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hydantoin-Derivate-Allergie" ]
+       ], [
+         fhir:index 363;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112322" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hydantoin-Derivate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 364;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112451" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hydralazin-Allergie" ]
+       ], [
+         fhir:index 365;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112320" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hydralazin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 366;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I89391" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Idiosynkrasie durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung" ]
+       ], [
+         fhir:index 367;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I89392" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Idiosynkrasie durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung" ]
+       ], [
+         fhir:index 368;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112449" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Imidazol-Derivate-Allergie" ]
+       ], [
+         fhir:index 369;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112318" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Imidazol-Derivate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 370;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112499" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunglobuline-Allergie" ]
+       ], [
+         fhir:index 371;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112369" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Immunglobuline-Überempfindlichkeit" ]
+       ], [
+         fhir:index 372;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112447" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indometacin-Allergie" ]
+       ], [
+         fhir:index 373;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112316" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indometacin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 374;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112446" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inhalationsanästhetika-Allergie" ]
+       ], [
+         fhir:index 375;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112315" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inhalationsanästhetika-Überempfindlichkeit" ]
+       ], [
+         fhir:index 376;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I684" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Insulin-Nebenwirkung" ]
+       ], [
+         fhir:index 377;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116802" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Jodschnupfen" ]
+       ], [
+         fhir:index 378;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I115859" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kaliumthiocyanat-Überempfindlichkeit" ]
+       ], [
+         fhir:index 379;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112565" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kalziumantagonisten-Allergie" ]
+       ], [
+         fhir:index 380;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112435" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kalziumantagonisten-Überempfindlichkeit" ]
+       ], [
+         fhir:index 381;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112575" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Koffein-Allergie" ]
+       ], [
+         fhir:index 382;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112445" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Koffein-Überempfindlichkeit" ]
+       ], [
+         fhir:index 383;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112473" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kontrastmittel-Allergie" ]
+       ], [
+         fhir:index 384;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112342" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kontrastmittel-Überempfindlichkeit" ]
+       ], [
+         fhir:index 385;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112448" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kortikosteroid-Allergie" ]
+       ], [
+         fhir:index 386;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112317" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kortikosteroid-Überempfindlichkeit" ]
+       ], [
+         fhir:index 387;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I109566" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kreuztoleranz" ]
+       ], [
+         fhir:index 388;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112452" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lidocain-Allergie" ]
+       ], [
+         fhir:index 389;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112321" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lidocain-Überempfindlichkeit" ]
+       ], [
+         fhir:index 390;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112454" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lincomycin-Allergie" ]
+       ], [
+         fhir:index 391;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112323" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lincomycin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 392;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112456" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lincosamid-Allergie" ]
+       ], [
+         fhir:index 393;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112325" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lincosamid-Überempfindlichkeit" ]
+       ], [
+         fhir:index 394;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112458" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lisinopril-Allergie" ]
+       ], [
+         fhir:index 395;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112327" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lisinopril-Überempfindlichkeit" ]
+       ], [
+         fhir:index 396;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I698" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lokalanästhetikaunverträglichkeit" ]
+       ], [
+         fhir:index 397;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112450" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lutein-Releasing-Hormone-Allergie" ]
+       ], [
+         fhir:index 398;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112319" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lutein-Releasing-Hormone-Überempfindlichkeit" ]
+       ], [
+         fhir:index 399;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112464" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Macrogol-Allergie" ]
+       ], [
+         fhir:index 400;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112333" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Macrogol-Überempfindlichkeit" ]
+       ], [
+         fhir:index 401;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112554" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Makrolid-Allergie" ]
+       ], [
+         fhir:index 402;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112468" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Makrolid-Antibiotika-Allergie" ]
+       ], [
+         fhir:index 403;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112337" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Makrolid-Antibiotika-Überempfindlichkeit" ]
+       ], [
+         fhir:index 404;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112424" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Makrolid-Überempfindlichkeit" ]
+       ], [
+         fhir:index 405;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I12828" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medikamentenallergie" ]
+       ], [
+         fhir:index 406;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I696" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medikamentenunverträglichkeit" ]
+       ], [
+         fhir:index 407;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112472" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mercaptopurin-Allergie" ]
+       ], [
+         fhir:index 408;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112341" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mercaptopurin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 409;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112470" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Methanolchinolin-Allergie" ]
+       ], [
+         fhir:index 410;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112339" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Methanolchinolin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 411;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112476" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Metoprolol-Allergie" ]
+       ], [
+         fhir:index 412;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112345" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Metoprolol-Überempfindlichkeit" ]
+       ], [
+         fhir:index 413;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112478" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Muskelrelaxanzien-Allergie" ]
+       ], [
+         fhir:index 414;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112347" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Muskelrelaxanzien-Überempfindlichkeit" ]
+       ], [
+         fhir:index 415;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112480" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mutterkornalkaloid-Allergie" ]
+       ], [
+         fhir:index 416;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112349" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mutterkornalkaloid-Überempfindlichkeit" ]
+       ], [
+         fhir:index 417;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112482" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nadroparin-Allergie" ]
+       ], [
+         fhir:index 418;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112351" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nadroparin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 419;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112484" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Natamycin-Allergie" ]
+       ], [
+         fhir:index 420;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112353" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Natamycin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 421;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I24992" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nebenwirkung oraler Kontrazeptiva" ]
+       ], [
+         fhir:index 422;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112486" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neomycin-Allergie" ]
+       ], [
+         fhir:index 423;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112355" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neomycin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 424;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112488" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neuroleptika-Allergie" ]
+       ], [
+         fhir:index 425;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112357" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neuroleptika-Überempfindlichkeit" ]
+       ], [
+         fhir:index 426;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112490" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nitrat-Allergie" ]
+       ], [
+         fhir:index 427;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112359" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nitrat-Überempfindlichkeit" ]
+       ], [
+         fhir:index 428;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112491" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nitrofuran-Allergie" ]
+       ], [
+         fhir:index 429;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112361" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nitrofuran-Überempfindlichkeit" ]
+       ], [
+         fhir:index 430;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112498" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nitroimidazol-Derivate-Allergie" ]
+       ], [
+         fhir:index 431;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112368" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nitroimidazol-Derivate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 432;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112493" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nitrosoharn-Allergie" ]
+       ], [
+         fhir:index 433;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112363" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nitrosoharn-Überempfindlichkeit" ]
+       ], [
+         fhir:index 434;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I686" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Norethistosteron-Nebenwirkung" ]
+       ], [
+         fhir:index 435;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I687" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ocytocin-Nebenwirkung" ]
+       ], [
+         fhir:index 436;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112534" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Opiate-Allergie" ]
+       ], [
+         fhir:index 437;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112404" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Opiate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 438;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I24993" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ovulationshemmernebenwirkung" ]
+       ], [
+         fhir:index 439;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I24991" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ovulationshemmerunverträglichkeit" ]
+       ], [
+         fhir:index 440;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112533" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oxicam-Allergie" ]
+       ], [
+         fhir:index 441;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112403" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oxicam-Überempfindlichkeit" ]
+       ], [
+         fhir:index 442;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I109417" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oxytozin-Nebenwirkung" ]
+       ], [
+         fhir:index 443;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I12829" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Penicillin-Allergie" ]
+       ], [
+         fhir:index 444;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112532" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Perchlorat-Allergie" ]
+       ], [
+         fhir:index 445;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112402" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Perchlorat-Überempfindlichkeit" ]
+       ], [
+         fhir:index 446;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112531" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Perubalsam-Allergie" ]
+       ], [
+         fhir:index 447;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112401" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Perubalsam-Überempfindlichkeit" ]
+       ], [
+         fhir:index 448;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112530" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Phenothiazin-Allergie" ]
+       ], [
+         fhir:index 449;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112400" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Phenothiazin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 450;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112529" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Phenytoin-Allergie" ]
+       ], [
+         fhir:index 451;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112399" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Phenytoin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 452;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112528" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Piperazin-Derviate-Allergie" ]
+       ], [
+         fhir:index 453;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112398" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Piperazin-Derviate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 454;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112527" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Piperidin-Derivate-Allergie" ]
+       ], [
+         fhir:index 455;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112397" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Piperidin-Derivate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 456;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112455" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasmaprotein-Allergie" ]
+       ], [
+         fhir:index 457;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112324" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plasmaprotein-Überempfindlichkeit" ]
+       ], [
+         fhir:index 458;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112526" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Podophyllotoxin-Allergie" ]
+       ], [
+         fhir:index 459;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112396" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Podophyllotoxin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 460;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112525" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Polymyxin-B-Allergie" ]
+       ], [
+         fhir:index 461;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112395" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Polymyxin-B-Überempfindlichkeit" ]
+       ], [
+         fhir:index 462;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112524" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pravastatin-Allergie" ]
+       ], [
+         fhir:index 463;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112394" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pravastatin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 464;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112523" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Probenecid-Allergie" ]
+       ], [
+         fhir:index 465;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112393" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Probenecid-Überempfindlichkeit" ]
+       ], [
+         fhir:index 466;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I689" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Progesteron-Nebenwirkung" ]
+       ], [
+         fhir:index 467;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112522" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Propacetamol-Allergie" ]
+       ], [
+         fhir:index 468;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112392" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Propacetamol-Überempfindlichkeit" ]
+       ], [
+         fhir:index 469;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112521" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prostaglandin-Allergie" ]
+       ], [
+         fhir:index 470;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112391" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prostaglandin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 471;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I117241" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Purple-Glove-Syndrom" ]
+       ], [
+         fhir:index 472;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112520" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pyrazolon-Allergie" ]
+       ], [
+         fhir:index 473;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112390" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pyrazolon-Überempfindlichkeit" ]
+       ], [
+         fhir:index 474;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112519" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pyrethrin-Allergie" ]
+       ], [
+         fhir:index 475;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112389" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pyrethrin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 476;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112518" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quecksilber-Allergie" ]
+       ], [
+         fhir:index 477;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112388" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Quecksilber-Überempfindlichkeit" ]
+       ], [
+         fhir:index 478;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116803" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rapamycin-Derivate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 479;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112517" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rifamycin-Allergie" ]
+       ], [
+         fhir:index 480;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112387" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rifamycin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 481;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112516" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Salizylate-Allergie" ]
+       ], [
+         fhir:index 482;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112386" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Salizylate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 483;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I117244" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Scopolaminderivate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 484;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112537" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Serotonin-5HT3-Antagonisten-Allergie" ]
+       ], [
+         fhir:index 485;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112407" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Serotonin-5HT3-Antagonisten-Überempfindlichkeit" ]
+       ], [
+         fhir:index 486;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I109557" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Serotonin-Syndrom" ]
+       ], [
+         fhir:index 487;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I118673" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Streptomycin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 488;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112514" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sulfasalazin-Allergie" ]
+       ], [
+         fhir:index 489;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112384" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sulfasalazin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 490;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112513" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sulfonamid-Allergie" ]
+       ], [
+         fhir:index 491;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112383" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sulfonamid-Überempfindlichkeit" ]
+       ], [
+         fhir:index 492;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112512" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sulfonylharnstoff-Allergie" ]
+       ], [
+         fhir:index 493;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112382" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sulfonylharnstoff-Überempfindlichkeit" ]
+       ], [
+         fhir:index 494;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112511" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sympathomimetika-Allergie" ]
+       ], [
+         fhir:index 495;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112381" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sympathomimetika-Überempfindlichkeit" ]
+       ], [
+         fhir:index 496;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112466" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tacrolismus-Allergie" ]
+       ], [
+         fhir:index 497;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112335" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tacrolismus-Überempfindlichkeit" ]
+       ], [
+         fhir:index 498;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I694" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tamoxifen-Nebenwirkung" ]
+       ], [
+         fhir:index 499;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112510" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Terbutalin-Allergie" ]
+       ], [
+         fhir:index 500;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112380" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Terbutalin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 501;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112509" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tetracyclin-Allergie" ]
+       ], [
+         fhir:index 502;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112508" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tetracyclin-Derivate-Allergie" ]
+       ], [
+         fhir:index 503;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112378" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tetracyclin-Derivate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 504;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112379" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tetracyclin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 505;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112506" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thiamin-Allergie" ]
+       ], [
+         fhir:index 506;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112376" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thiamin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 507;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112505" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thiazid-Allergie" ]
+       ], [
+         fhir:index 508;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112375" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thiazid-Überempfindlichkeit" ]
+       ], [
+         fhir:index 509;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112503" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thioxanthen-Allergie" ]
+       ], [
+         fhir:index 510;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112373" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thioxanthen-Überempfindlichkeit" ]
+       ], [
+         fhir:index 511;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I690" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thyreostatika-Nebenwirkung" ]
+       ], [
+         fhir:index 512;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112501" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thyreotropin-Releasing-Hormon-Allergie" ]
+       ], [
+         fhir:index 513;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112371" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thyreotropin-Releasing-Hormon-Überempfindlichkeit" ]
+       ], [
+         fhir:index 514;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112502" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tolycain-Allergie" ]
+       ], [
+         fhir:index 515;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112372" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tolycain-Überempfindlichkeit" ]
+       ], [
+         fhir:index 516;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trimethoprim-Allergie" ]
+       ], [
+         fhir:index 517;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112370" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trimethoprim-Überempfindlichkeit" ]
+       ], [
+         fhir:index 518;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I119546" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unerwünschte Arzneimittelwirkung" ]
+       ], [
+         fhir:index 519;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I89389" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unerwünschte Nebenwirkung durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung" ]
+       ], [
+         fhir:index 520;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I89390" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unerwünschte Nebenwirkung durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung" ]
+       ], [
+         fhir:index 521;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112497" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Valaciclovir-Allergie" ]
+       ], [
+         fhir:index 522;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112367" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Valaciclovir-Überempfindlichkeit" ]
+       ], [
+         fhir:index 523;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I115860" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Valganciclovir-Überempfindlichkeit" ]
+       ], [
+         fhir:index 524;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112496" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Valproinsäure-Derivate-Allergie" ]
+       ], [
+         fhir:index 525;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112366" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Valproinsäure-Derivate-Überempfindlichkeit" ]
+       ], [
+         fhir:index 526;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112495" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vitamin-D-Allergie" ]
+       ], [
+         fhir:index 527;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112365" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vitamin-D-Überempfindlichkeit" ]
+       ], [
+         fhir:index 528;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I693" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Wehenmittel-Nebenwirkung" ]
+       ], [
+         fhir:index 529;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112474" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Xanthin-Allergie" ]
+       ], [
+         fhir:index 530;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112343" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Xanthin-Überempfindlichkeit" ]
+       ], [
+         fhir:index 531;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112412" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch adrenerge Mittel" ]
+       ], [
+         fhir:index 532;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I89393" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung" ]
+       ], [
+         fhir:index 533;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I89394" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung" ]
+       ], [
+         fhir:index 534;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112334" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch halogenierte Kohlenwasserstoffe" ]
+       ], [
+         fhir:index 535;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I115861" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch homologe Immunglobuline" ]
+       ], [
+         fhir:index 536;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112443" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch monoklonale Antikörper" ]
+       ], [
+         fhir:index 537;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112326" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch normale humane Immunglobuline" ]
+       ], [
+         fhir:index 538;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I116804" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch Sirolimus" ]
+       ], [
+         fhir:index 539;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I117243" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch tetrazyklische Antidepressiva" ]
+       ], [
+         fhir:index 540;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I112377" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch trizyklische Antidepressiva" ]
+       ], [
+         fhir:index 541;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I117242" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit durch Vincaalkaloide" ]
+       ], [
+         fhir:index 542;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I118675" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit gegen Prasugrel" ]
+       ], [
+         fhir:index 543;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I118674" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit gegen Succinimide" ]
+       ], [
+         fhir:index 544;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I118676" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit gegen Ticlopidin" ]
+       ], [
+         fhir:index 545;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I118677" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Überempfindlichkeit gegen Zytokine" ]
+       ], [
+         fhir:index 546;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I688" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Östrogen-Nebenwirkung" ]
+       ], [
+         fhir:index 547;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I27947" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Angeborene Laktoseintoleranz" ]
+       ], [
+         fhir:index 548;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I27946" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Laktoseintoleranz" ]
+       ], [
+         fhir:index 549;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "I27948" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Laktoseintoleranzsyndrom" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/ValueSet/mp-allergiesintolerances-alphaid.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

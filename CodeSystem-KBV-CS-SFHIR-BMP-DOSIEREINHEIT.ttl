@@ -1,0 +1,477 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/CodeSystem/KBV-CS-SFHIR-BMP-DOSIEREINHEIT> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "KBV-CS-SFHIR-BMP-DOSIEREINHEIT"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">#<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-.35\"> </a></td><td>Messlöffel</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-0\"> </a></td><td>Messbecher</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-1\"> </a></td><td>Stück</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-2\"> </a></td><td>Pkg.</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-3\"> </a></td><td>Flasche</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-4\"> </a></td><td>Beutel</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-5\"> </a></td><td>Hub</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-6\"> </a></td><td>Tropfen</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-7\"> </a></td><td>Teelöffel</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-8\"> </a></td><td>Esslöffel</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-9\"> </a></td><td>E</td></tr><tr><td style=\"white-space:nowrap\">a<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-a\"> </a></td><td>Tasse</td></tr><tr><td style=\"white-space:nowrap\">b<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-b\"> </a></td><td>Applikatorfüllung</td></tr><tr><td style=\"white-space:nowrap\">c<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-c\"> </a></td><td>Augenbadewanne</td></tr><tr><td style=\"white-space:nowrap\">d<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-d\"> </a></td><td>Dosierbriefchen</td></tr><tr><td style=\"white-space:nowrap\">e<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-e\"> </a></td><td>Dosierpipette</td></tr><tr><td style=\"white-space:nowrap\">f<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-f\"> </a></td><td>Dosierspritze</td></tr><tr><td style=\"white-space:nowrap\">g<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-g\"> </a></td><td>Einzeldosis</td></tr><tr><td style=\"white-space:nowrap\">h<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-h\"> </a></td><td>Glas</td></tr><tr><td style=\"white-space:nowrap\">i<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-i\"> </a></td><td>Likörglas</td></tr><tr><td style=\"white-space:nowrap\">j<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-j\"> </a></td><td>Messkappe</td></tr><tr><td style=\"white-space:nowrap\">k<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-k\"> </a></td><td>Messschale</td></tr><tr><td style=\"white-space:nowrap\">l<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-l\"> </a></td><td>Mio E</td></tr><tr><td style=\"white-space:nowrap\">m<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-m\"> </a></td><td>Mio IE</td></tr><tr><td style=\"white-space:nowrap\">n<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-n\"> </a></td><td>Pipettenteilstrich</td></tr><tr><td style=\"white-space:nowrap\">o<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-o\"> </a></td><td>Sprühstoß</td></tr><tr><td style=\"white-space:nowrap\">p<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-p\"> </a></td><td>IE</td></tr><tr><td style=\"white-space:nowrap\">q<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-q\"> </a></td><td>cm</td></tr><tr><td style=\"white-space:nowrap\">r<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-r\"> </a></td><td>l</td></tr><tr><td style=\"white-space:nowrap\">s<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-s\"> </a></td><td>ml</td></tr><tr><td style=\"white-space:nowrap\">t<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-t\"> </a></td><td>g</td></tr><tr><td style=\"white-space:nowrap\">u<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-u\"> </a></td><td>kg</td></tr><tr><td style=\"white-space:nowrap\">v<a name=\"KBV-CS-SFHIR-BMP-DOSIEREINHEIT-v\"> </a></td><td>mg</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"];
+  fhir:CodeSystem.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:oid:1.2.276.0.76.3.1.1.5.2.41" ]
+  ];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "KBV_CS_SFHIR_BMP_DOSIEREINHEIT"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2019-01-01"^^xsd:date];
+  fhir:CodeSystem.publisher [ fhir:value "BIH@Charité"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "BIH@Charité" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/en/research/core-facilities/interoperability/" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Die Schlüsseltabelle enthält eine Liste von kodierten Dosiereinheiten, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Anhang 4 zu Anlage 3 Vereinbarung BMP). Die Spalte \"Code\" wird im Attribut \"V\", die Spalte \"Einheit Ausdruck\" im Attribut \"DN\", die Spalte  \"Bedeutung\" im Attribut \"bedeutung\" und die Spalte \"Einheit durch AM-Datenbanken unterstützt\" im Attribut \"unterstuetzt\" abgebildet."];
+  fhir:CodeSystem.copyright [ fhir:value "Kassenärztliche Bundesvereinigung"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "33"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "#" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Messlöffel" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "8"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Messbecher" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "9"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Stück" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "1"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pkg." ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "22"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Flasche" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "15"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Beutel" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "16"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hub" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "4"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tropfen" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "2"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Teelöffel" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "26"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Esslöffel" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "27"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "E" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "13"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "a" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tasse" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "29"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "b" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Applikatorfüllung" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "11"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "c" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Augenbadewanne" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "33"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "d" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dosierbriefchen" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "23"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "e" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dosierpipette" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "24"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "f" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dosierspritze" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "25"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "g" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Einzeldosis" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "12"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "h" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Glas" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "28"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "i" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Likörglas" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "32"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "j" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Messkappe" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "30"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "k" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Messschale" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "31"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "l" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mio E" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "17"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "m" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mio IE" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "18"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "n" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pipettenteilstrich" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "14"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "o" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sprühstoß" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "5"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "p" ];
+     fhir:CodeSystem.concept.display [ fhir:value "IE" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "3"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "q" ];
+     fhir:CodeSystem.concept.display [ fhir:value "cm" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "7"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "r" ];
+     fhir:CodeSystem.concept.display [ fhir:value "l" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "20"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "s" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ml" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "6"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "t" ];
+     fhir:CodeSystem.concept.display [ fhir:value "g" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "19"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "u" ];
+     fhir:CodeSystem.concept.display [ fhir:value "kg" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "21"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "v" ];
+     fhir:CodeSystem.concept.display [ fhir:value "mg" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unterstuetzt" ];
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "sortierung" ];
+       fhir:CodeSystem.concept.property.valueInteger [ fhir:value "10"^^xsd:integer ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/CodeSystem/KBV-CS-SFHIR-BMP-DOSIEREINHEIT.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,158 @@
+[
+  {
+    "id": "KBV-CS-SFHIR-BMP-DOSIEREINHEIT",
+    "type": "CodeSystem",
+    "url": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT",
+    "version": "0.1.0",
+    "name": "KBV_CS_SFHIR_BMP_DOSIEREINHEIT",
+    "oids": [
+      "1.2.276.0.76.3.1.1.5.2.41"
+    ]
+  },
+  {
+    "id": "KBV-VS-SFHIR-BMP-DOSIEREINHEIT",
+    "type": "ValueSet",
+    "url": "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT",
+    "version": "0.1.0",
+    "name": "KBV_VS_SFHIR_BMP_DOSIEREINHEIT"
+  },
+  {
+    "id": "mp-allergiesintolerances-alphaid",
+    "type": "ValueSet",
+    "url": "https://www.charite.de./fhir/medikationsplan/ValueSet/allergies-alphaid",
+    "version": "0.1.0",
+    "name": "AllergiesIntolerancesAlphaID"
+  },
+  {
+    "id": "mp-kbv-s-bmp-zwischenueberschrift-cs",
+    "type": "CodeSystem",
+    "url": "https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift",
+    "version": "0.1.0",
+    "name": "KBV_BMP_Zwischenueberschrift_CS",
+    "alt-urls": [
+      "1.2.276.0.76.3.1.1.5.2.42"
+    ]
+  },
+  {
+    "id": "mp4p-extension-freitext",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/Extension/freitext",
+    "version": "0.1.0",
+    "name": "Freitext"
+  },
+  {
+    "id": "de.mp4p",
+    "type": "ImplementationGuide",
+    "url": "https://www.charite.de/fhir/medikationsplan/ImplementationGuide/mp4p/ImplementationGuide/de.mp4p",
+    "version": "0.1.0",
+    "name": "MP4P_DE_IG"
+  },
+  {
+    "id": "mp4p-allergyintolerance",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/AllergyIntolerance",
+    "version": "0.1.0",
+    "name": "AllergyIntoleranceMP4P"
+  },
+  {
+    "id": "mp4p-bundle",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Bundle",
+    "version": "0.1.0",
+    "name": "BundleMP4P"
+  },
+  {
+    "id": "mp4p-composition",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition",
+    "version": "0.1.0",
+    "name": "CompositionMP4P"
+  },
+  {
+    "id": "mp4p-koerpergewicht",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergewicht",
+    "version": "0.1.0",
+    "name": "KoerpergewichtMP4P"
+  },
+  {
+    "id": "mp4p-koerpergroesse",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergroesse",
+    "version": "0.1.0",
+    "name": "KoerpergroesseMP4P"
+  },
+  {
+    "id": "mp4p-kreatinin",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Kreatininwert",
+    "version": "0.1.0",
+    "name": "KreatininMP4P"
+  },
+  {
+    "id": "mp4p-list",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/List",
+    "version": "0.1.0",
+    "name": "ListMP4P"
+  },
+  {
+    "id": "mp4p-medikation",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Medication",
+    "version": "0.1.0",
+    "name": "MedicationMP4P"
+  },
+  {
+    "id": "mp4p-medicationstatement",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement",
+    "version": "0.1.0",
+    "name": "MedicationStatementMP4P"
+  },
+  {
+    "id": "mp4p-patient",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient",
+    "version": "0.1.0",
+    "name": "PatientMP4P"
+  },
+  {
+    "id": "mp4p-practitioner",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner",
+    "version": "0.1.0",
+    "name": "PractitionerMP4P"
+  },
+  {
+    "id": "mp4p-schwangerschaft",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusSchwanger",
+    "version": "0.1.0",
+    "name": "StatusSchwangerMP4P"
+  },
+  {
+    "id": "mp4p-stillend",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusStillend",
+    "version": "0.1.0",
+    "name": "StatusStillendMP4P"
+  },
+  {
+    "id": "mp4p-einnahmezeitpunkte-v3",
+    "type": "ValueSet",
+    "url": "https://www.charite.de/fhir/medikationsplan/ValueSet/einnahmezeitpunkte-v3-TimingEvent",
+    "version": "0.1.0",
+    "name": "EinnahmezeitpunkteV3"
+  },
+  {
+    "id": "mp-kbv-s-bmp-zwischenueberschrift-vs",
+    "type": "ValueSet",
+    "url": "https://www.charite.de/fhir/medikationsplan/ValueSet/kbv/s-bmp-zwischenueberschrift",
+    "version": "0.1.0",
+    "name": "KBV_BMP_Zwischenueberschrift_VS",
+    "alt-urls": [
+      "1.2.276.0.76.3.1.1.5.2.42"
+    ]
+  }
+]

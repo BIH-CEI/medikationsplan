@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/ValueSet/mp-kbv-s-bmp-zwischenueberschrift-vs> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "mp-kbv-s-bmp-zwischenueberschrift-vs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html\"><code>https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift</code></a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.charite.de/fhir/medikationsplan/ValueSet/kbv/s-bmp-zwischenueberschrift"];
+  fhir:ValueSet.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "1.2.276.0.76.3.1.1.5.2.42" ]
+  ];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "KBV_BMP_Zwischenueberschrift_VS"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2021-05-13"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "BIH@Charité"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "BIH@Charité" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/en/research/core-facilities/interoperability/" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP)."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/ValueSet/mp-kbv-s-bmp-zwischenueberschrift-vs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

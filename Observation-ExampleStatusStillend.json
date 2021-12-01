@@ -1,0 +1,27 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleStatusStillend",
+  "meta": {
+    "profile": [
+      "https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusStillend"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 63895-7}\">Breastfeeding status</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Gesetzliche Krankenversicherung: Z234567890 (OFFICIAL); Clara Josephine Schumann (OFFICIAL)</a></p><p><b>effective</b>: 2021-11-25</p><p><b>value</b>: false</p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "63895-7"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2021-11-25",
+  "valueBoolean": false
+}

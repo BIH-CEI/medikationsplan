@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/List/ExampleList> a fhir:List;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ExampleList"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/List";
+       fhir:index 0;
+       fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/List>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"clstu\"><tr><td>Mode: snapshotStatus: currentCode: Dauermedikation</td></tr><tr><td></td></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr></table></div>"
+  ];
+  fhir:List.status [ fhir:value "current"];
+  fhir:List.mode [ fhir:value "snapshot"];
+  fhir:List.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift" ];
+       fhir:Coding.code [ fhir:value "412" ];
+       fhir:Coding.display [ fhir:value "Dauermedikation" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/List/ExampleList.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

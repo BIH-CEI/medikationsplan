@@ -1,0 +1,89 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "mp-kbv-s-bmp-zwischenueberschrift-cs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">411<a name=\"mp-kbv-s-bmp-zwischenueberschrift-cs-411\"> </a></td><td>Bedarfsmedikation</td></tr><tr><td style=\"white-space:nowrap\">412<a name=\"mp-kbv-s-bmp-zwischenueberschrift-cs-412\"> </a></td><td>Dauermedikation</td></tr><tr><td style=\"white-space:nowrap\">413<a name=\"mp-kbv-s-bmp-zwischenueberschrift-cs-413\"> </a></td><td>Intramuskuläre Anwendung</td></tr><tr><td style=\"white-space:nowrap\">414<a name=\"mp-kbv-s-bmp-zwischenueberschrift-cs-414\"> </a></td><td>Besondere Anwendung</td></tr><tr><td style=\"white-space:nowrap\">415<a name=\"mp-kbv-s-bmp-zwischenueberschrift-cs-415\"> </a></td><td>Intravenöse Anwendung</td></tr><tr><td style=\"white-space:nowrap\">416<a name=\"mp-kbv-s-bmp-zwischenueberschrift-cs-416\"> </a></td><td>Anwendung unter die Haut</td></tr><tr><td style=\"white-space:nowrap\">417<a name=\"mp-kbv-s-bmp-zwischenueberschrift-cs-417\"> </a></td><td>Fertigspritze</td></tr><tr><td style=\"white-space:nowrap\">418<a name=\"mp-kbv-s-bmp-zwischenueberschrift-cs-418\"> </a></td><td>Selbstmedikation</td></tr><tr><td style=\"white-space:nowrap\">419<a name=\"mp-kbv-s-bmp-zwischenueberschrift-cs-419\"> </a></td><td>Allergiehinweise</td></tr><tr><td style=\"white-space:nowrap\">421<a name=\"mp-kbv-s-bmp-zwischenueberschrift-cs-421\"> </a></td><td>Wichtige Hinweise</td></tr><tr><td style=\"white-space:nowrap\">422<a name=\"mp-kbv-s-bmp-zwischenueberschrift-cs-422\"> </a></td><td>Wichtige Angaben</td></tr><tr><td style=\"white-space:nowrap\">423<a name=\"mp-kbv-s-bmp-zwischenueberschrift-cs-423\"> </a></td><td>zu besonderen Zeiten anzuwendende Medikamente</td></tr><tr><td style=\"white-space:nowrap\">424<a name=\"mp-kbv-s-bmp-zwischenueberschrift-cs-424\"> </a></td><td>zeitlich befristet anzuwendende Medikamente</td></tr></table></div>"
+  },
+  "url": "https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "1.2.276.0.76.3.1.1.5.2.42"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "KBV_BMP_Zwischenueberschrift_CS",
+  "status": "draft",
+  "date": "2017-08-08",
+  "publisher": "BIH@Charité",
+  "contact": [
+    {
+      "name": "BIH@Charité",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP).",
+  "valueSet": "https://www.charite.de/fhir/medikationsplan/ValueSet/kbv/s-bmp-zwischenueberschrift",
+  "content": "complete",
+  "count": 13,
+  "concept": [
+    {
+      "code": "411",
+      "display": "Bedarfsmedikation"
+    },
+    {
+      "code": "412",
+      "display": "Dauermedikation"
+    },
+    {
+      "code": "413",
+      "display": "Intramuskuläre Anwendung"
+    },
+    {
+      "code": "414",
+      "display": "Besondere Anwendung"
+    },
+    {
+      "code": "415",
+      "display": "Intravenöse Anwendung"
+    },
+    {
+      "code": "416",
+      "display": "Anwendung unter die Haut"
+    },
+    {
+      "code": "417",
+      "display": "Fertigspritze"
+    },
+    {
+      "code": "418",
+      "display": "Selbstmedikation"
+    },
+    {
+      "code": "419",
+      "display": "Allergiehinweise"
+    },
+    {
+      "code": "421",
+      "display": "Wichtige Hinweise"
+    },
+    {
+      "code": "422",
+      "display": "Wichtige Angaben"
+    },
+    {
+      "code": "423",
+      "display": "zu besonderen Zeiten anzuwendende Medikamente"
+    },
+    {
+      "code": "424",
+      "display": "zeitlich befristet anzuwendende Medikamente"
+    }
+  ]
+}

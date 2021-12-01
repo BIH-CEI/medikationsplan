@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<List xmlns="http://hl7.org/fhir">
+  <id value="ExampleList"/>
+  <meta>
+    <profile value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/List"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table class="clstu"><tr><td>Mode: snapshotStatus: currentCode: Dauermedikation</td></tr><tr><td></td></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr></table></div>
+  </text>
+  <status value="current"/>
+  <mode value="snapshot"/>
+  <code>
+    <coding>
+      <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+      <code value="412"/>
+      <display value="Dauermedikation"/>
+    </coding>
+  </code>
+</List>

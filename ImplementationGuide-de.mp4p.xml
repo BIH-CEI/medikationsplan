@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="de.mp4p"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MP4P_DE_IG</h2><p>The official URL for this implementation guide is: </p><pre>https://www.charite.de/fhir/medikationsplan/ImplementationGuide/mp4p/ImplementationGuide/de.mp4p</pre></div>
+  </text>
+  <url value="https://www.charite.de/fhir/medikationsplan/ImplementationGuide/mp4p/ImplementationGuide/de.mp4p"/>
+  <version value="0.1.0"/>
+  <name value="MP4P_DE_IG"/>
+  <title value="Medikationsplan 4 PLUS"/>
+  <status value="draft"/>
+  <date value="2021-12-01T09:40:17+00:00"/>
+  <publisher value="BIH@Charité"/>
+  <contact>
+    <name value="BIH@Charité"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
+    </telecom>
+  </contact>
+  <packageId value="de.mp4p"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="de_basisprofil_r4">
+    <uri value="http://fhir.de/ImplementationGuide/basisprofil-de-r4"/>
+    <packageId value="de.basisprofil.r4"/>
+    <version value="1.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_ips">
+    <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
+    <packageId value="hl7.fhir.uv.ips"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="kbv_basis">
+    <uri value="https://simplifier.net/packages/kbv.basis"/>
+    <packageId value="kbv.basis"/>
+    <version value="1.2.0"/>
+  </dependsOn>
+  <dependsOn id="kbv_mio_patientenkurzakte">
+    <uri value="https://simplifier.net/packages/kbv.mio.patientenkurzakte"/>
+    <packageId value="kbv.mio.patientenkurzakte"/>
+    <version value="1.0.0-kommentierung"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.charite.de/fhir/medikationsplan/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mp4p-allergyintolerance"/>
+      </reference>
+      <name value="AllergyIntolerance MP4+"/>
+      <description value="Allergie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mp4p-bundle"/>
+      </reference>
+      <name value="Bundle MP4+"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mp4p-composition"/>
+      </reference>
+      <name value="Composition MP4+"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mp4p-koerpergewicht"/>
+      </reference>
+      <name value="Körpergewicht MP4+"/>
+      <description value="Körpergewicht des Patienten in kg."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mp4p-koerpergroesse"/>
+      </reference>
+      <name value="Körpergröße MP4+"/>
+      <description value="Körpergröße des Patienten in cm."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mp4p-kreatinin"/>
+      </reference>
+      <name value="Kreatininwert MP4+"/>
+      <description value="Kreatininwert des Patienten in mg/dl."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mp4p-list"/>
+      </reference>
+      <name value="MedicationStatement List MP4+"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mp4p-medikation"/>
+      </reference>
+      <name value="Medikation MP4+"/>
+      <description value="Dieses Profil beschreibt die Medikation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mp4p-medicationstatement"/>
+      </reference>
+      <name value="MedicationStatement MP4+"/>
+      <description value="Dieses Profil beschreibt die Verordnung eines Arzneimittels."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mp4p-patient"/>
+      </reference>
+      <name value="Patient MP4+"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mp4p-practitioner"/>
+      </reference>
+      <name value="Practitioner MP4+"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mp4p-schwangerschaft"/>
+      </reference>
+      <name value="Status schwanger MP4+"/>
+      <description value="Information darüber, ob die Patientin aktuell schwanger ist."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mp4p-stillend"/>
+      </reference>
+      <name value="Status stillend MP4+"/>
+      <description value="Information darüber, ob die Patientin aktuell stillend ist."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mp4p-extension-freitext"/>
+      </reference>
+      <name value="Extension Freitext MP4+"/>
+      <description value="Extension zur Freitext-Angabe der Wirkstoffmenge bzw. Stärke."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mp-allergiesintolerances-alphaid"/>
+      </reference>
+      <name value="AllergiesIntolerancesAlphaID"/>
+      <description value="Allergien und Unverträglichkeiten Alpha-ID"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mp4p-einnahmezeitpunkte-v3"/>
+      </reference>
+      <name value="Einnahmezeitpunkte v3 TimingEvent"/>
+      <description value="ValueSet zur Codierung von Einnahmezeitpunkten aus v3 CodeSystem TimingEvent."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mp-kbv-s-bmp-zwischenueberschrift-vs"/>
+      </reference>
+      <name value="KBV_BMP_Zwischenueberschrift_VS"/>
+      <description value="Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/KBV-VS-SFHIR-BMP-DOSIEREINHEIT"/>
+      </reference>
+      <name value="KBV_VS_SFHIR_BMP_DOSIEREINHEIT"/>
+      <description value="Das Valueset enthält alle Codes aus dem Codesystem https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mp-kbv-s-bmp-zwischenueberschrift-cs"/>
+      </reference>
+      <name value="KBV_BMP_Zwischenueberschrift_CS"/>
+      <description value="Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KBV-CS-SFHIR-BMP-DOSIEREINHEIT"/>
+      </reference>
+      <name value="KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+      <description value="Die Schlüsseltabelle enthält eine Liste von kodierten Dosiereinheiten, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Anhang 4 zu Anlage 3 Vereinbarung BMP). Die Spalte &quot;Code&quot; wird im Attribut &quot;V&quot;, die Spalte &quot;Einheit Ausdruck&quot; im Attribut &quot;DN&quot;, die Spalte  &quot;Bedeutung&quot; im Attribut &quot;bedeutung&quot; und die Spalte &quot;Einheit durch AM-Datenbanken unterstützt&quot; im Attribut &quot;unterstuetzt&quot; abgebildet."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/AllergyIntoleranceMP4P"/>
+      </reference>
+      <name value="AllergyIntoleranceMP4P"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/AllergyIntolerance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/ExampleBundle"/>
+      </reference>
+      <name value="ExampleBundle"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/ExampleComposition"/>
+      </reference>
+      <name value="ExampleComposition"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleKoerpergewicht"/>
+      </reference>
+      <name value="ExampleKoerpergewicht"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergewicht"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleKoerpergroesse"/>
+      </reference>
+      <name value="ExampleKoerpergroesse"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergroesse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleKreatinin"/>
+      </reference>
+      <name value="ExampleKreatinin"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Kreatininwert"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <reference>
+        <reference value="List/ExampleList"/>
+      </reference>
+      <name value="ExampleList"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/List"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/ExampleMedication"/>
+      </reference>
+      <name value="ExampleMedication"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/ExampleMedicationStatement"/>
+      </reference>
+      <name value="ExampleMedicationStatement"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ExamplePatient"/>
+      </reference>
+      <name value="ExamplePatient"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/ExamplePractitioner"/>
+      </reference>
+      <name value="ExamplePractitioner"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleStatusSchwanger"/>
+      </reference>
+      <name value="ExampleStatusSchwanger"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusSchwanger"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleStatusStillend"/>
+      </reference>
+      <name value="ExampleStatusStillend"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusStillend"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

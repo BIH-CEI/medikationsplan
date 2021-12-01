@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "KBV-VS-SFHIR-BMP-DOSIEREINHEIT",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT.html\"><code>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT</code></a></li></ul></div>"
+  },
+  "url": "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT",
+  "version": "0.1.0",
+  "name": "KBV_VS_SFHIR_BMP_DOSIEREINHEIT",
+  "status": "active",
+  "date": "2019-01-01",
+  "publisher": "BIH@Charité",
+  "contact": [
+    {
+      "name": "BIH@Charité",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "Das Valueset enthält alle Codes aus dem Codesystem https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT",
+  "copyright": "Kassenärztliche Bundesvereinigung",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"
+      }
+    ]
+  }
+}

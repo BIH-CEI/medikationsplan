@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="ExamplePractitioner"/>
+  <meta>
+    <profile value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Lifelong physician number: 1656304456 (OFFICIAL)</p><p><b>name</b>: Dr. Antonín Leopold Dvořák</p><p><b>telecom</b>: ph: 01234-12345, <a href="mailto:a.dvorak@mpraxis-rusalka.de">a.dvorak@mpraxis-rusalka.de</a></p><p><b>address</b>: Prager Str. 9, 00035 Dumka</p><p><b>birthDate</b>: 1841-09-08</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="LANR"/>
+      </coding>
+    </type>
+    <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"/>
+    <value value="1656304456"/>
+  </identifier>
+  <name>
+    <text value="Dr. Antonín Leopold Dvořák"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="01234-12345"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="a.dvorak@mpraxis-rusalka.de"/>
+  </telecom>
+  <address>
+    <text value="Prager Str. 9, 00035 Dumka"/>
+    <line value="Prager Str. 9"/>
+    <city value="Dumka"/>
+    <postalCode value="00035"/>
+  </address>
+  <birthDate value="1841-09-08"/>
+</Practitioner>

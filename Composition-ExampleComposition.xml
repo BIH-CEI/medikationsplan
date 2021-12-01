@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="ExampleComposition"/>
+  <meta>
+    <profile value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 77603-9}">Medication treatment plan.extended Document</span></p><p><b>date</b>: 2021-11-23</p><p><b>author</b>: <a href="Practitioner-ExamplePractitioner.html">Generated Summary: Lifelong physician number: 1656304456 (OFFICIAL); Dr. Antonín Leopold Dvořák; Phone: 01234-12345, a.dvorak@mpraxis-rusalka.de; birthDate: 1841-09-08</a></p><p><b>title</b>: Medikationsplan</p></div>
+  </text>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="77603-9"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <date value="2021-11-23"/>
+  <author>
+    <reference value="Practitioner/ExamplePractitioner"/>
+  </author>
+  <title value="Medikationsplan"/>
+  <section>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19009-0"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="List/ExampleList"/>
+    </entry>
+  </section>
+</Composition>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="ExampleBundle"/>
+  <meta>
+    <profile value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Bundle"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2021-11-23T13:28:17.239+01:00"/>
+  <entry>
+    <fullUrl value="Composition/ExampleComposition"/>
+    <resource>
+      <Composition>
+        <id value="ExampleComposition"/>
+        <meta>
+          <profile value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 77603-9}">Medication treatment plan.extended Document</span></p><p><b>date</b>: 2021-11-23</p><p><b>author</b>: <a href="#Practitioner_ExamplePractitioner">See above (Practitioner/ExamplePractitioner)</a></p><p><b>title</b>: Medikationsplan</p></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d"/>
+        </identifier>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="77603-9"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/ExamplePatient"/>
+        </subject>
+        <date value="2021-11-23"/>
+        <author>
+          <reference value="Practitioner/ExamplePractitioner"/>
+        </author>
+        <title value="Medikationsplan"/>
+        <section>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="19009-0"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="List/ExampleList"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="List/ExampleList"/>
+    <resource>
+      <List>
+        <id value="ExampleList"/>
+        <meta>
+          <profile value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/List"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: current</p><p><b>mode</b>: snapshot</p><p><b>code</b>: <span title="Codes: {https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift 412}">Dauermedikation</span></p></div>
+        </text>
+        <status value="current"/>
+        <mode value="snapshot"/>
+        <code>
+          <coding>
+            <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+            <code value="412"/>
+            <display value="Dauermedikation"/>
+          </coding>
+        </code>
+      </List>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Patient/ExamplePatient"/>
+    <resource>
+      <Patient>
+        <id value="ExamplePatient"/>
+        <meta>
+          <profile value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Gesetzliche Krankenversicherung: Z234567890 (OFFICIAL)</p><p><b>name</b>: Clara Josephine Schumann (OFFICIAL)</p></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+              <code value="GKV"/>
+            </coding>
+          </type>
+          <system value="http://fhir.de/sid/gkv/kvid-10"/>
+          <value value="Z234567890"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <family value="Schumann">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+              <valueString value="Schumann"/>
+            </extension>
+          </family>
+          <given value="Clara"/>
+          <given value="Josephine"/>
+        </name>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Practitioner/ExamplePractitioner"/>
+    <resource>
+      <Practitioner>
+        <id value="ExamplePractitioner"/>
+        <meta>
+          <profile value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Lifelong physician number: 1656304456 (OFFICIAL)</p><p><b>name</b>: Dr. Antonín Leopold Dvořák</p><p><b>telecom</b>: ph: 01234-12345, <a href="mailto:a.dvorak@mpraxis-rusalka.de">a.dvorak@mpraxis-rusalka.de</a></p><p><b>address</b>: Prager Str. 9, 00035 Dumka</p><p><b>birthDate</b>: 1841-09-08</p></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="LANR"/>
+            </coding>
+          </type>
+          <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"/>
+          <value value="1656304456"/>
+        </identifier>
+        <name>
+          <text value="Dr. Antonín Leopold Dvořák"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="01234-12345"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="a.dvorak@mpraxis-rusalka.de"/>
+        </telecom>
+        <address>
+          <text value="Prager Str. 9, 00035 Dumka"/>
+          <line value="Prager Str. 9"/>
+          <city value="Dumka"/>
+          <postalCode value="00035"/>
+        </address>
+        <birthDate value="1841-09-08"/>
+      </Practitioner>
+    </resource>
+  </entry>
+</Bundle>

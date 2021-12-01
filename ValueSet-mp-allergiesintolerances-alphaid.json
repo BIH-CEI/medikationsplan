@@ -1,0 +1,2236 @@
+{
+  "resourceType": "ValueSet",
+  "id": "mp-allergiesintolerances-alphaid",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/bfarm/alpha-id</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>I81502</td><td>Anaphylaktischer Schock durch Nahrungsmittel a.n.k.</td></tr><tr><td>I81501</td><td>Schock durch Nahrungsmittelunverträglichkeit</td></tr><tr><td>I564</td><td>Allergie gegen Nahrungsmittel</td></tr><tr><td>I97198</td><td>Allergische Reaktion durch Nahrungsmittel a.n.k.</td></tr><tr><td>I112579</td><td>Eiprotein-Allergie</td></tr><tr><td>I112647</td><td>Eiprotein-Überempfindlichkeit</td></tr><tr><td>I120131</td><td>Erdnussprotein-Allergie</td></tr><tr><td>I112580</td><td>Erdnussöl-Allergie</td></tr><tr><td>I112648</td><td>Erdnussöl-Überempfindlichkeit</td></tr><tr><td>I116460</td><td>Fisch-Allergie</td></tr><tr><td>I116463</td><td>Fischeiweiß-Überempfindlichkeit</td></tr><tr><td>I116461</td><td>Gelatine-Überempfindlichkeit</td></tr><tr><td>I116459</td><td>Hühnereiweiß-Allergie</td></tr><tr><td>I24369</td><td>Kuhmilchproteinintoleranz</td></tr><tr><td>I116796</td><td>Kürbisfrüchte-Allergie</td></tr><tr><td>I116465</td><td>Leguminosen-Allergie</td></tr><tr><td>I29215</td><td>Nahrungsmittelunverträglichkeit</td></tr><tr><td>I116462</td><td>Nuss-Überempfindlichkeit</td></tr><tr><td>I116353</td><td>Rinderprotein-Überempfindlichkeit</td></tr><tr><td>I116795</td><td>Sesamöl-Allergie</td></tr><tr><td>I112576</td><td>Soja-Allergie</td></tr><tr><td>I112644</td><td>Soja-Überempfindlichkeit</td></tr><tr><td>I112577</td><td>Sojaprotein-Allergie</td></tr><tr><td>I112645</td><td>Sojaprotein-Überempfindlichkeit</td></tr><tr><td>I112641</td><td>Sorbitol-Allergie</td></tr><tr><td>I112709</td><td>Sorbitol-Überempfindlichkeit</td></tr><tr><td>I109560</td><td>Sorbitolunverträglichkeit</td></tr><tr><td>I109981</td><td>Überempfindlichkeit gegen Farbstoffe in Nahrungsmitteln</td></tr><tr><td>I109980</td><td>Überempfindlichkeit gegen Konservierungsmittel</td></tr><tr><td>I109978</td><td>Überempfindlichkeit gegen Nahrungsmittelzusatzstoffe</td></tr><tr><td>I112578</td><td>Zimt-Allergie</td></tr><tr><td>I112646</td><td>Zimt-Überempfindlichkeit</td></tr><tr><td>I116464</td><td>Zitrusfrüchte-Überempfindlichkeit</td></tr><tr><td>I87720</td><td>Allergischer Schock</td></tr><tr><td>I565</td><td>Anaphylaktischer Schock</td></tr><tr><td>I16144</td><td>Anaphylaxie</td></tr><tr><td>I85981</td><td>Herxheimer-Reaktion</td></tr><tr><td>I80523</td><td>Schock durch Arzneimittel</td></tr><tr><td>I74711</td><td>Akutes essentielles Ödem</td></tr><tr><td>I74531</td><td>Akutes Quincke-Ödem der Haut</td></tr><tr><td>I74712</td><td>Akutes umschriebenes Ödem</td></tr><tr><td>I74721</td><td>Akutes zirkumskriptes Ödem</td></tr><tr><td>I64438</td><td>Allergisches angioneurotisches Ödem</td></tr><tr><td>I64444</td><td>Allergisches Angioödem</td></tr><tr><td>I96567</td><td>Allergisches Glottisödem</td></tr><tr><td>I566</td><td>Angioneurotisches Ödem</td></tr><tr><td>I64441</td><td>Angioneurotisches Ödem mit Urtikaria</td></tr><tr><td>I567</td><td>Angioödem</td></tr><tr><td>I64445</td><td>Angioödem mit Urtikaria</td></tr><tr><td>I75170</td><td>Bannister-Krankheit</td></tr><tr><td>I82080</td><td>Larynxurtikaria</td></tr><tr><td>I74718</td><td>Periodisches Ödem</td></tr><tr><td>I81969</td><td>Quincke-Syndrom</td></tr><tr><td>I568</td><td>Quincke-Ödem</td></tr><tr><td>I82079</td><td>Urticaria gigantea</td></tr><tr><td>I119417</td><td>AAE [Erworbenes Angioödem]</td></tr><tr><td>I119795</td><td>Erworbenes angioneurotisches Ödem</td></tr><tr><td>I119704</td><td>Erworbenes Angioödem</td></tr><tr><td>I119898</td><td>Erworbenes Bradykinin-induziertes Angioödem</td></tr><tr><td>I119899</td><td>Erworbenes nicht-Histamin-induziertes Angioödem</td></tr><tr><td>I15529</td><td>Allergie</td></tr><tr><td>I109613</td><td>Allergie gegen Alkohol</td></tr><tr><td>I112601</td><td>Allergie gegen echtes Karmin [E 120]</td></tr><tr><td>I15530</td><td>Allergische Diathese</td></tr><tr><td>I15533</td><td>Allergische Reaktion</td></tr><tr><td>I112598</td><td>Allurarot-Allergie [E 129]</td></tr><tr><td>I112666</td><td>Allurarot-Überempfindlichkeit [E 129]</td></tr><tr><td>I112625</td><td>Amaranth-Allergie [E 123]</td></tr><tr><td>I112693</td><td>Amaranth-Überempfindlichkeit [E 123]</td></tr><tr><td>I112596</td><td>Annatto-Allergie</td></tr><tr><td>I112664</td><td>Annatto-Überempfindlichkeit</td></tr><tr><td>I32389</td><td>Arthus-Phänomen</td></tr><tr><td>I24895</td><td>Atopie</td></tr><tr><td>I112624</td><td>Azorubin-Allergie [E 122]</td></tr><tr><td>I112692</td><td>Azorubin-Überempfindlichkeit [E 122]</td></tr><tr><td>I112623</td><td>Benzalkoniumchlorid-Allergie</td></tr><tr><td>I112691</td><td>Benzalkoniumchlorid-Überempfindlichkeit</td></tr><tr><td>I112594</td><td>Benzoesäure-Allergie</td></tr><tr><td>I112662</td><td>Benzoesäure-Überempfindlichkeit</td></tr><tr><td>I112622</td><td>Benzolsulfonsäure-Allergie</td></tr><tr><td>I112690</td><td>Benzolsulfonsäure-Überempfindlichkeit</td></tr><tr><td>I112621</td><td>Benzylalkohol-Allergie</td></tr><tr><td>I112689</td><td>Benzylalkohol-Überempfindlichkeit</td></tr><tr><td>I112620</td><td>Bernsteinsäure-Allergie</td></tr><tr><td>I112688</td><td>Bernsteinsäure-Überempfindlichkeit</td></tr><tr><td>I112597</td><td>Braun-Allergie [E 155]</td></tr><tr><td>I112665</td><td>Braun-Überempfindlichkeit [E 155]</td></tr><tr><td>I112618</td><td>Brillantschwarz-Allergie [E 151]</td></tr><tr><td>I112686</td><td>Brillantschwarz-Überempfindlichkeit [E 151]</td></tr><tr><td>I112590</td><td>Butylhydroxyanisol-Allergie</td></tr><tr><td>I112658</td><td>Butylhydroxyanisol-Überempfindlichkeit</td></tr><tr><td>I112619</td><td>Butylhydroxytoluol-Allergie</td></tr><tr><td>I112687</td><td>Butylhydroxytoluol-Überempfindlichkeit</td></tr><tr><td>I112587</td><td>Carrageen-Allergie [E 407]</td></tr><tr><td>I112655</td><td>Carrageen-Überempfindlichkeit [E 407]</td></tr><tr><td>I112617</td><td>Cetylalkohol-Allergie</td></tr><tr><td>I112685</td><td>Cetylalkohol-Überempfindlichkeit</td></tr><tr><td>I112639</td><td>Chinazolin-Allergie</td></tr><tr><td>I112707</td><td>Chinazolin-Überempfindlichkeit</td></tr><tr><td>I112616</td><td>Chinolingelb-Allergie [E 104]</td></tr><tr><td>I112684</td><td>Chinolingelb-Überempfindlichkeit [E 104]</td></tr><tr><td>I112615</td><td>Chlorocresol-Allergie</td></tr><tr><td>I112683</td><td>Chlorocresol-Überempfindlichkeit</td></tr><tr><td>I112638</td><td>Chrysanthemen-Allergie</td></tr><tr><td>I112706</td><td>Chrysanthemen-Überempfindlichkeit</td></tr><tr><td>I112600</td><td>Cochenillerot-Allergie [E 124]</td></tr><tr><td>I112668</td><td>Cochenillerot-Überempfindlichkeit [E 124]</td></tr><tr><td>I112637</td><td>Doldengewächs-Allergie</td></tr><tr><td>I112705</td><td>Doldengewächs-Überempfindlichkeit</td></tr><tr><td>I112614</td><td>Erythrosin-Allergie [E 127]</td></tr><tr><td>I112682</td><td>Erythrosin-Überempfindlichkeit [E 127]</td></tr><tr><td>I112483</td><td>Ethanol-Allergie</td></tr><tr><td>I112352</td><td>Ethanol-Überempfindlichkeit</td></tr><tr><td>I112612</td><td>Formaldehyd-Allergie</td></tr><tr><td>I112680</td><td>Formaldehyd-Überempfindlichkeit</td></tr><tr><td>I112591</td><td>Gallate-Allergie</td></tr><tr><td>I112659</td><td>Gallate-Überempfindlichkeit</td></tr><tr><td>I117140</td><td>Gallussäure-Allergie</td></tr><tr><td>I112613</td><td>Gelborange-Allergie [E 110]</td></tr><tr><td>I112681</td><td>Gelborange-Überempfindlichkeit [E 110]</td></tr><tr><td>I112585</td><td>Guarkernmehl-Allergie [E 412]</td></tr><tr><td>I112653</td><td>Guarkernmehl-Überempfindlichkeit [E 412]</td></tr><tr><td>I112636</td><td>Hamsterprotein-Allergie</td></tr><tr><td>I112704</td><td>Hamsterprotein-Überempfindlichkeit</td></tr><tr><td>I115633</td><td>Hyperergische Reaktion</td></tr><tr><td>I115638</td><td>Hyperergische Reaktion gegen mikrobielle Allergene</td></tr><tr><td>I15536</td><td>Hypersensibilität</td></tr><tr><td>I32391</td><td>Idiosynkrasie</td></tr><tr><td>I112611</td><td>Isopropylalkohol-Allergie</td></tr><tr><td>I112679</td><td>Isopropylalkohol-Überempfindlichkeit</td></tr><tr><td>I109672</td><td>Jodallergie</td></tr><tr><td>I112586</td><td>Johannisbrotkernmehl-Allergie [E 410]</td></tr><tr><td>I112654</td><td>Johannisbrotkernmehl-Überempfindlichkeit [E 410]</td></tr><tr><td>I15532</td><td>Kaninchenallergie</td></tr><tr><td>I112583</td><td>Karaya-Allergie [E 416]</td></tr><tr><td>I112651</td><td>Karaya-Überempfindlichkeit [E 416]</td></tr><tr><td>I112635</td><td>Korbblütler-Allergie</td></tr><tr><td>I112703</td><td>Korbblütler-Überempfindlichkeit</td></tr><tr><td>I112602</td><td>Kurkumin-Allergie [E 100]</td></tr><tr><td>I112670</td><td>Kurkumin-Überempfindlichkeit [E 100]</td></tr><tr><td>I112595</td><td>Litholrubin-Allergie [E 180]</td></tr><tr><td>I112663</td><td>Litholrubin-Überempfindlichkeit [E 180]</td></tr><tr><td>I112582</td><td>Lysozym-Allergie</td></tr><tr><td>I112650</td><td>Lysozym-Überempfindlichkeit</td></tr><tr><td>I112610</td><td>Macrogolglycerolricinoleat-Allergie</td></tr><tr><td>I112678</td><td>Macrogolglycerolricinoleat-Überempfindlichkeit</td></tr><tr><td>I112634</td><td>Mausprotein-Allergie</td></tr><tr><td>I112702</td><td>Mausprotein-Überempfindlichkeit</td></tr><tr><td>I30749</td><td>MCS [Multiple-Chemical-Sensitivity]-Syndrom</td></tr><tr><td>I15535</td><td>Multiple Allergien</td></tr><tr><td>I15534</td><td>Multiple-Chemical-Sensitivity [MCS]-Syndrom</td></tr><tr><td>I112609</td><td>Natriumbenzoat-Allergie</td></tr><tr><td>I112677</td><td>Natriumbenzoat-Überempfindlichkeit</td></tr><tr><td>I112608</td><td>Natriumdisulfit-Allergie</td></tr><tr><td>I112676</td><td>Natriumdisulfit-Überempfindlichkeit</td></tr><tr><td>I112607</td><td>Natriumedetat-Allergie</td></tr><tr><td>I112675</td><td>Natriumedetat-Überempfindlichkeit</td></tr><tr><td>I112633</td><td>Nitroverbindungen-Allergie</td></tr><tr><td>I112701</td><td>Nitroverbindungen-Überempfindlichkeit</td></tr><tr><td>I112632</td><td>Norfluran-Allergie</td></tr><tr><td>I112700</td><td>Norfluran-Überempfindlichkeit</td></tr><tr><td>I112593</td><td>Para-Hydroxybenzoesäureester-Allergie</td></tr><tr><td>I112661</td><td>Para-Hydroxybenzoesäureester-Überempfindlichkeit</td></tr><tr><td>I112606</td><td>Parabene-Allergie</td></tr><tr><td>I112674</td><td>Parabene-Überempfindlichkeit</td></tr><tr><td>I112631</td><td>Phenolrot-Allergie</td></tr><tr><td>I112699</td><td>Phenolrot-Überempfindlichkeit</td></tr><tr><td>I112605</td><td>Ponceau-Allergie [E 124]</td></tr><tr><td>I112673</td><td>Ponceau-Überempfindlichkeit [E 124]</td></tr><tr><td>I112604</td><td>Propylenglycol-Allergie</td></tr><tr><td>I112672</td><td>Propylenglycol-Überempfindlichkeit</td></tr><tr><td>I117141</td><td>Propylgallate-Allergie</td></tr><tr><td>I112630</td><td>Pyrrolidon-Allergie</td></tr><tr><td>I112698</td><td>Pyrrolidon-Überempfindlichkeit</td></tr><tr><td>I112599</td><td>Rot-Allergie [E 128]</td></tr><tr><td>I112667</td><td>Rot-Überempfindlichkeit [E 128]</td></tr><tr><td>I112592</td><td>Schwefeldioxid-Allergie</td></tr><tr><td>I112660</td><td>Schwefeldioxid-Überempfindlichkeit</td></tr><tr><td>I116354</td><td>Schwermetallüberempfindlichkeit</td></tr><tr><td>I112640</td><td>Sorbinsäure-Allergie</td></tr><tr><td>I112708</td><td>Sorbinsäure-Überempfindlichkeit</td></tr><tr><td>I112642</td><td>Stearylalkohol-Allergie</td></tr><tr><td>I112710</td><td>Stearylalkohol-Überempfindlichkeit</td></tr><tr><td>I112643</td><td>Sulfit-Allergie</td></tr><tr><td>I112711</td><td>Sulfit-Überempfindlichkeit</td></tr><tr><td>I112603</td><td>Tartrazin-Allergie [E 102]</td></tr><tr><td>I112671</td><td>Tartrazin-Überempfindlichkeit [E 102]</td></tr><tr><td>I120132</td><td>Thioharnstoff-Überempfindlichkeit</td></tr><tr><td>I112629</td><td>Thionamid-Derivate-Allergie</td></tr><tr><td>I112697</td><td>Thionamid-Derivate-Überempfindlichkeit</td></tr><tr><td>I112584</td><td>Traganth-Allergie [E 413]</td></tr><tr><td>I112652</td><td>Traganth-Überempfindlichkeit [E 413]</td></tr><tr><td>I112588</td><td>Triammoniumcitrat-Allergie</td></tr><tr><td>I112656</td><td>Triammoniumcitrat-Überempfindlichkeit</td></tr><tr><td>I112628</td><td>Triarylmethan-Allergie</td></tr><tr><td>I112696</td><td>Triarylmethan-Überempfindlichkeit</td></tr><tr><td>I112581</td><td>Triethylcitrat-Allergie</td></tr><tr><td>I112649</td><td>Triethylcitrat-Überempfindlichkeit</td></tr><tr><td>I112627</td><td>Triphenylmethan-Farbstoff-Allergie</td></tr><tr><td>I112695</td><td>Triphenylmethan-Farbstoff-Überempfindlichkeit</td></tr><tr><td>I112626</td><td>Tropasäure-Allergie</td></tr><tr><td>I112694</td><td>Tropasäure-Überempfindlichkeit</td></tr><tr><td>I15531</td><td>Unklare Allergie</td></tr><tr><td>I32390</td><td>Überempfindlichkeit</td></tr><tr><td>I116798</td><td>Überempfindlichkeit durch 2-Phenoxyethanol</td></tr><tr><td>I116467</td><td>Überempfindlichkeit durch Aspergillus-Extrakt</td></tr><tr><td>I116799</td><td>Überempfindlichkeit durch E. coli-Protein</td></tr><tr><td>I112669</td><td>Überempfindlichkeit durch echtes Karmin [E 120]</td></tr><tr><td>I116797</td><td>Überempfindlichkeit durch Polysorbat 20</td></tr><tr><td>I116466</td><td>Überempfindlichkeit durch quaternäre Ammoniumverbindung</td></tr><tr><td>I15537</td><td>Überempfindlichkeitsreaktion</td></tr><tr><td>I112589</td><td>Zitronensäure-Allergie</td></tr><tr><td>I112657</td><td>Zitronensäure-Überempfindlichkeit</td></tr><tr><td>I90606</td><td>Arthritis bei Überempfindlichkeitsreaktion a.n.k.</td></tr><tr><td>I83174</td><td>Abnorme Arzneimittelwirkung a.n.k.</td></tr><tr><td>I112538</td><td>ACE-Hemmer-Allergie</td></tr><tr><td>I112408</td><td>ACE-Hemmer-Überempfindlichkeit</td></tr><tr><td>I112539</td><td>Aciclovir-Allergie</td></tr><tr><td>I112409</td><td>Aciclovir-Überempfindlichkeit</td></tr><tr><td>I112540</td><td>Acridin-Derivate-Allergie</td></tr><tr><td>I112410</td><td>Acridin-Derivate-Überempfindlichkeit</td></tr><tr><td>I112541</td><td>ACTH [Adrenocorticotropes Hormon]-Allergie</td></tr><tr><td>I112411</td><td>ACTH [Adrenocorticotropes Hormon]-Überempfindlichkeit</td></tr><tr><td>I16017</td><td>Adriblastinschädigung</td></tr><tr><td>I112542</td><td>Allergie gegen adrenerge Mittel</td></tr><tr><td>I112465</td><td>Allergie gegen halogenierte Kohlenwasserstoffe</td></tr><tr><td>I109567</td><td>Allergie gegen jodhaltige Kontrastmittel</td></tr><tr><td>I112573</td><td>Allergie gegen monoklonale Antikörper</td></tr><tr><td>I112457</td><td>Allergie gegen normale humane Immunglobuline</td></tr><tr><td>I112507</td><td>Allergie gegen trizyklische Antidepressiva</td></tr><tr><td>I89387</td><td>Allergische Reaktion durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I89388</td><td>Allergische Reaktion durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I110486</td><td>Allergisches Medikamentenexanthem</td></tr><tr><td>I112543</td><td>Alpha-Adrenorezeptor-Antagonisten-Allergie</td></tr><tr><td>I112413</td><td>Alpha-Adrenorezeptor-Antagonisten-Überempfindlichkeit</td></tr><tr><td>I112544</td><td>Amantadin-Allergie</td></tr><tr><td>I112414</td><td>Amantadin-Überempfindlichkeit</td></tr><tr><td>I112460</td><td>Amid-Lokalanästhetika-Allergie</td></tr><tr><td>I112329</td><td>Amid-Lokalanästhetika-Überempfindlichkeit</td></tr><tr><td>I112545</td><td>Amidin-Allergie</td></tr><tr><td>I112415</td><td>Amidin-Überempfindlichkeit</td></tr><tr><td>I112536</td><td>Aminochinoline-Allergie</td></tr><tr><td>I112406</td><td>Aminochinoline-Überempfindlichkeit</td></tr><tr><td>I112546</td><td>Aminoglykosid-Allergie</td></tr><tr><td>I112416</td><td>Aminoglykosid-Überempfindlichkeit</td></tr><tr><td>I112547</td><td>Amoxicillin-Allergie</td></tr><tr><td>I112417</td><td>Amoxicillin-Überempfindlichkeit</td></tr><tr><td>I112548</td><td>Amphotericin-B-Allergie</td></tr><tr><td>I112418</td><td>Amphotericin-B-Überempfindlichkeit</td></tr><tr><td>I676</td><td>Analgetikaintoleranz</td></tr><tr><td>I670</td><td>Androgennebenwirkung</td></tr><tr><td>I112550</td><td>Anthracen-Derivate-Allergie</td></tr><tr><td>I112420</td><td>Anthracen-Derivate-Überempfindlichkeit</td></tr><tr><td>I112549</td><td>Anthracyclin-Allergie</td></tr><tr><td>I112419</td><td>Anthracyclin-Überempfindlichkeit</td></tr><tr><td>I671</td><td>Antiandrogen-Nebenwirkung</td></tr><tr><td>I110518</td><td>Antibiotikaunverträglichkeit</td></tr><tr><td>I112551</td><td>Anticholinergika-Allergie</td></tr><tr><td>I112421</td><td>Anticholinergika-Überempfindlichkeit</td></tr><tr><td>I691</td><td>Antidiabetika-Nebenwirkung</td></tr><tr><td>I112552</td><td>Antihistaminika-Allergie</td></tr><tr><td>I112422</td><td>Antihistaminika-Überempfindlichkeit</td></tr><tr><td>I672</td><td>Antiöstrogen-Nebenwirkung</td></tr><tr><td>I12827</td><td>Arzneimittelallergie</td></tr><tr><td>I116801</td><td>Arzneimittelbedingte Überhangeffekte</td></tr><tr><td>I109565</td><td>Arzneimittelinduzierte Toleranzentwicklung</td></tr><tr><td>I73188</td><td>Arzneimittelreaktion a.n.k.</td></tr><tr><td>I697</td><td>Arzneimittelunverträglichkeit</td></tr><tr><td>I78497</td><td>Arzneimittelüberempfindlichkeit</td></tr><tr><td>I112553</td><td>Atropin-Allergie</td></tr><tr><td>I112423</td><td>Atropin-Überempfindlichkeit</td></tr><tr><td>I112555</td><td>Baldrianwurzel-Allergie</td></tr><tr><td>I112425</td><td>Baldrianwurzel-Überempfindlichkeit</td></tr><tr><td>I112556</td><td>Barbiturate-Allergie</td></tr><tr><td>I112426</td><td>Barbiturate-Überempfindlichkeit</td></tr><tr><td>I112557</td><td>Benzamid-Allergie</td></tr><tr><td>I112427</td><td>Benzamid-Überempfindlichkeit</td></tr><tr><td>I112558</td><td>Benzimidazol-Derivate-Allergie</td></tr><tr><td>I112428</td><td>Benzimidazol-Derivate-Überempfindlichkeit</td></tr><tr><td>I112559</td><td>Benzodiazepin-Allergie</td></tr><tr><td>I112429</td><td>Benzodiazepin-Überempfindlichkeit</td></tr><tr><td>I112560</td><td>Beta-Adrenorezeptor-Antagonisten-Allergie</td></tr><tr><td>I112430</td><td>Beta-Adrenorezeptor-Antagonisten-Überempfindlichkeit</td></tr><tr><td>I112515</td><td>Beta-Laktamase-Inhibitoren-Allergie</td></tr><tr><td>I112385</td><td>Beta-Laktamase-Inhibitoren-Überempfindlichkeit</td></tr><tr><td>I112561</td><td>Betablocker-Allergie</td></tr><tr><td>I112431</td><td>Betablocker-Überempfindlichkeit</td></tr><tr><td>I112562</td><td>Betalaktam-Antibiotika-Allergie</td></tr><tr><td>I112432</td><td>Betalaktam-Antibiotika-Überempfindlichkeit</td></tr><tr><td>I112563</td><td>Bisphosphonat-Allergie</td></tr><tr><td>I112433</td><td>Bisphosphonat-Überempfindlichkeit</td></tr><tr><td>I112564</td><td>Butyrophenon-Derivate-Allergie</td></tr><tr><td>I112434</td><td>Butyrophenon-Derivate-Überempfindlichkeit</td></tr><tr><td>I112566</td><td>Carbamat-Allergie</td></tr><tr><td>I112436</td><td>Carbamat-Überempfindlichkeit</td></tr><tr><td>I112567</td><td>Carbamazepin-Allergie</td></tr><tr><td>I112437</td><td>Carbamazepin-Überempfindlichkeit</td></tr><tr><td>I112568</td><td>Carbapenem-Allergie</td></tr><tr><td>I112438</td><td>Carbapenem-Überempfindlichkeit</td></tr><tr><td>I112569</td><td>Cefotaxim-Allergie</td></tr><tr><td>I112439</td><td>Cefotaxim-Überempfindlichkeit</td></tr><tr><td>I112570</td><td>Cephalosporin-Allergie</td></tr><tr><td>I112440</td><td>Cephalosporin-Überempfindlichkeit</td></tr><tr><td>I692</td><td>Chemotherapie-Nebenwirkung</td></tr><tr><td>I112571</td><td>Chinolin-Allergie</td></tr><tr><td>I112441</td><td>Chinolin-Überempfindlichkeit</td></tr><tr><td>I112572</td><td>Chinolon-Allergie</td></tr><tr><td>I112442</td><td>Chinolon-Überempfindlichkeit</td></tr><tr><td>I685</td><td>Chlormadinonacetat-Nebenwirkung</td></tr><tr><td>I112574</td><td>Clindamycin-Allergie</td></tr><tr><td>I112444</td><td>Clindamycin-Überempfindlichkeit</td></tr><tr><td>I673</td><td>Cyproteronazetat-Nebenwirkung</td></tr><tr><td>I117908</td><td>Cytokine-Release-Syndrom</td></tr><tr><td>I112535</td><td>Dacarbazin-Allergie</td></tr><tr><td>I112405</td><td>Dacarbazin-Überempfindlichkeit</td></tr><tr><td>I112487</td><td>Darbepoetin-alfa-Allergie</td></tr><tr><td>I112356</td><td>Darbepoetin-alfa-Überempfindlichkeit</td></tr><tr><td>I674</td><td>Dehydroepiandrosteronsulfat-Nebenwirkung</td></tr><tr><td>I112459</td><td>Desirudin-Allergie</td></tr><tr><td>I112328</td><td>Desirudin-Überempfindlichkeit</td></tr><tr><td>I675</td><td>Desogestrel-Nebenwirkung</td></tr><tr><td>I677</td><td>DHEA [Dehydroepiandrosteron]-Sulfat-Nebenwirkung</td></tr><tr><td>I112494</td><td>Dihydropyridin-Allergie</td></tr><tr><td>I112364</td><td>Dihydropyridin-Überempfindlichkeit</td></tr><tr><td>I112492</td><td>Diphenylbutylpiperidin-Allergie</td></tr><tr><td>I112362</td><td>Diphenylbutylpiperidin-Überempfindlichkeit</td></tr><tr><td>I115806</td><td>DRESS [Drug Rash with Eosinophilia and Systemic Symptoms]-Syndrom</td></tr><tr><td>I83175</td><td>Drogenwirkung a.n.k.</td></tr><tr><td>I112489</td><td>Erythromycin-Allergie</td></tr><tr><td>I112358</td><td>Erythromycin-Überempfindlichkeit</td></tr><tr><td>I112462</td><td>Ester-Lokalanästhetika-Allergie</td></tr><tr><td>I112331</td><td>Ester-Lokalanästhetika-Überempfindlichkeit</td></tr><tr><td>I112485</td><td>Estradiol-Allergie</td></tr><tr><td>I678</td><td>Estradiol-Nebenwirkung</td></tr><tr><td>I112354</td><td>Estradiol-Überempfindlichkeit</td></tr><tr><td>I679</td><td>Estriol-Nebenwirkung</td></tr><tr><td>I680</td><td>Estron-Nebenwirkung</td></tr><tr><td>I681</td><td>Ethinyl-Estradiol-Nebenwirkung</td></tr><tr><td>I112481</td><td>Fentanyl-Allergie</td></tr><tr><td>I112350</td><td>Fentanyl-Überempfindlichkeit</td></tr><tr><td>I112479</td><td>Filgrastim-Allergie</td></tr><tr><td>I112348</td><td>Filgrastim-Überempfindlichkeit</td></tr><tr><td>I116805</td><td>Flare-Phänomen durch Strahlentherapie</td></tr><tr><td>I112477</td><td>Fluorouracil-Allergie</td></tr><tr><td>I112346</td><td>Fluorouracil-Überempfindlichkeit</td></tr><tr><td>I112475</td><td>Gadodiamid-Allergie</td></tr><tr><td>I112344</td><td>Gadodiamid-Überempfindlichkeit</td></tr><tr><td>I682</td><td>Gestagen-Nebenwirkung</td></tr><tr><td>I109614</td><td>Gesteigerte Empfindlichkeit auf ein Arzneimittel</td></tr><tr><td>I683</td><td>Glukokortikoid-Nebenwirkung</td></tr><tr><td>I112471</td><td>Glycopeptid-Antibiotika-Allergie</td></tr><tr><td>I112340</td><td>Glycopeptid-Antibiotika-Überempfindlichkeit</td></tr><tr><td>I112469</td><td>Gonadotropin-Releasing-Hormon-Analoga-Allergie</td></tr><tr><td>I112338</td><td>Gonadotropin-Releasing-Hormon-Analoga-Überempfindlichkeit</td></tr><tr><td>I112504</td><td>Harnstoff-Allergie</td></tr><tr><td>I112374</td><td>Harnstoff-Überempfindlichkeit</td></tr><tr><td>I112463</td><td>Heparin-Allergie</td></tr><tr><td>I112332</td><td>Heparin-Überempfindlichkeit</td></tr><tr><td>I112461</td><td>Herzglykoside-Allergie</td></tr><tr><td>I112330</td><td>Herzglykoside-Überempfindlichkeit</td></tr><tr><td>I112467</td><td>Histamin-H2-Rezeptorantagonist-Allergie</td></tr><tr><td>I112336</td><td>Histamin-H2-Rezeptorantagonist-Überempfindlichkeit</td></tr><tr><td>I112453</td><td>Hydantoin-Derivate-Allergie</td></tr><tr><td>I112322</td><td>Hydantoin-Derivate-Überempfindlichkeit</td></tr><tr><td>I112451</td><td>Hydralazin-Allergie</td></tr><tr><td>I112320</td><td>Hydralazin-Überempfindlichkeit</td></tr><tr><td>I89391</td><td>Idiosynkrasie durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I89392</td><td>Idiosynkrasie durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I112449</td><td>Imidazol-Derivate-Allergie</td></tr><tr><td>I112318</td><td>Imidazol-Derivate-Überempfindlichkeit</td></tr><tr><td>I112499</td><td>Immunglobuline-Allergie</td></tr><tr><td>I112369</td><td>Immunglobuline-Überempfindlichkeit</td></tr><tr><td>I112447</td><td>Indometacin-Allergie</td></tr><tr><td>I112316</td><td>Indometacin-Überempfindlichkeit</td></tr><tr><td>I112446</td><td>Inhalationsanästhetika-Allergie</td></tr><tr><td>I112315</td><td>Inhalationsanästhetika-Überempfindlichkeit</td></tr><tr><td>I684</td><td>Insulin-Nebenwirkung</td></tr><tr><td>I116802</td><td>Jodschnupfen</td></tr><tr><td>I115859</td><td>Kaliumthiocyanat-Überempfindlichkeit</td></tr><tr><td>I112565</td><td>Kalziumantagonisten-Allergie</td></tr><tr><td>I112435</td><td>Kalziumantagonisten-Überempfindlichkeit</td></tr><tr><td>I112575</td><td>Koffein-Allergie</td></tr><tr><td>I112445</td><td>Koffein-Überempfindlichkeit</td></tr><tr><td>I112473</td><td>Kontrastmittel-Allergie</td></tr><tr><td>I112342</td><td>Kontrastmittel-Überempfindlichkeit</td></tr><tr><td>I112448</td><td>Kortikosteroid-Allergie</td></tr><tr><td>I112317</td><td>Kortikosteroid-Überempfindlichkeit</td></tr><tr><td>I109566</td><td>Kreuztoleranz</td></tr><tr><td>I112452</td><td>Lidocain-Allergie</td></tr><tr><td>I112321</td><td>Lidocain-Überempfindlichkeit</td></tr><tr><td>I112454</td><td>Lincomycin-Allergie</td></tr><tr><td>I112323</td><td>Lincomycin-Überempfindlichkeit</td></tr><tr><td>I112456</td><td>Lincosamid-Allergie</td></tr><tr><td>I112325</td><td>Lincosamid-Überempfindlichkeit</td></tr><tr><td>I112458</td><td>Lisinopril-Allergie</td></tr><tr><td>I112327</td><td>Lisinopril-Überempfindlichkeit</td></tr><tr><td>I698</td><td>Lokalanästhetikaunverträglichkeit</td></tr><tr><td>I112450</td><td>Lutein-Releasing-Hormone-Allergie</td></tr><tr><td>I112319</td><td>Lutein-Releasing-Hormone-Überempfindlichkeit</td></tr><tr><td>I112464</td><td>Macrogol-Allergie</td></tr><tr><td>I112333</td><td>Macrogol-Überempfindlichkeit</td></tr><tr><td>I112554</td><td>Makrolid-Allergie</td></tr><tr><td>I112468</td><td>Makrolid-Antibiotika-Allergie</td></tr><tr><td>I112337</td><td>Makrolid-Antibiotika-Überempfindlichkeit</td></tr><tr><td>I112424</td><td>Makrolid-Überempfindlichkeit</td></tr><tr><td>I12828</td><td>Medikamentenallergie</td></tr><tr><td>I696</td><td>Medikamentenunverträglichkeit</td></tr><tr><td>I112472</td><td>Mercaptopurin-Allergie</td></tr><tr><td>I112341</td><td>Mercaptopurin-Überempfindlichkeit</td></tr><tr><td>I112470</td><td>Methanolchinolin-Allergie</td></tr><tr><td>I112339</td><td>Methanolchinolin-Überempfindlichkeit</td></tr><tr><td>I112476</td><td>Metoprolol-Allergie</td></tr><tr><td>I112345</td><td>Metoprolol-Überempfindlichkeit</td></tr><tr><td>I112478</td><td>Muskelrelaxanzien-Allergie</td></tr><tr><td>I112347</td><td>Muskelrelaxanzien-Überempfindlichkeit</td></tr><tr><td>I112480</td><td>Mutterkornalkaloid-Allergie</td></tr><tr><td>I112349</td><td>Mutterkornalkaloid-Überempfindlichkeit</td></tr><tr><td>I112482</td><td>Nadroparin-Allergie</td></tr><tr><td>I112351</td><td>Nadroparin-Überempfindlichkeit</td></tr><tr><td>I112484</td><td>Natamycin-Allergie</td></tr><tr><td>I112353</td><td>Natamycin-Überempfindlichkeit</td></tr><tr><td>I24992</td><td>Nebenwirkung oraler Kontrazeptiva</td></tr><tr><td>I112486</td><td>Neomycin-Allergie</td></tr><tr><td>I112355</td><td>Neomycin-Überempfindlichkeit</td></tr><tr><td>I112488</td><td>Neuroleptika-Allergie</td></tr><tr><td>I112357</td><td>Neuroleptika-Überempfindlichkeit</td></tr><tr><td>I112490</td><td>Nitrat-Allergie</td></tr><tr><td>I112359</td><td>Nitrat-Überempfindlichkeit</td></tr><tr><td>I112491</td><td>Nitrofuran-Allergie</td></tr><tr><td>I112361</td><td>Nitrofuran-Überempfindlichkeit</td></tr><tr><td>I112498</td><td>Nitroimidazol-Derivate-Allergie</td></tr><tr><td>I112368</td><td>Nitroimidazol-Derivate-Überempfindlichkeit</td></tr><tr><td>I112493</td><td>Nitrosoharn-Allergie</td></tr><tr><td>I112363</td><td>Nitrosoharn-Überempfindlichkeit</td></tr><tr><td>I686</td><td>Norethistosteron-Nebenwirkung</td></tr><tr><td>I687</td><td>Ocytocin-Nebenwirkung</td></tr><tr><td>I112534</td><td>Opiate-Allergie</td></tr><tr><td>I112404</td><td>Opiate-Überempfindlichkeit</td></tr><tr><td>I24993</td><td>Ovulationshemmernebenwirkung</td></tr><tr><td>I24991</td><td>Ovulationshemmerunverträglichkeit</td></tr><tr><td>I112533</td><td>Oxicam-Allergie</td></tr><tr><td>I112403</td><td>Oxicam-Überempfindlichkeit</td></tr><tr><td>I109417</td><td>Oxytozin-Nebenwirkung</td></tr><tr><td>I12829</td><td>Penicillin-Allergie</td></tr><tr><td>I112532</td><td>Perchlorat-Allergie</td></tr><tr><td>I112402</td><td>Perchlorat-Überempfindlichkeit</td></tr><tr><td>I112531</td><td>Perubalsam-Allergie</td></tr><tr><td>I112401</td><td>Perubalsam-Überempfindlichkeit</td></tr><tr><td>I112530</td><td>Phenothiazin-Allergie</td></tr><tr><td>I112400</td><td>Phenothiazin-Überempfindlichkeit</td></tr><tr><td>I112529</td><td>Phenytoin-Allergie</td></tr><tr><td>I112399</td><td>Phenytoin-Überempfindlichkeit</td></tr><tr><td>I112528</td><td>Piperazin-Derviate-Allergie</td></tr><tr><td>I112398</td><td>Piperazin-Derviate-Überempfindlichkeit</td></tr><tr><td>I112527</td><td>Piperidin-Derivate-Allergie</td></tr><tr><td>I112397</td><td>Piperidin-Derivate-Überempfindlichkeit</td></tr><tr><td>I112455</td><td>Plasmaprotein-Allergie</td></tr><tr><td>I112324</td><td>Plasmaprotein-Überempfindlichkeit</td></tr><tr><td>I112526</td><td>Podophyllotoxin-Allergie</td></tr><tr><td>I112396</td><td>Podophyllotoxin-Überempfindlichkeit</td></tr><tr><td>I112525</td><td>Polymyxin-B-Allergie</td></tr><tr><td>I112395</td><td>Polymyxin-B-Überempfindlichkeit</td></tr><tr><td>I112524</td><td>Pravastatin-Allergie</td></tr><tr><td>I112394</td><td>Pravastatin-Überempfindlichkeit</td></tr><tr><td>I112523</td><td>Probenecid-Allergie</td></tr><tr><td>I112393</td><td>Probenecid-Überempfindlichkeit</td></tr><tr><td>I689</td><td>Progesteron-Nebenwirkung</td></tr><tr><td>I112522</td><td>Propacetamol-Allergie</td></tr><tr><td>I112392</td><td>Propacetamol-Überempfindlichkeit</td></tr><tr><td>I112521</td><td>Prostaglandin-Allergie</td></tr><tr><td>I112391</td><td>Prostaglandin-Überempfindlichkeit</td></tr><tr><td>I117241</td><td>Purple-Glove-Syndrom</td></tr><tr><td>I112520</td><td>Pyrazolon-Allergie</td></tr><tr><td>I112390</td><td>Pyrazolon-Überempfindlichkeit</td></tr><tr><td>I112519</td><td>Pyrethrin-Allergie</td></tr><tr><td>I112389</td><td>Pyrethrin-Überempfindlichkeit</td></tr><tr><td>I112518</td><td>Quecksilber-Allergie</td></tr><tr><td>I112388</td><td>Quecksilber-Überempfindlichkeit</td></tr><tr><td>I116803</td><td>Rapamycin-Derivate-Überempfindlichkeit</td></tr><tr><td>I112517</td><td>Rifamycin-Allergie</td></tr><tr><td>I112387</td><td>Rifamycin-Überempfindlichkeit</td></tr><tr><td>I112516</td><td>Salizylate-Allergie</td></tr><tr><td>I112386</td><td>Salizylate-Überempfindlichkeit</td></tr><tr><td>I117244</td><td>Scopolaminderivate-Überempfindlichkeit</td></tr><tr><td>I112537</td><td>Serotonin-5HT3-Antagonisten-Allergie</td></tr><tr><td>I112407</td><td>Serotonin-5HT3-Antagonisten-Überempfindlichkeit</td></tr><tr><td>I109557</td><td>Serotonin-Syndrom</td></tr><tr><td>I118673</td><td>Streptomycin-Überempfindlichkeit</td></tr><tr><td>I112514</td><td>Sulfasalazin-Allergie</td></tr><tr><td>I112384</td><td>Sulfasalazin-Überempfindlichkeit</td></tr><tr><td>I112513</td><td>Sulfonamid-Allergie</td></tr><tr><td>I112383</td><td>Sulfonamid-Überempfindlichkeit</td></tr><tr><td>I112512</td><td>Sulfonylharnstoff-Allergie</td></tr><tr><td>I112382</td><td>Sulfonylharnstoff-Überempfindlichkeit</td></tr><tr><td>I112511</td><td>Sympathomimetika-Allergie</td></tr><tr><td>I112381</td><td>Sympathomimetika-Überempfindlichkeit</td></tr><tr><td>I112466</td><td>Tacrolismus-Allergie</td></tr><tr><td>I112335</td><td>Tacrolismus-Überempfindlichkeit</td></tr><tr><td>I694</td><td>Tamoxifen-Nebenwirkung</td></tr><tr><td>I112510</td><td>Terbutalin-Allergie</td></tr><tr><td>I112380</td><td>Terbutalin-Überempfindlichkeit</td></tr><tr><td>I112509</td><td>Tetracyclin-Allergie</td></tr><tr><td>I112508</td><td>Tetracyclin-Derivate-Allergie</td></tr><tr><td>I112378</td><td>Tetracyclin-Derivate-Überempfindlichkeit</td></tr><tr><td>I112379</td><td>Tetracyclin-Überempfindlichkeit</td></tr><tr><td>I112506</td><td>Thiamin-Allergie</td></tr><tr><td>I112376</td><td>Thiamin-Überempfindlichkeit</td></tr><tr><td>I112505</td><td>Thiazid-Allergie</td></tr><tr><td>I112375</td><td>Thiazid-Überempfindlichkeit</td></tr><tr><td>I112503</td><td>Thioxanthen-Allergie</td></tr><tr><td>I112373</td><td>Thioxanthen-Überempfindlichkeit</td></tr><tr><td>I690</td><td>Thyreostatika-Nebenwirkung</td></tr><tr><td>I112501</td><td>Thyreotropin-Releasing-Hormon-Allergie</td></tr><tr><td>I112371</td><td>Thyreotropin-Releasing-Hormon-Überempfindlichkeit</td></tr><tr><td>I112502</td><td>Tolycain-Allergie</td></tr><tr><td>I112372</td><td>Tolycain-Überempfindlichkeit</td></tr><tr><td>I112500</td><td>Trimethoprim-Allergie</td></tr><tr><td>I112370</td><td>Trimethoprim-Überempfindlichkeit</td></tr><tr><td>I119546</td><td>Unerwünschte Arzneimittelwirkung</td></tr><tr><td>I89389</td><td>Unerwünschte Nebenwirkung durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I89390</td><td>Unerwünschte Nebenwirkung durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I112497</td><td>Valaciclovir-Allergie</td></tr><tr><td>I112367</td><td>Valaciclovir-Überempfindlichkeit</td></tr><tr><td>I115860</td><td>Valganciclovir-Überempfindlichkeit</td></tr><tr><td>I112496</td><td>Valproinsäure-Derivate-Allergie</td></tr><tr><td>I112366</td><td>Valproinsäure-Derivate-Überempfindlichkeit</td></tr><tr><td>I112495</td><td>Vitamin-D-Allergie</td></tr><tr><td>I112365</td><td>Vitamin-D-Überempfindlichkeit</td></tr><tr><td>I693</td><td>Wehenmittel-Nebenwirkung</td></tr><tr><td>I112474</td><td>Xanthin-Allergie</td></tr><tr><td>I112343</td><td>Xanthin-Überempfindlichkeit</td></tr><tr><td>I112412</td><td>Überempfindlichkeit durch adrenerge Mittel</td></tr><tr><td>I89393</td><td>Überempfindlichkeit durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I89394</td><td>Überempfindlichkeit durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung</td></tr><tr><td>I112334</td><td>Überempfindlichkeit durch halogenierte Kohlenwasserstoffe</td></tr><tr><td>I115861</td><td>Überempfindlichkeit durch homologe Immunglobuline</td></tr><tr><td>I112443</td><td>Überempfindlichkeit durch monoklonale Antikörper</td></tr><tr><td>I112326</td><td>Überempfindlichkeit durch normale humane Immunglobuline</td></tr><tr><td>I116804</td><td>Überempfindlichkeit durch Sirolimus</td></tr><tr><td>I117243</td><td>Überempfindlichkeit durch tetrazyklische Antidepressiva</td></tr><tr><td>I112377</td><td>Überempfindlichkeit durch trizyklische Antidepressiva</td></tr><tr><td>I117242</td><td>Überempfindlichkeit durch Vincaalkaloide</td></tr><tr><td>I118675</td><td>Überempfindlichkeit gegen Prasugrel</td></tr><tr><td>I118674</td><td>Überempfindlichkeit gegen Succinimide</td></tr><tr><td>I118676</td><td>Überempfindlichkeit gegen Ticlopidin</td></tr><tr><td>I118677</td><td>Überempfindlichkeit gegen Zytokine</td></tr><tr><td>I688</td><td>Östrogen-Nebenwirkung</td></tr><tr><td>I27947</td><td>Angeborene Laktoseintoleranz</td></tr><tr><td>I27946</td><td>Laktoseintoleranz</td></tr><tr><td>I27948</td><td>Laktoseintoleranzsyndrom</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.charite.de./fhir/medikationsplan/ValueSet/allergies-alphaid",
+  "version": "0.1.0",
+  "name": "AllergiesIntolerancesAlphaID",
+  "status": "draft",
+  "experimental": false,
+  "date": "2021-05-13",
+  "publisher": "BIH@Charité",
+  "contact": [
+    {
+      "name": "BIH@Charité",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "Allergien und Unverträglichkeiten Alpha-ID",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/alpha-id",
+        "concept": [
+          {
+            "code": "I81502",
+            "display": "Anaphylaktischer Schock durch Nahrungsmittel a.n.k."
+          },
+          {
+            "code": "I81501",
+            "display": "Schock durch Nahrungsmittelunverträglichkeit"
+          },
+          {
+            "code": "I564",
+            "display": "Allergie gegen Nahrungsmittel"
+          },
+          {
+            "code": "I97198",
+            "display": "Allergische Reaktion durch Nahrungsmittel a.n.k."
+          },
+          {
+            "code": "I112579",
+            "display": "Eiprotein-Allergie"
+          },
+          {
+            "code": "I112647",
+            "display": "Eiprotein-Überempfindlichkeit"
+          },
+          {
+            "code": "I120131",
+            "display": "Erdnussprotein-Allergie"
+          },
+          {
+            "code": "I112580",
+            "display": "Erdnussöl-Allergie"
+          },
+          {
+            "code": "I112648",
+            "display": "Erdnussöl-Überempfindlichkeit"
+          },
+          {
+            "code": "I116460",
+            "display": "Fisch-Allergie"
+          },
+          {
+            "code": "I116463",
+            "display": "Fischeiweiß-Überempfindlichkeit"
+          },
+          {
+            "code": "I116461",
+            "display": "Gelatine-Überempfindlichkeit"
+          },
+          {
+            "code": "I116459",
+            "display": "Hühnereiweiß-Allergie"
+          },
+          {
+            "code": "I24369",
+            "display": "Kuhmilchproteinintoleranz"
+          },
+          {
+            "code": "I116796",
+            "display": "Kürbisfrüchte-Allergie"
+          },
+          {
+            "code": "I116465",
+            "display": "Leguminosen-Allergie"
+          },
+          {
+            "code": "I29215",
+            "display": "Nahrungsmittelunverträglichkeit"
+          },
+          {
+            "code": "I116462",
+            "display": "Nuss-Überempfindlichkeit"
+          },
+          {
+            "code": "I116353",
+            "display": "Rinderprotein-Überempfindlichkeit"
+          },
+          {
+            "code": "I116795",
+            "display": "Sesamöl-Allergie"
+          },
+          {
+            "code": "I112576",
+            "display": "Soja-Allergie"
+          },
+          {
+            "code": "I112644",
+            "display": "Soja-Überempfindlichkeit"
+          },
+          {
+            "code": "I112577",
+            "display": "Sojaprotein-Allergie"
+          },
+          {
+            "code": "I112645",
+            "display": "Sojaprotein-Überempfindlichkeit"
+          },
+          {
+            "code": "I112641",
+            "display": "Sorbitol-Allergie"
+          },
+          {
+            "code": "I112709",
+            "display": "Sorbitol-Überempfindlichkeit"
+          },
+          {
+            "code": "I109560",
+            "display": "Sorbitolunverträglichkeit"
+          },
+          {
+            "code": "I109981",
+            "display": "Überempfindlichkeit gegen Farbstoffe in Nahrungsmitteln"
+          },
+          {
+            "code": "I109980",
+            "display": "Überempfindlichkeit gegen Konservierungsmittel"
+          },
+          {
+            "code": "I109978",
+            "display": "Überempfindlichkeit gegen Nahrungsmittelzusatzstoffe"
+          },
+          {
+            "code": "I112578",
+            "display": "Zimt-Allergie"
+          },
+          {
+            "code": "I112646",
+            "display": "Zimt-Überempfindlichkeit"
+          },
+          {
+            "code": "I116464",
+            "display": "Zitrusfrüchte-Überempfindlichkeit"
+          },
+          {
+            "code": "I87720",
+            "display": "Allergischer Schock"
+          },
+          {
+            "code": "I565",
+            "display": "Anaphylaktischer Schock"
+          },
+          {
+            "code": "I16144",
+            "display": "Anaphylaxie"
+          },
+          {
+            "code": "I85981",
+            "display": "Herxheimer-Reaktion"
+          },
+          {
+            "code": "I80523",
+            "display": "Schock durch Arzneimittel"
+          },
+          {
+            "code": "I74711",
+            "display": "Akutes essentielles Ödem"
+          },
+          {
+            "code": "I74531",
+            "display": "Akutes Quincke-Ödem der Haut"
+          },
+          {
+            "code": "I74712",
+            "display": "Akutes umschriebenes Ödem"
+          },
+          {
+            "code": "I74721",
+            "display": "Akutes zirkumskriptes Ödem"
+          },
+          {
+            "code": "I64438",
+            "display": "Allergisches angioneurotisches Ödem"
+          },
+          {
+            "code": "I64444",
+            "display": "Allergisches Angioödem"
+          },
+          {
+            "code": "I96567",
+            "display": "Allergisches Glottisödem"
+          },
+          {
+            "code": "I566",
+            "display": "Angioneurotisches Ödem"
+          },
+          {
+            "code": "I64441",
+            "display": "Angioneurotisches Ödem mit Urtikaria"
+          },
+          {
+            "code": "I567",
+            "display": "Angioödem"
+          },
+          {
+            "code": "I64445",
+            "display": "Angioödem mit Urtikaria"
+          },
+          {
+            "code": "I75170",
+            "display": "Bannister-Krankheit"
+          },
+          {
+            "code": "I82080",
+            "display": "Larynxurtikaria"
+          },
+          {
+            "code": "I74718",
+            "display": "Periodisches Ödem"
+          },
+          {
+            "code": "I81969",
+            "display": "Quincke-Syndrom"
+          },
+          {
+            "code": "I568",
+            "display": "Quincke-Ödem"
+          },
+          {
+            "code": "I82079",
+            "display": "Urticaria gigantea"
+          },
+          {
+            "code": "I119417",
+            "display": "AAE [Erworbenes Angioödem]"
+          },
+          {
+            "code": "I119795",
+            "display": "Erworbenes angioneurotisches Ödem"
+          },
+          {
+            "code": "I119704",
+            "display": "Erworbenes Angioödem"
+          },
+          {
+            "code": "I119898",
+            "display": "Erworbenes Bradykinin-induziertes Angioödem"
+          },
+          {
+            "code": "I119899",
+            "display": "Erworbenes nicht-Histamin-induziertes Angioödem"
+          },
+          {
+            "code": "I15529",
+            "display": "Allergie"
+          },
+          {
+            "code": "I109613",
+            "display": "Allergie gegen Alkohol"
+          },
+          {
+            "code": "I112601",
+            "display": "Allergie gegen echtes Karmin [E 120]"
+          },
+          {
+            "code": "I15530",
+            "display": "Allergische Diathese"
+          },
+          {
+            "code": "I15533",
+            "display": "Allergische Reaktion"
+          },
+          {
+            "code": "I112598",
+            "display": "Allurarot-Allergie [E 129]"
+          },
+          {
+            "code": "I112666",
+            "display": "Allurarot-Überempfindlichkeit [E 129]"
+          },
+          {
+            "code": "I112625",
+            "display": "Amaranth-Allergie [E 123]"
+          },
+          {
+            "code": "I112693",
+            "display": "Amaranth-Überempfindlichkeit [E 123]"
+          },
+          {
+            "code": "I112596",
+            "display": "Annatto-Allergie"
+          },
+          {
+            "code": "I112664",
+            "display": "Annatto-Überempfindlichkeit"
+          },
+          {
+            "code": "I32389",
+            "display": "Arthus-Phänomen"
+          },
+          {
+            "code": "I24895",
+            "display": "Atopie"
+          },
+          {
+            "code": "I112624",
+            "display": "Azorubin-Allergie [E 122]"
+          },
+          {
+            "code": "I112692",
+            "display": "Azorubin-Überempfindlichkeit [E 122]"
+          },
+          {
+            "code": "I112623",
+            "display": "Benzalkoniumchlorid-Allergie"
+          },
+          {
+            "code": "I112691",
+            "display": "Benzalkoniumchlorid-Überempfindlichkeit"
+          },
+          {
+            "code": "I112594",
+            "display": "Benzoesäure-Allergie"
+          },
+          {
+            "code": "I112662",
+            "display": "Benzoesäure-Überempfindlichkeit"
+          },
+          {
+            "code": "I112622",
+            "display": "Benzolsulfonsäure-Allergie"
+          },
+          {
+            "code": "I112690",
+            "display": "Benzolsulfonsäure-Überempfindlichkeit"
+          },
+          {
+            "code": "I112621",
+            "display": "Benzylalkohol-Allergie"
+          },
+          {
+            "code": "I112689",
+            "display": "Benzylalkohol-Überempfindlichkeit"
+          },
+          {
+            "code": "I112620",
+            "display": "Bernsteinsäure-Allergie"
+          },
+          {
+            "code": "I112688",
+            "display": "Bernsteinsäure-Überempfindlichkeit"
+          },
+          {
+            "code": "I112597",
+            "display": "Braun-Allergie [E 155]"
+          },
+          {
+            "code": "I112665",
+            "display": "Braun-Überempfindlichkeit [E 155]"
+          },
+          {
+            "code": "I112618",
+            "display": "Brillantschwarz-Allergie [E 151]"
+          },
+          {
+            "code": "I112686",
+            "display": "Brillantschwarz-Überempfindlichkeit [E 151]"
+          },
+          {
+            "code": "I112590",
+            "display": "Butylhydroxyanisol-Allergie"
+          },
+          {
+            "code": "I112658",
+            "display": "Butylhydroxyanisol-Überempfindlichkeit"
+          },
+          {
+            "code": "I112619",
+            "display": "Butylhydroxytoluol-Allergie"
+          },
+          {
+            "code": "I112687",
+            "display": "Butylhydroxytoluol-Überempfindlichkeit"
+          },
+          {
+            "code": "I112587",
+            "display": "Carrageen-Allergie [E 407]"
+          },
+          {
+            "code": "I112655",
+            "display": "Carrageen-Überempfindlichkeit [E 407]"
+          },
+          {
+            "code": "I112617",
+            "display": "Cetylalkohol-Allergie"
+          },
+          {
+            "code": "I112685",
+            "display": "Cetylalkohol-Überempfindlichkeit"
+          },
+          {
+            "code": "I112639",
+            "display": "Chinazolin-Allergie"
+          },
+          {
+            "code": "I112707",
+            "display": "Chinazolin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112616",
+            "display": "Chinolingelb-Allergie [E 104]"
+          },
+          {
+            "code": "I112684",
+            "display": "Chinolingelb-Überempfindlichkeit [E 104]"
+          },
+          {
+            "code": "I112615",
+            "display": "Chlorocresol-Allergie"
+          },
+          {
+            "code": "I112683",
+            "display": "Chlorocresol-Überempfindlichkeit"
+          },
+          {
+            "code": "I112638",
+            "display": "Chrysanthemen-Allergie"
+          },
+          {
+            "code": "I112706",
+            "display": "Chrysanthemen-Überempfindlichkeit"
+          },
+          {
+            "code": "I112600",
+            "display": "Cochenillerot-Allergie [E 124]"
+          },
+          {
+            "code": "I112668",
+            "display": "Cochenillerot-Überempfindlichkeit [E 124]"
+          },
+          {
+            "code": "I112637",
+            "display": "Doldengewächs-Allergie"
+          },
+          {
+            "code": "I112705",
+            "display": "Doldengewächs-Überempfindlichkeit"
+          },
+          {
+            "code": "I112614",
+            "display": "Erythrosin-Allergie [E 127]"
+          },
+          {
+            "code": "I112682",
+            "display": "Erythrosin-Überempfindlichkeit [E 127]"
+          },
+          {
+            "code": "I112483",
+            "display": "Ethanol-Allergie"
+          },
+          {
+            "code": "I112352",
+            "display": "Ethanol-Überempfindlichkeit"
+          },
+          {
+            "code": "I112612",
+            "display": "Formaldehyd-Allergie"
+          },
+          {
+            "code": "I112680",
+            "display": "Formaldehyd-Überempfindlichkeit"
+          },
+          {
+            "code": "I112591",
+            "display": "Gallate-Allergie"
+          },
+          {
+            "code": "I112659",
+            "display": "Gallate-Überempfindlichkeit"
+          },
+          {
+            "code": "I117140",
+            "display": "Gallussäure-Allergie"
+          },
+          {
+            "code": "I112613",
+            "display": "Gelborange-Allergie [E 110]"
+          },
+          {
+            "code": "I112681",
+            "display": "Gelborange-Überempfindlichkeit [E 110]"
+          },
+          {
+            "code": "I112585",
+            "display": "Guarkernmehl-Allergie [E 412]"
+          },
+          {
+            "code": "I112653",
+            "display": "Guarkernmehl-Überempfindlichkeit [E 412]"
+          },
+          {
+            "code": "I112636",
+            "display": "Hamsterprotein-Allergie"
+          },
+          {
+            "code": "I112704",
+            "display": "Hamsterprotein-Überempfindlichkeit"
+          },
+          {
+            "code": "I115633",
+            "display": "Hyperergische Reaktion"
+          },
+          {
+            "code": "I115638",
+            "display": "Hyperergische Reaktion gegen mikrobielle Allergene"
+          },
+          {
+            "code": "I15536",
+            "display": "Hypersensibilität"
+          },
+          {
+            "code": "I32391",
+            "display": "Idiosynkrasie"
+          },
+          {
+            "code": "I112611",
+            "display": "Isopropylalkohol-Allergie"
+          },
+          {
+            "code": "I112679",
+            "display": "Isopropylalkohol-Überempfindlichkeit"
+          },
+          {
+            "code": "I109672",
+            "display": "Jodallergie"
+          },
+          {
+            "code": "I112586",
+            "display": "Johannisbrotkernmehl-Allergie [E 410]"
+          },
+          {
+            "code": "I112654",
+            "display": "Johannisbrotkernmehl-Überempfindlichkeit [E 410]"
+          },
+          {
+            "code": "I15532",
+            "display": "Kaninchenallergie"
+          },
+          {
+            "code": "I112583",
+            "display": "Karaya-Allergie [E 416]"
+          },
+          {
+            "code": "I112651",
+            "display": "Karaya-Überempfindlichkeit [E 416]"
+          },
+          {
+            "code": "I112635",
+            "display": "Korbblütler-Allergie"
+          },
+          {
+            "code": "I112703",
+            "display": "Korbblütler-Überempfindlichkeit"
+          },
+          {
+            "code": "I112602",
+            "display": "Kurkumin-Allergie [E 100]"
+          },
+          {
+            "code": "I112670",
+            "display": "Kurkumin-Überempfindlichkeit [E 100]"
+          },
+          {
+            "code": "I112595",
+            "display": "Litholrubin-Allergie [E 180]"
+          },
+          {
+            "code": "I112663",
+            "display": "Litholrubin-Überempfindlichkeit [E 180]"
+          },
+          {
+            "code": "I112582",
+            "display": "Lysozym-Allergie"
+          },
+          {
+            "code": "I112650",
+            "display": "Lysozym-Überempfindlichkeit"
+          },
+          {
+            "code": "I112610",
+            "display": "Macrogolglycerolricinoleat-Allergie"
+          },
+          {
+            "code": "I112678",
+            "display": "Macrogolglycerolricinoleat-Überempfindlichkeit"
+          },
+          {
+            "code": "I112634",
+            "display": "Mausprotein-Allergie"
+          },
+          {
+            "code": "I112702",
+            "display": "Mausprotein-Überempfindlichkeit"
+          },
+          {
+            "code": "I30749",
+            "display": "MCS [Multiple-Chemical-Sensitivity]-Syndrom"
+          },
+          {
+            "code": "I15535",
+            "display": "Multiple Allergien"
+          },
+          {
+            "code": "I15534",
+            "display": "Multiple-Chemical-Sensitivity [MCS]-Syndrom"
+          },
+          {
+            "code": "I112609",
+            "display": "Natriumbenzoat-Allergie"
+          },
+          {
+            "code": "I112677",
+            "display": "Natriumbenzoat-Überempfindlichkeit"
+          },
+          {
+            "code": "I112608",
+            "display": "Natriumdisulfit-Allergie"
+          },
+          {
+            "code": "I112676",
+            "display": "Natriumdisulfit-Überempfindlichkeit"
+          },
+          {
+            "code": "I112607",
+            "display": "Natriumedetat-Allergie"
+          },
+          {
+            "code": "I112675",
+            "display": "Natriumedetat-Überempfindlichkeit"
+          },
+          {
+            "code": "I112633",
+            "display": "Nitroverbindungen-Allergie"
+          },
+          {
+            "code": "I112701",
+            "display": "Nitroverbindungen-Überempfindlichkeit"
+          },
+          {
+            "code": "I112632",
+            "display": "Norfluran-Allergie"
+          },
+          {
+            "code": "I112700",
+            "display": "Norfluran-Überempfindlichkeit"
+          },
+          {
+            "code": "I112593",
+            "display": "Para-Hydroxybenzoesäureester-Allergie"
+          },
+          {
+            "code": "I112661",
+            "display": "Para-Hydroxybenzoesäureester-Überempfindlichkeit"
+          },
+          {
+            "code": "I112606",
+            "display": "Parabene-Allergie"
+          },
+          {
+            "code": "I112674",
+            "display": "Parabene-Überempfindlichkeit"
+          },
+          {
+            "code": "I112631",
+            "display": "Phenolrot-Allergie"
+          },
+          {
+            "code": "I112699",
+            "display": "Phenolrot-Überempfindlichkeit"
+          },
+          {
+            "code": "I112605",
+            "display": "Ponceau-Allergie [E 124]"
+          },
+          {
+            "code": "I112673",
+            "display": "Ponceau-Überempfindlichkeit [E 124]"
+          },
+          {
+            "code": "I112604",
+            "display": "Propylenglycol-Allergie"
+          },
+          {
+            "code": "I112672",
+            "display": "Propylenglycol-Überempfindlichkeit"
+          },
+          {
+            "code": "I117141",
+            "display": "Propylgallate-Allergie"
+          },
+          {
+            "code": "I112630",
+            "display": "Pyrrolidon-Allergie"
+          },
+          {
+            "code": "I112698",
+            "display": "Pyrrolidon-Überempfindlichkeit"
+          },
+          {
+            "code": "I112599",
+            "display": "Rot-Allergie [E 128]"
+          },
+          {
+            "code": "I112667",
+            "display": "Rot-Überempfindlichkeit [E 128]"
+          },
+          {
+            "code": "I112592",
+            "display": "Schwefeldioxid-Allergie"
+          },
+          {
+            "code": "I112660",
+            "display": "Schwefeldioxid-Überempfindlichkeit"
+          },
+          {
+            "code": "I116354",
+            "display": "Schwermetallüberempfindlichkeit"
+          },
+          {
+            "code": "I112640",
+            "display": "Sorbinsäure-Allergie"
+          },
+          {
+            "code": "I112708",
+            "display": "Sorbinsäure-Überempfindlichkeit"
+          },
+          {
+            "code": "I112642",
+            "display": "Stearylalkohol-Allergie"
+          },
+          {
+            "code": "I112710",
+            "display": "Stearylalkohol-Überempfindlichkeit"
+          },
+          {
+            "code": "I112643",
+            "display": "Sulfit-Allergie"
+          },
+          {
+            "code": "I112711",
+            "display": "Sulfit-Überempfindlichkeit"
+          },
+          {
+            "code": "I112603",
+            "display": "Tartrazin-Allergie [E 102]"
+          },
+          {
+            "code": "I112671",
+            "display": "Tartrazin-Überempfindlichkeit [E 102]"
+          },
+          {
+            "code": "I120132",
+            "display": "Thioharnstoff-Überempfindlichkeit"
+          },
+          {
+            "code": "I112629",
+            "display": "Thionamid-Derivate-Allergie"
+          },
+          {
+            "code": "I112697",
+            "display": "Thionamid-Derivate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112584",
+            "display": "Traganth-Allergie [E 413]"
+          },
+          {
+            "code": "I112652",
+            "display": "Traganth-Überempfindlichkeit [E 413]"
+          },
+          {
+            "code": "I112588",
+            "display": "Triammoniumcitrat-Allergie"
+          },
+          {
+            "code": "I112656",
+            "display": "Triammoniumcitrat-Überempfindlichkeit"
+          },
+          {
+            "code": "I112628",
+            "display": "Triarylmethan-Allergie"
+          },
+          {
+            "code": "I112696",
+            "display": "Triarylmethan-Überempfindlichkeit"
+          },
+          {
+            "code": "I112581",
+            "display": "Triethylcitrat-Allergie"
+          },
+          {
+            "code": "I112649",
+            "display": "Triethylcitrat-Überempfindlichkeit"
+          },
+          {
+            "code": "I112627",
+            "display": "Triphenylmethan-Farbstoff-Allergie"
+          },
+          {
+            "code": "I112695",
+            "display": "Triphenylmethan-Farbstoff-Überempfindlichkeit"
+          },
+          {
+            "code": "I112626",
+            "display": "Tropasäure-Allergie"
+          },
+          {
+            "code": "I112694",
+            "display": "Tropasäure-Überempfindlichkeit"
+          },
+          {
+            "code": "I15531",
+            "display": "Unklare Allergie"
+          },
+          {
+            "code": "I32390",
+            "display": "Überempfindlichkeit"
+          },
+          {
+            "code": "I116798",
+            "display": "Überempfindlichkeit durch 2-Phenoxyethanol"
+          },
+          {
+            "code": "I116467",
+            "display": "Überempfindlichkeit durch Aspergillus-Extrakt"
+          },
+          {
+            "code": "I116799",
+            "display": "Überempfindlichkeit durch E. coli-Protein"
+          },
+          {
+            "code": "I112669",
+            "display": "Überempfindlichkeit durch echtes Karmin [E 120]"
+          },
+          {
+            "code": "I116797",
+            "display": "Überempfindlichkeit durch Polysorbat 20"
+          },
+          {
+            "code": "I116466",
+            "display": "Überempfindlichkeit durch quaternäre Ammoniumverbindung"
+          },
+          {
+            "code": "I15537",
+            "display": "Überempfindlichkeitsreaktion"
+          },
+          {
+            "code": "I112589",
+            "display": "Zitronensäure-Allergie"
+          },
+          {
+            "code": "I112657",
+            "display": "Zitronensäure-Überempfindlichkeit"
+          },
+          {
+            "code": "I90606",
+            "display": "Arthritis bei Überempfindlichkeitsreaktion a.n.k."
+          },
+          {
+            "code": "I83174",
+            "display": "Abnorme Arzneimittelwirkung a.n.k."
+          },
+          {
+            "code": "I112538",
+            "display": "ACE-Hemmer-Allergie"
+          },
+          {
+            "code": "I112408",
+            "display": "ACE-Hemmer-Überempfindlichkeit"
+          },
+          {
+            "code": "I112539",
+            "display": "Aciclovir-Allergie"
+          },
+          {
+            "code": "I112409",
+            "display": "Aciclovir-Überempfindlichkeit"
+          },
+          {
+            "code": "I112540",
+            "display": "Acridin-Derivate-Allergie"
+          },
+          {
+            "code": "I112410",
+            "display": "Acridin-Derivate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112541",
+            "display": "ACTH [Adrenocorticotropes Hormon]-Allergie"
+          },
+          {
+            "code": "I112411",
+            "display": "ACTH [Adrenocorticotropes Hormon]-Überempfindlichkeit"
+          },
+          {
+            "code": "I16017",
+            "display": "Adriblastinschädigung"
+          },
+          {
+            "code": "I112542",
+            "display": "Allergie gegen adrenerge Mittel"
+          },
+          {
+            "code": "I112465",
+            "display": "Allergie gegen halogenierte Kohlenwasserstoffe"
+          },
+          {
+            "code": "I109567",
+            "display": "Allergie gegen jodhaltige Kontrastmittel"
+          },
+          {
+            "code": "I112573",
+            "display": "Allergie gegen monoklonale Antikörper"
+          },
+          {
+            "code": "I112457",
+            "display": "Allergie gegen normale humane Immunglobuline"
+          },
+          {
+            "code": "I112507",
+            "display": "Allergie gegen trizyklische Antidepressiva"
+          },
+          {
+            "code": "I89387",
+            "display": "Allergische Reaktion durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung"
+          },
+          {
+            "code": "I89388",
+            "display": "Allergische Reaktion durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung"
+          },
+          {
+            "code": "I110486",
+            "display": "Allergisches Medikamentenexanthem"
+          },
+          {
+            "code": "I112543",
+            "display": "Alpha-Adrenorezeptor-Antagonisten-Allergie"
+          },
+          {
+            "code": "I112413",
+            "display": "Alpha-Adrenorezeptor-Antagonisten-Überempfindlichkeit"
+          },
+          {
+            "code": "I112544",
+            "display": "Amantadin-Allergie"
+          },
+          {
+            "code": "I112414",
+            "display": "Amantadin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112460",
+            "display": "Amid-Lokalanästhetika-Allergie"
+          },
+          {
+            "code": "I112329",
+            "display": "Amid-Lokalanästhetika-Überempfindlichkeit"
+          },
+          {
+            "code": "I112545",
+            "display": "Amidin-Allergie"
+          },
+          {
+            "code": "I112415",
+            "display": "Amidin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112536",
+            "display": "Aminochinoline-Allergie"
+          },
+          {
+            "code": "I112406",
+            "display": "Aminochinoline-Überempfindlichkeit"
+          },
+          {
+            "code": "I112546",
+            "display": "Aminoglykosid-Allergie"
+          },
+          {
+            "code": "I112416",
+            "display": "Aminoglykosid-Überempfindlichkeit"
+          },
+          {
+            "code": "I112547",
+            "display": "Amoxicillin-Allergie"
+          },
+          {
+            "code": "I112417",
+            "display": "Amoxicillin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112548",
+            "display": "Amphotericin-B-Allergie"
+          },
+          {
+            "code": "I112418",
+            "display": "Amphotericin-B-Überempfindlichkeit"
+          },
+          {
+            "code": "I676",
+            "display": "Analgetikaintoleranz"
+          },
+          {
+            "code": "I670",
+            "display": "Androgennebenwirkung"
+          },
+          {
+            "code": "I112550",
+            "display": "Anthracen-Derivate-Allergie"
+          },
+          {
+            "code": "I112420",
+            "display": "Anthracen-Derivate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112549",
+            "display": "Anthracyclin-Allergie"
+          },
+          {
+            "code": "I112419",
+            "display": "Anthracyclin-Überempfindlichkeit"
+          },
+          {
+            "code": "I671",
+            "display": "Antiandrogen-Nebenwirkung"
+          },
+          {
+            "code": "I110518",
+            "display": "Antibiotikaunverträglichkeit"
+          },
+          {
+            "code": "I112551",
+            "display": "Anticholinergika-Allergie"
+          },
+          {
+            "code": "I112421",
+            "display": "Anticholinergika-Überempfindlichkeit"
+          },
+          {
+            "code": "I691",
+            "display": "Antidiabetika-Nebenwirkung"
+          },
+          {
+            "code": "I112552",
+            "display": "Antihistaminika-Allergie"
+          },
+          {
+            "code": "I112422",
+            "display": "Antihistaminika-Überempfindlichkeit"
+          },
+          {
+            "code": "I672",
+            "display": "Antiöstrogen-Nebenwirkung"
+          },
+          {
+            "code": "I12827",
+            "display": "Arzneimittelallergie"
+          },
+          {
+            "code": "I116801",
+            "display": "Arzneimittelbedingte Überhangeffekte"
+          },
+          {
+            "code": "I109565",
+            "display": "Arzneimittelinduzierte Toleranzentwicklung"
+          },
+          {
+            "code": "I73188",
+            "display": "Arzneimittelreaktion a.n.k."
+          },
+          {
+            "code": "I697",
+            "display": "Arzneimittelunverträglichkeit"
+          },
+          {
+            "code": "I78497",
+            "display": "Arzneimittelüberempfindlichkeit"
+          },
+          {
+            "code": "I112553",
+            "display": "Atropin-Allergie"
+          },
+          {
+            "code": "I112423",
+            "display": "Atropin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112555",
+            "display": "Baldrianwurzel-Allergie"
+          },
+          {
+            "code": "I112425",
+            "display": "Baldrianwurzel-Überempfindlichkeit"
+          },
+          {
+            "code": "I112556",
+            "display": "Barbiturate-Allergie"
+          },
+          {
+            "code": "I112426",
+            "display": "Barbiturate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112557",
+            "display": "Benzamid-Allergie"
+          },
+          {
+            "code": "I112427",
+            "display": "Benzamid-Überempfindlichkeit"
+          },
+          {
+            "code": "I112558",
+            "display": "Benzimidazol-Derivate-Allergie"
+          },
+          {
+            "code": "I112428",
+            "display": "Benzimidazol-Derivate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112559",
+            "display": "Benzodiazepin-Allergie"
+          },
+          {
+            "code": "I112429",
+            "display": "Benzodiazepin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112560",
+            "display": "Beta-Adrenorezeptor-Antagonisten-Allergie"
+          },
+          {
+            "code": "I112430",
+            "display": "Beta-Adrenorezeptor-Antagonisten-Überempfindlichkeit"
+          },
+          {
+            "code": "I112515",
+            "display": "Beta-Laktamase-Inhibitoren-Allergie"
+          },
+          {
+            "code": "I112385",
+            "display": "Beta-Laktamase-Inhibitoren-Überempfindlichkeit"
+          },
+          {
+            "code": "I112561",
+            "display": "Betablocker-Allergie"
+          },
+          {
+            "code": "I112431",
+            "display": "Betablocker-Überempfindlichkeit"
+          },
+          {
+            "code": "I112562",
+            "display": "Betalaktam-Antibiotika-Allergie"
+          },
+          {
+            "code": "I112432",
+            "display": "Betalaktam-Antibiotika-Überempfindlichkeit"
+          },
+          {
+            "code": "I112563",
+            "display": "Bisphosphonat-Allergie"
+          },
+          {
+            "code": "I112433",
+            "display": "Bisphosphonat-Überempfindlichkeit"
+          },
+          {
+            "code": "I112564",
+            "display": "Butyrophenon-Derivate-Allergie"
+          },
+          {
+            "code": "I112434",
+            "display": "Butyrophenon-Derivate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112566",
+            "display": "Carbamat-Allergie"
+          },
+          {
+            "code": "I112436",
+            "display": "Carbamat-Überempfindlichkeit"
+          },
+          {
+            "code": "I112567",
+            "display": "Carbamazepin-Allergie"
+          },
+          {
+            "code": "I112437",
+            "display": "Carbamazepin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112568",
+            "display": "Carbapenem-Allergie"
+          },
+          {
+            "code": "I112438",
+            "display": "Carbapenem-Überempfindlichkeit"
+          },
+          {
+            "code": "I112569",
+            "display": "Cefotaxim-Allergie"
+          },
+          {
+            "code": "I112439",
+            "display": "Cefotaxim-Überempfindlichkeit"
+          },
+          {
+            "code": "I112570",
+            "display": "Cephalosporin-Allergie"
+          },
+          {
+            "code": "I112440",
+            "display": "Cephalosporin-Überempfindlichkeit"
+          },
+          {
+            "code": "I692",
+            "display": "Chemotherapie-Nebenwirkung"
+          },
+          {
+            "code": "I112571",
+            "display": "Chinolin-Allergie"
+          },
+          {
+            "code": "I112441",
+            "display": "Chinolin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112572",
+            "display": "Chinolon-Allergie"
+          },
+          {
+            "code": "I112442",
+            "display": "Chinolon-Überempfindlichkeit"
+          },
+          {
+            "code": "I685",
+            "display": "Chlormadinonacetat-Nebenwirkung"
+          },
+          {
+            "code": "I112574",
+            "display": "Clindamycin-Allergie"
+          },
+          {
+            "code": "I112444",
+            "display": "Clindamycin-Überempfindlichkeit"
+          },
+          {
+            "code": "I673",
+            "display": "Cyproteronazetat-Nebenwirkung"
+          },
+          {
+            "code": "I117908",
+            "display": "Cytokine-Release-Syndrom"
+          },
+          {
+            "code": "I112535",
+            "display": "Dacarbazin-Allergie"
+          },
+          {
+            "code": "I112405",
+            "display": "Dacarbazin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112487",
+            "display": "Darbepoetin-alfa-Allergie"
+          },
+          {
+            "code": "I112356",
+            "display": "Darbepoetin-alfa-Überempfindlichkeit"
+          },
+          {
+            "code": "I674",
+            "display": "Dehydroepiandrosteronsulfat-Nebenwirkung"
+          },
+          {
+            "code": "I112459",
+            "display": "Desirudin-Allergie"
+          },
+          {
+            "code": "I112328",
+            "display": "Desirudin-Überempfindlichkeit"
+          },
+          {
+            "code": "I675",
+            "display": "Desogestrel-Nebenwirkung"
+          },
+          {
+            "code": "I677",
+            "display": "DHEA [Dehydroepiandrosteron]-Sulfat-Nebenwirkung"
+          },
+          {
+            "code": "I112494",
+            "display": "Dihydropyridin-Allergie"
+          },
+          {
+            "code": "I112364",
+            "display": "Dihydropyridin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112492",
+            "display": "Diphenylbutylpiperidin-Allergie"
+          },
+          {
+            "code": "I112362",
+            "display": "Diphenylbutylpiperidin-Überempfindlichkeit"
+          },
+          {
+            "code": "I115806",
+            "display": "DRESS [Drug Rash with Eosinophilia and Systemic Symptoms]-Syndrom"
+          },
+          {
+            "code": "I83175",
+            "display": "Drogenwirkung a.n.k."
+          },
+          {
+            "code": "I112489",
+            "display": "Erythromycin-Allergie"
+          },
+          {
+            "code": "I112358",
+            "display": "Erythromycin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112462",
+            "display": "Ester-Lokalanästhetika-Allergie"
+          },
+          {
+            "code": "I112331",
+            "display": "Ester-Lokalanästhetika-Überempfindlichkeit"
+          },
+          {
+            "code": "I112485",
+            "display": "Estradiol-Allergie"
+          },
+          {
+            "code": "I678",
+            "display": "Estradiol-Nebenwirkung"
+          },
+          {
+            "code": "I112354",
+            "display": "Estradiol-Überempfindlichkeit"
+          },
+          {
+            "code": "I679",
+            "display": "Estriol-Nebenwirkung"
+          },
+          {
+            "code": "I680",
+            "display": "Estron-Nebenwirkung"
+          },
+          {
+            "code": "I681",
+            "display": "Ethinyl-Estradiol-Nebenwirkung"
+          },
+          {
+            "code": "I112481",
+            "display": "Fentanyl-Allergie"
+          },
+          {
+            "code": "I112350",
+            "display": "Fentanyl-Überempfindlichkeit"
+          },
+          {
+            "code": "I112479",
+            "display": "Filgrastim-Allergie"
+          },
+          {
+            "code": "I112348",
+            "display": "Filgrastim-Überempfindlichkeit"
+          },
+          {
+            "code": "I116805",
+            "display": "Flare-Phänomen durch Strahlentherapie"
+          },
+          {
+            "code": "I112477",
+            "display": "Fluorouracil-Allergie"
+          },
+          {
+            "code": "I112346",
+            "display": "Fluorouracil-Überempfindlichkeit"
+          },
+          {
+            "code": "I112475",
+            "display": "Gadodiamid-Allergie"
+          },
+          {
+            "code": "I112344",
+            "display": "Gadodiamid-Überempfindlichkeit"
+          },
+          {
+            "code": "I682",
+            "display": "Gestagen-Nebenwirkung"
+          },
+          {
+            "code": "I109614",
+            "display": "Gesteigerte Empfindlichkeit auf ein Arzneimittel"
+          },
+          {
+            "code": "I683",
+            "display": "Glukokortikoid-Nebenwirkung"
+          },
+          {
+            "code": "I112471",
+            "display": "Glycopeptid-Antibiotika-Allergie"
+          },
+          {
+            "code": "I112340",
+            "display": "Glycopeptid-Antibiotika-Überempfindlichkeit"
+          },
+          {
+            "code": "I112469",
+            "display": "Gonadotropin-Releasing-Hormon-Analoga-Allergie"
+          },
+          {
+            "code": "I112338",
+            "display": "Gonadotropin-Releasing-Hormon-Analoga-Überempfindlichkeit"
+          },
+          {
+            "code": "I112504",
+            "display": "Harnstoff-Allergie"
+          },
+          {
+            "code": "I112374",
+            "display": "Harnstoff-Überempfindlichkeit"
+          },
+          {
+            "code": "I112463",
+            "display": "Heparin-Allergie"
+          },
+          {
+            "code": "I112332",
+            "display": "Heparin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112461",
+            "display": "Herzglykoside-Allergie"
+          },
+          {
+            "code": "I112330",
+            "display": "Herzglykoside-Überempfindlichkeit"
+          },
+          {
+            "code": "I112467",
+            "display": "Histamin-H2-Rezeptorantagonist-Allergie"
+          },
+          {
+            "code": "I112336",
+            "display": "Histamin-H2-Rezeptorantagonist-Überempfindlichkeit"
+          },
+          {
+            "code": "I112453",
+            "display": "Hydantoin-Derivate-Allergie"
+          },
+          {
+            "code": "I112322",
+            "display": "Hydantoin-Derivate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112451",
+            "display": "Hydralazin-Allergie"
+          },
+          {
+            "code": "I112320",
+            "display": "Hydralazin-Überempfindlichkeit"
+          },
+          {
+            "code": "I89391",
+            "display": "Idiosynkrasie durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung"
+          },
+          {
+            "code": "I89392",
+            "display": "Idiosynkrasie durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung"
+          },
+          {
+            "code": "I112449",
+            "display": "Imidazol-Derivate-Allergie"
+          },
+          {
+            "code": "I112318",
+            "display": "Imidazol-Derivate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112499",
+            "display": "Immunglobuline-Allergie"
+          },
+          {
+            "code": "I112369",
+            "display": "Immunglobuline-Überempfindlichkeit"
+          },
+          {
+            "code": "I112447",
+            "display": "Indometacin-Allergie"
+          },
+          {
+            "code": "I112316",
+            "display": "Indometacin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112446",
+            "display": "Inhalationsanästhetika-Allergie"
+          },
+          {
+            "code": "I112315",
+            "display": "Inhalationsanästhetika-Überempfindlichkeit"
+          },
+          {
+            "code": "I684",
+            "display": "Insulin-Nebenwirkung"
+          },
+          {
+            "code": "I116802",
+            "display": "Jodschnupfen"
+          },
+          {
+            "code": "I115859",
+            "display": "Kaliumthiocyanat-Überempfindlichkeit"
+          },
+          {
+            "code": "I112565",
+            "display": "Kalziumantagonisten-Allergie"
+          },
+          {
+            "code": "I112435",
+            "display": "Kalziumantagonisten-Überempfindlichkeit"
+          },
+          {
+            "code": "I112575",
+            "display": "Koffein-Allergie"
+          },
+          {
+            "code": "I112445",
+            "display": "Koffein-Überempfindlichkeit"
+          },
+          {
+            "code": "I112473",
+            "display": "Kontrastmittel-Allergie"
+          },
+          {
+            "code": "I112342",
+            "display": "Kontrastmittel-Überempfindlichkeit"
+          },
+          {
+            "code": "I112448",
+            "display": "Kortikosteroid-Allergie"
+          },
+          {
+            "code": "I112317",
+            "display": "Kortikosteroid-Überempfindlichkeit"
+          },
+          {
+            "code": "I109566",
+            "display": "Kreuztoleranz"
+          },
+          {
+            "code": "I112452",
+            "display": "Lidocain-Allergie"
+          },
+          {
+            "code": "I112321",
+            "display": "Lidocain-Überempfindlichkeit"
+          },
+          {
+            "code": "I112454",
+            "display": "Lincomycin-Allergie"
+          },
+          {
+            "code": "I112323",
+            "display": "Lincomycin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112456",
+            "display": "Lincosamid-Allergie"
+          },
+          {
+            "code": "I112325",
+            "display": "Lincosamid-Überempfindlichkeit"
+          },
+          {
+            "code": "I112458",
+            "display": "Lisinopril-Allergie"
+          },
+          {
+            "code": "I112327",
+            "display": "Lisinopril-Überempfindlichkeit"
+          },
+          {
+            "code": "I698",
+            "display": "Lokalanästhetikaunverträglichkeit"
+          },
+          {
+            "code": "I112450",
+            "display": "Lutein-Releasing-Hormone-Allergie"
+          },
+          {
+            "code": "I112319",
+            "display": "Lutein-Releasing-Hormone-Überempfindlichkeit"
+          },
+          {
+            "code": "I112464",
+            "display": "Macrogol-Allergie"
+          },
+          {
+            "code": "I112333",
+            "display": "Macrogol-Überempfindlichkeit"
+          },
+          {
+            "code": "I112554",
+            "display": "Makrolid-Allergie"
+          },
+          {
+            "code": "I112468",
+            "display": "Makrolid-Antibiotika-Allergie"
+          },
+          {
+            "code": "I112337",
+            "display": "Makrolid-Antibiotika-Überempfindlichkeit"
+          },
+          {
+            "code": "I112424",
+            "display": "Makrolid-Überempfindlichkeit"
+          },
+          {
+            "code": "I12828",
+            "display": "Medikamentenallergie"
+          },
+          {
+            "code": "I696",
+            "display": "Medikamentenunverträglichkeit"
+          },
+          {
+            "code": "I112472",
+            "display": "Mercaptopurin-Allergie"
+          },
+          {
+            "code": "I112341",
+            "display": "Mercaptopurin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112470",
+            "display": "Methanolchinolin-Allergie"
+          },
+          {
+            "code": "I112339",
+            "display": "Methanolchinolin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112476",
+            "display": "Metoprolol-Allergie"
+          },
+          {
+            "code": "I112345",
+            "display": "Metoprolol-Überempfindlichkeit"
+          },
+          {
+            "code": "I112478",
+            "display": "Muskelrelaxanzien-Allergie"
+          },
+          {
+            "code": "I112347",
+            "display": "Muskelrelaxanzien-Überempfindlichkeit"
+          },
+          {
+            "code": "I112480",
+            "display": "Mutterkornalkaloid-Allergie"
+          },
+          {
+            "code": "I112349",
+            "display": "Mutterkornalkaloid-Überempfindlichkeit"
+          },
+          {
+            "code": "I112482",
+            "display": "Nadroparin-Allergie"
+          },
+          {
+            "code": "I112351",
+            "display": "Nadroparin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112484",
+            "display": "Natamycin-Allergie"
+          },
+          {
+            "code": "I112353",
+            "display": "Natamycin-Überempfindlichkeit"
+          },
+          {
+            "code": "I24992",
+            "display": "Nebenwirkung oraler Kontrazeptiva"
+          },
+          {
+            "code": "I112486",
+            "display": "Neomycin-Allergie"
+          },
+          {
+            "code": "I112355",
+            "display": "Neomycin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112488",
+            "display": "Neuroleptika-Allergie"
+          },
+          {
+            "code": "I112357",
+            "display": "Neuroleptika-Überempfindlichkeit"
+          },
+          {
+            "code": "I112490",
+            "display": "Nitrat-Allergie"
+          },
+          {
+            "code": "I112359",
+            "display": "Nitrat-Überempfindlichkeit"
+          },
+          {
+            "code": "I112491",
+            "display": "Nitrofuran-Allergie"
+          },
+          {
+            "code": "I112361",
+            "display": "Nitrofuran-Überempfindlichkeit"
+          },
+          {
+            "code": "I112498",
+            "display": "Nitroimidazol-Derivate-Allergie"
+          },
+          {
+            "code": "I112368",
+            "display": "Nitroimidazol-Derivate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112493",
+            "display": "Nitrosoharn-Allergie"
+          },
+          {
+            "code": "I112363",
+            "display": "Nitrosoharn-Überempfindlichkeit"
+          },
+          {
+            "code": "I686",
+            "display": "Norethistosteron-Nebenwirkung"
+          },
+          {
+            "code": "I687",
+            "display": "Ocytocin-Nebenwirkung"
+          },
+          {
+            "code": "I112534",
+            "display": "Opiate-Allergie"
+          },
+          {
+            "code": "I112404",
+            "display": "Opiate-Überempfindlichkeit"
+          },
+          {
+            "code": "I24993",
+            "display": "Ovulationshemmernebenwirkung"
+          },
+          {
+            "code": "I24991",
+            "display": "Ovulationshemmerunverträglichkeit"
+          },
+          {
+            "code": "I112533",
+            "display": "Oxicam-Allergie"
+          },
+          {
+            "code": "I112403",
+            "display": "Oxicam-Überempfindlichkeit"
+          },
+          {
+            "code": "I109417",
+            "display": "Oxytozin-Nebenwirkung"
+          },
+          {
+            "code": "I12829",
+            "display": "Penicillin-Allergie"
+          },
+          {
+            "code": "I112532",
+            "display": "Perchlorat-Allergie"
+          },
+          {
+            "code": "I112402",
+            "display": "Perchlorat-Überempfindlichkeit"
+          },
+          {
+            "code": "I112531",
+            "display": "Perubalsam-Allergie"
+          },
+          {
+            "code": "I112401",
+            "display": "Perubalsam-Überempfindlichkeit"
+          },
+          {
+            "code": "I112530",
+            "display": "Phenothiazin-Allergie"
+          },
+          {
+            "code": "I112400",
+            "display": "Phenothiazin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112529",
+            "display": "Phenytoin-Allergie"
+          },
+          {
+            "code": "I112399",
+            "display": "Phenytoin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112528",
+            "display": "Piperazin-Derviate-Allergie"
+          },
+          {
+            "code": "I112398",
+            "display": "Piperazin-Derviate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112527",
+            "display": "Piperidin-Derivate-Allergie"
+          },
+          {
+            "code": "I112397",
+            "display": "Piperidin-Derivate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112455",
+            "display": "Plasmaprotein-Allergie"
+          },
+          {
+            "code": "I112324",
+            "display": "Plasmaprotein-Überempfindlichkeit"
+          },
+          {
+            "code": "I112526",
+            "display": "Podophyllotoxin-Allergie"
+          },
+          {
+            "code": "I112396",
+            "display": "Podophyllotoxin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112525",
+            "display": "Polymyxin-B-Allergie"
+          },
+          {
+            "code": "I112395",
+            "display": "Polymyxin-B-Überempfindlichkeit"
+          },
+          {
+            "code": "I112524",
+            "display": "Pravastatin-Allergie"
+          },
+          {
+            "code": "I112394",
+            "display": "Pravastatin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112523",
+            "display": "Probenecid-Allergie"
+          },
+          {
+            "code": "I112393",
+            "display": "Probenecid-Überempfindlichkeit"
+          },
+          {
+            "code": "I689",
+            "display": "Progesteron-Nebenwirkung"
+          },
+          {
+            "code": "I112522",
+            "display": "Propacetamol-Allergie"
+          },
+          {
+            "code": "I112392",
+            "display": "Propacetamol-Überempfindlichkeit"
+          },
+          {
+            "code": "I112521",
+            "display": "Prostaglandin-Allergie"
+          },
+          {
+            "code": "I112391",
+            "display": "Prostaglandin-Überempfindlichkeit"
+          },
+          {
+            "code": "I117241",
+            "display": "Purple-Glove-Syndrom"
+          },
+          {
+            "code": "I112520",
+            "display": "Pyrazolon-Allergie"
+          },
+          {
+            "code": "I112390",
+            "display": "Pyrazolon-Überempfindlichkeit"
+          },
+          {
+            "code": "I112519",
+            "display": "Pyrethrin-Allergie"
+          },
+          {
+            "code": "I112389",
+            "display": "Pyrethrin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112518",
+            "display": "Quecksilber-Allergie"
+          },
+          {
+            "code": "I112388",
+            "display": "Quecksilber-Überempfindlichkeit"
+          },
+          {
+            "code": "I116803",
+            "display": "Rapamycin-Derivate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112517",
+            "display": "Rifamycin-Allergie"
+          },
+          {
+            "code": "I112387",
+            "display": "Rifamycin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112516",
+            "display": "Salizylate-Allergie"
+          },
+          {
+            "code": "I112386",
+            "display": "Salizylate-Überempfindlichkeit"
+          },
+          {
+            "code": "I117244",
+            "display": "Scopolaminderivate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112537",
+            "display": "Serotonin-5HT3-Antagonisten-Allergie"
+          },
+          {
+            "code": "I112407",
+            "display": "Serotonin-5HT3-Antagonisten-Überempfindlichkeit"
+          },
+          {
+            "code": "I109557",
+            "display": "Serotonin-Syndrom"
+          },
+          {
+            "code": "I118673",
+            "display": "Streptomycin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112514",
+            "display": "Sulfasalazin-Allergie"
+          },
+          {
+            "code": "I112384",
+            "display": "Sulfasalazin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112513",
+            "display": "Sulfonamid-Allergie"
+          },
+          {
+            "code": "I112383",
+            "display": "Sulfonamid-Überempfindlichkeit"
+          },
+          {
+            "code": "I112512",
+            "display": "Sulfonylharnstoff-Allergie"
+          },
+          {
+            "code": "I112382",
+            "display": "Sulfonylharnstoff-Überempfindlichkeit"
+          },
+          {
+            "code": "I112511",
+            "display": "Sympathomimetika-Allergie"
+          },
+          {
+            "code": "I112381",
+            "display": "Sympathomimetika-Überempfindlichkeit"
+          },
+          {
+            "code": "I112466",
+            "display": "Tacrolismus-Allergie"
+          },
+          {
+            "code": "I112335",
+            "display": "Tacrolismus-Überempfindlichkeit"
+          },
+          {
+            "code": "I694",
+            "display": "Tamoxifen-Nebenwirkung"
+          },
+          {
+            "code": "I112510",
+            "display": "Terbutalin-Allergie"
+          },
+          {
+            "code": "I112380",
+            "display": "Terbutalin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112509",
+            "display": "Tetracyclin-Allergie"
+          },
+          {
+            "code": "I112508",
+            "display": "Tetracyclin-Derivate-Allergie"
+          },
+          {
+            "code": "I112378",
+            "display": "Tetracyclin-Derivate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112379",
+            "display": "Tetracyclin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112506",
+            "display": "Thiamin-Allergie"
+          },
+          {
+            "code": "I112376",
+            "display": "Thiamin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112505",
+            "display": "Thiazid-Allergie"
+          },
+          {
+            "code": "I112375",
+            "display": "Thiazid-Überempfindlichkeit"
+          },
+          {
+            "code": "I112503",
+            "display": "Thioxanthen-Allergie"
+          },
+          {
+            "code": "I112373",
+            "display": "Thioxanthen-Überempfindlichkeit"
+          },
+          {
+            "code": "I690",
+            "display": "Thyreostatika-Nebenwirkung"
+          },
+          {
+            "code": "I112501",
+            "display": "Thyreotropin-Releasing-Hormon-Allergie"
+          },
+          {
+            "code": "I112371",
+            "display": "Thyreotropin-Releasing-Hormon-Überempfindlichkeit"
+          },
+          {
+            "code": "I112502",
+            "display": "Tolycain-Allergie"
+          },
+          {
+            "code": "I112372",
+            "display": "Tolycain-Überempfindlichkeit"
+          },
+          {
+            "code": "I112500",
+            "display": "Trimethoprim-Allergie"
+          },
+          {
+            "code": "I112370",
+            "display": "Trimethoprim-Überempfindlichkeit"
+          },
+          {
+            "code": "I119546",
+            "display": "Unerwünschte Arzneimittelwirkung"
+          },
+          {
+            "code": "I89389",
+            "display": "Unerwünschte Nebenwirkung durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung"
+          },
+          {
+            "code": "I89390",
+            "display": "Unerwünschte Nebenwirkung durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung"
+          },
+          {
+            "code": "I112497",
+            "display": "Valaciclovir-Allergie"
+          },
+          {
+            "code": "I112367",
+            "display": "Valaciclovir-Überempfindlichkeit"
+          },
+          {
+            "code": "I115860",
+            "display": "Valganciclovir-Überempfindlichkeit"
+          },
+          {
+            "code": "I112496",
+            "display": "Valproinsäure-Derivate-Allergie"
+          },
+          {
+            "code": "I112366",
+            "display": "Valproinsäure-Derivate-Überempfindlichkeit"
+          },
+          {
+            "code": "I112495",
+            "display": "Vitamin-D-Allergie"
+          },
+          {
+            "code": "I112365",
+            "display": "Vitamin-D-Überempfindlichkeit"
+          },
+          {
+            "code": "I693",
+            "display": "Wehenmittel-Nebenwirkung"
+          },
+          {
+            "code": "I112474",
+            "display": "Xanthin-Allergie"
+          },
+          {
+            "code": "I112343",
+            "display": "Xanthin-Überempfindlichkeit"
+          },
+          {
+            "code": "I112412",
+            "display": "Überempfindlichkeit durch adrenerge Mittel"
+          },
+          {
+            "code": "I89393",
+            "display": "Überempfindlichkeit durch ein indikationsgerechtes Arzneimittel bei ordnungsgemäßer Verabreichung"
+          },
+          {
+            "code": "I89394",
+            "display": "Überempfindlichkeit durch eine indikationsgerechte Droge bei ordnungsgemäßer Verabreichung"
+          },
+          {
+            "code": "I112334",
+            "display": "Überempfindlichkeit durch halogenierte Kohlenwasserstoffe"
+          },
+          {
+            "code": "I115861",
+            "display": "Überempfindlichkeit durch homologe Immunglobuline"
+          },
+          {
+            "code": "I112443",
+            "display": "Überempfindlichkeit durch monoklonale Antikörper"
+          },
+          {
+            "code": "I112326",
+            "display": "Überempfindlichkeit durch normale humane Immunglobuline"
+          },
+          {
+            "code": "I116804",
+            "display": "Überempfindlichkeit durch Sirolimus"
+          },
+          {
+            "code": "I117243",
+            "display": "Überempfindlichkeit durch tetrazyklische Antidepressiva"
+          },
+          {
+            "code": "I112377",
+            "display": "Überempfindlichkeit durch trizyklische Antidepressiva"
+          },
+          {
+            "code": "I117242",
+            "display": "Überempfindlichkeit durch Vincaalkaloide"
+          },
+          {
+            "code": "I118675",
+            "display": "Überempfindlichkeit gegen Prasugrel"
+          },
+          {
+            "code": "I118674",
+            "display": "Überempfindlichkeit gegen Succinimide"
+          },
+          {
+            "code": "I118676",
+            "display": "Überempfindlichkeit gegen Ticlopidin"
+          },
+          {
+            "code": "I118677",
+            "display": "Überempfindlichkeit gegen Zytokine"
+          },
+          {
+            "code": "I688",
+            "display": "Östrogen-Nebenwirkung"
+          },
+          {
+            "code": "I27947",
+            "display": "Angeborene Laktoseintoleranz"
+          },
+          {
+            "code": "I27946",
+            "display": "Laktoseintoleranz"
+          },
+          {
+            "code": "I27948",
+            "display": "Laktoseintoleranzsyndrom"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/Composition/ExampleComposition> a fhir:Composition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ExampleComposition"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition";
+       fhir:index 0;
+       fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 77603-9}\">Medication treatment plan.extended Document</span></p><p><b>date</b>: 2021-11-23</p><p><b>author</b>: <a href=\"Practitioner-ExamplePractitioner.html\">Generated Summary: Lifelong physician number: 1656304456 (OFFICIAL); Dr. Antonín Leopold Dvořák; Phone: 01234-12345, a.dvorak@mpraxis-rusalka.de; birthDate: 1841-09-08</a></p><p><b>title</b>: Medikationsplan</p></div>"
+  ];
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d" ]
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77603-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77603-9" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:link <https://www.charite.de/fhir/medikationsplan/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:Composition.date [ fhir:value "2021-11-23"^^xsd:date];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:link <https://www.charite.de/fhir/medikationsplan/Practitioner/ExamplePractitioner>;
+     fhir:Reference.reference [ fhir:value "Practitioner/ExamplePractitioner" ]
+  ];
+  fhir:Composition.title [ fhir:value "Medikationsplan"];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:19009-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "19009-0" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://www.charite.de/fhir/medikationsplan/List/ExampleList>;
+       fhir:Reference.reference [ fhir:value "List/ExampleList" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/Composition/ExampleComposition.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

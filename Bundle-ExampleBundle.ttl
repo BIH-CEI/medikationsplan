@@ -1,0 +1,224 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/Bundle/ExampleBundle> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ExampleBundle"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Bundle";
+       fhir:index 0;
+       fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Bundle>
+     ]
+  ];
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d" ]
+  ];
+  fhir:Bundle.type [ fhir:value "document"];
+  fhir:Bundle.timestamp [ fhir:value "2021-11-23T13:28:17.239+01:00"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Composition/ExampleComposition" ];
+     fhir:Bundle.entry.resource <Composition/ExampleComposition>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "List/ExampleList" ];
+     fhir:Bundle.entry.resource <List/ExampleList>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Patient/ExamplePatient" ];
+     fhir:Bundle.entry.resource <Patient/ExamplePatient>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Practitioner/ExamplePractitioner" ];
+     fhir:Bundle.entry.resource <Practitioner/ExamplePractitioner>
+  ] .
+
+<Composition/ExampleComposition> a fhir:Composition;
+  fhir:Resource.id [ fhir:value "ExampleComposition"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition";
+       fhir:index 0;
+       fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 77603-9}\">Medication treatment plan.extended Document</span></p><p><b>date</b>: 2021-11-23</p><p><b>author</b>: <a href=\"#Practitioner_ExamplePractitioner\">See above (Practitioner/ExamplePractitioner)</a></p><p><b>title</b>: Medikationsplan</p></div>"
+  ];
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d" ]
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:77603-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "77603-9" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:link <https://www.charite.de/fhir/medikationsplan/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:Composition.date [ fhir:value "2021-11-23"^^xsd:date];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:link <https://www.charite.de/fhir/medikationsplan/Practitioner/ExamplePractitioner>;
+     fhir:Reference.reference [ fhir:value "Practitioner/ExamplePractitioner" ]
+  ];
+  fhir:Composition.title [ fhir:value "Medikationsplan"];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:19009-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "19009-0" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://www.charite.de/fhir/medikationsplan/List/ExampleList>;
+       fhir:Reference.reference [ fhir:value "List/ExampleList" ]
+     ]
+  ] .
+
+<List/ExampleList> a fhir:List;
+  fhir:Resource.id [ fhir:value "ExampleList"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/List";
+       fhir:index 0;
+       fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/List>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: current</p><p><b>mode</b>: snapshot</p><p><b>code</b>: <span title=\"Codes: {https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift 412}\">Dauermedikation</span></p></div>"
+  ];
+  fhir:List.status [ fhir:value "current"];
+  fhir:List.mode [ fhir:value "snapshot"];
+  fhir:List.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift" ];
+       fhir:Coding.code [ fhir:value "412" ];
+       fhir:Coding.display [ fhir:value "Dauermedikation" ]
+     ]
+  ] .
+
+<Patient/ExamplePatient> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "ExamplePatient"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient";
+       fhir:index 0;
+       fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Gesetzliche Krankenversicherung: Z234567890 (OFFICIAL)</p><p><b>name</b>: Clara Josephine Schumann (OFFICIAL)</p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/identifier-type-de-basis" ];
+         fhir:Coding.code [ fhir:value "GKV" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://fhir.de/sid/gkv/kvid-10" ];
+     fhir:Identifier.value [ fhir:value "Z234567890" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [
+       fhir:value "Schumann";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-own-name" ];
+         fhir:Extension.valueString [ fhir:value "Schumann" ]
+       ]
+     ];
+     fhir:HumanName.given [
+       fhir:value "Clara";
+       fhir:index 0
+     ], [
+       fhir:value "Josephine";
+       fhir:index 1
+     ]
+  ] .
+
+<Practitioner/ExamplePractitioner> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "ExamplePractitioner"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner";
+       fhir:index 0;
+       fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Lifelong physician number: 1656304456 (OFFICIAL)</p><p><b>name</b>: Dr. Antonín Leopold Dvořák</p><p><b>telecom</b>: ph: 01234-12345, <a href=\"mailto:a.dvorak@mpraxis-rusalka.de\">a.dvorak@mpraxis-rusalka.de</a></p><p><b>address</b>: Prager Str. 9, 00035 Dumka</p><p><b>birthDate</b>: 1841-09-08</p></div>"
+  ];
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "LANR" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" ];
+     fhir:Identifier.value [ fhir:value "1656304456" ]
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Dr. Antonín Leopold Dvořák" ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "01234-12345" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "a.dvorak@mpraxis-rusalka.de" ]
+  ];
+  fhir:Practitioner.address [
+     fhir:index 0;
+     fhir:Address.text [ fhir:value "Prager Str. 9, 00035 Dumka" ];
+     fhir:Address.line [
+       fhir:value "Prager Str. 9";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Dumka" ];
+     fhir:Address.postalCode [ fhir:value "00035" ]
+  ];
+  fhir:Practitioner.birthDate [ fhir:value "1841-09-08"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/Bundle/ExampleBundle.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

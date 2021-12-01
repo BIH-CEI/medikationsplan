@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/Practitioner/ExamplePractitioner> a fhir:Practitioner;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ExamplePractitioner"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner";
+       fhir:index 0;
+       fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Lifelong physician number: 1656304456 (OFFICIAL)</p><p><b>name</b>: Dr. Antonín Leopold Dvořák</p><p><b>telecom</b>: ph: 01234-12345, <a href=\"mailto:a.dvorak@mpraxis-rusalka.de\">a.dvorak@mpraxis-rusalka.de</a></p><p><b>address</b>: Prager Str. 9, 00035 Dumka</p><p><b>birthDate</b>: 1841-09-08</p></div>"
+  ];
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "LANR" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" ];
+     fhir:Identifier.value [ fhir:value "1656304456" ]
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Dr. Antonín Leopold Dvořák" ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "01234-12345" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "a.dvorak@mpraxis-rusalka.de" ]
+  ];
+  fhir:Practitioner.address [
+     fhir:index 0;
+     fhir:Address.text [ fhir:value "Prager Str. 9, 00035 Dumka" ];
+     fhir:Address.line [
+       fhir:value "Prager Str. 9";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Dumka" ];
+     fhir:Address.postalCode [ fhir:value "00035" ]
+  ];
+  fhir:Practitioner.birthDate [ fhir:value "1841-09-08"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.charite.de/fhir/medikationsplan/Practitioner/ExamplePractitioner.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

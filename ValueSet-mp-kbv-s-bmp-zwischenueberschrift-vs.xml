@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mp-kbv-s-bmp-zwischenueberschrift-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html"><code>https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift</code></a></li></ul></div>
+  </text>
+  <url value="https://www.charite.de/fhir/medikationsplan/ValueSet/kbv/s-bmp-zwischenueberschrift"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="1.2.276.0.76.3.1.1.5.2.42"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="KBV_BMP_Zwischenueberschrift_VS"/>
+  <status value="draft"/>
+  <date value="2021-05-13"/>
+  <publisher value="BIH@Charité"/>
+  <contact>
+    <name value="BIH@Charité"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
+    </telecom>
+  </contact>
+  <description value="Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP)."/>
+  <compose>
+    <include>
+      <system value="https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift"/>
+    </include>
+  </compose>
+</ValueSet>

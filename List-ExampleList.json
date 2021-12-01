@@ -1,0 +1,24 @@
+{
+  "resourceType": "List",
+  "id": "ExampleList",
+  "meta": {
+    "profile": [
+      "https://www.charite.de/fhir/medikationsplan/StructureDefinition/List"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"clstu\"><tr><td>Mode: snapshotStatus: currentCode: Dauermedikation</td></tr><tr><td></td></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr></table></div>"
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift",
+        "code": "412",
+        "display": "Dauermedikation"
+      }
+    ]
+  }
+}
