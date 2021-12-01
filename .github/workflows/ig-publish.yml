@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: julsas/mii-package-temp
-          path: packages
+          path: mii-package-temp
           lfs: true
 
       - name: Create symbolic link to package directory
