@@ -19,3 +19,4 @@ Alias: $standardterms = http://standardterms.edqm.eu
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+Alias: $MedikationsplanVersion = https://www.charite.de/fhir/medikationsplan/Extension/medikationsplan-version

@@ -12,6 +12,7 @@ Title: "Composition MP4+"
 * meta MS
 * meta.profile MS
 * language MS
+* extension contains $MedikationsplanVersion named medikationsplanVersion 0..1 MS
 * identifier 1.. MS
 * identifier.system 1.. MS
 * identifier.value 1.. MS
@@ -167,6 +168,8 @@ Instance: ExampleComposition
 InstanceOf: mp4p-composition
 Usage: #example
 * meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition"
+* extension[medikationsplanVersion].url = "https://www.charite.de/fhir/medikationsplan/Extension/medikationsplan-version"
+* extension[medikationsplanVersion].valueString = "2.6"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d"
 * status = #final
