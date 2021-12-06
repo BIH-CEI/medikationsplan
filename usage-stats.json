@@ -10,6 +10,14 @@
         "string",
         "string"
       ]
+    },
+    {
+      "url": "https://www.charite.de/fhir/medikationsplan/Extension/medikationsplan-version",
+      "title": "Extension Medikationsplan Version MP4+",
+      "types": [
+        "string",
+        "string"
+      ]
     }
   ],
   "profiles": {
@@ -150,6 +158,10 @@
     ],
     "https://www.charite.de/fhir/medikationsplan/Extension/freitext": [
       "Medication.ingredient.strength"
+    ],
+    "https://www.charite.de/fhir/medikationsplan/Extension/medikationsplan-version": [
+      "Bundle.entry.resource",
+      "Composition"
     ]
   }
 }

@@ -41,6 +41,13 @@
     "name": "Freitext"
   },
   {
+    "id": "mp4p-extension-medikationsplan-version",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/Extension/medikationsplan-version",
+    "version": "0.1.0",
+    "name": "MedikationsplanVersion"
+  },
+  {
     "id": "de.mp4p",
     "type": "ImplementationGuide",
     "url": "https://www.charite.de/fhir/medikationsplan/ImplementationGuide/mp4p/ImplementationGuide/de.mp4p",

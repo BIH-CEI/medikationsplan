@@ -20,8 +20,11 @@
           <profile value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 77603-9}">Medication treatment plan.extended Document</span></p><p><b>date</b>: 2021-11-23</p><p><b>author</b>: <a href="#Practitioner_ExamplePractitioner">See above (Practitioner/ExamplePractitioner)</a></p><p><b>title</b>: Medikationsplan</p></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Extension Medikationsplan Version MP4+</b>: 2.6</p><p><b>identifier</b>: id: urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 77603-9}">Medication treatment plan.extended Document</span></p><p><b>date</b>: 2021-11-23</p><p><b>author</b>: <a href="#Practitioner_ExamplePractitioner">See above (Practitioner/ExamplePractitioner)</a></p><p><b>title</b>: Medikationsplan</p></div>
         </text>
+        <extension url="https://www.charite.de/fhir/medikationsplan/Extension/medikationsplan-version">
+          <valueString value="2.6"/>
+        </extension>
         <identifier>
           <system value="urn:ietf:rfc:3986"/>
           <value value="urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d"/>

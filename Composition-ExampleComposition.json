@@ -7,9 +7,15 @@
     ]
   },
   "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 77603-9}\">Medication treatment plan.extended Document</span></p><p><b>date</b>: 2021-11-23</p><p><b>author</b>: <a href=\"Practitioner-ExamplePractitioner.html\">Generated Summary: Lifelong physician number: 1656304456 (OFFICIAL); Dr. Antonín Leopold Dvořák; Phone: 01234-12345, a.dvorak@mpraxis-rusalka.de; birthDate: 1841-09-08</a></p><p><b>title</b>: Medikationsplan</p></div>"
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Extension Medikationsplan Version MP4+</b>: 2.6</p><p><b>identifier</b>: id: urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 77603-9}\">Medication treatment plan.extended Document</span></p><p><b>date</b>: 2021-11-23</p><p><b>author</b>: <a href=\"Practitioner-ExamplePractitioner.html\">Generated Summary: Lifelong physician number: 1656304456 (OFFICIAL); Dr. Antonín Leopold Dvořák; Phone: 01234-12345, a.dvorak@mpraxis-rusalka.de; birthDate: 1841-09-08</a></p><p><b>title</b>: Medikationsplan</p></div>"
   },
+  "extension": [
+    {
+      "url": "https://www.charite.de/fhir/medikationsplan/Extension/medikationsplan-version",
+      "valueString": "2.6"
+    }
+  ],
   "identifier": {
     "system": "urn:ietf:rfc:3986",
     "value": "urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d"

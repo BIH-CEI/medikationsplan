@@ -1,9 +1,9 @@
 ﻿MP4P_DE_IG : Validation Results
 =========================================
 
-err = 31, warn = 26, info = 11
-IG Publisher Version: 1.1.83 Out of date - current version is 1.1.89
-Generated Wed Dec 01 11:34:56 UTC 2021. FHIR version 4.0.1 for de.mp4p#0.1.0 (canonical = https://www.charite.de/fhir/medikationsplan)
+err = 32, warn = 26, info = 11
+IG Publisher Version: 1.1.83 Out of date - current version is 1.1.90
+Generated Mon Dec 06 15:14:23 UTC 2021. FHIR version 4.0.1 for de.mp4p#0.1.0 (canonical = https://www.charite.de/fhir/medikationsplan)
  Build Errors : 116 / 20 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-AllergyIntoleranceMP4P : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Bundle-ExampleBundle : 0 / 1 / 12
@@ -25,6 +25,7 @@ Generated Wed Dec 01 11:34:56 UTC 2021. FHIR version 4.0.1 for de.mp4p#0.1.0 (ca
  /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-bundle : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-composition : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-extension-freitext : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-extension-medikationsplan-version : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-koerpergewicht : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-koerpergroesse : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-kreatinin : 1 / 0 / 1
@@ -217,6 +218,8 @@ ERROR: StructureDefinition.url: Resource id/url mismatch: mp4p-composition/https
 == fsh-generated/resources/StructureDefinition-mp4p-extension-freitext.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: mp4p-extension-freitext/https://www.charite.de/fhir/medikationsplan/Extension/freitext
 WARNING: StructureDefinition.where(url = 'https://www.charite.de/fhir/medikationsplan/Extension/freitext'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-mp4p-extension-medikationsplan-version.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: mp4p-extension-medikationsplan-version/https://www.charite.de/fhir/medikationsplan/Extension/medikationsplan-version
 == fsh-generated/resources/StructureDefinition-mp4p-koerpergewicht.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: mp4p-koerpergewicht/https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergewicht
 ERROR: StructureDefinition/mp4p-koerpergewicht: StructureDefinition.snapshot.element[54]: eld-8: 'Pattern and fixed are mutually exclusive' Rule 'Pattern and fixed are mutually exclusive' Failed
