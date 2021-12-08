@@ -11,7 +11,7 @@
   "title": "Extension Freitext MP4+",
   "status": "active",
   "experimental": false,
-  "date": "2021-12-06T15:13:20+00:00",
+  "date": "2021-12-08T18:19:37+00:00",
   "publisher": "BIH@Charité",
   "contact": [
     {
@@ -39,6 +39,10 @@
     {
       "type": "element",
       "expression": "Medication.ingredient.strength"
+    },
+    {
+      "type": "element",
+      "expression": "Dosage.doseAndRate.doseQuantity"
     }
   ],
   "type": "Extension",

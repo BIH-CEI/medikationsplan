@@ -1,6 +1,6 @@
 {
   "resourceType": "AllergyIntolerance",
-  "id": "AllergyIntoleranceMP4P",
+  "id": "ExampleAllergyIntolerance",
   "meta": {
     "profile": [
       "https://www.charite.de/fhir/medikationsplan/StructureDefinition/AllergyIntolerance"

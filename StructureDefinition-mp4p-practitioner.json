@@ -20,7 +20,7 @@
   "name": "PractitionerMP4P",
   "title": "Practitioner MP4+",
   "status": "draft",
-  "date": "2021-12-06T15:13:20+00:00",
+  "date": "2021-12-08T18:19:37+00:00",
   "publisher": "BIH@Charité",
   "contact": [
     {
@@ -33,6 +33,7 @@
       ]
     }
   ],
+  "description": "Daten zur Identifikation des Erstellers bzw. der Erstellerin des Medikationsplans.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -54,6 +55,10 @@
       "identity": "w5",
       "uri": "http://hl7.org/fhir/fivews",
       "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "UKF",
+      "name": "UKF Mapping"
     }
   ],
   "kind": "resource",

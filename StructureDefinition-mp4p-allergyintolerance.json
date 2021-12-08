@@ -20,7 +20,7 @@
   "name": "AllergyIntoleranceMP4P",
   "title": "AllergyIntolerance MP4+",
   "status": "draft",
-  "date": "2021-12-06T15:13:20+00:00",
+  "date": "2021-12-08T18:19:37+00:00",
   "publisher": "BIH@Charité",
   "contact": [
     {
@@ -33,7 +33,7 @@
       ]
     }
   ],
-  "description": "Allergie",
+  "description": "Allergie(n) und Unverträglichkeiten des Patienten.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

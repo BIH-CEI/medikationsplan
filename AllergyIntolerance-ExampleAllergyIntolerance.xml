@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
-  <id value="AllergyIntoleranceMP4P"/>
+  <id value="ExampleAllergyIntolerance"/>
   <meta>
     <profile value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/AllergyIntolerance"/>
   </meta>

@@ -157,7 +157,9 @@
       "ImplementationGuide.definition.resource"
     ],
     "https://www.charite.de/fhir/medikationsplan/Extension/freitext": [
-      "Medication.ingredient.strength"
+      "Medication.ingredient.strength",
+      "MedicationStatement.dosage.doseAndRate.doseQuantity",
+      "MedicationStatement.dosage.doseAndRate.dose[x]"
     ],
     "https://www.charite.de/fhir/medikationsplan/Extension/medikationsplan-version": [
       "Bundle.entry.resource",

@@ -10,7 +10,7 @@
   <name value="MP4P_DE_IG"/>
   <title value="Medikationsplan 4 PLUS"/>
   <status value="draft"/>
-  <date value="2021-12-06T15:13:20+00:00"/>
+  <date value="2021-12-08T18:19:37+00:00"/>
   <publisher value="BIH@Charité"/>
   <contact>
     <name value="BIH@Charité"/>
@@ -203,7 +203,7 @@
         <reference value="StructureDefinition/mp4p-allergyintolerance"/>
       </reference>
       <name value="AllergyIntolerance MP4+"/>
-      <description value="Allergie"/>
+      <description value="Allergie(n) und Unverträglichkeiten des Patienten."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -214,6 +214,7 @@
         <reference value="StructureDefinition/mp4p-bundle"/>
       </reference>
       <name value="Bundle MP4+"/>
+      <description value="Das Bundle bündelt alle Komponenten des Medikationsplans als Dokument."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -224,6 +225,7 @@
         <reference value="StructureDefinition/mp4p-composition"/>
       </reference>
       <name value="Composition MP4+"/>
+      <description value="Die Composition definiert die Struktur des Medikationsplans."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -267,6 +269,7 @@
         <reference value="StructureDefinition/mp4p-list"/>
       </reference>
       <name value="MedicationStatement List MP4+"/>
+      <description value="Die Composition definiert die Struktur des Medikationsplans."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -299,6 +302,7 @@
         <reference value="StructureDefinition/mp4p-patient"/>
       </reference>
       <name value="Patient MP4+"/>
+      <description value="Demografische und administrative Informationen zur Identifikation des Patienten"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -309,6 +313,7 @@
         <reference value="StructureDefinition/mp4p-practitioner"/>
       </reference>
       <name value="Practitioner MP4+"/>
+      <description value="Daten zur Identifikation des Erstellers bzw. der Erstellerin des Medikationsplans."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -352,7 +357,7 @@
         <reference value="StructureDefinition/mp4p-extension-medikationsplan-version"/>
       </reference>
       <name value="Extension Medikationsplan Version MP4+"/>
-      <description value="Version der Spezifikation des Medikationsplans."/>
+      <description value="Extension zur Angabe der Version der zugrundeliegenden Spezifikation des Medikationsplans."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -426,9 +431,9 @@
         <valueString value="AllergyIntolerance"/>
       </extension>
       <reference>
-        <reference value="AllergyIntolerance/AllergyIntoleranceMP4P"/>
+        <reference value="AllergyIntolerance/ExampleAllergyIntolerance"/>
       </reference>
-      <name value="AllergyIntoleranceMP4P"/>
+      <name value="ExampleAllergyIntolerance"/>
       <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/AllergyIntolerance"/>
     </resource>
     <resource>
@@ -509,6 +514,16 @@
         <reference value="MedicationStatement/ExampleMedicationStatement"/>
       </reference>
       <name value="ExampleMedicationStatement"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/ExampleMedicationStatement-2"/>
+      </reference>
+      <name value="ExampleMedicationStatement-2"/>
       <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement"/>
     </resource>
     <resource>

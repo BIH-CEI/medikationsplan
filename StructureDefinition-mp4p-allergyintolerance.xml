@@ -53,7 +53,7 @@
   <name value="AllergyIntoleranceMP4P"/>
   <title value="AllergyIntolerance MP4+"/>
   <status value="draft"/>
-  <date value="2021-12-06T15:13:20+00:00"/>
+  <date value="2021-12-08T18:19:37+00:00"/>
   <publisher value="BIH@Charité"/>
   <contact>
     <name value="BIH@Charité"/>
@@ -62,7 +62,7 @@
       <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
-  <description value="Allergie"/>
+  <description value="Allergie(n) und Unverträglichkeiten des Patienten."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>

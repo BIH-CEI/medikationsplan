@@ -16,7 +16,7 @@
   <title value="Extension Freitext MP4+"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2021-12-06T15:13:20+00:00"/>
+  <date value="2021-12-08T18:19:37+00:00"/>
   <publisher value="BIH@Charité"/>
   <contact>
     <name value="BIH@Charité"/>
@@ -37,6 +37,10 @@
   <context>
     <type value="element"/>
     <expression value="Medication.ingredient.strength"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Dosage.doseAndRate.doseQuantity"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

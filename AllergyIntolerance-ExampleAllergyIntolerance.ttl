@@ -5,9 +5,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.charite.de/fhir/medikationsplan/AllergyIntolerance/AllergyIntoleranceMP4P> a fhir:AllergyIntolerance;
+<https://www.charite.de/fhir/medikationsplan/AllergyIntolerance/ExampleAllergyIntolerance> a fhir:AllergyIntolerance;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "AllergyIntoleranceMP4P"];
+  fhir:Resource.id [ fhir:value "ExampleAllergyIntolerance"];
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/AllergyIntolerance";
@@ -41,7 +41,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.charite.de/fhir/medikationsplan/AllergyIntolerance/AllergyIntoleranceMP4P.ttl> a owl:Ontology;
+<https://www.charite.de/fhir/medikationsplan/AllergyIntolerance/ExampleAllergyIntolerance.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

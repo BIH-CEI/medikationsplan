@@ -20,7 +20,7 @@
   "name": "BundleMP4P",
   "title": "Bundle MP4+",
   "status": "draft",
-  "date": "2021-12-06T15:13:20+00:00",
+  "date": "2021-12-08T18:19:37+00:00",
   "publisher": "BIH@Charité",
   "contact": [
     {
@@ -33,6 +33,7 @@
       ]
     }
   ],
+  "description": "Das Bundle bündelt alle Komponenten des Medikationsplans als Dokument.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

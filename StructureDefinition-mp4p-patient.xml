@@ -62,7 +62,7 @@
   <name value="PatientMP4P"/>
   <title value="Patient MP4+"/>
   <status value="draft"/>
-  <date value="2021-12-06T15:13:20+00:00"/>
+  <date value="2021-12-08T18:19:37+00:00"/>
   <publisher value="BIH@Charité"/>
   <contact>
     <name value="BIH@Charité"/>
@@ -71,6 +71,7 @@
       <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
+  <description value="Demografische und administrative Informationen zur Identifikation des Patienten"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>
