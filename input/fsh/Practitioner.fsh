@@ -28,14 +28,6 @@ Mapping: UKF-Practitioner
 Id: UKF
 Title: "UKF Mapping"
 Source: PractitionerMP4P
-* identifier[versichertenId_GKV].value -> "P@egk"
-* name[name].family -> "P@f"
-* name[name].family.extension[namenszusatz] -> "P@z"
-* name[name].family.extension[vorsatzwort] -> "P@v"
-* name[name].given -> "P@g"
-* name[name].prefix -> "P@t"
-* gender -> "P@s"
-* birthDate -> "P@b"
 
 Instance: ExamplePractitioner
 InstanceOf: mp4p-practitioner
