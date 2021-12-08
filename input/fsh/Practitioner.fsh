@@ -2,6 +2,7 @@ Profile: PractitionerMP4P
 Parent: Practitioner
 Id: mp4p-practitioner
 Title: "Practitioner MP4+"
+Description: "Daten zur Identifikation des Erstellers bzw. der Erstellerin des Medikationsplans."
 * ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner"
 * ^version = "0.1.0"
 * ^status = #draft
@@ -22,6 +23,19 @@ Title: "Practitioner MP4+"
 * name MS
 * name only http://fhir.de/StructureDefinition/humanname-de-basis
 * name.text 1..1 MS
+
+Mapping: UKF-Practitioner
+Id: UKF
+Title: "UKF Mapping"
+Source: PractitionerMP4P
+* identifier[versichertenId_GKV].value -> "P@egk"
+* name[name].family -> "P@f"
+* name[name].family.extension[namenszusatz] -> "P@z"
+* name[name].family.extension[vorsatzwort] -> "P@v"
+* name[name].given -> "P@g"
+* name[name].prefix -> "P@t"
+* gender -> "P@s"
+* birthDate -> "P@b"
 
 Instance: ExamplePractitioner
 InstanceOf: mp4p-practitioner

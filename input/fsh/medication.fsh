@@ -14,10 +14,7 @@ Description: "Dieses Profil beschreibt die Medikation."
 * meta.profile MS
 * language MS
 * code 1..1 MS
-* code ^short = "PZN-Code des Medikamentes"
-* code ^definition = "Die Verwendung von PZN ist verpflichtent, die Codes können jedoch nicht validiert werden, da der gesamte Katalog der Codes nicht vorliegt."
 * code.coding 0..1 MS
-* code.coding ^short = "PZN-Nummer (@p)"
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -25,10 +22,10 @@ Description: "Dieses Profil beschreibt die Medikation."
 * code.coding[Pharmazentralnummer] ^patternCoding.system = "http://fhir.de/CodeSystem/ifa/pzn"
 * code.coding[Pharmazentralnummer].system 1.. MS
 * code.coding[Pharmazentralnummer].code 1.. MS
+* code.coding[Pharmazentralnummer].code ^short = "Pharmazentralnummer (PZN)"
 * code.coding[Pharmazentralnummer].display MS
-* code.coding[Pharmazentralnummer].display ^short = "Handelsname"
+* code.coding[Pharmazentralnummer].display ^short = "Handelsname aus PZN abgeleitet"
 * code.text MS
-* code.text ^short = "Handelsname (@a)"
 * code.text ^definition = "Handelsname des Medikamentes als Freitexteingabe (ohne PZN-Code) oder als von code.coding.display (Handelsname laut PZN) abweichender Handelsname"
 * form MS
 * form ^short = "Darreichungsform"
@@ -52,9 +49,9 @@ Description: "Dieses Profil beschreibt die Medikation."
 * form.coding[kbvDarreichungsform].system 1.. MS
 * form.coding[kbvDarreichungsform].code 1.. MS
 * form.text MS
-* form.text ^short = "Darreichungsform als Freitext (@fd)"
+* form.text ^short = "Darreichungsform als Freitext"
 * ingredient MS
-* ingredient ^short = "Wirkstoff (W)"
+* ingredient ^short = "Wirkstoff"
 * ingredient.item[x] only CodeableConcept
 * ingredient.item[x] ^slicing.discriminator.type = #type
 * ingredient.item[x] ^slicing.discriminator.path = "$this"
@@ -90,6 +87,17 @@ Mapping: UKF-Medication
 Id: UKF
 Title: "UKF Mapping"
 Source: MedicationMP4P
+* -> "M"
+* code.coding[Pharmazentralnummer].code -> "M@p"
+* code.coding[Pharmazentralnummer].display -> "M@a"
+* code.text -> "M@a"
+* form.coding[kbvDarreichungsform].code -> "M@f"
+* form.text -> "M@fd"
+* ingredient -> "W"
+* ingredient.itemCodeableConcept.coding[ASK].display -> "W@w"
+* ingredient.itemCodeableConcept.coding[ATC].display -> "W@w"
+* ingredient.itemCodeableConcept.text -> "W@w"
+* ingredient.strength -> "W@s"
 
 Instance: ExampleMedication
 InstanceOf: mp4p-medikation

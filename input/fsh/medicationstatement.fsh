@@ -13,9 +13,6 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * meta MS
 * meta.profile MS
 * language MS 
-//* identifier 1..* MS 
-//* identifier.system 1..1 MS 
-//* identifier.value 1..1 MS 
 * basedOn 0..0
 * partOf 0..0
 * status MS
@@ -63,11 +60,6 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * dosage[freitext].patientInstruction 0..1 MS
 * dosage[freitext].timing 0..0
 * dosage[freitext].asNeeded[x] 0..0
-//* dosage[freitext].asNeeded[x] only boolean
-//* dosage[freitext].asNeeded[x] ^slicing.discriminator.type = #type
-//* dosage[freitext].asNeeded[x] ^slicing.discriminator.path = "$this"
-//* dosage[freitext].asNeeded[x] ^slicing.rules = #open
-//* dosage[freitext].asNeededBoolean ^short = "Bedarfs- oder Dauermedikation"
 * dosage[freitext].site 0..0
 * dosage[freitext].route 0..0
 * dosage[freitext].method 0..0
@@ -83,7 +75,7 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * dosage[kodiert].timing.event 0..0
 * dosage[kodiert].timing.repeat 0..0
 * dosage[kodiert].timing.code 1..1 MS
-* dosage[kodiert].timing.code ^short = "Einnahmezeitpunkt (@m|@d|@v|@h)"
+* dosage[kodiert].timing.code ^short = "Einnahmezeitpunkt (M@m|M@d|M@v|M@h)"
 * dosage[kodiert].timing.code.coding 1..* MS
 * dosage[kodiert].timing.code.coding ^slicing.discriminator.type = #pattern
 * dosage[kodiert].timing.code.coding ^slicing.discriminator.path = "$this"
@@ -99,27 +91,24 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * dosage[kodiert].timing.code.coding[timingEvent] ^patternCoding.system = http://terminology.hl7.org/CodeSystem/v3-TimingEvent
 * dosage[kodiert].timing.code.coding[timingEvent].system 1..1 MS
 * dosage[kodiert].timing.code.coding[timingEvent].code 1..1 MS
-//* dosage[kodiert].asNeeded[x] 0..0
 * dosage[kodiert].site 0..0
 * dosage[kodiert].route 0..0
 * dosage[kodiert].method 0..0
 * dosage[kodiert].doseAndRate 1..1 MS
 * dosage[kodiert].doseAndRate.type 0..0
-//* dosage[kodiert].doseAndRate.dose[x] only SimpleQuantity or Range 
 * dosage[kodiert].doseAndRate.dose[x] ^slicing.discriminator.type = #type
 * dosage[kodiert].doseAndRate.dose[x] ^slicing.discriminator.path = "$this"
 * dosage[kodiert].doseAndRate.dose[x] ^slicing.rules = #closed
-//* dosage[kodiert].doseAndRate.dose[x] contains 
-//    doseQuantity 0..1 MS and 
-//    doseRange 0..1 MS
 * dosage[kodiert].doseAndRate.doseQuantity only SimpleQuantity
-* dosage[kodiert].doseAndRate.doseQuantity ^short = "Dosiereinheit kodiert (@du)"
-* dosage[kodiert].doseAndRate.doseQuantity.value 1.. MS
-* dosage[kodiert].doseAndRate.doseQuantity.unit 1.. MS
-* dosage[kodiert].doseAndRate.doseQuantity.system 1.. MS
+* dosage[kodiert].doseAndRate.doseQuantity obeys dqty-1
+* dosage[kodiert].doseAndRate.doseQuantity ^short = "Dosiereinheit kodiert (M@du)"
+* dosage[kodiert].doseAndRate.doseQuantity.value MS
+* dosage[kodiert].doseAndRate.doseQuantity.unit MS
+* dosage[kodiert].doseAndRate.doseQuantity.system MS
 * dosage[kodiert].doseAndRate.doseQuantity.system = $KBV_CS_SFHIR_BMP_DOSIEREINHEIT (exactly)
-* dosage[kodiert].doseAndRate.doseQuantity.code 1.. MS
+* dosage[kodiert].doseAndRate.doseQuantity.code MS
 * dosage[kodiert].doseAndRate.doseQuantity.code from https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT (required)
+* dosage[kodiert].doseAndRate.doseQuantity.extension contains https://www.charite.de/fhir/medikationsplan/Extension/freitext named freitextDosiereinheit 0..1 MS
 * dosage[kodiert].doseAndRate.doseRange only Range
 * dosage[kodiert].doseAndRate.rate[x] 0..0
 * dosage[kodiert].maxDosePerPeriod 0..0
@@ -144,6 +133,21 @@ Mapping: UKF-MedicationStatement
 Id: UKF
 Title: "UKF Mapping"
 Source: MedicationStatementMP4P
+* -> "M"
+* dosage[kodiert].timing.code.coding[snomed].code -> "M@m"
+* dosage[kodiert].timing.code.coding[timingEvent].code -> "M@m"
+* dosage[kodiert].timing.code.coding[snomed].code -> "M@d"
+* dosage[kodiert].timing.code.coding[timingEvent].code -> "M@d"
+* dosage[kodiert].timing.code.coding[snomed].code -> "M@v"
+* dosage[kodiert].timing.code.coding[timingEvent].code -> "M@v"
+* dosage[kodiert].timing.code.coding[snomed].code -> "M@h"
+* dosage[kodiert].timing.code.coding[timingEvent].code -> "M@h"
+* dosage[kodiert].doseAndRate.doseQuantity.code -> "M@du"
+* dosage[kodiert].doseAndRate.doseQuantity.extension[freitextDosiereinheit].valueString -> "M@dud"
+* dosage[freitext].text -> "M@t"
+* reasonCode.text -> "M@r"
+* dosage[freitext].patientInstruction  -> "M@i"
+* dosage[kodiert].patientInstruction  -> "M@i"
 
 Instance: ExampleMedicationStatement
 InstanceOf: mp4p-medicationstatement
@@ -159,3 +163,15 @@ Usage: #example
 * dosage[kodiert].doseAndRate.doseQuantity.unit = "Stück"
 * dosage[kodiert].doseAndRate.doseQuantity.system = $KBV_CS_SFHIR_BMP_DOSIEREINHEIT
 * dosage[kodiert].doseAndRate.doseQuantity.code = #1
+
+Instance: ExampleMedicationStatement-2
+InstanceOf: mp4p-medicationstatement
+Usage: #example
+* meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement"
+* status = #active
+* medicationReference = Reference(ExampleMedication)
+* subject = Reference(ExamplePatient)
+* effectivePeriod.start = "2021-01-03"
+* dosage[kodiert].timing.code.coding[snomed] = $snomed#71997007 "Noon (qualifier value)"
+* dosage[kodiert].timing.code.coding[timingEvent] = $TimingEvent#CD "Mittags"
+* dosage[kodiert].doseAndRate.doseQuantity.extension[freitextDosiereinheit].valueString = "1 Tablette"

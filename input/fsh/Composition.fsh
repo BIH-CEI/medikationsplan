@@ -2,6 +2,7 @@ Profile: CompositionMP4P
 Parent: Composition
 Id: mp4p-composition
 Title: "Composition MP4+"
+Description: "Die Composition definiert die Struktur des Medikationsplans."
 * ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition"
 * ^version = "0.1.0"
 * ^status = #draft
@@ -121,7 +122,7 @@ Title: "Composition MP4+"
 * section[klinischeParameter].code.coding.system 1..1 MS
 * section[klinischeParameter].code.coding.system = "http://loinc.org" (exactly)
 * section[klinischeParameter].code.coding.code 1..1 MS
-* section[klinischeParameter].code.coding.code = #755752-0 (exactly)
+* section[klinischeParameter].code.coding.code = #55752-0 (exactly)
 * section[klinischeParameter].code.coding.display MS
 * section[klinischeParameter].mode 0..0
 * section[klinischeParameter].orderedBy 0..0
@@ -162,6 +163,9 @@ Id: UKF
 Title: "UKF Mapping"
 Source: CompositionMP4P
 * -> "MP"
+* extension[medikationsplanVersion].valueString -> "MP@v"
+* section[hinweiseSection].text -> "X"
+* identifier.value -> "MP@U"
 
 
 Instance: ExampleComposition

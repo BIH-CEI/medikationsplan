@@ -2,6 +2,7 @@ Profile: ListMP4P
 Parent: List
 Id: mp4p-list
 Title: "MedicationStatement List MP4+"
+Description: "Die Composition definiert die Struktur des Medikationsplans."
 * ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/List"
 * ^version = "0.1.0"
 * ^status = #draft

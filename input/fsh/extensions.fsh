@@ -8,8 +8,10 @@ Description: "Extension zur Freitext-Angabe der Wirkstoffmenge bzw. Stärke."
 * ^publisher = "Charité"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
-* ^context.type = #element
-* ^context.expression = "Medication.ingredient.strength"
+* ^context[0].type = #element
+* ^context[0].expression = "Medication.ingredient.strength"
+* ^context[1].type = #element
+* ^context[1].expression = "Dosage.doseAndRate.doseQuantity"
 * url = "https://www.charite.de/fhir/medikationsplan/Extension/freitext" (exactly)
 * value[x] 1..
 * value[x] only string
@@ -21,7 +23,7 @@ Description: "Extension zur Freitext-Angabe der Wirkstoffmenge bzw. Stärke."
 Extension: MedikationsplanVersion
 Id: mp4p-extension-medikationsplan-version
 Title: "Extension Medikationsplan Version MP4+"
-Description: "Version der Spezifikation des Medikationsplans."
+Description: "Extension zur Angabe der Version der zugrundeliegenden Spezifikation des Medikationsplans."
 * ^url = "https://www.charite.de/fhir/medikationsplan/Extension/medikationsplan-version"
 * ^version = "0.1.0"
 * ^experimental = false
@@ -37,3 +39,9 @@ Description: "Version der Spezifikation des Medikationsplans."
 * value[x] ^slicing.discriminator.path = "$this"
 * value[x] ^slicing.rules = #open
 * valueString 1..1
+
+Mapping: UKF-Extension-Version
+Id: UKF
+Title: "UKF Mapping"
+Source: MedikationsplanVersion
+* valueString -> "@v"

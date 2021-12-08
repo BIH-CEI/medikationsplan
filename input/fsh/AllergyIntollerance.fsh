@@ -2,7 +2,7 @@ Profile: AllergyIntoleranceMP4P
 Parent: AllergyIntolerance
 Id: mp4p-allergyintolerance
 Title: "AllergyIntolerance MP4+"
-Description: "Allergie"
+Description: "Allergie(n) und Unverträglichkeiten des Patienten."
 * ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/AllergyIntolerance"
 * ^version = "0.1.0"
 * ^status = #draft
@@ -58,7 +58,7 @@ Title: "UKF Mapping"
 Source: AllergyIntoleranceMP4P
 * code.text -> "O@a"
 
-Instance: AllergyIntoleranceMP4P
+Instance: ExampleAllergyIntolerance
 InstanceOf: mp4p-allergyintolerance
 Usage: #example
 * meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/AllergyIntolerance"

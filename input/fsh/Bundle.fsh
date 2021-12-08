@@ -2,6 +2,7 @@ Profile: BundleMP4P
 Parent: Bundle
 Id: mp4p-bundle
 Title: "Bundle MP4+"
+Description: "Das Bundle bündelt alle Komponenten des Medikationsplans als Dokument."
 * ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Bundle"
 * ^version = "0.1.0"
 * ^status = #draft

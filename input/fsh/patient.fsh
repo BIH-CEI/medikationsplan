@@ -5,6 +5,7 @@ Profile: PatientMP4P
 Parent: Patient
 Id: mp4p-patient
 Title: "Patient MP4+"
+Description: "Demografische und administrative Informationen zur Identifikation des Patienten"
 * ^url = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient"
 * ^version = "0.1.0"
 * ^status = #draft
