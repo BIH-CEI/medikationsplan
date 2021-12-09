@@ -104,7 +104,7 @@ Description: "Die Composition definiert die Struktur des Medikationsplans."
 * section[gesundheitsBelange].orderedBy 0..0
 * section[gesundheitsBelange].entry 0..* MS
 * section[gesundheitsBelange].entry ^slicing.discriminator.type = #profile
-* section[gesundheitsBelange].entry ^slicing.discriminator.path = "reference"
+* section[gesundheitsBelange].entry ^slicing.discriminator.path = "$this.resolve()"
 * section[gesundheitsBelange].entry ^slicing.rules = #closed
 * section[gesundheitsBelange].entry contains
     schwangerschaft 0..1 MS and 
@@ -128,7 +128,7 @@ Description: "Die Composition definiert die Struktur des Medikationsplans."
 * section[klinischeParameter].orderedBy 0..0
 * section[klinischeParameter].entry 0..* MS
 * section[klinischeParameter].entry ^slicing.discriminator.type = #profile
-* section[klinischeParameter].entry ^slicing.discriminator.path = "reference"
+* section[klinischeParameter].entry ^slicing.discriminator.path = "$this.resolve()"
 * section[klinischeParameter].entry ^slicing.rules = #closed
 * section[klinischeParameter].entry contains
     gewicht 0..1 MS and 
