@@ -3,7 +3,7 @@
 
 err = 34, warn = 22, info = 11
 IG Publisher Version: 1.1.83 Out of date - current version is 1.1.90
-Generated Wed Dec 08 18:20:37 UTC 2021. FHIR version 4.0.1 for de.mp4p#0.1.0 (canonical = https://www.charite.de/fhir/medikationsplan)
+Generated Thu Dec 09 19:19:57 UTC 2021. FHIR version 4.0.1 for de.mp4p#0.1.0 (canonical = https://www.charite.de/fhir/medikationsplan)
  Build Errors : 120 / 16 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-ExampleAllergyIntolerance : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Bundle-ExampleBundle : 0 / 1 / 12
