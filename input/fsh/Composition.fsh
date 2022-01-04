@@ -34,19 +34,19 @@ Description: "Die Composition definiert die Struktur des Medikationsplans."
 * subject.reference 1..1 MS
 * encounter 0..0
 * date MS
-* author only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner)
+* author only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner or https://www.charite.de/fhir/medikationsplan/StructureDefinition/Organization)
 * author 1..1 MS 
 * title 1..1 MS
-//* custodian ^slicing.discriminator.type = #pattern
-//* custodian ^slicing.discriminator.path = "identifier"
-//* custodian ^slicing.rules = #closed
-//* custodian contains
-//    Apotheke 0..1 MS and
-//    Praxis 0..1 MS
-//* custodian[Apotheke].identifier ^patternIdentifier.system = "http://fhir.de/NamingSystem/bfarm/btmnr"
-//* custodian[Apotheke].identifier 1..1
-//* custodian[Praxis].identifier ^patternIdentifier.system = "http://fhir.de/NamingSystem/kbv/bsnr"
-//* custodian[Praxis].identifier 1..1
+* custodian ^slicing.discriminator.type = #pattern
+* custodian ^slicing.discriminator.path = "identifier"
+* custodian ^slicing.rules = #open
+* custodian contains
+    Apotheke 0..1 MS and
+    Praxis 0..1 MS
+* custodian[Apotheke].identifier ^patternIdentifier.system = "http://fhir.de/NamingSystem/bfarm/btmnr"
+* custodian[Apotheke].identifier 1..1
+* custodian[Praxis].identifier ^patternIdentifier.system = "http://fhir.de/NamingSystem/kbv/bsnr"
+* custodian[Praxis].identifier 1..1
 * relatesTo 0..0
 * event 0..0
 * section MS
@@ -105,7 +105,7 @@ Description: "Die Composition definiert die Struktur des Medikationsplans."
 * section[gesundheitsBelange].entry 0..* MS
 * section[gesundheitsBelange].entry ^slicing.discriminator.type = #profile
 * section[gesundheitsBelange].entry ^slicing.discriminator.path = "$this.resolve()"
-* section[gesundheitsBelange].entry ^slicing.rules = #closed
+* section[gesundheitsBelange].entry ^slicing.rules = #open
 * section[gesundheitsBelange].entry contains
     schwangerschaft 0..1 MS and 
     stillzeit 0..1 MS
@@ -129,7 +129,7 @@ Description: "Die Composition definiert die Struktur des Medikationsplans."
 * section[klinischeParameter].entry 0..* MS
 * section[klinischeParameter].entry ^slicing.discriminator.type = #profile
 * section[klinischeParameter].entry ^slicing.discriminator.path = "$this.resolve()"
-* section[klinischeParameter].entry ^slicing.rules = #closed
+* section[klinischeParameter].entry ^slicing.rules = #open
 * section[klinischeParameter].entry contains
     gewicht 0..1 MS and 
     groesse 0..1 MS and
@@ -184,3 +184,7 @@ Usage: #example
 * title = "Medikationsplan"
 * section[medikationsplanSection].code = $loinc#19009-0
 * section[medikationsplanSection].entry = Reference(ExampleList)
+//* section[medikationsplanSection].entry.reference = "http://example.org/List/ExampleList"
+* section[klinischeParameter].code = $loinc#55752-0
+* section[klinischeParameter].entry[gewicht] = Reference(ExampleKoerpergewicht)
+//* section[klinischeParameter].entry[gewicht].reference = "http://example.org/Observation/ExampleKoerpergewicht"

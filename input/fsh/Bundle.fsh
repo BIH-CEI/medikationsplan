@@ -55,3 +55,5 @@ Usage: #example
 * entry[=].fullUrl = "Patient/ExamplePatient"
 * entry[+].resource = ExamplePractitioner
 * entry[=].fullUrl = "Practitioner/ExamplePractitioner"
+* entry[+].resource = ExampleKoerpergewicht
+* entry[=].fullUrl = "Observation/ExampleKoerpergewicht"
