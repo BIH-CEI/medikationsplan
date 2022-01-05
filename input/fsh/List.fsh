@@ -37,7 +37,7 @@ Description: "Die Composition definiert die Struktur des Medikationsplans."
 * entry.deleted 0..0
 * entry.date 0..0
 * entry.item MS
-* entry.item only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement)
+* entry.item only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement or https://www.charite.de/fhir/medikationsplan/StructureDefinition/freitext)
 * entry.item.reference 1..1 MS
 * emptyReason 0..0
 
