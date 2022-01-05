@@ -45,6 +45,8 @@ Mapping: UKF-List
 Id: UKF
 Title: "UKF Mapping"
 Source: ListMP4P
+* code.coding.code -> "S@c"
+* code.text -> "S@t"
 
 Instance: ExampleList
 InstanceOf: mp4p-list

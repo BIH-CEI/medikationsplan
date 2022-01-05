@@ -50,6 +50,7 @@ Mapping: UKF-Koerpergewicht
 Id: UKF
 Title: "UKF Mapping"
 Source: KoerpergewichtMP4P
+* valueQuantity.value -> "O@w"
 
 Instance: ExampleKoerpergewicht
 InstanceOf: mp4p-koerpergewicht

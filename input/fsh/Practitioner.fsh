@@ -23,11 +23,21 @@ Description: "Daten zur Identifikation des Erstellers bzw. der Erstellerin des M
 * name MS
 * name only http://fhir.de/StructureDefinition/humanname-de-basis
 * name.text 1..1 MS
+* address MS
+* address only http://fhir.de/StructureDefinition/address-de-basis
+* telecom.system MS
+* telecom.value MS
 
 Mapping: UKF-Practitioner
 Id: UKF
 Title: "UKF Mapping"
 Source: PractitionerMP4P
+* identifier[lanr].value -> "A@lanr"
+* address.line -> "A@s"
+* address.postalCode -> "A@z"
+* address.city -> "A@o"
+* telecom.value -> "A@p"
+* telecom.value -> "A@e"
 
 Instance: ExamplePractitioner
 InstanceOf: mp4p-practitioner

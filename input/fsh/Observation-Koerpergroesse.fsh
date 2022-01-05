@@ -50,6 +50,7 @@ Mapping: UKF-Koerpergroesse
 Id: UKF
 Title: "UKF Mapping"
 Source: KoerpergroesseMP4P
+* valueQuantity.value -> "O@h"
 
 Instance: ExampleKoerpergroesse
 InstanceOf: mp4p-koerpergroesse

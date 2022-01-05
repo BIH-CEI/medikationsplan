@@ -51,6 +51,7 @@ Mapping: UKF-StatusSchwanger
 Id: UKF
 Title: "UKF Mapping"
 Source: StatusSchwangerMP4P
+* -> "O@p"
 
 Instance: ExampleStatusSchwanger
 InstanceOf: mp4p-schwangerschaft

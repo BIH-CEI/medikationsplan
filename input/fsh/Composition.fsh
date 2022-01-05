@@ -158,6 +158,7 @@ Source: CompositionMP4P
 * extension[medikationsplanVersion].valueString -> "MP@v"
 * section[hinweiseSection].text -> "X"
 * identifier.value -> "MP@U"
+* date -> "A@t"
 
 
 Instance: ExampleComposition

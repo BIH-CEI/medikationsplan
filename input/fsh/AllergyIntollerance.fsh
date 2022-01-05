@@ -57,6 +57,7 @@ Id: UKF
 Title: "UKF Mapping"
 Source: AllergyIntoleranceMP4P
 * code.text -> "O@a"
+* code.text -> "O@i"
 
 Instance: ExampleAllergyIntolerance
 InstanceOf: mp4p-allergyintolerance

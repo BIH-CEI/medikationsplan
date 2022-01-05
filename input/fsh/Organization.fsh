@@ -34,6 +34,11 @@ Description: "Identifikation einer Organisation"
 * identifier[apothekenidentifikationsnummer].system 1..1 MS
 * identifier[apothekenidentifikationsnummer].system = "http://fhir.de/sid/bfarm/btmnr"
 * identifier[apothekenidentifikationsnummer].value 1..1 MS
+* name MS
+* address MS
+* address only http://fhir.de/StructureDefinition/address-de-basis
+* telecom.system MS
+* telecom.value MS
 
 Mapping: UKF-Organization
 Id: UKF
@@ -41,6 +46,12 @@ Title: "UKF Mapping"
 Source: OrganizationMP4P
 * identifier[institutionskennzeichen].value -> "A@kik"
 * identifier[apothekenidentifikationsnummer].value -> "A@idf"
+* name -> "A@n"
+* address.line -> "A@s"
+* address.postalCode -> "A@z"
+* address.city -> "A@o"
+* telecom.value -> "A@p"
+* telecom.value -> "A@e"
 
 Instance: ExampleOrganization
 InstanceOf: mp4p-organization

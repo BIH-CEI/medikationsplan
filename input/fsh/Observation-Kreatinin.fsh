@@ -50,6 +50,7 @@ Mapping: UKF-Kreatinin
 Id: UKF
 Title: "UKF Mapping"
 Source: KreatininMP4P
+* valueQuantity.value -> "O@c"
 
 Instance: ExampleKreatinin
 InstanceOf: mp4p-kreatinin

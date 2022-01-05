@@ -44,4 +44,4 @@ Mapping: UKF-Extension-Version
 Id: UKF
 Title: "UKF Mapping"
 Source: MedikationsplanVersion
-* valueString -> "@v"
+* valueString -> "MP@v"

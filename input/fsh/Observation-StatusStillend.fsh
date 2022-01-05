@@ -46,6 +46,7 @@ Mapping: UKF-StatusStillend
 Id: UKF
 Title: "UKF Mapping"
 Source: StatusStillendMP4P
+* -> "O@b"
 
 Instance: ExampleStatusStillend
 InstanceOf: mp4p-stillend
