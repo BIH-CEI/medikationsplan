@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "PractitionerMP4P"];
   fhir:StructureDefinition.title [ fhir:value "Practitioner MP4+"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-01-05T14:37:11+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-01-05T14:53:01+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "BIH@Charité"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

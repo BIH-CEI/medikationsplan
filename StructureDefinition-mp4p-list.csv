@@ -152,7 +152,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "List.entry.date","","","",0,0,"","","","dateTime {[]} {[]}
 ","When item added to list","When this item was added to the list.","","The date may be significant for understanding the meaning of items in a working list.","","","","","","","",,,,,"",,,,"List.entry.date",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".availabilityTime"
-"List.entry.item","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement]]}
+"List.entry.item","","","",1,1,"Y","","","Reference {[]} {[CanonicalType[https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement], CanonicalType[https://www.charite.de/fhir/medikationsplan/StructureDefinition/freitext]]}
 ","Actual entry","A reference to the actual resource from which data was derived.","","","","","","","","","",,,,,"",,,,"List.entry.item",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".target or .role or .role.entity"
 "List.entry.item.id","","","",0,1,"","","","string {[]} {[]}
