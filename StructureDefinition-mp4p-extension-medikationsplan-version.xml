@@ -16,7 +16,7 @@
   <title value="Extension Medikationsplan Version MP4+"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2021-12-09T19:18:46+00:00"/>
+  <date value="2022-01-05T14:37:11+00:00"/>
   <publisher value="BIH@Charité"/>
   <contact>
     <name value="BIH@Charité"/>
@@ -237,7 +237,7 @@
       </mapping>
       <mapping>
         <identity value="UKF"/>
-        <map value="@v"/>
+        <map value="MP@v"/>
       </mapping>
     </element>
   </snapshot>
@@ -275,7 +275,7 @@
       <max value="1"/>
       <mapping>
         <identity value="UKF"/>
-        <map value="@v"/>
+        <map value="MP@v"/>
       </mapping>
     </element>
   </differential>

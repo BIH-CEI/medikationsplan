@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "AllergyIntoleranceMP4P"];
   fhir:StructureDefinition.title [ fhir:value "AllergyIntolerance MP4+"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2021-12-09T19:18:46+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-01-05T14:37:11+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "BIH@Charité"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1900,6 +1900,10 @@
          fhir:index 3;
          fhir:ElementDefinition.mapping.identity [ fhir:value "UKF" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "O@a" ]
+       ], [
+         fhir:index 4;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "UKF" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "O@i" ]
        ]
      ], [
        fhir:index 36;
@@ -3724,6 +3728,10 @@
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "UKF" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "O@a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "UKF" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "O@i" ]
        ]
      ], [
        fhir:index 16;

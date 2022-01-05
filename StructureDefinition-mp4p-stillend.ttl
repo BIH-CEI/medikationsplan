@@ -221,6 +221,10 @@
          fhir:index 4;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Observation[classCode=OBS, moodCode=EVN]" ]
+       ], [
+         fhir:index 5;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "UKF" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "O@b" ]
        ]
      ], [
        fhir:index 1;
@@ -4101,7 +4105,12 @@
      fhir:StructureDefinition.differential.element [
        fhir:index 0;
        fhir:Element.id [ fhir:value "Observation" ];
-       fhir:ElementDefinition.path [ fhir:value "Observation" ]
+       fhir:ElementDefinition.path [ fhir:value "Observation" ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "UKF" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "O@b" ]
+       ]
      ], [
        fhir:index 1;
        fhir:Element.id [ fhir:value "Observation.id" ];

@@ -118,6 +118,13 @@
     "name": "MedicationStatementMP4P"
   },
   {
+    "id": "mp4p-organization",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Organization",
+    "version": "0.1.0",
+    "name": "OrganizationMP4P"
+  },
+  {
     "id": "mp4p-patient",
     "type": "StructureDefinition",
     "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient",
@@ -144,6 +151,13 @@
     "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusStillend",
     "version": "0.1.0",
     "name": "StatusStillendMP4P"
+  },
+  {
+    "id": "mp4p-freitext",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/freitext",
+    "version": "0.1.0",
+    "name": "FreitextMP4P"
   },
   {
     "id": "mp4p-einnahmezeitpunkte-v3",

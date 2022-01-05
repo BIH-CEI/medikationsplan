@@ -125,7 +125,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","CD.codingRationale","Sometimes implied by being first"
 "AllergyIntolerance.code.text","","","",0,1,"Y","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./originalText[mediaType/code=""text/plain""]/data","C*E.9. But note many systems use C*E.2 for this","O@a"
+","./originalText[mediaType/code=""text/plain""]/data","C*E.9. But note many systems use C*E.2 for this","O@a","O@i"
 "AllergyIntolerance.patient","","Patient
 ","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient]]}
 ","Who the sensitivity is for","The patient who has the allergy or intolerance.","","","","","","","","","",,,,,"",,,,"AllergyIntolerance.patient",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

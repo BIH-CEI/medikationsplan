@@ -2563,6 +2563,10 @@
           {
             "identity": "rim",
             "map": "PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value"
+          },
+          {
+            "identity": "UKF",
+            "map": "O@c"
           }
         ]
       },
@@ -4349,7 +4353,13 @@
         "id": "Observation.valueQuantity.value",
         "path": "Observation.valueQuantity.value",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "UKF",
+            "map": "O@c"
+          }
+        ]
       },
       {
         "id": "Observation.valueQuantity.unit",

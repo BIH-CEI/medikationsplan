@@ -3443,6 +3443,10 @@
          fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "UKF" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "O@w" ]
        ]
      ], [
        fhir:index 52;
@@ -6505,7 +6509,12 @@
        fhir:index 19;
        fhir:Element.id [ fhir:value "Observation.valueQuantity.value" ];
        fhir:ElementDefinition.path [ fhir:value "Observation.valueQuantity.value" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "UKF" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "O@w" ]
+       ]
      ], [
        fhir:index 20;
        fhir:Element.id [ fhir:value "Observation.valueQuantity.unit" ];

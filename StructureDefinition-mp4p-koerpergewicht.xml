@@ -2647,6 +2647,10 @@
         <identity value="rim"/>
         <map value="PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value"/>
       </mapping>
+      <mapping>
+        <identity value="UKF"/>
+        <map value="O@w"/>
+      </mapping>
     </element>
     <element id="Observation.value[x]:valueQuantity.comparator">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -4982,6 +4986,10 @@
     <element id="Observation.valueQuantity.value">
       <path value="Observation.valueQuantity.value"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="UKF"/>
+        <map value="O@w"/>
+      </mapping>
     </element>
     <element id="Observation.valueQuantity.unit">
       <path value="Observation.valueQuantity.unit"/>

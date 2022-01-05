@@ -97,7 +97,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","./codeSystemVersion"
 "List.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./code"
+","./code","S@c"
 "List.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CV.displayName"
@@ -106,7 +106,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","CD.codingRationale"
 "List.code.text","","","",0,1,"Y","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./originalText[mediaType/code=""text/plain""]/data"
+","./originalText[mediaType/code=""text/plain""]/data","S@t"
 "List.subject","","","",0,0,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
 ","If all resources have the same subject","The common subject (or patient) of the resources that are in the list if there is one.","Some purely arbitrary lists do not have a common subject, so this is optional.","The primary purpose of listing the subject explicitly is to help with finding the right list.","","","","","","","",,,,,"",,,,"List.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".participation[typeCode<SUB].role (and sometimes .player)","FiveWs.subject[x]","FiveWs.subject"

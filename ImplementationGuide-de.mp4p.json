@@ -10,7 +10,7 @@
   "name": "MP4P_DE_IG",
   "title": "Medikationsplan 4 PLUS",
   "status": "draft",
-  "date": "2021-12-09T19:18:46+00:00",
+  "date": "2022-01-05T14:37:11+00:00",
   "publisher": "BIH@Charité",
   "contact": [
     {
@@ -355,6 +355,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/mp4p-freitext"
+        },
+        "name": "Freitext MP4+",
+        "description": "Text ohne Bezug zu einem Medikationseintrag.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/mp4p-koerpergewicht"
         },
         "name": "Körpergewicht MP4+",
@@ -429,6 +443,20 @@
         },
         "name": "MedicationStatement MP4+",
         "description": "Dieses Profil beschreibt die Verordnung eines Arzneimittels.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/mp4p-organization"
+        },
+        "name": "Organization MP4+",
+        "description": "Identifikation einer Organisation",
         "exampleBoolean": false
       },
       {
@@ -646,6 +674,19 @@
           }
         ],
         "reference": {
+          "reference": "Observation/ExampleFreitext"
+        },
+        "name": "ExampleFreitext",
+        "exampleCanonical": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/freitext"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
           "reference": "Observation/ExampleKoerpergewicht"
         },
         "name": "ExampleKoerpergewicht",
@@ -728,6 +769,19 @@
         },
         "name": "ExampleMedicationStatement-2",
         "exampleCanonical": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/ExampleOrganization"
+        },
+        "name": "ExampleOrganization",
+        "exampleCanonical": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Organization"
       },
       {
         "extension": [

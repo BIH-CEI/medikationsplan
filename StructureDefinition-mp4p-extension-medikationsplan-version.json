@@ -11,7 +11,7 @@
   "title": "Extension Medikationsplan Version MP4+",
   "status": "active",
   "experimental": false,
-  "date": "2021-12-09T19:18:46+00:00",
+  "date": "2022-01-05T14:37:11+00:00",
   "publisher": "BIH@Charité",
   "contact": [
     {
@@ -288,7 +288,7 @@
           },
           {
             "identity": "UKF",
-            "map": "@v"
+            "map": "MP@v"
           }
         ]
       }
@@ -339,7 +339,7 @@
         "mapping": [
           {
             "identity": "UKF",
-            "map": "@v"
+            "map": "MP@v"
           }
         ]
       }

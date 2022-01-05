@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "MP4P_DE_IG"];
   fhir:ImplementationGuide.title [ fhir:value "Medikationsplan 4 PLUS"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-12-09T19:18:46+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-05T14:37:11+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "BIH@Charité"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -351,6 +351,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-freitext>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-freitext" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Freitext MP4+" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Text ohne Bezug zu einem Medikationseintrag." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-koerpergewicht>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-koerpergewicht" ]
        ];
@@ -358,7 +372,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Körpergewicht des Patienten in kg." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -372,7 +386,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Körpergröße des Patienten in cm." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -386,7 +400,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Kreatininwert des Patienten in mg/dl." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -400,7 +414,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Die Composition definiert die Struktur des Medikationsplans." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -414,7 +428,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dieses Profil beschreibt die Medikation." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -428,7 +442,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dieses Profil beschreibt die Verordnung eines Arzneimittels." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/mp4p-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/mp4p-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization MP4+" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifikation einer Organisation" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -442,7 +470,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Demografische und administrative Informationen zur Identifikation des Patienten" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -456,7 +484,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Daten zur Identifikation des Erstellers bzw. der Erstellerin des Medikationsplans." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -470,7 +498,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Information darüber, ob die Patientin aktuell schwanger ist." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -484,7 +512,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Information darüber, ob die Patientin aktuell stillend ist." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -498,7 +526,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension zur Freitext-Angabe der Wirkstoffmenge bzw. Stärke." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -512,7 +540,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension zur Angabe der Version der zugrundeliegenden Spezifikation des Medikationsplans." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -526,7 +554,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Allergien und Unverträglichkeiten Alpha-ID" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -540,7 +568,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet zur Codierung von Einnahmezeitpunkten aus v3 CodeSystem TimingEvent." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -554,7 +582,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -568,7 +596,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Das Valueset enthält alle Codes aus dem Codesystem https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -582,7 +610,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -596,7 +624,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Die Schlüsseltabelle enthält eine Liste von kodierten Dosiereinheiten, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Anhang 4 zu Anlage 3 Vereinbarung BMP). Die Spalte \"Code\" wird im Attribut \"V\", die Spalte \"Einheit Ausdruck\" im Attribut \"DN\", die Spalte  \"Bedeutung\" im Attribut \"bedeutung\" und die Spalte \"Einheit durch AM-Datenbanken unterstützt\" im Attribut \"unterstuetzt\" abgebildet." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -612,7 +640,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/AllergyIntolerance>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -628,7 +656,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Bundle>
        ]
      ], [
-       fhir:index 23;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -644,7 +672,23 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Composition>
        ]
      ], [
-       fhir:index 24;
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/Observation/ExampleFreitext>;
+         fhir:Reference.reference [ fhir:value "Observation/ExampleFreitext" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleFreitext" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/freitext";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/freitext>
+       ]
+     ], [
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -660,7 +704,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergewicht>
        ]
      ], [
-       fhir:index 25;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -676,7 +720,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergroesse>
        ]
      ], [
-       fhir:index 26;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -692,7 +736,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Kreatininwert>
        ]
      ], [
-       fhir:index 27;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -708,7 +752,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/List>
        ]
      ], [
-       fhir:index 28;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -724,7 +768,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Medication>
        ]
      ], [
-       fhir:index 29;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -740,7 +784,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement>
        ]
      ], [
-       fhir:index 30;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -756,7 +800,23 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement>
        ]
      ], [
-       fhir:index 31;
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/Organization/ExampleOrganization>;
+         fhir:Reference.reference [ fhir:value "Organization/ExampleOrganization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleOrganization" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Organization";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Organization>
+       ]
+     ], [
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -772,7 +832,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -788,7 +848,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner>
        ]
      ], [
-       fhir:index 33;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -804,7 +864,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusSchwanger>
        ]
      ], [
-       fhir:index 34;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

@@ -194,6 +194,10 @@
         <identity value="rim"/>
         <map value="Observation[classCode=OBS, moodCode=EVN]"/>
       </mapping>
+      <mapping>
+        <identity value="UKF"/>
+        <map value="O@b"/>
+      </mapping>
     </element>
     <element id="Observation.id">
       <path value="Observation.id"/>
@@ -3191,6 +3195,10 @@
   <differential>
     <element id="Observation">
       <path value="Observation"/>
+      <mapping>
+        <identity value="UKF"/>
+        <map value="O@b"/>
+      </mapping>
     </element>
     <element id="Observation.id">
       <path value="Observation.id"/>

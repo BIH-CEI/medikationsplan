@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "ListMP4P"];
   fhir:StructureDefinition.title [ fhir:value "MedicationStatement List MP4+"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2021-12-09T19:18:46+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-01-05T14:37:11+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "BIH@Charité"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1490,6 +1490,10 @@
          fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "UKF" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "S@c" ]
        ]
      ], [
        fhir:index 30;
@@ -1638,6 +1642,10 @@
          fhir:index 2;
          fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "UKF" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "S@t" ]
        ]
      ], [
        fhir:index 33;
@@ -2705,12 +2713,22 @@
        fhir:Element.id [ fhir:value "List.code.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "List.code.coding.code" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "UKF" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "S@c" ]
+       ]
      ], [
        fhir:index 13;
        fhir:Element.id [ fhir:value "List.code.text" ];
        fhir:ElementDefinition.path [ fhir:value "List.code.text" ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "UKF" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "S@t" ]
+       ]
      ], [
        fhir:index 14;
        fhir:Element.id [ fhir:value "List.subject" ];

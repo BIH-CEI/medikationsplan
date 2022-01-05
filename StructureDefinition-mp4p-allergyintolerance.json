@@ -20,7 +20,7 @@
   "name": "AllergyIntoleranceMP4P",
   "title": "AllergyIntolerance MP4+",
   "status": "draft",
-  "date": "2021-12-09T19:18:46+00:00",
+  "date": "2022-01-05T14:37:11+00:00",
   "publisher": "BIH@Charité",
   "contact": [
     {
@@ -1785,6 +1785,10 @@
           {
             "identity": "UKF",
             "map": "O@a"
+          },
+          {
+            "identity": "UKF",
+            "map": "O@i"
           }
         ]
       },
@@ -3543,6 +3547,10 @@
           {
             "identity": "UKF",
             "map": "O@a"
+          },
+          {
+            "identity": "UKF",
+            "map": "O@i"
           }
         ]
       },

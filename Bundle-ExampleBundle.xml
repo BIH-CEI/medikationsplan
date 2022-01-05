@@ -55,6 +55,17 @@
             <reference value="List/ExampleList"/>
           </entry>
         </section>
+        <section>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="55752-0"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="Observation/ExampleKoerpergewicht"/>
+          </entry>
+        </section>
       </Composition>
     </resource>
   </entry>
@@ -157,6 +168,43 @@
         </address>
         <birthDate value="1841-09-08"/>
       </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Observation/ExampleKoerpergewicht"/>
+    <resource>
+      <Observation>
+        <id value="ExampleKoerpergewicht"/>
+        <meta>
+          <profile value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergewicht"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 29463-7}">Body weight</span></p><p><b>subject</b>: <a href="#Patient_ExamplePatient">See above (Patient/ExamplePatient)</a></p><p><b>effective</b>: 2021-11-25</p><p><b>value</b>: 68 Kilogramm</p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ExamplePatient"/>
+        </subject>
+        <effectiveDateTime value="2021-11-25"/>
+        <valueQuantity>
+          <value value="68"/>
+          <unit value="Kilogramm"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="kg"/>
+        </valueQuantity>
+      </Observation>
     </resource>
   </entry>
 </Bundle>

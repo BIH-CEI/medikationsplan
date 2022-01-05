@@ -20,7 +20,7 @@
   "name": "ListMP4P",
   "title": "MedicationStatement List MP4+",
   "status": "draft",
-  "date": "2021-12-09T19:18:46+00:00",
+  "date": "2022-01-05T14:37:11+00:00",
   "publisher": "BIH@Charité",
   "contact": [
     {
@@ -1402,6 +1402,10 @@
           {
             "identity": "orim",
             "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
+          },
+          {
+            "identity": "UKF",
+            "map": "S@c"
           }
         ]
       },
@@ -1552,6 +1556,10 @@
           {
             "identity": "orim",
             "map": "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText"
+          },
+          {
+            "identity": "UKF",
+            "map": "S@t"
           }
         ]
       },
@@ -2565,12 +2573,24 @@
         "id": "List.code.coding.code",
         "path": "List.code.coding.code",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "UKF",
+            "map": "S@c"
+          }
+        ]
       },
       {
         "id": "List.code.text",
         "path": "List.code.text",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "UKF",
+            "map": "S@t"
+          }
+        ]
       },
       {
         "id": "List.subject",

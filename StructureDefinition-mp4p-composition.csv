@@ -68,7 +68,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","N/A"
 "Composition.extension.value[x]","valueString","","",1,1,"","","","string {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A","@v","MP@v"
+","N/A","MP@v"
 "Composition.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -192,8 +192,8 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","Event.context","unique(highest(./outboundRelationship[typeCode=""SUBJ"" and isNormalActRelationship()], priorityNumber)/target[moodCode=""EVN"" and classCode=(""ENC"", ""PCPR"") and isNormalAct])",".componentOf.encompassingEncounter","DocumentReference.context.encounter","FiveWs.context"
 "Composition.date","","","",1,1,"Y","","Y","dateTime {[]} {[]}
 ","Composition editing time","The composition editing time, when the composition was last logically changed by the author.","The Last Modified Date on the composition may be after the date of the document was attested without being changed.","dateTime is used for tracking, organizing versions and searching. Note that this is the time of *authoring*. When packaged in a document, [Bundle.timestamp](http://hl7.org/fhir/R4/bundle-definitions.html#Bundle.timestamp) is the date of packaging.","","","","","","","",,,,,"",,,,"Composition.date",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.occurrence[x]",".effectiveTime[type=""TS""]",".effectiveTime","DocumentReference.content.attachment.date, DocumentReference.created","FiveWs.done[x]"
-"Composition.author","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner]]}
+","Event.occurrence[x]",".effectiveTime[type=""TS""]",".effectiveTime","DocumentReference.content.attachment.date, DocumentReference.created","FiveWs.done[x]","A@t"
+"Composition.author","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner], CanonicalType[https://www.charite.de/fhir/medikationsplan/StructureDefinition/Organization]]}
 ","Who and/or what authored the composition","Identifies who is responsible for the information in the composition, not necessarily who typed it in.","","Identifies who is responsible for the content.","","","","","","","",,,,,"",,,,"Composition.author",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer",".participation[typeCode=""AUT""].role[classCode=""ASSIGNED""]",".author.assignedAuthor","DocumentReference.agent","FiveWs.author"
 "Composition.title","","","",1,1,"Y","","Y","string {[]} {[]}
@@ -226,7 +226,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Composition.attester.party","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Who attested the composition","Who attested the composition in the specified way.","","Identifies who has taken on the responsibility for accuracy of the composition content.","","","","","","","",,,,,"",,,,"Composition.attester.party",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./role[classCode=""ASSIGNED"" and isNormalRole]/player[determinerCode=""INST"" and classCode=(""DEV"", ""PSN"") and isNormalEntity()] or ./role[classCode=""ASSIGNED"" and isNormalRole and not(player)]/scoper[determinerCode=""INST"" and classCode=""ORG"" and isNormalEntity()]",".authenticator.assignedEnttty","FiveWs.witness"
-"Composition.custodian","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+"Composition.custodian","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[https://www.charite.de/fhir/medikationsplan/StructureDefinition/Organization]]}
 ","Organization which maintains the composition","Identifies the organization or group who is responsible for ongoing maintenance of and access to the composition/document information.","This is useful when documents are derived from a composition - provides guidance for how to get the latest version of the document. This is optional because this is sometimes not known by the authoring system, and can be inferred by context. However, it is important that this information be known when working with a derived document, so providing a custodian is encouraged.","Identifies where to go to find the current version, where to report issues, etc.","","","","","","","",,,,,"",,,,"Composition.custodian",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".participation[typeCode=""RCV""].role[classCode=""CUST""].scoper[classCode=""ORG"" and determinerCode=""INST""]",".custodian.assignedCustodian","DocumentReference.custodian"
 "Composition.relatesTo","","","",0,0,"","","","BackboneElement {[]} {[]}
@@ -631,7 +631,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",".outboundRelationship[typeCode=COMP].sequenceNumber > 1","n/a"
 "Composition.section.entry","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
 ","A reference to data that supports this section","A reference to the actual resource from which the narrative in the section is derived.","If there are no entries in the list, an emptyReason SHOULD be provided.","","","","","","","","",,,,,"","profile:$this.resolve()}
-","",,"closed","Composition.section.entry",0,*,"cmp-2
+","",,"open","Composition.section.entry",0,*,"cmp-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]",".entry"
 "Composition.section.entry","schwangerschaft","","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusSchwanger]]}
@@ -782,7 +782,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",".outboundRelationship[typeCode=COMP].sequenceNumber > 1","n/a"
 "Composition.section.entry","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
 ","A reference to data that supports this section","A reference to the actual resource from which the narrative in the section is derived.","If there are no entries in the list, an emptyReason SHOULD be provided.","","","","","","","","",,,,,"","profile:$this.resolve()}
-","",,"closed","Composition.section.entry",0,*,"cmp-2
+","",,"open","Composition.section.entry",0,*,"cmp-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]",".entry"
 "Composition.section.entry","gewicht","","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergewicht]]}

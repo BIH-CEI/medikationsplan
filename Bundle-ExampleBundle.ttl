@@ -38,6 +38,10 @@
      fhir:index 3;
      fhir:Bundle.entry.fullUrl [ fhir:value "Practitioner/ExamplePractitioner" ];
      fhir:Bundle.entry.resource <Practitioner/ExamplePractitioner>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Observation/ExampleKoerpergewicht" ];
+     fhir:Bundle.entry.resource <Observation/ExampleKoerpergewicht>
   ] .
 
 <Composition/ExampleComposition> a fhir:Composition;
@@ -96,6 +100,21 @@
        fhir:index 0;
        fhir:link <https://www.charite.de/fhir/medikationsplan/List/ExampleList>;
        fhir:Reference.reference [ fhir:value "List/ExampleList" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:55752-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "55752-0" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://www.charite.de/fhir/medikationsplan/Observation/ExampleKoerpergewicht>;
+       fhir:Reference.reference [ fhir:value "Observation/ExampleKoerpergewicht" ]
      ]
   ] .
 
@@ -219,6 +238,48 @@
      fhir:Address.postalCode [ fhir:value "00035" ]
   ];
   fhir:Practitioner.birthDate [ fhir:value "1841-09-08"^^xsd:date] .
+
+<Observation/ExampleKoerpergewicht> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "ExampleKoerpergewicht"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergewicht";
+       fhir:index 0;
+       fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Koerpergewicht>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 29463-7}\">Body weight</span></p><p><b>subject</b>: <a href=\"#Patient_ExamplePatient\">See above (Patient/ExamplePatient)</a></p><p><b>effective</b>: 2021-11-25</p><p><b>value</b>: 68 Kilogramm</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:29463-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "29463-7" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://www.charite.de/fhir/medikationsplan/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2021-11-25"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "68"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "Kilogramm" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "kg" ]
+  ] .
 
 # - ontology header ------------------------------------------------------------
 

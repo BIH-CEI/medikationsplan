@@ -54,6 +54,21 @@
           "reference": "List/ExampleList"
         }
       ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "55752-0"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/ExampleKoerpergewicht"
+        }
+      ]
     }
   ]
 }

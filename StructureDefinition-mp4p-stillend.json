@@ -188,6 +188,10 @@
           {
             "identity": "rim",
             "map": "Observation[classCode=OBS, moodCode=EVN]"
+          },
+          {
+            "identity": "UKF",
+            "map": "O@b"
           }
         ]
       },
@@ -3861,7 +3865,13 @@
     "element": [
       {
         "id": "Observation",
-        "path": "Observation"
+        "path": "Observation",
+        "mapping": [
+          {
+            "identity": "UKF",
+            "map": "O@b"
+          }
+        ]
       },
       {
         "id": "Observation.id",

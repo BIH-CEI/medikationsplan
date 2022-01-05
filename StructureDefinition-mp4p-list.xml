@@ -43,7 +43,7 @@
   <name value="ListMP4P"/>
   <title value="MedicationStatement List MP4+"/>
   <status value="draft"/>
-  <date value="2021-12-09T19:18:46+00:00"/>
+  <date value="2022-01-05T14:37:11+00:00"/>
   <publisher value="BIH@Charité"/>
   <contact>
     <name value="BIH@Charité"/>
@@ -1176,6 +1176,10 @@
         <identity value="orim"/>
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"/>
       </mapping>
+      <mapping>
+        <identity value="UKF"/>
+        <map value="S@c"/>
+      </mapping>
     </element>
     <element id="List.code.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -1298,6 +1302,10 @@
       <mapping>
         <identity value="orim"/>
         <map value="fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText"/>
+      </mapping>
+      <mapping>
+        <identity value="UKF"/>
+        <map value="S@t"/>
       </mapping>
     </element>
     <element id="List.subject">
@@ -2102,10 +2110,18 @@
       <path value="List.code.coding.code"/>
       <min value="1"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="UKF"/>
+        <map value="S@c"/>
+      </mapping>
     </element>
     <element id="List.code.text">
       <path value="List.code.text"/>
       <mustSupport value="true"/>
+      <mapping>
+        <identity value="UKF"/>
+        <map value="S@t"/>
+      </mapping>
     </element>
     <element id="List.subject">
       <path value="List.subject"/>

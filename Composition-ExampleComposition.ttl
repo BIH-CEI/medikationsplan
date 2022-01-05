@@ -64,6 +64,21 @@
        fhir:link <https://www.charite.de/fhir/medikationsplan/List/ExampleList>;
        fhir:Reference.reference [ fhir:value "List/ExampleList" ]
      ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:55752-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "55752-0" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://www.charite.de/fhir/medikationsplan/Observation/ExampleKoerpergewicht>;
+       fhir:Reference.reference [ fhir:value "Observation/ExampleKoerpergewicht" ]
+     ]
   ] .
 
 # - ontology header ------------------------------------------------------------

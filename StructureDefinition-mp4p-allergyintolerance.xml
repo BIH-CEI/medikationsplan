@@ -53,7 +53,7 @@
   <name value="AllergyIntoleranceMP4P"/>
   <title value="AllergyIntolerance MP4+"/>
   <status value="draft"/>
-  <date value="2021-12-09T19:18:46+00:00"/>
+  <date value="2022-01-05T14:37:11+00:00"/>
   <publisher value="BIH@Charité"/>
   <contact>
     <name value="BIH@Charité"/>
@@ -1497,6 +1497,10 @@
         <identity value="UKF"/>
         <map value="O@a"/>
       </mapping>
+      <mapping>
+        <identity value="UKF"/>
+        <map value="O@i"/>
+      </mapping>
     </element>
     <element id="AllergyIntolerance.patient">
       <path value="AllergyIntolerance.patient"/>
@@ -2908,6 +2912,10 @@
       <mapping>
         <identity value="UKF"/>
         <map value="O@a"/>
+      </mapping>
+      <mapping>
+        <identity value="UKF"/>
+        <map value="O@i"/>
       </mapping>
     </element>
     <element id="AllergyIntolerance.patient">
