@@ -37,16 +37,8 @@ Description: "Die Composition definiert die Struktur des Medikationsplans."
 * author only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner or https://www.charite.de/fhir/medikationsplan/StructureDefinition/Organization)
 * author 1..1 MS 
 * title 1..1 MS
-* custodian ^slicing.discriminator.type = #pattern
-* custodian ^slicing.discriminator.path = "identifier"
-* custodian ^slicing.rules = #open
-* custodian contains
-    Apotheke 0..1 MS and
-    Praxis 0..1 MS
-* custodian[Apotheke].identifier ^patternIdentifier.system = "http://fhir.de/NamingSystem/bfarm/btmnr"
-* custodian[Apotheke].identifier 1..1
-* custodian[Praxis].identifier ^patternIdentifier.system = "http://fhir.de/NamingSystem/kbv/bsnr"
-* custodian[Praxis].identifier 1..1
+* custodian MS
+* custodian only Reference(https://www.charite.de/fhir/medikationsplan/StructureDefinition/Organization)
 * relatesTo 0..0
 * event 0..0
 * section MS

@@ -22,6 +22,10 @@ Description: "Identifikation einer Organisation"
     apothekenidentifikationsnummer 0..1 MS
 * identifier[institutionskennzeichen] only http://fhir.de/StructureDefinition/identifier-iknr
 * identifier[institutionskennzeichen] ^patternIdentifier.type = $v2-0203#XX
+* identifier[institutionskennzeichen].use 1..1 MS
+* identifier[institutionskennzeichen].type 1..1 MS
+* identifier[institutionskennzeichen].system MS
+* identifier[institutionskennzeichen].value MS
 * identifier[apothekenidentifikationsnummer] ^patternIdentifier.type = $v2-0203#RI
 * identifier[apothekenidentifikationsnummer].use 1..1 MS
 * identifier[apothekenidentifikationsnummer].use = #official
