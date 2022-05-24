@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="6a11b86c-0881-474e-affc-09ec1abb4be7"/>
+  <id value="a99cb763-2504-4ba6-9107-e0a331ae2453"/>
   <meta>
-    <lastUpdated value="2022-01-05T14:53:01.866+00:00"/>
+    <lastUpdated value="2022-05-24T10:16:42.328+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -19,10 +19,10 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-TimingEvent.html">TimingEvent v2.0.0 (CodeSystem)</a>
+              <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-TimingEvent.html">TimingEvent v2.1.0 (CodeSystem)</a>
             </p>
             <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-TimingEvent.html">
+              <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-TimingEvent.html">
                 <code>http://terminology.hl7.org/CodeSystem/v3-TimingEvent</code>
               </a>
             </p>
@@ -41,7 +41,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-TimingEvent-CM"> </a>
-                  <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-TimingEvent.html#v3-TimingEvent-CM">CM</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-TimingEvent.html#v3-TimingEvent-CM">CM</a>
                 </td>
                 <td>Morgens</td>
                 <td>**Description:** breakfast (from lat. cibus matutinus)</td>
@@ -49,7 +49,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-TimingEvent-CD"> </a>
-                  <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-TimingEvent.html#v3-TimingEvent-CD">CD</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-TimingEvent.html#v3-TimingEvent-CD">CD</a>
                 </td>
                 <td>Mittags</td>
                 <td>**Description:** lunch (from lat. cibus diurnus)</td>
@@ -57,7 +57,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-TimingEvent-CV"> </a>
-                  <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-TimingEvent.html#v3-TimingEvent-CV">CV</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-TimingEvent.html#v3-TimingEvent-CV">CV</a>
                 </td>
                 <td>Abends</td>
                 <td>**Description:** dinner (from lat. cibus vespertinus)</td>
@@ -65,7 +65,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-TimingEvent-HS"> </a>
-                  <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-TimingEvent.html#v3-TimingEvent-HS">HS</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-TimingEvent.html#v3-TimingEvent-HS">HS</a>
                 </td>
                 <td>zur Nacht</td>
                 <td>**Description:** Prior to beginning a regular period of extended sleep (this would exclude naps). Note that this might occur at different times of day depending on a person&#39;s regular sleep schedule.</td>
@@ -90,8 +90,8 @@
         </contact>
         <description value="ValueSet zur Codierung von Einnahmezeitpunkten aus v3 CodeSystem TimingEvent."/>
         <expansion>
-          <identifier value="urn:uuid:93ac14c6-8b17-4109-821f-c4fc32090fdd"/>
-          <timestamp value="2022-01-05T14:53:35+00:00"/>
+          <identifier value="urn:uuid:37ff1f6f-a17c-407e-940e-5556f59d3c0f"/>
+          <timestamp value="2022-05-24T10:17:16+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -99,7 +99,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent|2.0.0"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent|2.1.0"/>
           </parameter>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent"/>
@@ -280,8 +280,8 @@
         </contact>
         <description value="Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP)."/>
         <expansion>
-          <identifier value="urn:uuid:868a55c8-ab55-47d3-aad9-ba7ae9e66f6f"/>
-          <timestamp value="2022-01-05T14:53:35+00:00"/>
+          <identifier value="urn:uuid:e4bbe08d-5e12-4763-b260-08e4cb5df732"/>
+          <timestamp value="2022-05-24T10:17:16+00:00"/>
           <total value="13"/>
           <parameter>
             <name value="excludeNested"/>
@@ -672,8 +672,8 @@
         <description value="Das Valueset enthält alle Codes aus dem Codesystem https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
         <copyright value="Kassenärztliche Bundesvereinigung"/>
         <expansion>
-          <identifier value="urn:uuid:eab28325-7199-4fb3-a869-1dbdbece8eed"/>
-          <timestamp value="2022-01-05T14:53:35+00:00"/>
+          <identifier value="urn:uuid:c5839c58-c15b-47ed-903b-f58e92f504f4"/>
+          <timestamp value="2022-05-24T10:17:16+00:00"/>
           <total value="33"/>
           <parameter>
             <name value="excludeNested"/>

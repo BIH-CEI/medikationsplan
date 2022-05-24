@@ -47,7 +47,13 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Medikationsplan 4 PLUS</span><br/>0.1.0 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Medikationsplan 4 PLUS</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -103,6 +109,7 @@
 <div style="counter-reset: section 4" class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">Medikationsplan 4 PLUS - Local Development build (v0.1.0). See the <a href="https://www.charite.de/fhir/medikationsplan/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
+
 
 
 
@@ -174,6 +181,21 @@
 
 <a name="root"> </a>
 <h2 id="root">Resource Profile: PatientMP4P - Detailed Descriptions</h2>
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2022-05-24
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p>Definitions for the mp4p-patient resource profile.</p>
 
@@ -367,7 +389,7 @@ A human language.
 </td></tr>
   <tr><td>Note</td><td>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l1497">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/identifier-kvid-10]]">IdentifierKvid10</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l1510">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/identifier-kvid-10]]">IdentifierKvid10</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Patients are almost always assigned specific numerical identifiers.</p>
 </td></tr>
@@ -470,7 +492,7 @@ A coded type for an identifier that can be used to determine which identifier to
 </td></tr>
   <tr><td>Note</td><td>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l2178">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/identifier-pid]]">IdentifierPid</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l2191">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/identifier-pid]]">IdentifierPid</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Patients are almost always assigned specific numerical identifiers.</p>
 </td></tr>
@@ -483,7 +505,7 @@ A coded type for an identifier that can be used to determine which identifier to
 </td></tr>
   <tr><td>Note</td><td>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l2283">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/identifier-pkv]]">IdentifierPkv</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l2296">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/identifier-pkv]]">IdentifierPkv</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Patients are almost always assigned specific numerical identifiers.</p>
 </td></tr>
@@ -524,7 +546,7 @@ Many systems use this property to mark as non-current patients, such as those th
   <tr><td>Definition</td><td><p>Personenname mit in Deutschland üblichen Erweiterungen</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l2546">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/humanname-de-basis]]">HumannameDeBasis</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l2559">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/humanname-de-basis]]">HumannameDeBasis</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Need to be able to track the patient by multiple names. Examples are your official name and a partner name.</p>
 </td></tr>
@@ -607,7 +629,7 @@ The use of a human name.
 Beispiele: Gräfin, Prinz oder Fürst</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l3097">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/humanname-namenszusatz]]">HumannameNamenszusatz</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l3110">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/humanname-namenszusatz]]">HumannameNamenszusatz</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>)</td></tr>
   <tr><td>Comments</td><td><p>Die Extension wurde erstellt aufgrund der Anforderung, die auf der eGK vorhandenen Patientenstammdaten in FHIR abbilden zu können. Auf der eGK werden die Namensbestandteile "Namenszusatz" und "Vorsatzwort" getrennt vom Nachnamen gespeichert. Anhand der Liste der zulässigen Namenszusätze ist deutlich erkennbar, dass es sich hierbei sinngemäß um Adelstitel handelt.
 Das Vorsatzwort kann durch die Core-Extension own-prefix (Canonical: http://hl7.org/fhir/StructureDefinition/humanname-own-prefix) abgebildet werden, für den Namenszusatz ergibt sich jedoch die Notwendikeit einer nationalen Extension, da in andern Ländern Adelstitel entweder gar nicht oder als reguläres Namenspräfix erfasst werden.</p>
 </td></tr>
@@ -758,7 +780,7 @@ The gender of a person used for administrative purposes.
   <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l4111">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/gender-amtlich-de]]">GenderOtherDE</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l4124">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/gender-amtlich-de]]">GenderOtherDE</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
@@ -813,7 +835,7 @@ The gender of a person used for administrative purposes.
 <p>Insbesondere bei ausländischen Adresse oder Adressen, die nicht durch Einlesen einer elektronischen Versichertenkarte erfasst wurden, sind abweichende Strukturen möglich. Die Verwendung der Extensions ist nicht verpflichtend.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l4478">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/address-de-basis]]">AddressDeBasis</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l4491">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/address-de-basis]]">AddressDeBasis</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.</p>
 </td></tr>
@@ -920,7 +942,7 @@ The nature of the relationship between a patient and a contact person for that p
   <tr><td>Definition</td><td><p>Personenname mit in Deutschland üblichen Erweiterungen</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5178">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/humanname-de-basis]]">HumannameDeBasis</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5191">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/humanname-de-basis]]">HumannameDeBasis</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.</p>
@@ -944,7 +966,7 @@ The nature of the relationship between a patient and a contact person for that p
 <p>Insbesondere bei ausländischen Adresse oder Adressen, die nicht durch Einlesen einer elektronischen Versichertenkarte erfasst wurden, sind abweichende Strukturen möglich. Die Verwendung der Extensions ist nicht verpflichtend.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5334">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/address-de-basis]]">AddressDeBasis</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5347">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/address-de-basis]]">AddressDeBasis</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Need to keep track where the contact person can be contacted per postal mail or visited.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the <a href="http://hl7.org/fhir/R4/location.html#">Location</a> resource).</p>
@@ -1297,7 +1319,7 @@ The type of link between this patient resource and another patient resource.
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/en/research/core-facilities/interoperability/">BIH@Charité</a>.  Package de.mp4p#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 5, 2022 14:53+0000">2022-01-05</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/en/research/core-facilities/interoperability/">BIH@Charité</a>.  Package de.mp4p#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 24, 2022 10:16+0000">2022-05-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -1322,6 +1344,8 @@ The type of link between this patient resource and another patient resource.
   <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
