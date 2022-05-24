@@ -13,7 +13,7 @@ Description: "Dieses Profil beschreibt die Medikation."
 * meta MS
 * meta.profile MS
 * language MS
-* code 1..1 MS
+* code 0..1 MS
 * code.coding 0..1 MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"

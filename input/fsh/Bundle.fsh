@@ -27,7 +27,7 @@ Description: "Das Bundle bündelt alle Komponenten des Medikationsplans als Doku
 * entry contains 
     composition 1..1 MS
 * entry[composition].fullUrl MS
-* entry[composition].resource only http://hl7.org/fhir/StructureDefinition/Composition
+* entry[composition].resource only CompositionMP4P
 * entry[composition].search 0..0
 * entry[composition].request 0..0
 * entry[composition].response 0..0

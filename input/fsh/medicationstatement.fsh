@@ -96,11 +96,12 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * dosage[kodiert].method 0..0
 * dosage[kodiert].doseAndRate 1..1 MS
 * dosage[kodiert].doseAndRate.type 0..0
-* dosage[kodiert].doseAndRate.dose[x] ^slicing.discriminator.type = #type
-* dosage[kodiert].doseAndRate.dose[x] ^slicing.discriminator.path = "$this"
-* dosage[kodiert].doseAndRate.dose[x] ^slicing.rules = #closed
-* dosage[kodiert].doseAndRate.doseQuantity only SimpleQuantity
+//* dosage[kodiert].doseAndRate.dose[x] ^slicing.discriminator.type = #type
+//* dosage[kodiert].doseAndRate.dose[x] ^slicing.discriminator.path = "$this"
+//* dosage[kodiert].doseAndRate.dose[x] ^slicing.rules = #closed
+//* dosage[kodiert].doseAndRate.doseQuantity only SimpleQuantity
 * dosage[kodiert].doseAndRate.doseQuantity obeys dqty-1
+* dosage[kodiert].doseAndRate.doseQuantity MS
 * dosage[kodiert].doseAndRate.doseQuantity ^short = "Dosiereinheit kodiert (M@du)"
 * dosage[kodiert].doseAndRate.doseQuantity.value MS
 * dosage[kodiert].doseAndRate.doseQuantity.unit MS
@@ -109,7 +110,8 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * dosage[kodiert].doseAndRate.doseQuantity.code MS
 * dosage[kodiert].doseAndRate.doseQuantity.code from https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT (required)
 * dosage[kodiert].doseAndRate.doseQuantity.extension contains https://www.charite.de/fhir/medikationsplan/Extension/freitext named freitextDosiereinheit 0..1 MS
-* dosage[kodiert].doseAndRate.doseRange only Range
+//* dosage[kodiert].doseAndRate.doseRange only Range
+//* dosage[kodiert].doseAndRate.doseRange MS
 * dosage[kodiert].doseAndRate.rate[x] 0..0
 * dosage[kodiert].maxDosePerPeriod 0..0
 * dosage[kodiert].maxDosePerAdministration 0..0
