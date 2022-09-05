@@ -99,6 +99,8 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 //* dosage[kodiert].doseAndRate.dose[x] ^slicing.discriminator.type = #type
 //* dosage[kodiert].doseAndRate.dose[x] ^slicing.discriminator.path = "$this"
 //* dosage[kodiert].doseAndRate.dose[x] ^slicing.rules = #closed
+//* dosage[kodiert].doseAndRate.dose[x] only SimpleQuantity or Range
+//* dosage[kodiert].doseAndRate.doseQuantity ^sliceName = "doseQuantity"
 //* dosage[kodiert].doseAndRate.doseQuantity only SimpleQuantity
 * dosage[kodiert].doseAndRate.doseQuantity obeys dqty-1
 * dosage[kodiert].doseAndRate.doseQuantity MS
@@ -111,6 +113,7 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels."
 * dosage[kodiert].doseAndRate.doseQuantity.code from https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT (required)
 * dosage[kodiert].doseAndRate.doseQuantity.extension contains https://www.charite.de/fhir/medikationsplan/Extension/freitext named freitextDosiereinheit 0..1 MS
 //* dosage[kodiert].doseAndRate.doseRange only Range
+//* dosage[kodiert].doseAndRate.doseRange ^sliceName = "doseRange"
 //* dosage[kodiert].doseAndRate.doseRange MS
 * dosage[kodiert].doseAndRate.rate[x] 0..0
 * dosage[kodiert].maxDosePerPeriod 0..0
@@ -177,3 +180,28 @@ Usage: #example
 * dosage[kodiert].timing.code.coding[snomed] = $snomed#71997007 "Noon (qualifier value)"
 * dosage[kodiert].timing.code.coding[timingEvent] = $TimingEvent#CD "Mittags"
 * dosage[kodiert].doseAndRate.doseQuantity.extension[freitextDosiereinheit].valueString = "1 Tablette"
+
+Instance: ExampleMedicationStatement-3
+InstanceOf: mp4p-medicationstatement
+Usage: #example
+* meta.profile = "https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement"
+* status = #active
+* medicationReference = Reference(Medication/insulin)
+* subject = Reference(ExamplePatient)
+* effectivePeriod.start = "2017-05-02"
+* dosage[kodiert][0].timing.code.coding[snomed] = $snomed#73775008 "Morning (qualifier value)"
+* dosage[kodiert][0].timing.code.coding[timingEvent] = $TimingEvent#CM "Morgens"
+* dosage[kodiert][0].doseAndRate.doseQuantity.extension[freitextDosiereinheit].valueString = "10 IE"
+* dosage[kodiert][0].doseAndRate.doseQuantity = 10 $KBV_CS_SFHIR_BMP_DOSIEREINHEIT#p "IE"
+* dosage[kodiert][1].timing.code.coding[snomed] = $snomed#71997007 "Noon (qualifier value)"
+* dosage[kodiert][1].timing.code.coding[timingEvent] = $TimingEvent#CD "Mittags"
+* dosage[kodiert][1].doseAndRate.doseQuantity.extension[freitextDosiereinheit].valueString = "6 IE"
+* dosage[kodiert][1].doseAndRate.doseQuantity = 6 $KBV_CS_SFHIR_BMP_DOSIEREINHEIT#p "IE"
+* dosage[kodiert][2].timing.code.coding[snomed] = $snomed#3157002 "Evening (qualifier value)"
+* dosage[kodiert][2].timing.code.coding[timingEvent] = $TimingEvent#CV "Abends"
+* dosage[kodiert][2].doseAndRate.doseQuantity.extension[freitextDosiereinheit].valueString = "8 IE"
+* dosage[kodiert][2].doseAndRate.doseQuantity = 8 $KBV_CS_SFHIR_BMP_DOSIEREINHEIT#p "IE"
+* dosage[kodiert][3].timing.code.coding[snomed] = $snomed#2546009 "Night time (qualifier value)"
+* dosage[kodiert][3].timing.code.coding[timingEvent] = $TimingEvent#HS "zur Nacht"
+* dosage[kodiert][3].doseAndRate.doseQuantity.extension[freitextDosiereinheit].valueString = "0 IE"
+* dosage[kodiert][3].doseAndRate.doseQuantity = 0 $KBV_CS_SFHIR_BMP_DOSIEREINHEIT#p "IE"

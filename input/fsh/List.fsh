@@ -21,7 +21,7 @@ Description: "Die Composition definiert die Struktur des Medikationsplans."
 * mode = #snapshot (exactly)
 * title ^short = "Zwischenüberschrift Titel (@c)"
 * code from https://www.charite.de/fhir/medikationsplan/ValueSet/kbv/s-bmp-zwischenueberschrift (required)
-* code 1.. MS
+* code 0.. MS
 * code.coding 1.. MS
 * code.coding.system 1.. MS
 * code.coding.code 1.. MS

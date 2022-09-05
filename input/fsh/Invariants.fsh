@@ -9,6 +9,6 @@ Severity: #warning
 Expression: "code.coding.where(code='412').empty() or entry.all($this.item.resolve().first().dosage.asNeededBoolean.allFalse())"
 
 Invariant: dqty-1
-Description: ""
+Description: "Die Dosierung muss strukturiert oder als Freitext angegeben werden."
 Severity: #error
 Expression: "$this.extension.where(url='https://www.charite.de/fhir/medikationsplan/Extension/freitext').exists() xor ($this.value.exists() and $this.unit.exists() and $this.system.exists() and $this.code.exists())"
