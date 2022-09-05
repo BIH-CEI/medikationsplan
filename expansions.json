@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "a99cb763-2504-4ba6-9107-e0a331ae2453",
+  "id" : "2522ecb8-3528-4642-8bdf-e63c8b55a82b",
   "meta" : {
-    "lastUpdated" : "2022-05-24T10:16:42.328+00:00"
+    "lastUpdated" : "2022-09-05T15:28:19.466+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -34,8 +34,8 @@
       }],
       "description" : "ValueSet zur Codierung von Einnahmezeitpunkten aus v3 CodeSystem TimingEvent.",
       "expansion" : {
-        "identifier" : "urn:uuid:37ff1f6f-a17c-407e-940e-5556f59d3c0f",
-        "timestamp" : "2022-05-24T10:17:16+00:00",
+        "identifier" : "urn:uuid:156a18bb-6539-461b-b3d8-ee5feadd59aa",
+        "timestamp" : "2022-09-05T15:29:15+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -96,8 +96,8 @@
       }],
       "description" : "Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP).",
       "expansion" : {
-        "identifier" : "urn:uuid:e4bbe08d-5e12-4763-b260-08e4cb5df732",
-        "timestamp" : "2022-05-24T10:17:16+00:00",
+        "identifier" : "urn:uuid:5e44a7ef-649d-4bca-a7b5-0d6205f07a95",
+        "timestamp" : "2022-09-05T15:29:15+00:00",
         "total" : 13,
         "parameter" : [{
           "name" : "excludeNested",
@@ -200,8 +200,8 @@
       "description" : "Das Valueset enthält alle Codes aus dem Codesystem https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT",
       "copyright" : "Kassenärztliche Bundesvereinigung",
       "expansion" : {
-        "identifier" : "urn:uuid:c5839c58-c15b-47ed-903b-f58e92f504f4",
-        "timestamp" : "2022-05-24T10:17:16+00:00",
+        "identifier" : "urn:uuid:bc50574a-b9ff-4b02-8f26-5e08867de4c9",
+        "timestamp" : "2022-09-05T15:29:15+00:00",
         "total" : 33,
         "parameter" : [{
           "name" : "excludeNested",

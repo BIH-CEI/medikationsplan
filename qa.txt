@@ -1,10 +1,10 @@
 ﻿MP4P_DE_IG : Validation Results
 =========================================
 
-err = 37, warn = 24, info = 17
-IG Publisher Version: 1.1.83 Out of date - current version is 1.1.120
-Generated Tue May 24 10:17:43 UTC 2022. FHIR version 4.0.1 for de.mp4p#0.1.0 (canonical = https://www.charite.de/fhir/medikationsplan)
- Build Errors : 149 / 18 / 0
+err = 40, warn = 29, info = 17
+IG Publisher Version: 1.1.83 Out of date - current version is 1.1.128
+Generated Mon Sep 05 15:29:44 UTC 2022. FHIR version 4.0.1 for de.mp4p#0.1.0 (canonical = https://www.charite.de/fhir/medikationsplan)
+ Build Errors : 149 / 19 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-ExampleAllergyIntolerance : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Bundle-ExampleBundle : 0 / 1 / 16
  /github/workspace/fsh-generated/resources/CodeSystem-KBV-CS-SFHIR-BMP-DOSIEREINHEIT : 0 / 0 / 1
@@ -15,6 +15,7 @@ Generated Tue May 24 10:17:43 UTC 2022. FHIR version 4.0.1 for de.mp4p#0.1.0 (ca
  /github/workspace/fsh-generated/resources/Medication-ExampleMedication : 0 / 0 / 5
  /github/workspace/fsh-generated/resources/MedicationStatement-ExampleMedicationStatement : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/MedicationStatement-ExampleMedicationStatement-2 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/MedicationStatement-ExampleMedicationStatement-3 : 5 / 4 / 1
  /github/workspace/fsh-generated/resources/Observation-ExampleFreitext : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-ExampleKoerpergewicht : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-ExampleKoerpergroesse : 0 / 0 / 1
@@ -34,7 +35,7 @@ Generated Tue May 24 10:17:43 UTC 2022. FHIR version 4.0.1 for de.mp4p#0.1.0 (ca
  /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-koerpergroesse : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-kreatinin : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-list : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-medicationstatement : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-medicationstatement : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-medikation : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-organization : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-mp4p-patient : 1 / 0 / 3
@@ -68,6 +69,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/ExampleMedication.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/ExampleMedicationStatement.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/ExampleMedicationStatement-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/ExampleMedicationStatement-3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/ExampleOrganization.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/ExamplePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/ExamplePractitioner.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -240,6 +242,16 @@ INFORMATION: Medication/ExampleMedication: Medication.ingredient[0].item.ofType(
 WARNING: MedicationStatement/ExampleMedicationStatement: MedicationStatement.dosage[0].timing.code.coding[1]: Display Name for http://terminology.hl7.org/CodeSystem/v3-TimingEvent#CD should be one of 'CD' instead of 'Mittags' for 'http://terminology.hl7.org/CodeSystem/v3-TimingEvent#CD'
 == fsh-generated/resources/MedicationStatement-ExampleMedicationStatement-2.json ==
 WARNING: MedicationStatement/ExampleMedicationStatement-2: MedicationStatement.dosage[0].timing.code.coding[1]: Display Name for http://terminology.hl7.org/CodeSystem/v3-TimingEvent#CD should be one of 'CD' instead of 'Mittags' for 'http://terminology.hl7.org/CodeSystem/v3-TimingEvent#CD'
+== fsh-generated/resources/MedicationStatement-ExampleMedicationStatement-3.json ==
+ERROR: MedicationStatement/ExampleMedicationStatement-3: MedicationStatement.medication.ofType(Reference): Unable to resolve resource 'Medication/insulin'
+WARNING: MedicationStatement/ExampleMedicationStatement-3: MedicationStatement.dosage[0].timing.code.coding[1]: Display Name for http://terminology.hl7.org/CodeSystem/v3-TimingEvent#CM should be one of 'CM' instead of 'Morgens' for 'http://terminology.hl7.org/CodeSystem/v3-TimingEvent#CM'
+ERROR: MedicationStatement/ExampleMedicationStatement-3: MedicationStatement.dosage[0].doseAndRate[0].dose.ofType(Quantity): dqty-1: 'Die Dosierung muss strukturiert oder als Freitext angegeben werden.' Rule 'Die Dosierung muss strukturiert oder als Freitext angegeben werden.' Failed
+WARNING: MedicationStatement/ExampleMedicationStatement-3: MedicationStatement.dosage[1].timing.code.coding[1]: Display Name for http://terminology.hl7.org/CodeSystem/v3-TimingEvent#CD should be one of 'CD' instead of 'Mittags' for 'http://terminology.hl7.org/CodeSystem/v3-TimingEvent#CD'
+ERROR: MedicationStatement/ExampleMedicationStatement-3: MedicationStatement.dosage[1].doseAndRate[0].dose.ofType(Quantity): dqty-1: 'Die Dosierung muss strukturiert oder als Freitext angegeben werden.' Rule 'Die Dosierung muss strukturiert oder als Freitext angegeben werden.' Failed
+WARNING: MedicationStatement/ExampleMedicationStatement-3: MedicationStatement.dosage[2].timing.code.coding[1]: Display Name for http://terminology.hl7.org/CodeSystem/v3-TimingEvent#CV should be one of 'CV' instead of 'Abends' for 'http://terminology.hl7.org/CodeSystem/v3-TimingEvent#CV'
+ERROR: MedicationStatement/ExampleMedicationStatement-3: MedicationStatement.dosage[2].doseAndRate[0].dose.ofType(Quantity): dqty-1: 'Die Dosierung muss strukturiert oder als Freitext angegeben werden.' Rule 'Die Dosierung muss strukturiert oder als Freitext angegeben werden.' Failed
+WARNING: MedicationStatement/ExampleMedicationStatement-3: MedicationStatement.dosage[3].timing.code.coding[1]: Display Name for http://terminology.hl7.org/CodeSystem/v3-TimingEvent#HS should be one of 'HS' instead of 'zur Nacht' for 'http://terminology.hl7.org/CodeSystem/v3-TimingEvent#HS'
+ERROR: MedicationStatement/ExampleMedicationStatement-3: MedicationStatement.dosage[3].doseAndRate[0].dose.ofType(Quantity): dqty-1: 'Die Dosierung muss strukturiert oder als Freitext angegeben werden.' Rule 'Die Dosierung muss strukturiert oder als Freitext angegeben werden.' Failed
 == fsh-generated/resources/Observation-ExampleFreitext.json ==
 == fsh-generated/resources/Observation-ExampleKoerpergewicht.json ==
 == fsh-generated/resources/Observation-ExampleKoerpergroesse.json ==
@@ -274,8 +286,6 @@ ERROR: StructureDefinition.url: Resource id/url mismatch: mp4p-kreatinin/https:/
 ERROR: StructureDefinition.url: Resource id/url mismatch: mp4p-list/https://www.charite.de/fhir/medikationsplan/StructureDefinition/List
 == fsh-generated/resources/StructureDefinition-mp4p-medicationstatement.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: mp4p-medicationstatement/https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement
-ERROR: StructureDefinition/mp4p-medicationstatement: StructureDefinition.snapshot.element[156].constraint[3]: ElementDefinition.constraint.human: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
-ERROR: StructureDefinition/mp4p-medicationstatement: StructureDefinition.differential.element[75].constraint[0]: ElementDefinition.constraint.human: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 == fsh-generated/resources/StructureDefinition-mp4p-medikation.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: mp4p-medikation/https://www.charite.de/fhir/medikationsplan/StructureDefinition/Medication
 == fsh-generated/resources/StructureDefinition-mp4p-organization.json ==

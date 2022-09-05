@@ -69,7 +69,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "List.title","","","",0,1,"","","Y","string {[]} {[]}
 ","Zwischenüberschrift Titel (@c)","A label for the list assigned by the author.","","Allows customization beyond just the code identifying the kind of list.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Dr. Jane&#39;s Patients""/>","","",,,,,"",,,,"List.title",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".title"
-"List.code","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
+"List.code","","","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","What the purpose of this list is","This code defines the purpose of the list - why it was created.","If there is no code, the purpose of the list is implied where it is used, such as in a document section using Document.section.code.","Lists often contain subsets of resources rather than an exhaustive list.  The code identifies what type of subset is included.","","","","","","","",,"required","","https://www.charite.de/fhir/medikationsplan/ValueSet/kbv/s-bmp-zwischenueberschrift","",,,,"List.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".code","FiveWs.what[x]"
 "List.code.id","","","",0,1,"","","","string {[]} {[]}

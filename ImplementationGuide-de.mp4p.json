@@ -10,7 +10,7 @@
   "name": "MP4P_DE_IG",
   "title": "Medikationsplan 4 PLUS",
   "status": "draft",
-  "date": "2022-05-24T10:16:42+00:00",
+  "date": "2022-09-05T15:28:19+00:00",
   "publisher": "BIH@Charité",
   "contact": [
     {
@@ -807,6 +807,19 @@
           "reference": "MedicationStatement/ExampleMedicationStatement-2"
         },
         "name": "ExampleMedicationStatement-2",
+        "exampleCanonical": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/ExampleMedicationStatement-3"
+        },
+        "name": "ExampleMedicationStatement-3",
         "exampleCanonical": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement"
       },
       {

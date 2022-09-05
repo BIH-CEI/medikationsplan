@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="ExampleMedicationStatement-3"/>
+  <meta>
+    <profile value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.1.0&amp;canonical=http://fhir.de/Medication/insulin">Medication/insulin</a></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Gesetzliche Krankenversicherung: Z234567890 (OFFICIAL); Clara Josephine Schumann (OFFICIAL)</a></p><p><b>effective</b>: 2017-05-02 --&gt; (ongoing)</p></div>
+  </text>
+  <status value="active"/>
+  <medicationReference>
+    <reference value="Medication/insulin"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2017-05-02"/>
+  </effectivePeriod>
+  <dosage>
+    <timing>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="73775008"/>
+          <display value="Morning (qualifier value)"/>
+        </coding>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent"/>
+          <code value="CM"/>
+          <display value="Morgens"/>
+        </coding>
+      </code>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <extension url="https://www.charite.de/fhir/medikationsplan/Extension/freitext">
+          <valueString value="10 IE"/>
+        </extension>
+        <value value="10"/>
+        <unit value="IE"/>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+        <code value="p"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosage>
+  <dosage>
+    <timing>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="71997007"/>
+          <display value="Noon (qualifier value)"/>
+        </coding>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent"/>
+          <code value="CD"/>
+          <display value="Mittags"/>
+        </coding>
+      </code>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <extension url="https://www.charite.de/fhir/medikationsplan/Extension/freitext">
+          <valueString value="6 IE"/>
+        </extension>
+        <value value="6"/>
+        <unit value="IE"/>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+        <code value="p"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosage>
+  <dosage>
+    <timing>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="3157002"/>
+          <display value="Evening (qualifier value)"/>
+        </coding>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent"/>
+          <code value="CV"/>
+          <display value="Abends"/>
+        </coding>
+      </code>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <extension url="https://www.charite.de/fhir/medikationsplan/Extension/freitext">
+          <valueString value="8 IE"/>
+        </extension>
+        <value value="8"/>
+        <unit value="IE"/>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+        <code value="p"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosage>
+  <dosage>
+    <timing>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="2546009"/>
+          <display value="Night time (qualifier value)"/>
+        </coding>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-TimingEvent"/>
+          <code value="HS"/>
+          <display value="zur Nacht"/>
+        </coding>
+      </code>
+    </timing>
+    <doseAndRate>
+      <doseQuantity>
+        <extension url="https://www.charite.de/fhir/medikationsplan/Extension/freitext">
+          <valueString value="0 IE"/>
+        </extension>
+        <value value="0"/>
+        <unit value="IE"/>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+        <code value="p"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosage>
+</MedicationStatement>

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "MP4P_DE_IG"];
   fhir:ImplementationGuide.title [ fhir:value "Medikationsplan 4 PLUS"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-05-24T10:16:42+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-09-05T15:28:19+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "BIH@Charité"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -840,6 +840,22 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.charite.de/fhir/medikationsplan/MedicationStatement/ExampleMedicationStatement-3>;
+         fhir:Reference.reference [ fhir:value "MedicationStatement/ExampleMedicationStatement-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleMedicationStatement-3" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement";
+         fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement>
+       ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -852,7 +868,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Organization>
        ]
      ], [
-       fhir:index 35;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -868,7 +884,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Patient>
        ]
      ], [
-       fhir:index 36;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -884,7 +900,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/Practitioner>
        ]
      ], [
-       fhir:index 37;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -900,7 +916,7 @@
          fhir:link <https://www.charite.de/fhir/medikationsplan/StructureDefinition/StatusSchwanger>
        ]
      ], [
-       fhir:index 38;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

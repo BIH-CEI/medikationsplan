@@ -10,7 +10,7 @@
   <name value="MP4P_DE_IG"/>
   <title value="Medikationsplan 4 PLUS"/>
   <status value="draft"/>
-  <date value="2022-05-24T10:16:42+00:00"/>
+  <date value="2022-09-05T15:28:19+00:00"/>
   <publisher value="BIH@Charité"/>
   <contact>
     <name value="BIH@Charité"/>
@@ -580,6 +580,16 @@
         <reference value="MedicationStatement/ExampleMedicationStatement-2"/>
       </reference>
       <name value="ExampleMedicationStatement-2"/>
+      <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/ExampleMedicationStatement-3"/>
+      </reference>
+      <name value="ExampleMedicationStatement-3"/>
       <exampleCanonical value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/MedicationStatement"/>
     </resource>
     <resource>
