@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Gesetzliche Krankenversicherung: Z234567890 (OFFICIAL)</p><p><b>name</b>: Clara Josephine Schumann (OFFICIAL)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Clara Josephine Schumann (OFFICIAL)</b> (no stated gender), DoB Unknown ( Gesetzliche Krankenversicherung: Z234567890 (use: OFFICIAL))</p><hr/></div>"
   ];
   fhir:Patient.identifier [
      fhir:index 0;

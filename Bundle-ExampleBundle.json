@@ -25,7 +25,7 @@
         },
         "text": {
           "status": "extensions",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Extension Medikationsplan Version MP4+</b>: 2.6</p><p><b>identifier</b>: id: urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 77603-9}\">Medication treatment plan.extended Document</span></p><p><b>date</b>: 2021-11-23</p><p><b>author</b>: <a href=\"#Practitioner_ExamplePractitioner\">See above (Practitioner/ExamplePractitioner)</a></p><p><b>title</b>: Medikationsplan</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"ExampleComposition\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;ExampleComposition&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mp4p-composition.html\">Composition MP4+</a></p></div><p><b>Extension Medikationsplan Version MP4+</b>: 2.6</p><p><b>identifier</b>: id: urn:uuid:f1addd63-aaff-4287-aa8e-e5bdc075043d</p><p><b>status</b>: final</p><p><b>type</b>: Medication treatment plan.extended Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#77603-9)</span></p><p><b>date</b>: 2021-11-23</p><p><b>author</b>: <a href=\"#Practitioner_ExamplePractitioner\">See above (Practitioner/ExamplePractitioner)</a></p><p><b>title</b>: Medikationsplan</p></div>"
         },
         "extension": [
           {
@@ -102,7 +102,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: current</p><p><b>mode</b>: snapshot</p><p><b>code</b>: <span title=\"Codes: {https://www.charite.de/fhir/medikationsplan/CodeSystem/kbv/s-bmp-zwischenueberschrift 412}\">Dauermedikation</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: List</b><a name=\"ExampleList\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource List &quot;ExampleList&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mp4p-list.html\">MedicationStatement List MP4+</a></p></div><p><b>status</b>: current</p><p><b>mode</b>: snapshot</p><p><b>code</b>: Dauermedikation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mp-kbv-s-bmp-zwischenueberschrift-cs.html\">KBV_BMP_Zwischenueberschrift_CS</a>#412)</span></p></div>"
         },
         "status": "current",
         "mode": "snapshot",
@@ -129,7 +129,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Gesetzliche Krankenversicherung: Z234567890 (OFFICIAL)</p><p><b>name</b>: Clara Josephine Schumann (OFFICIAL)</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"ExamplePatient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;ExamplePatient&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mp4p-patient.html\">Patient MP4+</a></p></div><p><b>identifier</b>: Gesetzliche Krankenversicherung: Z234567890 (use: OFFICIAL)</p><p><b>name</b>: Clara Josephine Schumann (OFFICIAL)</p></div>"
         },
         "identifier": [
           {
@@ -178,7 +178,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Lifelong physician number: 1656304456 (OFFICIAL)</p><p><b>name</b>: Dr. Antonín Leopold Dvořák</p><p><b>telecom</b>: ph: 01234-12345, <a href=\"mailto:a.dvorak@mpraxis-rusalka.de\">a.dvorak@mpraxis-rusalka.de</a></p><p><b>address</b>: Prager Str. 9, 00035 Dumka</p><p><b>birthDate</b>: 1841-09-08</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"ExamplePractitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;ExamplePractitioner&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mp4p-practitioner.html\">Practitioner MP4+</a></p></div><p><b>identifier</b>: Lifelong physician number: 1656304456 (use: OFFICIAL)</p><p><b>name</b>: Dr. Antonín Leopold Dvořák</p><p><b>telecom</b>: ph: 01234-12345, <a href=\"mailto:a.dvorak@mpraxis-rusalka.de\">a.dvorak@mpraxis-rusalka.de</a></p><p><b>address</b>: Prager Str. 9, 00035 Dumka</p><p><b>birthDate</b>: 1841-09-08</p></div>"
         },
         "identifier": [
           {
@@ -235,7 +235,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 29463-7}\">Body weight</span></p><p><b>subject</b>: <a href=\"#Patient_ExamplePatient\">See above (Patient/ExamplePatient)</a></p><p><b>effective</b>: 2021-11-25</p><p><b>value</b>: 68 Kilogramm</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ExampleKoerpergewicht\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ExampleKoerpergewicht&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mp4p-koerpergewicht.html\">Körpergewicht MP4+</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7)</span></p><p><b>subject</b>: <a href=\"#Patient_ExamplePatient\">See above (Patient/ExamplePatient)</a></p><p><b>effective</b>: 2021-11-25</p><p><b>value</b>: 68 Kilogramm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg = 'kg')</span></p></div>"
         },
         "status": "final",
         "category": [

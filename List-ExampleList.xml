@@ -6,7 +6,7 @@
     <profile value="https://www.charite.de/fhir/medikationsplan/StructureDefinition/List"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table class="clstu"><tr><td>Mode: snapshotStatus: currentCode: Dauermedikation</td></tr><tr><td></td></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table class="clstu"><tr><td>Mode: snapshotStatus: currentCode: Dauermedikation</td></tr><tr><td/></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr></table></div>
   </text>
   <status value="current"/>
   <mode value="snapshot"/>

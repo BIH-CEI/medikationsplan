@@ -18,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 63895-7}\">Breastfeeding status</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Gesetzliche Krankenversicherung: Z234567890 (OFFICIAL); Clara Josephine Schumann (OFFICIAL)</a></p><p><b>effective</b>: 2021-11-25</p><p><b>value</b>: false</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ExampleStatusStillend\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ExampleStatusStillend&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mp4p-stillend.html\">Status stillend MP4+</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Breastfeeding status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#63895-7)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; SCHUMANN&quot;</p><p><b>effective</b>: 2021-11-25</p><p><b>value</b>: false</p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.code [

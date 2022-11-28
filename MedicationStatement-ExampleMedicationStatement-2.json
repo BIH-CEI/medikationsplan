@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"Medication-ExampleMedication.html\">Generated Summary: <span title=\"Codes: {http://fhir.de/CodeSystem/ifa/pzn 06312077}\">ASS 100 - 1a Pharma TAH Tabletten</span>; <span title=\"Codes: {http://standardterms.edqm.eu 10219000}, {https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM TAB}\">Tablet</span></a></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Gesetzliche Krankenversicherung: Z234567890 (OFFICIAL); Clara Josephine Schumann (OFFICIAL)</a></p><p><b>effective</b>: 2021-01-03 --&gt; (ongoing)</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"ExampleMedicationStatement-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;ExampleMedicationStatement-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mp4p-medicationstatement.html\">MedicationStatement MP4+</a></p></div><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"Medication-ExampleMedication.html\">Medication/ExampleMedication</a></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; SCHUMANN&quot;</p><p><b>effective</b>: 2021-01-03 --&gt; (ongoing)</p><blockquote><p><b>dosage</b></p><p><b>timing</b>: Code: Noon (qualifier value)</p></blockquote></div>"
   },
   "status": "active",
   "medicationReference": {

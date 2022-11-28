@@ -160,6 +160,20 @@
     "name": "FreitextMP4P"
   },
   {
+    "id": "lm-medikation",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/medikation",
+    "version": "0.1.0",
+    "name": "LM_Medikation"
+  },
+  {
+    "id": "lm-substance",
+    "type": "StructureDefinition",
+    "url": "https://www.charite.de/fhir/medikationsplan/StructureDefinition/substance",
+    "version": "0.1.0",
+    "name": "LM_Substance"
+  },
+  {
     "id": "mp4p-einnahmezeitpunkte-v3",
     "type": "ValueSet",
     "url": "https://www.charite.de/fhir/medikationsplan/ValueSet/einnahmezeitpunkte-v3-TimingEvent",
