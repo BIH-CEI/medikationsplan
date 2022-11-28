@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "BundleMP4P"];
   fhir:StructureDefinition.title [ fhir:value "Bundle MP4+"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-28T18:22:11+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-28T18:36:43+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "BIH@Charité"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

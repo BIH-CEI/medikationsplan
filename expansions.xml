@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e31b237c-ff50-4012-9e44-ac17b137039a"/>
+  <id value="74ae2e11-6a56-4a46-825b-13f8e00e7e60"/>
   <meta>
-    <lastUpdated value="2022-11-28T18:22:11.833+00:00"/>
+    <lastUpdated value="2022-11-28T18:36:43.044+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -156,8 +156,8 @@
         </contact>
         <description value="Die Schlüsseltabelle enthält eine Liste kodierter Zwischenüberschriften, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Tabelle 6 in Anlage 3 Vereinbarung BMP)."/>
         <expansion>
-          <identifier value="urn:uuid:fd7a1c28-3997-469a-8f4a-3ac5f043561e"/>
-          <timestamp value="2022-11-28T18:22:45+00:00"/>
+          <identifier value="urn:uuid:5006a460-d00a-47d7-a540-ee9762a36644"/>
+          <timestamp value="2022-11-28T18:37:29+00:00"/>
           <total value="13"/>
           <parameter>
             <name value="excludeNested"/>
@@ -543,8 +543,8 @@
         <description value="Das Valueset enthält alle Codes aus dem Codesystem https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
         <copyright value="Kassenärztliche Bundesvereinigung"/>
         <expansion>
-          <identifier value="urn:uuid:20b149cf-7a1d-489a-9ff8-2048aff3b031"/>
-          <timestamp value="2022-11-28T18:22:45+00:00"/>
+          <identifier value="urn:uuid:8cf4e61c-f7fc-4086-b477-b295744fe310"/>
+          <timestamp value="2022-11-28T18:37:29+00:00"/>
           <total value="33"/>
           <parameter>
             <name value="excludeNested"/>
@@ -837,8 +837,8 @@
         </contact>
         <description value="ValueSet zur Codierung von Einnahmezeitpunkten aus v3 CodeSystem TimingEvent."/>
         <expansion>
-          <identifier value="urn:uuid:2a4142ca-40e6-456e-8139-5276f9f542f5"/>
-          <timestamp value="2022-11-28T18:23:06+00:00"/>
+          <identifier value="urn:uuid:f3887e98-43c6-4777-b8c4-d68e786e8bdb"/>
+          <timestamp value="2022-11-28T18:37:54+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>

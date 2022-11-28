@@ -18,7 +18,7 @@
   fhir:StructureDefinition.title [ fhir:value "Extension Medikationsplan Version MP4+"];
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-28T18:22:11+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-28T18:36:43+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "BIH@Charité"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
